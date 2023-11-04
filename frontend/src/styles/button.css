@@ -1,0 +1,32 @@
+.button-header {
+    display: flex;
+    min-width: 60px;
+    justify-content: center;
+    align-items: center;
+    @apply gap-xxs px-xs py-xxs rounded-lg;
+}
+
+.button-primary {
+    display: flex;
+    min-width: 60px;
+    justify-content: center;
+    align-items: center;
+    @apply gap-xxs px-sm py-xxs rounded-lg
+}
+
+.btn-gradient1 {
+    border: 1px solid var(--resend-com-linear-cyan-aqua-green-haze-electric-violet, rgba(2, 252, 239, 0.44));
+    background: var(--Linear-Electric-Lime-Rio-Grande-Rio-Grande, linear-gradient(180deg, rgba(192, 197, 228, 0.16) 0%, rgba(189, 200, 255, 0.09) 50%, rgba(54, 49, 60, 0.08) 100%));
+}
+
+.button-secondary-black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @apply gap-xxs px-sm py-xxs rounded-lg
+}
+
+.btn-gradient2 {
+    @apply border border-solid border-highlight;
+    background: var(--Linear-Electric-Lime-Rio-Grande-Rio-Grande, linear-gradient(180deg, rgba(192, 197, 228, 0.16) 0%, rgba(189, 200, 255, 0.09) 50%, rgba(54, 49, 60, 0.08) 100%));
+}
