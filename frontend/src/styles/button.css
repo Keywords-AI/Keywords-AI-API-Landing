@@ -15,8 +15,9 @@
 }
 
 .btn-gradient1 {
-    border: 1px solid var(--resend-com-linear-cyan-aqua-green-haze-electric-violet, rgba(2, 252, 239, 0.44));
     background: var(--Linear-Electric-Lime-Rio-Grande-Rio-Grande, linear-gradient(180deg, rgba(192, 197, 228, 0.16) 0%, rgba(189, 200, 255, 0.09) 50%, rgba(54, 49, 60, 0.08) 100%));
+
+
 }
 
 .button-secondary-black {
@@ -27,6 +28,26 @@
 }
 
 .btn-gradient2 {
-    @apply border border-solid border-highlight;
+    border: 1px solid var(--highlight, rgba(255, 255, 255, 0.00));
     background: var(--Linear-Electric-Lime-Rio-Grande-Rio-Grande, linear-gradient(180deg, rgba(192, 197, 228, 0.16) 0%, rgba(189, 200, 255, 0.09) 50%, rgba(54, 49, 60, 0.08) 100%));
+
+}
+
+.btn-gradient-border-1 {
+    background: radial-gradient(circle at 100% 100%, #000000 0, #000000 17px, transparent 17px) 0% 0%/18px 18px no-repeat,
+        radial-gradient(circle at 0 100%, #000000 0, #000000 17px, transparent 17px) 100% 0%/18px 18px no-repeat,
+        radial-gradient(circle at 100% 0, #000000 0, #000000 17px, transparent 17px) 0% 100%/18px 18px no-repeat,
+        radial-gradient(circle at 0 0, #000000 0, #000000 17px, transparent 17px) 100% 100%/18px 18px no-repeat,
+        linear-gradient(#000000, #000000) 50% 50%/calc(100% - 2px) calc(100% - 36px) no-repeat,
+        linear-gradient(#000000, #000000) 50% 50%/calc(100% - 36px) calc(100% - 2px) no-repeat,
+        conic-gradient(#ff0000 0%, #ffff00 16.67%, #00ff00 33.33%, #00ffff 50%, #0000ff 66.67%, #ff00ff 83.33%, #ff0000 100%);
+    border-radius: 18px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+
+
+.button-cr{
+    @apply flex min-w-[60px] px-sm py-xxs justify-center items-center gap-xxs rounded-sm;
 }

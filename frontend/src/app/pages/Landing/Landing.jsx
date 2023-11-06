@@ -1,8 +1,10 @@
 import { Page } from 'src/app/components/Page/Page';
 import { ArrowRight, Brain, Search, Y, Text } from 'src/app/components/icons';
-import { SmallCard } from 'src/app/components/SmallCard/SmallCard';
+import { SmallCard } from './components/SmallCard/SmallCard';
 import './Landing.css';
-
+import { Subtract } from '../../components/icons';
+import { Footer } from '../../components/Footer/Footer';
+import { Navbar } from '../../components/Navbar/Navbar';
 export function Landing({}) {
   const cardData = [
     {
@@ -51,11 +53,14 @@ export function Landing({}) {
       >
         <div className="flex max-w-[1200px] flex-col items-start gap-xl self-stretch">
           <div className="flex flex-col items-start gap-lg self-stretch">
-            <button className="button-primary btn-gradient1">
-              <span className="text-sm text-center">
-                Read our launch on Product Hunt
-              </span>
-            </button>
+            <div className="btn-gradient-border-1">
+              <button className="button-primary btn-gradient1">
+                <span className="text-sm-regular text-center">
+                  Read our launch on Product Hunt
+                </span>
+              </button>
+            </div>
+
             <p className="display-xl self-stretch gradient-text">
               Streamline Your AI Costs. <br />
               Not Your Capabilities.
@@ -69,13 +74,13 @@ export function Landing({}) {
           </div>
           <div className="flex items-start gap-xs">
             <button className="button-primary bg-gray-white">
-              <span className="text-sm text-center flex-1 text-gray-2">
+              <span className="text-sm-regular text-center flex-1 text-gray-2">
                 Get started
               </span>
               <ArrowRight />
             </button>
             <button className="button-header">
-              <span className="text-sm text-center text-gray-4 flex-1">
+              <span className="text-sm-regular text-center text-gray-4 flex-1">
                 Documentation
               </span>
               <ArrowRight fill="fill-gray-4" />
@@ -83,19 +88,19 @@ export function Landing({}) {
           </div>
         </div>
         <div className="flex max-w-[1200px] items-center gap-xxs self-stretch">
-          <p className="text-sm text-resend-64">Backed by</p>
+          <p className="text-sm-regular text-resend-64">Backed by</p>
           <div className="flex items-center gap-[4px]">
             <Y />
-            <span className="text-sm gradient-text">Combinator</span>
+            <span className="text-sm-regular gradient-text">Combinator</span>
           </div>
         </div>
       </div>
       {/* section 2 */}
       <div
         aria-label="section2"
-        className="flex flex-col px-xxxl py-xxl items-center gap-xl self-stretch bg-gray-black"
+        className="flex-col px-xxxl py-xxl items-center gap-xl self-stretch bg-gray-black"
       >
-        <div className="flex max-w-[1200px] flex-col items-center gap-xl self-stretch rounded-xl border-t border-box border-solid">
+        <div className="max-w-[1200px] flex-col items-center gap-xl rounded-xl border-t border-box border-solid">
           <div className="h-[1px] gradient-bar self-stretch"></div>
           <div
             aria-label="section title"
@@ -138,15 +143,43 @@ export function Landing({}) {
               outperforming models including GPT-3.5 and Claude 2.
             </p>
           </div>
-          <button className="button-secondary-black btn-gradient2">
-            <span className="text-sm text-center flex-1">
-              Benchmark results
-            </span>
-            <ArrowRight />
-          </button>
+          <div className="gradient-out p-[1px] rounded-lg">
+            <button className="button-secondary-black gradient-in">
+              <span className="text-sm-regular text-center flex-1">
+                Benchmark results
+              </span>
+              <ArrowRight fill="fill-gray-white" />
+            </button>
+          </div>
         </div>
         <div className="flex h-[480px] flex-col justify-center items-center self-stretch rounded-xl border border-solid border-box">
           <p className="display-sm text-gray-3">Graph Plaeholder</p>
+        </div>
+      </div>
+      {/* section 4 */}
+      <div className="flex px-[180px] pt-xxxl flex-col items-center gap-xl self-stretch">
+        <div className="flex max-w-[1200px] flex-col items-center gap-sm ">
+          <p className="display-lg text-center gradient-text ">
+            Integrate in minutes. <br />
+            Available today.
+          </p>
+        </div>
+        <div className="flex items-start gap-xxs">
+          <button className="button-primary bg-gray-white">
+            <span className="text-sm-regular flex-1 text-gray-2">
+              Get started
+            </span>
+            <ArrowRight fill="fill-gray-black" />
+          </button>
+          <button className="button-header ">
+            <span className="text-sm-regular flex-1 text-gray-4 ">
+              Contact us
+            </span>
+            <ArrowRight fill="fill-gray-4" />
+          </button>
+        </div>
+        <div className="flex justify-center items-center">
+          <Subtract />
         </div>
       </div>
     </Page>

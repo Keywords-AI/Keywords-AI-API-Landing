@@ -3,6 +3,7 @@ import React from 'react';
 export const Brain = ({ fill = 'fill-gray-white' }) => {
   return (
     <svg
+      aria-label='Brain'
       xmlns="http://www.w3.org/2000/svg"
       width="22"
       height="24"
@@ -19,6 +20,7 @@ export const Brain = ({ fill = 'fill-gray-white' }) => {
 export const Text = ({ fill = 'fill-gray-white' }) => {
   return (
     <svg
+      aria-label='Text'
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -35,6 +37,7 @@ export const Text = ({ fill = 'fill-gray-white' }) => {
 export const Search = ({ fill = 'fill-gray-white' }) => {
   return (
     <svg
+      aria-label='Search'
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -51,6 +54,7 @@ export const Search = ({ fill = 'fill-gray-white' }) => {
 export const Logo = ({ fill = 'fill-gray-white' }) => {
   return (
     <svg
+      aria-label='Logo'
       xmlns="http://www.w3.org/2000/svg"
       width="19"
       height="20"
@@ -70,6 +74,7 @@ export const Logo = ({ fill = 'fill-gray-white' }) => {
 export const ArrowRight = ({ fill = 'fill-gray-black' }) => {
   return (
     <svg
+      aria-label='ArrowRight'
       xmlns="http://www.w3.org/2000/svg"
       width="4"
       height="8"
@@ -86,6 +91,7 @@ export const ArrowRight = ({ fill = 'fill-gray-black' }) => {
 export const Y = () => {
   return (
     <svg
+      aria-label='Y'
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -121,6 +127,167 @@ export const Y = () => {
         <clipPath id="clip0_3605_4208">
           <rect width="24" height="24" fill="white" />
         </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+export const Subtract = () => {
+  return (
+    <svg
+      aria-label='Subtract'
+      xmlns="http://www.w3.org/2000/svg"
+      width="334"
+      height="203"
+      viewBox="0 0 334 203"
+      fill="none"
+    >
+      <mask id="path-1-inside-1_3839_1693" fill="white">
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M191.576 20.2001C188.079 20.2001 184.583 21.5427 181.753 23.7244C174.428 29.4303 173.096 40.0031 178.757 47.2194V47.3872L267.157 161.506V203H0.272775C0.258097 202.002 0.250732 201.002 0.250732 200C0.250732 89.5431 89.7938 0 200.251 0C211.703 0 222.93 0.962567 233.857 2.81121C233.683 6.66212 234.815 10.5812 237.357 13.8229L333.25 137.675H333.749V203H300.453V149.926L205.06 26.7452C201.897 22.5496 196.903 20.2001 191.576 20.2001Z"
+        />
+      </mask>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M191.576 20.2001C188.079 20.2001 184.583 21.5427 181.753 23.7244C174.428 29.4303 173.096 40.0031 178.757 47.2194V47.3872L267.157 161.506V203H0.272775C0.258097 202.002 0.250732 201.002 0.250732 200C0.250732 89.5431 89.7938 0 200.251 0C211.703 0 222.93 0.962567 233.857 2.81121C233.683 6.66212 234.815 10.5812 237.357 13.8229L333.25 137.675H333.749V203H300.453V149.926L205.06 26.7452C201.897 22.5496 196.903 20.2001 191.576 20.2001Z"
+        fill="url(#paint0_linear_3839_1693)"
+      />
+      <path
+        d="M181.753 23.7244L181.143 22.9324L181.139 22.9355L181.753 23.7244ZM178.757 47.2194H179.757V46.874L179.543 46.6022L178.757 47.2194ZM178.757 47.3872H177.757V47.7293L177.966 47.9996L178.757 47.3872ZM267.157 161.506H268.157V161.164L267.948 160.894L267.157 161.506ZM267.157 203V204H268.157V203H267.157ZM0.272775 203L-0.727117 203.015L-0.712629 204H0.272775V203ZM233.857 2.81121L234.856 2.85626L234.895 1.97276L234.023 1.82522L233.857 2.81121ZM237.357 13.8229L238.148 13.2107L238.144 13.2057L237.357 13.8229ZM333.25 137.675L332.459 138.288L332.759 138.675H333.25V137.675ZM333.749 137.675H334.749V136.675H333.749V137.675ZM333.749 203V204H334.749V203H333.749ZM300.453 203H299.453V204H300.453V203ZM300.453 149.926H301.453V149.584L301.244 149.314L300.453 149.926ZM205.06 26.7452L204.262 27.3472L204.27 27.3574L205.06 26.7452ZM182.364 24.5164C185.044 22.45 188.33 21.2001 191.576 21.2001V19.2001C187.829 19.2001 184.123 20.6353 181.143 22.9324L182.364 24.5164ZM179.543 46.6022C174.23 39.8281 175.473 29.8842 182.368 24.5133L181.139 22.9355C173.384 28.9764 171.963 40.1781 177.97 47.8366L179.543 46.6022ZM179.757 47.3872V47.2194H177.757V47.3872H179.757ZM267.948 160.894L179.547 46.7748L177.966 47.9996L266.367 162.118L267.948 160.894ZM268.157 203V161.506H266.157V203H268.157ZM0.272775 204H267.157V202H0.272775V204ZM-0.749268 200C-0.749268 201.007 -0.741867 202.012 -0.727117 203.015L1.27267 202.985C1.25806 201.992 1.25073 200.997 1.25073 200H-0.749268ZM200.251 -1C89.2415 -1 -0.749268 88.9908 -0.749268 200H1.25073C1.25073 90.0953 90.3461 1 200.251 1V-1ZM234.023 1.82522C223.042 -0.0327073 211.759 -1 200.251 -1V1C211.647 1 222.819 1.95784 233.69 3.7972L234.023 1.82522ZM238.144 13.2057C235.757 10.1624 234.692 6.48137 234.856 2.85626L232.858 2.76616C232.674 6.84287 233.872 10.9999 236.571 14.44L238.144 13.2057ZM334.04 137.063L238.148 13.2107L236.567 14.4351L332.459 138.288L334.04 137.063ZM333.749 136.675H333.25V138.675H333.749V136.675ZM334.749 203V137.675H332.749V203H334.749ZM300.453 204H333.749V202H300.453V204ZM299.453 149.926V203H301.453V149.926H299.453ZM204.27 27.3574L299.663 150.539L301.244 149.314L205.851 26.1329L204.27 27.3574ZM191.576 21.2001C196.61 21.2001 201.3 23.4184 204.262 27.3472L205.859 26.1432C202.495 21.6808 197.196 19.2001 191.576 19.2001V21.2001Z"
+        fill="url(#paint1_linear_3839_1693)"
+        mask="url(#path-1-inside-1_3839_1693)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_3839_1693"
+          x1="167"
+          y1="0"
+          x2="167"
+          y2="203"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#C0C5E4" stopOpacity="0.157" />
+          <stop offset="0.5" stopColor="#BDC8FF" stopOpacity="0.09" />
+          <stop offset="1" stopColor="#36313C" stopOpacity="0.08" />
+        </linearGradient>
+        <linearGradient
+          id="paint1_linear_3839_1693"
+          x1="0.250732"
+          y1="101.5"
+          x2="333.749"
+          y2="101.5"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="white" stopOpacity="0" />
+          <stop stopOpacity="0.2" />
+          <stop offset="0.5" stopColor="#8F8F8F" stopOpacity="0.67" />
+          <stop offset="1" stopOpacity="0.04" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+export const SmallDot = ({ fill = 'fill-gray-4' }) => {
+  return (
+    <svg
+      aria-label="SmallDot"
+      xmlns="http://www.w3.org/2000/svg"
+      width="2"
+      height="2"
+      viewBox="0 0 2 2"
+      fill="none"
+    >
+      <path
+        d="M1 0C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.555 0.45 2 1 2C1.555 2 2 1.555 2 1C2 0.734784 1.89464 0.48043 1.70711 0.292893C1.51957 0.105357 1.26522 0 1 0Z"
+        className={fill}
+      />
+    </svg>
+  );
+};
+
+export const FeatureTick = ({ fill = 'fill-gray-white' }) => {
+  return (
+    <svg
+      aria-label="FeatureTick"
+      xmlns="http://www.w3.org/2000/svg"
+      width="12"
+      height="9"
+      viewBox="0 0 12 9"
+      fill="none"
+    >
+      <path
+        d="M11.8333 1.00006L3.83334 9.00006L0.166672 5.33339L1.10667 4.39339L3.83334 7.11339L10.8933 0.0600586L11.8333 1.00006Z"
+        className={fill}
+      />
+    </svg>
+  );
+};
+
+export const Check = ({ fill = 'fill-gray-white' }) => {
+  return (
+    <svg
+      aria-label="Check"
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      viewBox="0 0 18 18"
+      fill="none"
+    >
+      <path
+        d="M15.375 5.45822L6.87502 13.9582L2.97919 10.0624L3.97794 9.06364L6.87502 11.9536L14.3763 4.45947L15.375 5.45822Z"
+        className={fill}
+      />
+    </svg>
+  );
+};
+
+export const ArrowLeft = ({ fill = 'fill-gray-white' }) => {
+  return (
+    <svg
+      aria-label="ArrowLeft"
+      xmlns="http://www.w3.org/2000/svg"
+      width="4"
+      height="8"
+      viewBox="0 0 4 8"
+      fill="none"
+    >
+      <path
+        d="M4 1.52757L1.52767 3.9999L4 6.47764L3.23887 7.23877L0 3.9999L3.23887 0.761037L4 1.52757Z"
+        className={fill}
+      />
+    </svg>
+  );
+};
+
+export const CircleTick = () => {
+  return (
+    <svg
+      aria-label="CircleTick"
+      xmlns="http://www.w3.org/2000/svg"
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+    >
+      <path
+        d="M24 0C10.8 0 0 10.8 0 24C0 37.2 10.8 48 24 48C37.2 48 48 37.2 48 24C48 10.8 37.2 0 24 0ZM24 43.2C13.416 43.2 4.8 34.584 4.8 24C4.8 13.416 13.416 4.8 24 4.8C34.584 4.8 43.2 13.416 43.2 24C43.2 34.584 34.584 43.2 24 43.2ZM35.016 13.392L19.2 29.208L12.984 23.016L9.6 26.4L19.2 36L38.4 16.8L35.016 13.392Z"
+        fill="url(#paint0_linear_3681_3587)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_3681_3587"
+          x1="24"
+          y1="5.45161e-06"
+          x2="50.0169"
+          y2="1.11931"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#D1CAE4" />
+        </linearGradient>
       </defs>
     </svg>
   );

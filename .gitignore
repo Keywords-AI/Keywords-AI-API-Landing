@@ -3,3 +3,4 @@
 .nx/cache
 node_modules
 frontend/src/app/components/SmallCard/SmallCard.jsx
+.DS_Store

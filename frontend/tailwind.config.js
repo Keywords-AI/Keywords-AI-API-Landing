@@ -60,7 +60,10 @@ module.exports = {
           64: "rgba(239, 245, 255, 0.69)",
         },
       },
+      boxShadow: {
+        pricing: "2px 2px 10px 2px rgba(24, 24, 32, 0.40)",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("./flexPlugin.js")],
 };

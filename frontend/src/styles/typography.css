@@ -55,7 +55,7 @@
     font-style: normal;
 }
 
-.text-sm {
+.text-sm-regular {
     @apply text-gray-white;
     font-size: 14px;
     font-weight: 400;
