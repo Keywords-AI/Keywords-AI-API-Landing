@@ -2,7 +2,7 @@ import { ArrowRight, Logo } from '../icons';
 import './Navbar.css';
 import { useNavigate } from 'react-router-dom';
 
-export function Navbar({}) {
+export function Navbar() {
   const navigate = useNavigate();
   return (
     <div
@@ -32,7 +32,9 @@ export function Navbar({}) {
       </div>
       <div className="flex items-center gap-xs">
         <button className="button-header">
-          <span className="text-sm-regular text-center text-gray-4 flex-1">Log in</span>
+          <span className="text-sm-regular text-center text-gray-4 flex-1">
+            Log in
+          </span>
         </button>
         <button className="button-primary bg-gray-white">
           <span className="text-sm-regular text-center text-gray-2 flex-1">

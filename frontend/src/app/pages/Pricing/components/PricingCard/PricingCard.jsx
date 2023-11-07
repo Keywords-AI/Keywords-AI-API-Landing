@@ -21,12 +21,10 @@ export default function PricingCard({
     text: 'Choose This',
     className: 'button-tertiary-white button-fill',
     icon: null,
-    onClick: () => {},
   },
   upgradeButton = {
     text: 'Get Started',
     className: 'button-primary button-fill',
-    onClick: () => {},
   },
   downgradeButton = {
     text: 'Talk to us',

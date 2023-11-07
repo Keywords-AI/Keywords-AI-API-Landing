@@ -1,5 +1,5 @@
 import { BackButton } from '../../components/BackButton/BackButton';
-import { ArrowRight, CircleTick, Subtract } from '../../components/icons';
+import { ArrowRight, CircleTick } from '../../components/icons';
 import './PaymentSuccess.css';
 
 export function PaymentSuccess() {
@@ -8,7 +8,10 @@ export function PaymentSuccess() {
       <BackButton text="Home" link={-1} />
       <div className="flex-col  max-w-[420px] items-center gap-md ">
         <CircleTick />
-        <div aria-label='section title' className="flex-col items-center gap-xxs self-stretch ">
+        <div
+          aria-label="section title"
+          className="flex-col items-center gap-xxs self-stretch "
+        >
           <div className="display-xs text-gray-white">
             Subscription Successful!
           </div>

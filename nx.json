@@ -3,16 +3,26 @@
     "default": {
       "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
       }
     }
   },
   "targetDefaults": {
     "build": {
-      "dependsOn": ["^build"]
+      "dependsOn": [
+        "^build"
+      ]
     },
     "test": {
-      "inputs": ["default", "^default"]
+      "inputs": [
+        "default",
+        "^default"
+      ]
     },
     "lint": {
       "inputs": [
@@ -24,7 +34,7 @@
     }
   },
   "installation": {
-    "version": "17.0.2"
+    "version": "17.0.3"
   },
   "generators": {
     "@nx/react": {
@@ -44,3 +54,4 @@
     }
   }
 }
+

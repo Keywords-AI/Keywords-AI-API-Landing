@@ -14,10 +14,7 @@
     padding: none
 }
 
-html,
-body {
-    height: 100vh;
-}
+
 
 strong {
     font-weight: bold;

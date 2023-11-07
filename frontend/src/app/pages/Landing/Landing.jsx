@@ -3,9 +3,7 @@ import { ArrowRight, Brain, Search, Y, Text } from 'src/app/components/icons';
 import { SmallCard } from './components/SmallCard/SmallCard';
 import './Landing.css';
 import { Subtract } from '../../components/icons';
-import { Footer } from '../../components/Footer/Footer';
-import { Navbar } from '../../components/Navbar/Navbar';
-export function Landing({}) {
+export function Landing() {
   const cardData = [
     {
       linkIcon: <Brain />,

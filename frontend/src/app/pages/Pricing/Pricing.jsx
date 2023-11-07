@@ -1,9 +1,7 @@
 import { Page } from '../../components/Page/Page';
 import PricingCard from './components/PricingCard/PricingCard';
-import { Footer } from '../../components/Footer/Footer';
 import { cards, plans, features } from './Data';
 import { PricingTable } from './components/PricingTable/PricingTable';
-import { Navbar } from '../../components/Navbar/Navbar';
 export function Pricing() {
   return (
     <Page>

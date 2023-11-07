@@ -1,5 +1,6 @@
 import { Check } from 'src/app/components/icons';
 import { ArrowRight } from '../../components/icons';
+
 export const plans = [
   { name: 'Flex 8k', key: 'f8k' },
   { name: 'Flex 32k', key: 'f32k' },
@@ -135,42 +136,42 @@ export const cards = [
         className={
           'button-primary bg-gray-white text-sm-regular text-center flex-1 text-gray-black self-stretch'
         }
-        onClick={() => navigate('/platform/organization/usage')}
+        // onClick={() => navigate('/platform/organization/usage')}
       >
         <span>{'Start free trial'}</span>
       </button>
     ),
     currentPlan: 'View Usage Details',
-    upgradeButton: {
-      text: 'Add subscription',
-      className: 'button-primary self-stretch',
-      onClick: () => {
-        if (!user.email) navigate('/signup?next=/platform/pricing');
-        else {
-          createPaymentSession({
-            lookup_keys: [
-              'keywordsai_flex_8k_input',
-              'keywordsai_flex_8k_output',
-            ],
-          });
-        }
-      },
-    },
-    downgradeButton: {
-      text: 'Add subscription',
-      className: 'button-primary self-stretch',
-      onClick: () => {
-        if (!user.email) navigate('/signup?next=/platform/pricing');
-        else {
-          createPaymentSession({
-            lookup_keys: [
-              'keywordsai_flex_8k_input',
-              'keywordsai_flex_8k_output',
-            ],
-          });
-        }
-      },
-    },
+    // upgradeButton: {
+    //   text: 'Add subscription',
+    //   className: 'button-primary self-stretch',
+    //   onClick: () => {
+    //     if (!user.email) navigate('/signup?next=/platform/pricing');
+    //     else {
+    //       createPaymentSession({
+    //         lookup_keys: [
+    //           'keywordsai_flex_8k_input',
+    //           'keywordsai_flex_8k_output',
+    //         ],
+    //       });
+    //     }
+    //   },
+    // },
+    // downgradeButton: {
+    //   text: 'Add subscription',
+    //   className: 'button-primary self-stretch',
+    //   onClick: () => {
+    //     if (!user.email) navigate('/signup?next=/platform/pricing');
+    //     else {
+    //       createPaymentSession({
+    //         lookup_keys: [
+    //           'keywordsai_flex_8k_input',
+    //           'keywordsai_flex_8k_output',
+    //         ],
+    //       });
+    //     }
+    //   },
+    // },
     features: [
       '40K free trial tokens',
       '8K context window',
@@ -201,41 +202,41 @@ export const cards = [
         className={
           'button-primary bg-gray-white text-sm-regular text-center flex-1 text-gray-black self-stretch'
         }
-        onClick={() => navigate('/platform/organization/usage')}
+        // onClick={() => navigate('/platform/organization/usage')}
       >
         <span>{'Start free trial'}</span>
       </button>
     ),
-    upgradeButton: {
-      text: 'Add subscription',
-      className: 'button-primary self-stretch',
-      onClick: () => {
-        if (!user.email) navigate('/signup?next=/platform/pricing');
-        else {
-          createPaymentSession({
-            lookup_keys: [
-              'keywordsai_flex_32k_input',
-              'keywordsai_flex_32k_output',
-            ],
-          });
-        }
-      },
-    },
-    downgradeButton: {
-      text: 'Add subscription',
-      className: 'button-primary self-stretch',
-      onClick: () => {
-        if (!user.email) navigate('/signup?next=/platform/pricing');
-        else {
-          createPaymentSession({
-            lookup_keys: [
-              'keywordsai_flex_32k_input',
-              'keywordsai_flex_32k_output',
-            ],
-          });
-        }
-      },
-    },
+    // upgradeButton: {
+    //   text: 'Add subscription',
+    //   className: 'button-primary self-stretch',
+    //   onClick: () => {
+    //     if (!user.email) navigate('/signup?next=/platform/pricing');
+    //     else {
+    //       createPaymentSession({
+    //         lookup_keys: [
+    //           'keywordsai_flex_32k_input',
+    //           'keywordsai_flex_32k_output',
+    //         ],
+    //       });
+    //     }
+    //   },
+    // },
+    // downgradeButton: {
+    //   text: 'Add subscription',
+    //   className: 'button-primary self-stretch',
+    //   onClick: () => {
+    //     if (!user.email) navigate('/signup?next=/platform/pricing');
+    //     else {
+    //       createPaymentSession({
+    //         lookup_keys: [
+    //           'keywordsai_flex_32k_input',
+    //           'keywordsai_flex_32k_output',
+    //         ],
+    //       });
+    //     }
+    //   },
+    // },
     features: [
       '40K free trial tokens',
       '32K context window',
@@ -258,7 +259,7 @@ export const cards = [
           className={
             'button-secondary-black text-sm-regular text-center text-gray-white flex-1 self-stretch bg-gray-black'
           }
-          onClick={() => navigate('/platform/organization/usage')}
+          // onClick={() => navigate('/platform/organization/usage')}
         >
           <span>{'Talk to us'}</span>
           <ArrowRight fill="fill-gray-white" />

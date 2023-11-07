@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useRoutes, Navigate } from 'react-router-dom';
 import { Landing } from './pages/Landing';
 import { Pricing } from './pages/Pricing/Pricing';
