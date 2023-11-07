@@ -1,0 +1,5 @@
+{
+    "files.autoSave": "afterDelay",
+    "css.lint.unknownAtRules": "ignore",
+
+}
