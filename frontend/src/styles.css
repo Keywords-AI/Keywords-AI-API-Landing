@@ -1,5 +1,6 @@
 @import './styles/typography.css';
 @import './styles/button.css';
+@import './styles/input.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

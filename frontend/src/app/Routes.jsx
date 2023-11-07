@@ -7,8 +7,15 @@ import { PrivacyPolicy } from './pages/PrivacyPolicy/PrivacyPolicy';
 import { Tou } from './pages/Tou/Tou';
 import { Dpa } from './pages/Dpa/Dpa';
 import { PaymentSuccess } from './pages/PaymentSuccess/PaymentSuccess';
-import path from 'path';
 import { FullScreenLayout } from './layouts/FullScreenLayout/FullScreenLayout';
+import { NotFound } from './pages/NotFound/NotFound';
+import { ConfirmRegistration } from './pages/ConfirmRegistration/ConfirmRegistration';
+import { Unauthorized } from './pages/Unauthorized/Unauthorized';
+import { Unauthenticated } from './pages/Unauthenticated';
+import { SignUp } from './pages/SignUp/SignUp';
+import { LogIn } from './pages/LogIn';
+import { ResetPassword } from './pages/ResetPassword/ResetPassword';
+import { ForgotPassword } from './pages/ForgotPassword/ForgotPassword';
 
 export const Routes = () => {
   const routes = useRoutes([
@@ -17,7 +24,7 @@ export const Routes = () => {
       children: [
         { path: '/', element: <Landing /> },
         { path: '/pricing', element: <Pricing /> },
-        { path: '*', element: <Navigate to="/" /> },
+        { path: '*', element: <Navigate to="/not-found" /> },
         {
           path: '/privacy-policy',
           element: <PrivacyPolicy />,
@@ -33,8 +40,22 @@ export const Routes = () => {
       ],
     },
     {
-      element: <FullScreenLayout />,
-      children: [{ path: '/payment-success', element: <PaymentSuccess /> }],
+      element: <FullScreenLayout />, // layout without navigation bar
+      children: [
+        { path: '/payment-success', element: <PaymentSuccess /> },
+        { path: '*', element: <Navigate to="/not-found" /> },
+        { path: '/not-found', element: <NotFound /> },
+        { path: '/confirm-registration', element: <ConfirmRegistration /> },
+        { path: '/unauthorized', element: <Unauthorized /> },
+        { path: '/unauthenticated', element: <Unauthenticated /> },
+        { path: '/login', element: <LogIn /> },
+        { path: '/signup', element: <SignUp /> },
+        { path: 'reset-password', element: <ResetPassword /> },
+        {
+          path: 'forgot-password',
+          element: <ForgotPassword />,
+        },
+      ],
     },
   ]);
   return <div>{routes}</div>;

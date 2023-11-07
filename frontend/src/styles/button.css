@@ -48,6 +48,10 @@
 
 
 
-.button-cr{
+.button-cr {
     @apply flex min-w-[60px] px-sm py-xxs justify-center items-center gap-xxs rounded-sm;
+}
+
+.button-secondary-gray {
+    @apply flex min-w-[60px] px-sm py-xxs justify-center items-center gap-xxs rounded-sm border border-solid border-gray-3 bg-gray-2;
 }
