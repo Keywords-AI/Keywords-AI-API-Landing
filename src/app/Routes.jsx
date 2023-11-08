@@ -22,8 +22,7 @@ export const Routes = () => {
     {
       element: <NavigationLayout />,
       children: [
-        { path: "/", element: <Navigate to="/Keywords-AI-API-Landing" /> },
-        { path: "/Keywords-AI-API-Landing", element: <Landing /> },
+        { path: "/", element: <Landing /> },
         { path: "/pricing", element: <Pricing /> },
         {
           path: "/privacy-policy",
