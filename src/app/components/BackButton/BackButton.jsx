@@ -6,7 +6,9 @@ export function BackButton({ text, link = -1 }) {
     <div className="flex-col items-start gap-[10px] self-stretch">
       <button className="button-header" onClick={() => navigate(link)}>
         <ArrowLeft />
-        <span className="flex-1 text-sm-regular">{text}</span>
+        <span className="flex-1 text-sm-regular text-gray-4 hover:text-gray-white">
+          {text}
+        </span>
       </button>
     </div>
   );

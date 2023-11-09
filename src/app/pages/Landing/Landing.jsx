@@ -57,8 +57,8 @@ export function Landing() {
       >
         <div className="flex max-w-[1200px] flex-col items-start gap-xl self-stretch">
           <div className="flex flex-col items-start gap-lg self-stretch">
-            <div className="btn-gradient-border-1">
-              <button className="button-primary btn-gradient1">
+            <div className="btn-rainbow-border">
+              <button className="button-primary gradient-in">
                 <span className="text-sm-regular text-center">
                   Read our launch on Product Hunt
                 </span>
@@ -92,11 +92,11 @@ export function Landing() {
           </div>
         </div>
         <div className="flex max-w-[1200px] items-center gap-xxs self-stretch">
-          <p className="text-sm-regular text-resend-64">Backed by</p>
+          {/* <p className="text-sm-regular text-resend-64">Backed by</p>
           <div className="flex items-center gap-[4px]">
             <Y />
             <span className="text-sm-regular gradient-text">Combinator</span>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* section 2 */}
@@ -104,11 +104,11 @@ export function Landing() {
         aria-label="section2"
         className="flex-col px-xxxl py-xxl items-center gap-xl self-stretch bg-gray-black"
       >
-        <div className="max-w-[1200px] flex-col items-center gap-xl rounded-xl border-t border-box border-solid">
+        <div className="max-w-[1200px] flex-col items-center gap-xl rounded-xl border-t border-box border-solid w-full">
           <div className="h-[1px] gradient-bar self-stretch"></div>
           <div
             aria-label="section title"
-            className="flex flex-col items-center gap-sm self-stretch"
+            className="flex flex-col text-center items-center gap-sm self-stretch"
           >
             <p className="gradient-text display-lg">
               Powerful AI Doesn't Have to Be Expensive.
@@ -130,9 +130,9 @@ export function Landing() {
       {/* section 3 */}
       <div
         aria-label="section3"
-        className="flex flex-col items-center gap-xl px-xxxl py-xxl self-stretch bg-gray-black"
+        className="flex flex-col items-center gap-xl px-xxxl py-xxl self-stretch bg-gray-black justify-center"
       >
-        <div className="flex max-w-[1200px] flex-col items-start gap-lg self-stretch ">
+        <div className="flex max-w-[1200px] flex-col items-start gap-lg w-full ">
           <div
             aria-label="section title"
             className="flex flex-col items-start gap-sm self-stretch"
@@ -156,7 +156,7 @@ export function Landing() {
             </button>
           </div>
         </div>
-        <div className="flex h-[480px] flex-col justify-center items-center self-stretch rounded-xl border border-solid border-box">
+        <div className="flex h-[480px] flex-col justify-center items-center rounded-xl border border-solid border-box max-w-[1200px] w-full">
           <p className="display-sm text-gray-3">Graph Plaeholder</p>
         </div>
       </div>
