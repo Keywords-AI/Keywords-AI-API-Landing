@@ -11,7 +11,7 @@
     min-width: 60px;
     justify-content: center;
     align-items: center;
-    @apply gap-xxs px-sm py-xxs rounded-lg
+    @apply gap-xxs px-sm py-xxs rounded-lg;
 }
 
 .btn-gradient1 {
@@ -33,17 +33,9 @@
 
 }
 
-.btn-gradient-border-1 {
-    background: radial-gradient(circle at 100% 100%, #000000 0, #000000 17px, transparent 17px) 0% 0%/18px 18px no-repeat,
-        radial-gradient(circle at 0 100%, #000000 0, #000000 17px, transparent 17px) 100% 0%/18px 18px no-repeat,
-        radial-gradient(circle at 100% 0, #000000 0, #000000 17px, transparent 17px) 0% 100%/18px 18px no-repeat,
-        radial-gradient(circle at 0 0, #000000 0, #000000 17px, transparent 17px) 100% 100%/18px 18px no-repeat,
-        linear-gradient(#000000, #000000) 50% 50%/calc(100% - 2px) calc(100% - 36px) no-repeat,
-        linear-gradient(#000000, #000000) 50% 50%/calc(100% - 36px) calc(100% - 2px) no-repeat,
-        conic-gradient(#ff0000 0%, #ffff00 16.67%, #00ff00 33.33%, #00ffff 50%, #0000ff 66.67%, #ff00ff 83.33%, #ff0000 100%);
-    border-radius: 18px;
-    padding: 1px;
-    box-sizing: border-box;
+.btn-rainbow-border {
+    background: var(--resend-com-linear-cyan-aqua-green-haze-electric-violet, linear-gradient(90deg, rgba(2, 252, 239, 0.44) 0%, rgba(255, 181, 43, 0.44) 50%, rgba(160, 43, 254, 0.44) 100%));
+    @apply p-[1px] rounded-lg max-h-[36px];
 }
 
 

@@ -42,7 +42,6 @@ export const Routes = () => {
       element: <FullScreenLayout />, // layout without navigation bar
       children: [
         { path: "/payment-success", element: <PaymentSuccess /> },
-        { path: "*", element: <Navigate to="/not-found" /> },
         { path: "/not-found", element: <NotFound /> },
         { path: "/confirm-registration", element: <ConfirmRegistration /> },
         { path: "/unauthorized", element: <Unauthorized /> },
@@ -54,6 +53,7 @@ export const Routes = () => {
           path: "/forgot-password",
           element: <ForgotPassword />,
         },
+        { path: "*", element: <Navigate to="/not-found" /> },
       ],
     },
   ]);
