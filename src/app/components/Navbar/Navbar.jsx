@@ -7,7 +7,7 @@ export function Navbar() {
   return (
     <div
       aria-label="Navigation Bar"
-      className="w-full flex px-[120px] py-xs justify-between items-center self-stretch bg-gray-black border-b border-gray-2 fixed z-50 "
+      className="w-full flex px-[120px] py-xs justify-between items-center self-stretch bg-gray-black border-b border-gray-2 "
     >
       <div
         className="flex items-center gap-xxs self-stretch hover:cursor-pointer"
@@ -36,7 +36,10 @@ export function Navbar() {
             Log in
           </span>
         </button>
-        <button className="button-primary bg-gray-white" onClick={() => navigate("/signup")}>
+        <button
+          className="button-primary bg-gray-white"
+          onClick={() => navigate("/signup")}
+        >
           <span className="text-sm-regular text-center text-gray-2 flex-1">
             Sign up
           </span>
