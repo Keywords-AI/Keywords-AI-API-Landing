@@ -3,7 +3,7 @@ import { BackButton } from "../../components/BackButton/BackButton";
 export function NotFound() {
   return (
     <div className="flex-col items-center gap-xxxl justify-center self-stretch">
-      <BackButton text="Home" link={"/"} />
+      <BackButton text="Back"  />
       <div className="flex-col w-full max-w-[420px] items-center gap-md ">
         <div
           aria-label="section title"

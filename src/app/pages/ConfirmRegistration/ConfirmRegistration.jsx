@@ -1,9 +1,9 @@
-import { BackButton } from '../../components/BackButton/BackButton';
+import { BackButton } from "../../components/BackButton/BackButton";
 
 export function ConfirmRegistration() {
   return (
     <div className="flex-col items-center gap-xxxl justify-center self-stretch">
-      <BackButton text="Home" link={-1} />
+      <BackButton text="Back" />
       <div className="flex-col  max-w-[420px] items-center gap-md ">
         <div
           aria-label="section title"
