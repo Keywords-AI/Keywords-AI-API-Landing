@@ -1,8 +1,8 @@
-import { useNavigate } from 'react-router-dom';
-import { BackButton } from '../../components/BackButton/BackButton';
-import { useForm } from 'react-hook-form';
-import { AuthenticationTitle } from '../../components/AuthenticationTitle/AuthenticationTitle';
-import cn from '../../utils/ClassMerge';
+import { useNavigate } from "react-router-dom";
+import { BackButton } from "../../components/BackButton/BackButton";
+import { useForm } from "react-hook-form";
+import { AuthenticationTitle } from "../../components/AuthenticationTitle/AuthenticationTitle";
+import cn from "../../utils/ClassMerge";
 export function SignUp() {
   const navigate = useNavigate();
   const {
@@ -16,10 +16,10 @@ export function SignUp() {
   const passwordError = errors.password;
   return (
     <div className="flex-col items-center gap-xxxl justify-center self-stretch">
-      <BackButton text="Home" link={-1} />
+      <BackButton text="Back" />
       <div className=" flex-col w-full max-w-[420px] items-center gap-lg justify-center ">
         <AuthenticationTitle
-          title={'Create an Account'}
+          title={"Create an Account"}
           subtitle={<span>Sign up to retrieve a free trial API key</span>}
         />
         <form
@@ -36,15 +36,15 @@ export function SignUp() {
               >
                 <label
                   className={cn(
-                    'self-stretch text-sm text-gray-4',
-                    firstnameError ? 'text-error' : ''
+                    "self-stretch text-sm text-gray-4",
+                    firstnameError ? "text-error" : ""
                   )}
                 >
                   First Name*
                 </label>
                 <input
                   type="text"
-                  {...register('firstname', {
+                  {...register("firstname", {
                     required: true,
                   })}
                   className="input-box"
@@ -56,15 +56,15 @@ export function SignUp() {
               >
                 <label
                   className={cn(
-                    'self-stretch text-sm text-gray-4',
-                    lastnameError ? 'text-error' : ''
+                    "self-stretch text-sm text-gray-4",
+                    lastnameError ? "text-error" : ""
                   )}
                 >
                   Last Name*
                 </label>
                 <input
                   type="text"
-                  {...register('lastname', {
+                  {...register("lastname", {
                     required: true,
                   })}
                   className="input-box"
@@ -77,15 +77,15 @@ export function SignUp() {
             >
               <label
                 className={cn(
-                  'self-stretch text-sm text-gray-4',
-                  emailError ? 'text-error' : ''
+                  "self-stretch text-sm text-gray-4",
+                  emailError ? "text-error" : ""
                 )}
               >
                 Email*
               </label>
               <input
                 type="text"
-                {...register('email', {
+                {...register("email", {
                   required: true,
                   pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                 })}
@@ -98,15 +98,15 @@ export function SignUp() {
             >
               <label
                 className={cn(
-                  'self-stretch text-sm text-gray-4',
-                  passwordError ? 'text-error' : ''
+                  "self-stretch text-sm text-gray-4",
+                  passwordError ? "text-error" : ""
                 )}
               >
                 Password*
               </label>
               <input
                 type="password"
-                {...register('password', {
+                {...register("password", {
                   required: true,
                   pattern: /^(?=.*[a-zA-Z0-9]).{8,}$/,
                 })}
@@ -117,12 +117,12 @@ export function SignUp() {
               aria-label="Organization name field"
               className="flex-col justify-center items-start gap-xxs self-stretch"
             >
-              <label className={cn('self-stretch text-sm text-gray-4')}>
+              <label className={cn("self-stretch text-sm text-gray-4")}>
                 Organization Name
               </label>
               <input
                 type="text"
-                {...register('organization', { required: false })}
+                {...register("organization", { required: false })}
                 className="input-box"
               />
             </div>
@@ -135,21 +135,18 @@ export function SignUp() {
             >
               Create Account
             </button>
-            <p
-              className="caption text-gray-4 self-stretch hover:cursor-pointer"
-              onClick={() => navigate('/forgot-password')}
-            >
-              By signing up, you agree to our{' '}
+            <p className="caption text-gray-4 self-stretch ">
+              By signing up, you agree to our{" "}
               <span
-                className=" text-[#6893FF] hover:cursor-pointer"
-                onClick={() => navigate('/terms-of-use')}
+                className=" text-primary hover:cursor-pointer"
+                onClick={() => navigate("/terms-of-use")}
               >
                 Terms of Use
-              </span>{' '}
+              </span>{" "}
               and
               <span
-                className=" text-[#6893FF] hover:cursor-pointer"
-                onClick={() => navigate('/privacy-policy')}
+                className=" text-primary hover:cursor-pointer"
+                onClick={() => navigate("/privacy-policy")}
               >
                 Privacy Policy
               </span>

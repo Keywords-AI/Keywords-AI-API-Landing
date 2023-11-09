@@ -31,12 +31,12 @@ export function Navbar() {
         </button>
       </div>
       <div className="flex items-center gap-xs">
-        <button className="button-header">
+        <button className="button-header" onClick={() => navigate("/login")}>
           <span className="text-sm-regular text-center text-gray-4 flex-1">
             Log in
           </span>
         </button>
-        <button className="button-primary bg-gray-white">
+        <button className="button-primary bg-gray-white" onClick={() => navigate("/signup")}>
           <span className="text-sm-regular text-center text-gray-2 flex-1">
             Sign up
           </span>

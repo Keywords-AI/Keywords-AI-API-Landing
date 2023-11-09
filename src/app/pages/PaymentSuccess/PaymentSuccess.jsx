@@ -5,7 +5,7 @@ import './PaymentSuccess.css';
 export function PaymentSuccess() {
   return (
     <div className="flex-col items-center gap-xxxl justify-center self-stretch">
-      <BackButton text="Home" link={-1} />
+      <BackButton text="Back"  />
       <div className="flex-col  max-w-[420px] items-center gap-md ">
         <CircleTick />
         <div

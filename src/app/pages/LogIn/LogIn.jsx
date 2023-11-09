@@ -15,7 +15,7 @@ export function LogIn() {
   const passwordError = errors.password;
   return (
     <div className="flex-col items-center gap-xxxl justify-center self-stretch">
-      <BackButton text="Home" link={-1} />
+      <BackButton text="Back"  />
       <div className=" flex-col w-full max-w-[420px] items-center gap-lg justify-center ">
         <AuthenticationTitle
           title={'Sign In'}
@@ -23,7 +23,7 @@ export function LogIn() {
             <span>
               Don’t have an account?{' '}
               <span
-                className=" text-[#6893FF] hover:cursor-pointer"
+                className=" text-primary hover:cursor-pointer"
                 onClick={() => navigate('/signup')}
               >
                 Sign up.
