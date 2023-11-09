@@ -55,7 +55,7 @@ export function Landing() {
         aria-label="section1"
         className="flex p-xxxl flex-col items-center gap-xxxl self-stretch"
       >
-        <div className="flex max-w-[1200px] flex-col items-start gap-xl self-stretch">
+        <div className="flex max-w-[1200px] flex-col items-start gap-xl w-full">
           <div className="flex flex-col items-start gap-lg self-stretch">
             <div className="btn-rainbow-border">
               <button className="button-primary gradient-in">
