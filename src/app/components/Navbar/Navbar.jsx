@@ -7,7 +7,7 @@ export function Navbar() {
   return (
     <div
       aria-label="Navigation Bar"
-      className="w-full flex px-[120px] py-xs justify-between items-center self-stretch bg-gray-black border-b border-gray-2 "
+      className="w-full flex px-[120px] py-xs justify-between items-center self-stretch bg-gray-black border-b border-gray-2 fixed"
     >
       <div
         className="flex items-center gap-xxs self-stretch hover:cursor-pointer"

@@ -20,6 +20,10 @@ strong {
 
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
 
 *,
 *::before,
