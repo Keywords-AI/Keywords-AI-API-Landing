@@ -1,7 +1,7 @@
-import { Routes } from './Routes';
+import { Routes } from "./Routes";
 export function App() {
   return (
-    <div className="bg-gray-black h-full">
+    <div className="bg-gray-black h-full w-full">
       <Routes />
     </div>
   );
