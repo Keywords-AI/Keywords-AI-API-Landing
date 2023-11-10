@@ -60,16 +60,19 @@ export function Navbar() {
           </button>
         </div>
         <div className="flex items-center gap-xs">
-          <button className="button-header" onClick={() => navigate("/login")}>
-            <span className="text-sm-regular text-center text-gray-4 flex-1">
+          <button
+            className="button-header group hover:bg-gray-3 hover:text-gray-white"
+            onClick={() => navigate("/login")}
+          >
+            <span className="text-sm-regular text-center text-gray-4 flex-1 group-hover:text-gray-white">
               Log in
             </span>
           </button>
           <button
-            className="button-primary bg-gray-white"
+            className="button-primary  bg-gray-white "
             onClick={() => navigate("/signup")}
           >
-            <span className="text-sm-regular text-center text-gray-2 flex-1">
+            <span className="text-sm-regular text-center flex-1 text-gray-2">
               Sign up
             </span>
             <ArrowRight />

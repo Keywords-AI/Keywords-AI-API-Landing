@@ -175,8 +175,8 @@ export function Landing() {
             </span>
             <ArrowRight fill="fill-gray-black" />
           </button>
-          <button className="button-header ">
-            <span className="text-sm-regular flex-1 text-gray-4 ">
+          <button className="button-header group hover:bg-gray-3 ">
+            <span className="text-sm-regular flex-1 text-gray-4 group-hover:text-gray-white">
               Contact us
             </span>
             <ArrowRight fill="fill-gray-4" />
