@@ -20,7 +20,7 @@ export function SignUp() {
       <div className=" flex-col w-full max-w-[420px] items-center gap-lg justify-center ">
         <AuthenticationTitle
           title={"Create an Account"}
-          subtitle={<span>Sign up to retrieve a free trial API key</span>}
+          subtitle={<span>Sign up to retrieve a free trial API key.</span>}
         />
         <form
           onSubmit={handleSubmit((data) => {
@@ -135,7 +135,7 @@ export function SignUp() {
             >
               Create Account
             </button>
-            <p className="caption text-gray-4 self-stretch ">
+            <p className="caption text-gray-4 self-stretch text-center">
               By signing up, you agree to our{" "}
               <span
                 className=" text-primary hover:cursor-pointer"
@@ -143,7 +143,7 @@ export function SignUp() {
               >
                 Terms of Use
               </span>{" "}
-              and
+              and{" "}
               <span
                 className=" text-primary hover:cursor-pointer"
                 onClick={() => navigate("/privacy-policy")}

@@ -1,5 +1,5 @@
-import React from 'react';
-import './SmallCard.css';
+import React from "react";
+import "./SmallCard.css";
 export function SmallCard({ linkIcon, title, content }) {
   return (
     <div className="gradient-out rounded-xl p-[1px]">
@@ -7,7 +7,7 @@ export function SmallCard({ linkIcon, title, content }) {
         {linkIcon}
         <div className="flex flex-col items-start gap-xxs self-stretch">
           <p className="display-xs">{title}</p>
-          <p className="text-sm-regular">{content}</p>
+          <p className="text-sm-regular text-gray-4">{content}</p>
         </div>
       </div>
     </div>
