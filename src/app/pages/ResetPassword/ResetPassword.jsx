@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import { BackButton } from "../../components/BackButton/BackButton";
+import { BackButton } from "src/app/components/BackButton";
 import { useForm } from "react-hook-form";
-import { AuthenticationTitle } from "../../components/AuthenticationTitle/AuthenticationTitle";
-import cn from "../../utils/ClassMerge";
+import { AuthenticationTitle } from "src/app/components/AuthenticationTitle/AuthenticationTitle";
+import cn from "src/app/utils/ClassMerge";
 export function ResetPassword() {
   const navigate = useNavigate();
   const {

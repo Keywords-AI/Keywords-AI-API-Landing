@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { BackButton } from "../../components/BackButton/BackButton";
+import { BackButton } from "src/app/components/BackButton";
 
 export function NotFound() {
   const navigate = useNavigate();

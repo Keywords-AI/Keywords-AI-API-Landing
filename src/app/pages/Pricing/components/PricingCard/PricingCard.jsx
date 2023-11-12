@@ -1,7 +1,7 @@
-import { FeatureTick } from "../../../../components/icons";
 import "./PricingCard.css";
 import { useNavigate } from "react-router-dom";
 import React, { useEffect } from "react";
+import { FeatureTick } from "src/app/components/icons";
 
 const ranking = {
   flex_8k: 1,

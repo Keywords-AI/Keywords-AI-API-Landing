@@ -1,10 +1,10 @@
-import { Page } from '../../components/Page/Page';
-import './Tou.css';
+import { Page } from "src/app/components/Page/Page";
+import "./Tou.css";
 
 export function Tou() {
   const Data = {
-    title: 'Terms of Use',
-    date: 'Updated 10/24/2023',
+    title: "Terms of Use",
+    date: "Updated 10/24/2023",
     content: (
       <div className="Tos text-md-regular text-gray-4">
         <p>
@@ -19,17 +19,17 @@ export function Tou() {
           Street, Great Neck, NY 11021.
         </p>
         <p>
-          We operate the website{' '}
+          We operate the website{" "}
           <a
             className="text-primary"
-            style={{ textDecoration: 'none' }}
+            style={{ textDecoration: "none" }}
             href="https://keywordsai.co"
           >
             https://keywordsai.co
-          </a>{' '}
+          </a>{" "}
           (the <strong>&quot;Site&quot;</strong>), as well as any other related
           products and services that refer or link to these legal terms (the
-          &quot;<strong>Legal Terms</strong>&quot;) (collectively, the{' '}
+          &quot;<strong>Legal Terms</strong>&quot;) (collectively, the{" "}
           <strong>&quot;Services&quot;</strong>).
         </p>
         <p>
@@ -123,7 +123,7 @@ export function Tou() {
           violate the Gramm-Leach-Bliley Act (GLBA).
         </p>
         <p>
-          <strong>2. INTELLECTUAL PROPERTY RIGHTS</strong>{' '}
+          <strong>2. INTELLECTUAL PROPERTY RIGHTS</strong>{" "}
         </p>
         <p>
           <strong>Our intellectual property</strong>
@@ -229,7 +229,7 @@ export function Tou() {
           <strong>
             When you post Contributions, you grant us a license (including use
             of your name, trademarks, and logos):
-          </strong>{' '}
+          </strong>{" "}
           By posting any Contributions, you grant us an unrestricted, unlimited,
           irrevocable, perpetual, non-exclusive, transferable, royalty- free,
           fully-paid, worldwide right, and license to: use, copy, reproduce,
@@ -274,7 +274,7 @@ export function Tou() {
             to you or that you have the necessary rights and licenses to submit
             such Submissions and/or Contributions and that you have full
             authority to grant us the above- mentioned rights in relation to
-            your Submissions and/or Contributions; and{' '}
+            your Submissions and/or Contributions; and{" "}
           </li>
           <li>
             warrant and represent that your Submissions and/or Contributions do
@@ -488,7 +488,7 @@ export function Tou() {
           </li>
           <li>
             Use a buying agent or purchasing agent to make purchases on the
-            Services.{' '}
+            Services.{" "}
           </li>
           <li>
             Make any unauthorized use of the Services, including collecting
@@ -715,10 +715,10 @@ export function Tou() {
           We care about data privacy and security. Please review our Privacy
         </p>
         <p>
-          Policy:{' '}
+          Policy:{" "}
           <a
             className="text-primary"
-            style={{ textDecoration: 'none' }}
+            style={{ textDecoration: "none" }}
             href="https://www.keywordsai.co/privacy-policy"
           >
             https://www.keywordsai.co/privacy-policy
@@ -795,7 +795,7 @@ export function Tou() {
           State of New York, without regard to its conflict of law principles.
         </p>
         <p>
-          <strong>16. DISPUTE RESOLUTION</strong>{' '}
+          <strong>16. DISPUTE RESOLUTION</strong>{" "}
         </p>
         <p>
           <strong>Informal Negotiations</strong>
@@ -1057,10 +1057,10 @@ export function Tou() {
           <strong>Keywords AI Inc.</strong>
         </p>
         <p>
-          <strong>76 Jayson Ave</strong>{' '}
+          <strong>76 Jayson Ave</strong>{" "}
         </p>
         <p>
-          <strong>Great Neck, NY 11021</strong>{' '}
+          <strong>Great Neck, NY 11021</strong>{" "}
         </p>
         <p>
           <strong>United States</strong>

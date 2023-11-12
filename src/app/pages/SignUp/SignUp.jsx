@@ -1,8 +1,10 @@
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import { BackButton } from "../../components/BackButton/BackButton";
+import { BackButton } from "src/app/components/BackButton";
 import { useForm } from "react-hook-form";
-import { AuthenticationTitle } from "../../components/AuthenticationTitle/AuthenticationTitle";
-import cn from "../../utils/ClassMerge";
+import { AuthenticationTitle } from "src/app/components/AuthenticationTitle/AuthenticationTitle";
+import cn from "src/app/utils/ClassMerge";
+import { signup } from "src/app/authentication/Authentication";
 export function SignUp() {
   const navigate = useNavigate();
   const {
@@ -14,6 +16,8 @@ export function SignUp() {
   const lastnameError = errors.lastname;
   const emailError = errors.email;
   const passwordError = errors.password;
+  const [backendError, setBackendError] = React.useState(null);
+
   return (
     <div className="flex-col items-center gap-xxxl justify-center self-stretch">
       <BackButton text="Back" />
@@ -23,8 +27,13 @@ export function SignUp() {
           subtitle={<span>Sign up to retrieve a free trial API key.</span>}
         />
         <form
-          onSubmit={handleSubmit((data) => {
-            console.log(data);
+          onSubmit={handleSubmit(async (data) => {
+            try {
+              const res = await signup({...data});
+              navigate("/login")
+            } catch (error) {
+              setBackendError(error.message);
+            }
           })}
           className="flex-col justify-center items-center gap-md self-stretch"
         >
@@ -127,7 +136,9 @@ export function SignUp() {
               />
             </div>
           </div>
-
+          <p className="text-sm-regular text-error self-start">
+            {backendError ? backendError : ""}
+          </p>
           <div className="flex-col items-start gap-xs self-stretch">
             <button
               type="submit"

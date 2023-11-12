@@ -1,11 +1,11 @@
-import { BackButton } from '../../components/BackButton/BackButton';
-import { ArrowRight, CircleTick } from '../../components/icons';
-import './PaymentSuccess.css';
+import { BackButton } from "src/app/components/BackButton/BackButton";
+import { ArrowRight, CircleTick } from "src/app/components/icons";
+import "./PaymentSuccess.css";
 
 export function PaymentSuccess() {
   return (
     <div className="flex-col items-center gap-xxxl justify-center self-stretch">
-      <BackButton text="Back"  />
+      <BackButton text="Back" />
       <div className="flex-col  max-w-[420px] items-center gap-md ">
         <CircleTick />
         <div

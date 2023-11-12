@@ -1,4 +1,4 @@
-import { ArrowRight, Check } from "../../components/icons";
+import { ArrowRight, Check } from "src/app/components/icons";
 
 export const plans = [
   { name: "Flex 8k", key: "f8k" },

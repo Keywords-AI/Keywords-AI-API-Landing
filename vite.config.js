@@ -11,4 +11,9 @@ export default defineConfig({
   preview: {
     port: 8080,
   },
+  resolve: {
+    alias: {
+      src: "/src",
+    },
+  },
 });

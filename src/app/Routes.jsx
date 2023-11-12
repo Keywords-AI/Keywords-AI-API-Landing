@@ -1,5 +1,5 @@
 import React from "react";
-import { useRoutes, Navigate } from "react-router-dom";
+import { useRoutes, Navigate, useLocation } from "react-router-dom";
 import { Landing } from "./pages/Landing";
 import { Pricing } from "./pages/Pricing/Pricing";
 import { NavigationLayout } from "./layouts/NavigationLayout/NavigationLayout";
@@ -16,8 +16,33 @@ import { SignUp } from "./pages/SignUp/SignUp";
 import { LogIn } from "./pages/LogIn";
 import { ResetPassword } from "./pages/ResetPassword/ResetPassword";
 import { ForgotPassword } from "./pages/ForgotPassword/ForgotPassword";
+import { ComponentGrid } from "./pages/ComponentGrid";
+import { isUserLoggedIn } from "./authentication/Authentication";
+import AuthContext from "./authentication/AuthContext";
 
 export const Routes = () => {
+  // console.log("url:", import.meta.env.VITE_BACKEND_URL);
+  // if (import.meta.env.MODE === "production") {
+  //   console.log("Running in production mode");
+  // } else if (import.meta.env.MODE === "development") {
+  //   console.log("Running in development mode");
+  // } else {
+  //   console.log("Running in some other mode");
+  // }
+  const {user, setUser} = React.useContext(AuthContext);
+  const location = useLocation();
+  React.useEffect(() => {
+    // check user login status for each navigation
+    const checkIsLogin = async () => {
+      try {
+        const fetchedUser = await isUserLoggedIn();
+        setUser(fetchedUser);
+      } catch (error) {
+        setUser(null);
+      }
+    };
+    checkIsLogin();
+  }, [location.pathname]);
   const routes = useRoutes([
     {
       element: <NavigationLayout />,
@@ -35,6 +60,10 @@ export const Routes = () => {
         {
           path: "/dpa",
           element: <Dpa />,
+        },
+        {
+          path: "/componentgrid",
+          element: user ? <ComponentGrid /> : <Navigate to="/login" />,
         },
       ],
     },

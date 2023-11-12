@@ -3,7 +3,7 @@
     min-width: 60px;
     justify-content: center;
     align-items: center;
-    @apply gap-xxs px-xs py-xxs rounded-lg;
+    @apply gap-xxs px-sm py-xxs rounded-lg;
 }
 
 .button-primary {
