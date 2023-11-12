@@ -41,6 +41,7 @@ jobs:
         run: npm run build
         env:
           VITE_ENV_A: ${{ secrets.VITE_ENV_A }}
+          VITE_BACKEND_URL: ${{ secrets.VITE_BACKEND_URL }}
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
