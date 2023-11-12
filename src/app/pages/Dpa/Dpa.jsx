@@ -1,6 +1,7 @@
-import { Page } from '../../components/Page/Page';
-import { ArrowRight } from '../../components/icons';
+
+import { ArrowRight } from 'src/app/components/icons';
 import './Dpa.css';
+import { Page } from 'src/app/components/Page';
 
 export function Dpa() {
   const Data = {

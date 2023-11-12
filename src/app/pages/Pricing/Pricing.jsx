@@ -1,7 +1,7 @@
-import { Page } from '../../components/Page/Page';
-import PricingCard from './components/PricingCard/PricingCard';
-import { cards, plans, features } from './Data';
-import { PricingTable } from './components/PricingTable/PricingTable';
+import { Page } from "src/app/components/Page/Page";
+import PricingCard from "./components/PricingCard/PricingCard";
+import { cards, plans, features } from "./Data";
+import { PricingTable } from "./components/PricingTable/PricingTable";
 export function Pricing() {
   return (
     <Page>

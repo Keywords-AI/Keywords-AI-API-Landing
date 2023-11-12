@@ -1,10 +1,10 @@
-import { Page } from '../../components/Page/Page';
-import './PrivacyPolicy.css';
+import { Page } from "src/app/components/Page/Page";
+import "./PrivacyPolicy.css";
 
 export function PrivacyPolicy() {
   const Data = {
-    title: 'Privacy Policy',
-    date: 'Updated 10/20/2023',
+    title: "Privacy Policy",
+    date: "Updated 10/20/2023",
     content: (
       <div className="PrivacyPolicy text-md-regular text-gray-4">
         <p>
@@ -16,10 +16,10 @@ export function PrivacyPolicy() {
         </p>
         <ul>
           <li>
-            Visit our website at{' '}
+            Visit our website at{" "}
             <a
               className="text-primary"
-              style={{ textDecoration: 'none' }}
+              style={{ textDecoration: "none" }}
               href="https://www.keywordsai.co"
             >
               https://www.keywordsai.co
@@ -35,15 +35,15 @@ export function PrivacyPolicy() {
           Questions or concerns? Reading this privacy notice will help you
           understand your privacy rights and choices. If you do not agree with
           our policies and practices, please do not use our Services. If you
-          still have any questions or concerns, please contact us at{' '}
+          still have any questions or concerns, please contact us at{" "}
           <a
             className="text-primary"
-            style={{ textDecoration: 'none' }}
+            style={{ textDecoration: "none" }}
             href="mailto:team@keywordsai.co"
           >
             team@keywordsai.co
           </a>
-          .{' '}
+          .{" "}
         </p>
         <p>
           <strong>SUMMARY OF KEY POINTS</strong>
@@ -56,7 +56,7 @@ export function PrivacyPolicy() {
               the link following each key point or by using our table of
               contents below to find the section you are looking for.
             </em>
-          </strong>{' '}
+          </strong>{" "}
         </p>
         <p>
           <strong>What personal information do we process? </strong>When you
@@ -69,11 +69,11 @@ export function PrivacyPolicy() {
           <strong>Do we process any sensitive personal information? </strong>We
           may process sensitive personal information when necessary with your
           consent or as otherwise permitted by applicable law. Learn more about
-          sensitive information we process.{' '}
+          sensitive information we process.{" "}
         </p>
         <p>
           <strong>Do we receive any information from third parties? </strong>We
-          do not receive any information from third parties.{' '}
+          do not receive any information from third parties.{" "}
         </p>
         <p>
           <strong>How do we process your information? </strong>We process your
@@ -82,12 +82,12 @@ export function PrivacyPolicy() {
           with law. We may also process your information for other purposes with
           your consent. We process your information only when we have a valid
           legal reason to do so. Learn more about how we process your
-          information.{' '}
+          information.{" "}
         </p>
         <p>
           <strong>
             In what situations and with which types of parties do we share
-            personal information?{' '}
+            personal information?{" "}
           </strong>
           We may share information in specific situations and with specific
           categories of third parties. Learn more about when and with whom we
@@ -219,7 +219,7 @@ export function PrivacyPolicy() {
           process your payment if you make purchases, such as your payment
           instrument number, and the security code associated with your payment
           instrument. All payment data is stored by Stripe. You may find their
-          privacy notice link(s) here:{' '}
+          privacy notice link(s) here:{" "}
           <a href="https://stripe.com/privacy">https://stripe.com/privacy</a>.
         </p>
         <p>
@@ -241,7 +241,7 @@ export function PrivacyPolicy() {
         <p>
           <strong>
             <em>In Short:</em>
-          </strong>{' '}
+          </strong>{" "}
           Some information — such as your Internet Protocol (IP) address and/or
           browser and device characteristics — is collected automatically when
           you visit our Services.
@@ -301,7 +301,7 @@ export function PrivacyPolicy() {
         <p>
           <strong>
             <em>In Short:</em>
-          </strong>{' '}
+          </strong>{" "}
           We process your information to provide, improve, and administer our
           Services, communicate with you, for security and fraud prevention, and
           to comply with law. We may also process your information for other
@@ -318,7 +318,7 @@ export function PrivacyPolicy() {
             <strong>
               To facilitate account creation and authentication and otherwise
               manage user accounts.
-            </strong>{' '}
+            </strong>{" "}
             We may process your information so you can create and log in to your
             account, as well as keep your account in working order.
           </li>
@@ -330,7 +330,7 @@ export function PrivacyPolicy() {
           <li>
             <strong>
               To send you marketing and promotional communications.
-            </strong>{' '}
+            </strong>{" "}
             We may process the personal information you send to us for our
             marketing purposes, if this is in accordance with your marketing
             preferences. You can opt out of our marketing emails at any time.
@@ -355,7 +355,7 @@ export function PrivacyPolicy() {
           <li>
             <strong>
               To save or protect an individual&#39;s vital interest.
-            </strong>{' '}
+            </strong>{" "}
             We may process your information when necessary to save or protect an
             individual’s vital interest, such as to prevent harm.
           </li>
@@ -368,7 +368,7 @@ export function PrivacyPolicy() {
         <p>
           <strong>
             <em>In Short:</em>
-          </strong>{' '}
+          </strong>{" "}
           We only process your personal information when we believe it is
           necessary and we have a valid legal reason (i.e., legal basis) to do
           so under applicable law. like with your consent, to comply with laws,
@@ -379,7 +379,7 @@ export function PrivacyPolicy() {
         <p>
           <strong>
             <em>
-              <span style={{ textDecoration: 'underline' }}>
+              <span style={{ textDecoration: "underline" }}>
                 If you are located in the EU or UK, this section applies to you.
               </span>
             </em>
@@ -442,7 +442,7 @@ export function PrivacyPolicy() {
         <p>
           <strong>
             <em>
-              <span style={{ textDecoration: 'underline' }}>
+              <span style={{ textDecoration: "underline" }}>
                 If you are located in Canada, this section applies to you.
               </span>
             </em>
@@ -519,7 +519,7 @@ export function PrivacyPolicy() {
         <p>
           <strong>
             Vendors, Consultants, and Other Third-Party Service Providers.
-          </strong>{' '}
+          </strong>{" "}
           We may share your data with third-party vendors, service providers,
           contractors, or agents (&quot;<strong>third parties</strong>&quot;)
           who perform services for us or on our behalf and require access to
@@ -559,7 +559,7 @@ export function PrivacyPolicy() {
         <p>
           <strong>
             <em>In Short:</em>
-          </strong>{' '}
+          </strong>{" "}
           If you choose to register or log in to our Services using a social
           media account, we may have access to certain information about you.
         </p>
@@ -589,7 +589,7 @@ export function PrivacyPolicy() {
         <p>
           <strong>
             <em>In Short:</em>
-          </strong>{' '}
+          </strong>{" "}
           We may transfer, store, and process your information in countries
           other than your own.
         </p>
@@ -629,7 +629,7 @@ export function PrivacyPolicy() {
         <p>
           <strong>
             <em>In Short:</em>
-          </strong>{' '}
+          </strong>{" "}
           We keep your information for as long as necessary to fulfill the
           purposes outlined in this privacy notice unless otherwise required by
           law.
@@ -656,7 +656,7 @@ export function PrivacyPolicy() {
         <p>
           <strong>
             <em>In Short:</em>
-          </strong>{' '}
+          </strong>{" "}
           We aim to protect your personal information through a system of
           organizational and technical security measures.
         </p>
@@ -680,7 +680,7 @@ export function PrivacyPolicy() {
         <p>
           <strong>
             <em>In Short:</em>
-          </strong>{' '}
+          </strong>{" "}
           In some regions, such as the European Economic Area (EEA), United
           Kingdom (UK), Switzerland, and Canada, you have rights that allow you
           greater access to and control over your personal information. You may
@@ -715,10 +715,10 @@ export function PrivacyPolicy() {
         </p>
         <p>
           <strong>
-            <span style={{ textDecoration: 'underline' }}>
+            <span style={{ textDecoration: "underline" }}>
               Withdrawing your consent:
             </span>
-          </strong>{' '}
+          </strong>{" "}
           If we are relying on your consent to process your personal
           information, which may be express and/or implied consent depending on
           the applicable law, you have the right to withdraw your consent at any
@@ -735,10 +735,10 @@ export function PrivacyPolicy() {
         </p>
         <p>
           <strong>
-            <span style={{ textDecoration: 'underline' }}>
+            <span style={{ textDecoration: "underline" }}>
               Opting out of marketing and promotional communications:
             </span>
-          </strong>{' '}
+          </strong>{" "}
           You can unsubscribe from our marketing and promotional communications
           at any time by clicking on the unsubscribe link in the emails that we
           send, replying &quot;STOP&quot; or &quot;UNSUBSCRIBE&quot; to the SMS
@@ -796,7 +796,7 @@ export function PrivacyPolicy() {
         <p>
           <strong>
             <em>In Short:</em>
-          </strong>{' '}
+          </strong>{" "}
           If you are a resident of California or Virginia, you are granted
           specific rights regarding access to your personal information.
         </p>
@@ -1010,7 +1010,7 @@ export function PrivacyPolicy() {
         </p>
         <p>
           <strong>
-            <span style={{ textDecoration: 'underline' }}>
+            <span style={{ textDecoration: "underline" }}>
               CCPA Privacy Notice
             </span>
           </strong>
@@ -1044,7 +1044,7 @@ export function PrivacyPolicy() {
           <strong>Your rights with respect to your personal data</strong>
         </p>
         <p>
-          <span style={{ textDecoration: 'underline' }}>
+          <span style={{ textDecoration: "underline" }}>
             Right to request deletion of the data — Request to delete
           </span>
         </p>
@@ -1058,7 +1058,7 @@ export function PrivacyPolicy() {
           may be required to protect against illegal activities.
         </p>
         <p>
-          <span style={{ textDecoration: 'underline' }}>
+          <span style={{ textDecoration: "underline" }}>
             Right to be informed — Request to know
           </span>
         </p>
@@ -1093,9 +1093,9 @@ export function PrivacyPolicy() {
           consumer request.
         </p>
         <p>
-          <span style={{ textDecoration: 'underline' }}>
+          <span style={{ textDecoration: "underline" }}>
             Right to Non-Discrimination for the Exercise of a Consumer’s Privacy
-            Rights{' '}
+            Rights{" "}
           </span>
         </p>
         <p>
@@ -1103,7 +1103,7 @@ export function PrivacyPolicy() {
           rights.
         </p>
         <p>
-          <span style={{ textDecoration: 'underline' }}>
+          <span style={{ textDecoration: "underline" }}>
             Right to Limit Use and Disclosure of Sensitive Personal Information
           </span>
         </p>
@@ -1153,7 +1153,7 @@ export function PrivacyPolicy() {
           subject access request.
         </p>
         <p>
-          <span style={{ textDecoration: 'underline' }}>
+          <span style={{ textDecoration: "underline" }}>
             Verification process
           </span>
         </p>
@@ -1181,7 +1181,7 @@ export function PrivacyPolicy() {
           verifying you.
         </p>
         <p>
-          <span style={{ textDecoration: 'underline' }}>
+          <span style={{ textDecoration: "underline" }}>
             Other privacy rights
           </span>
         </p>
@@ -1240,7 +1240,7 @@ export function PrivacyPolicy() {
           adhere to certain rights and obligations regarding your personal data.
         </p>
         <p>
-          <span style={{ textDecoration: 'underline' }}>
+          <span style={{ textDecoration: "underline" }}>
             Your rights with respect to your personal data
           </span>
         </p>
@@ -1263,7 +1263,7 @@ export function PrivacyPolicy() {
           </li>
         </ul>
         <p>
-          <span style={{ textDecoration: 'underline' }}>
+          <span style={{ textDecoration: "underline" }}>
             Exercise your rights provided under the Virginia VCDPA
           </span>
         </p>
@@ -1277,7 +1277,7 @@ export function PrivacyPolicy() {
           have been validly authorized to act on your behalf.
         </p>
         <p>
-          <span style={{ textDecoration: 'underline' }}>
+          <span style={{ textDecoration: "underline" }}>
             Verification process
           </span>
         </p>
@@ -1297,7 +1297,7 @@ export function PrivacyPolicy() {
           extension.
         </p>
         <p>
-          <span style={{ textDecoration: 'underline' }}>Right to appeal</span>
+          <span style={{ textDecoration: "underline" }}>Right to appeal</span>
         </p>
         <p>
           If we decline to take action regarding your request, we will inform
@@ -1314,7 +1314,7 @@ export function PrivacyPolicy() {
         <p>
           <strong>
             <em>In Short:</em>
-          </strong>{' '}
+          </strong>{" "}
           Yes, we will update this notice as necessary to stay compliant with
           relevant laws.
         </p>

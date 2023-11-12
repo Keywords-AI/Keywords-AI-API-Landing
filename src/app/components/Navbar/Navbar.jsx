@@ -1,11 +1,15 @@
-import cn from "../../utils/ClassMerge";
+import cn from "src/app/utils/ClassMerge";
 import { ArrowRight, Logo } from "../icons";
 import "./Navbar.css";
 import { useLocation, useNavigate } from "react-router-dom";
+import React from "react";
+import AuthContext from "src/app/authentication/AuthContext";
+import { logout } from "src/app/authentication/Authentication";
 
 export function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
+  const { user } = React.useContext(AuthContext);
   return (
     <div
       aria-label="Navigation Bar"
@@ -47,7 +51,7 @@ export function Navbar() {
           </button>
           <button
             className="button-header flex-1"
-            onClick={() => navigate("/doc")}
+            onClick={() => navigate("/componentgrid")}
           >
             <span
               className={cn(
@@ -59,25 +63,38 @@ export function Navbar() {
             </span>
           </button>
         </div>
-        <div className="flex items-center gap-xs">
+        {user ? (
           <button
             className="button-header group hover:bg-gray-3 hover:text-gray-white"
-            onClick={() => navigate("/login")}
+            onClick={() => {
+              logout();
+              navigate("/")}}
           >
             <span className="text-sm-regular text-center text-gray-4 flex-1 group-hover:text-gray-white">
-              Log in
+              Log out
             </span>
           </button>
-          <button
-            className="button-primary  bg-gray-white "
-            onClick={() => navigate("/signup")}
-          >
-            <span className="text-sm-regular text-center flex-1 text-gray-2">
-              Sign up
-            </span>
-            <ArrowRight />
-          </button>
-        </div>
+        ) : (
+          <div className="flex items-center gap-xs">
+            <button
+              className="button-header group hover:bg-gray-3 hover:text-gray-white"
+              onClick={() => navigate("/login")}
+            >
+              <span className="text-sm-regular text-center text-gray-4 flex-1 group-hover:text-gray-white">
+                Log in
+              </span>
+            </button>
+            <button
+              className="button-primary  bg-gray-white "
+              onClick={() => navigate("/signup")}
+            >
+              <span className="text-sm-regular text-center flex-1 text-gray-2">
+                Sign up
+              </span>
+              <ArrowRight />
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

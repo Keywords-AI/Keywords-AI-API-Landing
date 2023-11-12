@@ -1,4 +1,3 @@
-import { Page } from "../../components/Page/Page";
 import { SmallCard } from "./components/SmallCard/SmallCard";
 import "./Landing.css";
 import {
@@ -8,7 +7,8 @@ import {
   Search,
   Y,
   Text,
-} from "../../components/icons";
+} from "src/app/components/icons";
+import { Page } from "src/app/components/Page";
 export function Landing() {
   const cardData = [
     {

@@ -1,9 +1,9 @@
-import { BackButton } from '../../components/BackButton/BackButton';
+import { BackButton } from "src/app/components/BackButton/BackButton";
 
 export function Unauthorized() {
   return (
     <div className="flex-col items-center gap-xxxl justify-center self-stretch">
-      <BackButton text="Back"  />
+      <BackButton text="Back" />
       <div className="flex-col w-full  max-w-[420px] items-center gap-md ">
         <div
           aria-label="section title"
