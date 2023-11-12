@@ -29,7 +29,8 @@ export const Routes = () => {
   // } else {
   //   console.log("Running in some other mode");
   // }
-  const {user, setUser} = React.useContext(AuthContext);
+  console.log(import.meta.env.VITE_ENV_A);
+  const { user, setUser } = React.useContext(AuthContext);
   const location = useLocation();
   React.useEffect(() => {
     // check user login status for each navigation
