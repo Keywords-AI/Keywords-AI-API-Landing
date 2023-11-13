@@ -63,7 +63,7 @@ export const Routes = () => {
         },
         {
           path: "/componentgrid",
-          element: user ? <ComponentGrid /> : <Navigate to="/login" />,
+          element: user ? <ComponentGrid /> : <Navigate to="/" />,
         },
       ],
     },
