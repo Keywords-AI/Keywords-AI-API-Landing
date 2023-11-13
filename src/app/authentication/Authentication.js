@@ -72,10 +72,9 @@ export const login = async (email, password) => {
       },
       timeout: 5000,
     });
-
+    console.log(response.status,response.data,response.statusText)
     if (response.status === 200) {
       const responseData = response.data;
-      console.log(responseData)
       setCookie("access_token", responseData.access, expirationDays);
       setCookie("refresh_token", responseData.refresh, expirationDays);
       const nextStation = new URLSearchParams(window.location.search).get("next");
