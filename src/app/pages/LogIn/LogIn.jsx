@@ -38,6 +38,7 @@ export function LogIn() {
           onSubmit={handleSubmit(async (data) => {
             try {
               const res = await login(data.email, data.password);
+              console.log(res);
               navigate("/");
             } catch (error) {
               setBackendError(error.message);
