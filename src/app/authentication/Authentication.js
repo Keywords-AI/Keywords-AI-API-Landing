@@ -37,13 +37,6 @@ export const signup = async ({email, password, firstname, lastname, organization
     });
 
     const responseData = response.data;
-    if (response.status === 200) {
-      localStorage.setItem("access_token", responseData.access);
-      localStorage.setItem("refresh_token", responseData.refresh);
-      console.log(responseData, "here is the created user");
-    } else if (response.status === 400) {
-      console.log(responseData, "here is the error");
-    }
   } catch (error) {
     if (error.code === 'ECONNABORTED') {
       throw new Error('Request timed out');
@@ -72,7 +65,6 @@ export const login = async (email, password) => {
       },
       timeout: 5000,
     });
-    console.log(response.status,response.data,response.statusText)
     if (response.status === 200) {
       const responseData = response.data;
       setCookie("access_token", responseData.access, expirationDays);
@@ -130,9 +122,11 @@ function setCookie(name, value, expirationDays) {
   const date = new Date();
   date.setTime(date.getTime() + (expirationDays * 24 * 60 * 60 * 1000)); // Calculate expiration date
   const expires = "expires=" + date.toUTCString();
-  document.cookie = name + "=" + value + "; " + expires + "; path=/; secure; samesite=strict"; // Set the cookie with secure and SameSite attributes
+  document.cookie = name + "=" + value + ";" + expires + ";path=/;domain=" + 
+  window.location.hostname + ";secure; samesite=strict"
 }
 
-function eraseCookie(name) {   
-  document.cookie = name+'=; Max-Age=-99999999;';  
+function eraseCookie(name, path) {
+  const domain = window.location.hostname;
+  document.cookie = name + '=; Max-Age=-99999999; domain=' + domain + '; path=' + path;
 }
