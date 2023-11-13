@@ -12,6 +12,14 @@ export function SignUp() {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  const onSubmit = async (data) => {
+    try {
+      const res = await signup({ ...data });
+      navigate("/login");
+    } catch (error) {
+      setBackendError(error.message);
+    }
+  };
   const firstnameError = errors.firstname;
   const lastnameError = errors.lastname;
   const emailError = errors.email;
@@ -27,14 +35,7 @@ export function SignUp() {
           subtitle={<span>Sign up to retrieve a free trial API key.</span>}
         />
         <form
-          onSubmit={handleSubmit(async (data) => {
-            try {
-              const res = await signup({...data});
-              navigate("/login")
-            } catch (error) {
-              setBackendError(error.message);
-            }
-          })}
+          onSubmit={handleSubmit(onSubmit)}
           className="flex-col justify-center items-center gap-md self-stretch"
         >
           <div className="flex-col justify-center items-start gap-xs self-stretch">

@@ -8,6 +8,15 @@ import { login } from "src/app/authentication/Authentication";
 
 export function LogIn() {
   const navigate = useNavigate();
+  const onSubmit = async (data) => {
+    try {
+      const res = await login(data.email, data.password);
+      console.log(res);
+      navigate("/");
+    } catch (error) {
+      setBackendError(error.message);
+    }
+  };
   const {
     register,
     handleSubmit,
@@ -35,15 +44,7 @@ export function LogIn() {
           }
         />
         <form
-          onSubmit={handleSubmit(async (data) => {
-            try {
-              const res = await login(data.email, data.password);
-              console.log(res);
-              navigate("/");
-            } catch (error) {
-              setBackendError(error.message);
-            }
-          })}
+          onSubmit={handleSubmit(onSubmit)}
           className="flex-col justify-center items-center gap-md self-stretch"
         >
           <div className="flex-col justify-center items-start gap-xs self-stretch">
