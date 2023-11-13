@@ -1,6 +1,6 @@
 import axios from "axios";
 const apiurl = import.meta.env.VITE_BACKEND_URL;
-const expirationDays = 1;
+const expirationDays = 7;
 export const isUserLoggedIn = async () => {
   try {
     const response = await axios.get(`${apiurl}auth/users/me`, {
@@ -75,6 +75,7 @@ export const login = async (email, password) => {
 
     if (response.status === 200) {
       const responseData = response.data;
+      console.log(responseData)
       setCookie("access_token", responseData.access, expirationDays);
       setCookie("refresh_token", responseData.refresh, expirationDays);
       const nextStation = new URLSearchParams(window.location.search).get("next");
