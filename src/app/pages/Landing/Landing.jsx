@@ -58,7 +58,7 @@ export function Landing() {
         <div className="flex max-w-[1200px] flex-col items-start gap-xl w-full">
           <div className="flex flex-col items-start gap-lg self-stretch">
             <div className="btn-rainbow-border">
-              <button className="button-primary gradient-in">
+              <button className="button-primary gradient-in max-h-[34px]">
                 <span className="text-sm-regular text-center">
                   Read our launch on Product Hunt
                 </span>
