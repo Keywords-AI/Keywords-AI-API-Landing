@@ -68,7 +68,8 @@ export function Navbar() {
             className="button-header group hover:bg-gray-3 hover:text-gray-white"
             onClick={() => {
               logout();
-              navigate("/")}}
+              window.location.reload();
+            }}
           >
             <span className="text-sm-regular text-center text-gray-4 flex-1 group-hover:text-gray-white">
               Log out
