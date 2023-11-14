@@ -1,6 +1,7 @@
 import { BackButton } from "src/app/components/BackButton/BackButton";
-import { ArrowRight, CircleTick } from "src/app/components/icons";
+import { CircleTick } from "src/app/components/icons";
 import "./PaymentSuccess.css";
+import { Button } from "src/app/components/Button";
 
 export function PaymentSuccess() {
   return (
@@ -19,10 +20,12 @@ export function PaymentSuccess() {
             All set! Your subscription went through smoothly.
           </div>
         </div>
-        <button className="button-cr bg-gray-white text-sm-regular text-center text-gray-2">
-          <span className="flex flex-1">Request signed DPA</span>
-          <ArrowRight />
-        </button>
+
+        <Button
+          text={"Retrieve API keys"}
+          variant={"secondary"}
+          borderRadius="rounded-sm"
+        />
       </div>
     </div>
   );

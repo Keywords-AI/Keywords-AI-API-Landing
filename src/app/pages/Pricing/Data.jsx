@@ -1,3 +1,4 @@
+import { Button } from "src/app/components/Button";
 import { ArrowRight, Check } from "src/app/components/icons";
 
 export const plans = [
@@ -131,14 +132,12 @@ export const cards = [
     ),
     featureTitle: "Flex 8k plan features:",
     button: (
-      <button
-        className={
-          "button-primary bg-gray-white text-sm-regular text-center flex-1 text-gray-black self-stretch"
-        }
-        // onClick={() => navigate('/platform/organization/usage')}
-      >
-        <span>{"Start free trial"}</span>
-      </button>
+      <Button
+        variant={"secondary"}
+        text={"Start free trial"}
+        arrow={false}
+        className="self-stretch"
+      />
     ),
     currentPlan: "View Usage Details",
     // upgradeButton: {
@@ -197,14 +196,12 @@ export const cards = [
     featureTitle: "Flex 32k plan features:",
     currentPlan: "View Usage Details",
     button: (
-      <button
-        className={
-          "button-primary bg-gray-white text-sm-regular text-center flex-1 text-gray-black self-stretch"
-        }
-        // onClick={() => navigate('/platform/organization/usage')}
-      >
-        <span>{"Start free trial"}</span>
-      </button>
+      <Button
+        variant={"secondary"}
+        text={"Start free trial"}
+        arrow={false}
+        className="self-stretch"
+      />
     ),
     // upgradeButton: {
     //   text: 'Add subscription',

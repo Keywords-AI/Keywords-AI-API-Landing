@@ -1,4 +1,5 @@
 import { BackButton } from "src/app/components/BackButton";
+import { Button } from "src/app/components/Button";
 
 export function ConfirmRegistration() {
   return (
@@ -17,9 +18,12 @@ export function ConfirmRegistration() {
           </div>
         </div>
         <div className="flex justify-center items-center gap-md self-stretch">
-          <button className="button-cr bg-gray-white text-gray-black text-sm-regular text-center">
-            Confirm
-          </button>
+          <Button
+            text="Confirm"
+            variant={"secondary"}
+            borderRadius="rounded-sm"
+            arrow={false}
+          />
         </div>
       </div>
     </div>

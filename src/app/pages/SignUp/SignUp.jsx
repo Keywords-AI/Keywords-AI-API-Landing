@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { AuthenticationTitle } from "src/app/components/AuthenticationTitle/AuthenticationTitle";
 import cn from "src/app/utils/ClassMerge";
 import { signup } from "src/app/authentication/Authentication";
+import { Button } from "src/app/components/Button";
 export function SignUp() {
   const navigate = useNavigate();
   const {
@@ -141,12 +142,13 @@ export function SignUp() {
             {backendError ? backendError : ""}
           </p>
           <div className="flex-col items-start gap-xs self-stretch">
-            <button
-              type="submit"
-              className="button-cr bg-gray-white text-gray-black text-sm-regular text-center w-full"
-            >
-              Create Account
-            </button>
+            <Button
+              text={"Create Account"}
+              variant={"secondary"}
+              borderRadius="rounded-sm"
+              className="w-full"
+              arrow={false}
+            />
             <p className="caption text-gray-4 self-stretch text-center">
               By signing up, you agree to our{" "}
               <span
