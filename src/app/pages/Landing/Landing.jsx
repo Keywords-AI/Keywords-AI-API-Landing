@@ -1,3 +1,4 @@
+import { Button } from "src/app/components/Button";
 import { SmallCard } from "./components/SmallCard/SmallCard";
 import "./Landing.css";
 import {
@@ -77,18 +78,8 @@ export function Landing() {
             </p>
           </div>
           <div className="flex items-start gap-xs">
-            <button className="button-primary bg-gray-white">
-              <span className="text-sm-regular text-center flex-1 text-gray-2">
-                Get started
-              </span>
-              <ArrowRight />
-            </button>
-            <button className="button-header">
-              <span className="text-sm-regular text-center text-gray-4 flex-1">
-                Documentation
-              </span>
-              <ArrowRight fill="fill-gray-4" />
-            </button>
+            <Button text="Get started" variant="secondary" />
+            <Button text="Documentation" variant="header" />
           </div>
         </div>
         <div className="flex max-w-[1200px] items-center gap-xxs self-stretch">
@@ -119,7 +110,7 @@ export function Landing() {
           </div>
           <div
             aria-label="card grid"
-            className="flex w-max-[1200px] items-start content-start gap-[24px] self-stretch flex-wrap"
+            className="flex w-max-[1200px] items-start justify-center content-start gap-[24px] self-stretch flex-wrap"
           >
             {cardData.map((card, index) => (
               <SmallCard {...card} key={index} />
@@ -169,18 +160,8 @@ export function Landing() {
           </p>
         </div>
         <div className="flex items-start gap-xxs">
-          <button className="button-primary bg-gray-white">
-            <span className="text-sm-regular flex-1 text-gray-2">
-              Get started
-            </span>
-            <ArrowRight fill="fill-gray-black" />
-          </button>
-          <button className="button-header group hover:bg-gray-3 ">
-            <span className="text-sm-regular flex-1 text-gray-4 group-hover:text-gray-white">
-              Contact us
-            </span>
-            <ArrowRight fill="fill-gray-4" />
-          </button>
+          <Button text="Get started" variant="secondary" />
+          <Button text="Contact us" variant="header" />
         </div>
         <div className="flex justify-center items-center">
           <Subtract />

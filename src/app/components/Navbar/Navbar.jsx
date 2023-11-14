@@ -5,6 +5,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import React from "react";
 import AuthContext from "src/app/authentication/AuthContext";
 import { logout } from "src/app/authentication/Authentication";
+import { Button } from "../Button";
 
 export function Navbar() {
   const navigate = useNavigate();
@@ -24,44 +25,38 @@ export function Navbar() {
           <p className="display-xs font-[600] text-center">Keywords AI</p>
         </div>
         <div className="flex items-center gap-xs">
-          <button className="button-header" onClick={() => navigate("/")}>
-            <span
-              className={cn(
-                "text-sm-regular text-center flex-1",
-                location.pathname == "/" ? "text-gray-white" : "text-gray-4"
-              )}
-            >
-              Overview
-            </span>
-          </button>
-          <button
-            className="button-header"
+          <Button
+            text="Overview"
+            variant="header"
+            arrow={false}
+            onClick={() => navigate("/")}
+            textClassName={cn(
+              location.pathname == "/" ? "text-gray-white" : "text-gray-4"
+            )}
+          />
+          <Button
+            text="Pricing"
+            variant="header"
+            arrow={false}
             onClick={() => navigate("/pricing")}
-          >
-            <span
-              className={cn(
-                "text-sm-regular text-center flex-1",
-                location.pathname == "/pricing"
-                  ? "text-gray-white"
-                  : "text-gray-4"
-              )}
-            >
-              Pricing
-            </span>
-          </button>
-          <button
-            className="button-header flex-1"
+            textClassName={cn(
+              location.pathname == "/pricing"
+                ? "text-gray-white"
+                : "text-gray-4"
+            )}
+          />
+
+          <Button
+            text="Docs"
+            variant="header"
+            arrow={false}
             onClick={() => navigate("/componentgrid")}
-          >
-            <span
-              className={cn(
-                "text-sm-regular text-center flex-1",
-                location.pathname == "/doc" ? "text-gray-white" : "text-gray-4"
-              )}
-            >
-              Docs
-            </span>
-          </button>
+            textClassName={cn(
+              location.pathname == "/componentgrid"
+                ? "text-gray-white"
+                : "text-gray-4"
+            )}
+          />
         </div>
         {user ? (
           <button
@@ -77,23 +72,17 @@ export function Navbar() {
           </button>
         ) : (
           <div className="flex items-center gap-xs">
-            <button
-              className="button-header group hover:bg-gray-3 hover:text-gray-white"
+            <Button
+              text="Log in"
+              variant="header"
+              arrow={false}
               onClick={() => navigate("/login")}
-            >
-              <span className="text-sm-regular text-center text-gray-4 flex-1 group-hover:text-gray-white">
-                Log in
-              </span>
-            </button>
-            <button
-              className="button-primary  bg-gray-white "
+            />
+            <Button
+              text="Sign up"
+              variant="secondary"
               onClick={() => navigate("/signup")}
-            >
-              <span className="text-sm-regular text-center flex-1 text-gray-2">
-                Sign up
-              </span>
-              <ArrowRight />
-            </button>
+            />
           </div>
         )}
       </div>

@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import { BackButton } from "src/app/components/BackButton/BackButton";
+import { Button } from "src/app/components/Button";
 
 export function Unauthorized() {
+  const navigate = useNavigate();
   return (
     <div className="flex-col items-center gap-xxxl justify-center self-stretch">
       <BackButton text="Back" />
@@ -17,9 +20,15 @@ export function Unauthorized() {
           </div>
         </div>
         <div className="flex justify-center items-center gap-md self-stretch">
-          <button className="button-cr bg-gray-white text-gray-black text-sm-regular text-center">
-            View pricing plans
-          </button>
+          <Button
+            text="View pricing plans"
+            variant={"secondary"}
+            borderRadius="rounded-sm"
+            onClick={() => {
+              navigate("/pricing");
+            }}
+            arrow={false}
+          />
         </div>
       </div>
     </div>

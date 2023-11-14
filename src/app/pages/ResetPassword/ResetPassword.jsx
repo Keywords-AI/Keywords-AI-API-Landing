@@ -3,6 +3,7 @@ import { BackButton } from "src/app/components/BackButton";
 import { useForm } from "react-hook-form";
 import { AuthenticationTitle } from "src/app/components/AuthenticationTitle/AuthenticationTitle";
 import cn from "src/app/utils/ClassMerge";
+import { Button } from "src/app/components/Button";
 export function ResetPassword() {
   const navigate = useNavigate();
   const {
@@ -74,12 +75,13 @@ export function ResetPassword() {
             Passwords do not match.
           </p>
           <div className="flex-col items-start gap-xs self-stretch">
-            <button
-              type="submit"
-              className="button-cr bg-gray-white text-gray-black text-sm-regular text-center w-full"
-            >
-              Change password
-            </button>
+            <Button
+              variant={"secondary"}
+              text={"Change password"}
+              arrow={false}
+              borderRadius="rounded-sm"
+              className="w-full"
+            />
           </div>
         </form>
       </div>

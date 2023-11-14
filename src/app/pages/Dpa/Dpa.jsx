@@ -1,12 +1,11 @@
-
-import { ArrowRight } from 'src/app/components/icons';
-import './Dpa.css';
-import { Page } from 'src/app/components/Page';
+import "./Dpa.css";
+import { Page } from "src/app/components/Page";
+import { Button } from "src/app/components/Button";
 
 export function Dpa() {
   const Data = {
-    title: 'Data Processing Agreement',
-    date: 'Updated 10/19/2023',
+    title: "Data Processing Agreement",
+    date: "Updated 10/19/2023",
     content: (
       <p className="Dpa text-md-regular text-gray-4">
         To use our API services, you're required to accept the Keywords AI Data
@@ -28,10 +27,12 @@ export function Dpa() {
           </div>
           <div className="flex-col items-start self-stretch gap-md">
             {Data.content}
-            <button className="button-cr bg-gray-white text-sm-regular text-center text-gray-2">
-              <span className="flex flex-1">Request signed DPA</span>
-              <ArrowRight />
-            </button>
+
+            <Button
+              text={"Request signed DPA"}
+              variant={"secondary"}
+              borderRadius="rounded-sm"
+            />
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { BackButton } from "src/app/components/BackButton";
 import { useForm } from "react-hook-form";
 import { AuthenticationTitle } from "src/app/components/AuthenticationTitle/AuthenticationTitle";
 import cn from "src/app/utils/ClassMerge";
+import { Button } from "src/app/components/Button";
 
 export function ForgotPassword() {
   const navigate = useNavigate();
@@ -56,12 +57,13 @@ export function ForgotPassword() {
             Link sent to your email inbox via thekeywordsai@gmail.com.
           </p>
           <div className="flex-col items-start gap-xs self-stretch">
-            <button
-              type="submit"
-              className="button-cr bg-gray-white text-gray-black text-sm-regular text-center w-full"
-            >
-              Send reset link
-            </button>
+            <Button
+              variant={"secondary"}
+              text={"Send reset link"}
+              arrow={false}
+              borderRadius="rounded-sm"
+              className="w-full"
+            />
           </div>
         </form>
       </div>

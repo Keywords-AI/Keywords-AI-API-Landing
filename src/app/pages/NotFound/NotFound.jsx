@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { BackButton } from "src/app/components/BackButton";
+import { Button } from "src/app/components/Button";
 
 export function NotFound() {
   const navigate = useNavigate();
@@ -17,15 +18,22 @@ export function NotFound() {
           </div>
         </div>
         <div className="flex justify-center items-start gap-md self-stretch">
-          <button
-            className="button-cr bg-gray-white text-gray-black text-sm-regular text-center"
-            onClick={() => navigate("/")}
-          >
-            Back to home
-          </button>
-          <button className="button-secondary-gray text-sm-regular text-center text-gray-white">
-            Bug report
-          </button>
+          <Button
+            text="Back to home"
+            variant={"secondary"}
+            borderRadius="rounded-sm"
+            arrow={false}
+            onClick={() => {
+              navigate("/");
+            }}
+          />
+          <Button
+            text="Bug report"
+            variant={"secondary-gray"}
+            borderRadius="rounded-sm"
+            arrow={false}
+            className="border border-solid border-gray-3"
+          />
         </div>
       </div>
     </div>
