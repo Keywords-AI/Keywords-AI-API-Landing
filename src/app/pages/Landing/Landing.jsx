@@ -84,7 +84,7 @@ export function Landing() {
         </div>
         <div className="flex max-w-[1200px] items-center gap-xxs self-stretch">
           {/* <p className="text-sm-regular text-resend-64">Backed by</p>
-          <div className="flex items-center gap-[4px]">
+          <div className="flex items-center gap-xxxs">
             <Y />
             <span className="text-sm-regular gradient-text">Combinator</span>
           </div> */}

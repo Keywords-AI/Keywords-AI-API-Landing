@@ -1,15 +1,15 @@
 import { useNavigate } from "react-router-dom";
-import { ArrowLeft } from "../icons";
+import { Button } from "../Button";
 export function BackButton({ text, link = -1 }) {
   const navigate = useNavigate();
   return (
     <div className="flex-col items-start gap-[10px] self-stretch">
-      <button className="button-header" onClick={() => navigate(link)}>
-        <ArrowLeft />
-        <span className="flex-1 text-sm-regular text-gray-4 hover:text-gray-white">
-          {text}
-        </span>
-      </button>
+      <Button
+        text={text}
+        variant={"header"}
+        arrowDirection={"left"}
+        onClick={() => navigate(link)}
+      />
     </div>
   );
 }

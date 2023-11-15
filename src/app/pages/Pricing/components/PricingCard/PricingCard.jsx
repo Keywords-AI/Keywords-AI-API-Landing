@@ -24,7 +24,7 @@ export default function PricingCard({
   },
   upgradeButton = {
     text: "Get Started",
-    className: "button-primary button-fill",
+    className: " button-fill",
   },
   downgradeButton = {
     text: "Talk to us",

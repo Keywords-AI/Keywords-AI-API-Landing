@@ -59,17 +59,15 @@ export function Navbar() {
           />
         </div>
         {user ? (
-          <button
-            className="button-header group hover:bg-gray-3 hover:text-gray-white"
+          <Button
+            text="Log out"
+            variant="header"
+            arrow={false}
             onClick={() => {
               logout();
               window.location.reload();
             }}
-          >
-            <span className="text-sm-regular text-center text-gray-4 flex-1 group-hover:text-gray-white">
-              Log out
-            </span>
-          </button>
+          />
         ) : (
           <div className="flex items-center gap-xs">
             <Button

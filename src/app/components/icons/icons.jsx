@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-export const Brain = ({ fill = 'fill-gray-white' }) => {
+export const Brain = ({ fill = "fill-gray-white" }) => {
   return (
     <svg
-      aria-label='Brain'
+      aria-label="Brain"
       xmlns="http://www.w3.org/2000/svg"
       width="22"
       height="24"
@@ -17,10 +17,10 @@ export const Brain = ({ fill = 'fill-gray-white' }) => {
     </svg>
   );
 };
-export const Text = ({ fill = 'fill-gray-white' }) => {
+export const Text = ({ fill = "fill-gray-white" }) => {
   return (
     <svg
-      aria-label='Text'
+      aria-label="Text"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -34,10 +34,10 @@ export const Text = ({ fill = 'fill-gray-white' }) => {
     </svg>
   );
 };
-export const Search = ({ fill = 'fill-gray-white' }) => {
+export const Search = ({ fill = "fill-gray-white" }) => {
   return (
     <svg
-      aria-label='Search'
+      aria-label="Search"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -51,10 +51,10 @@ export const Search = ({ fill = 'fill-gray-white' }) => {
     </svg>
   );
 };
-export const Logo = ({ fill = 'fill-gray-white' }) => {
+export const Logo = ({ fill = "fill-gray-white" }) => {
   return (
     <svg
-      aria-label='Logo'
+      aria-label="Logo"
       xmlns="http://www.w3.org/2000/svg"
       width="19"
       height="20"
@@ -71,10 +71,10 @@ export const Logo = ({ fill = 'fill-gray-white' }) => {
   );
 };
 
-export const ArrowRight = ({ fill = 'fill-gray-black' }) => {
+export const ArrowRight = ({ fill = "fill-gray-black" }) => {
   return (
     <svg
-      aria-label='ArrowRight'
+      aria-label="ArrowRight"
       xmlns="http://www.w3.org/2000/svg"
       width="4"
       height="8"
@@ -91,7 +91,7 @@ export const ArrowRight = ({ fill = 'fill-gray-black' }) => {
 export const Y = () => {
   return (
     <svg
-      aria-label='Y'
+      aria-label="Y"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -135,7 +135,7 @@ export const Y = () => {
 export const Subtract = () => {
   return (
     <svg
-      aria-label='Subtract'
+      aria-label="Subtract"
       xmlns="http://www.w3.org/2000/svg"
       width="334"
       height="203"
@@ -190,7 +190,7 @@ export const Subtract = () => {
     </svg>
   );
 };
-export const SmallDot = ({ fill = 'fill-gray-4' }) => {
+export const SmallDot = ({ fill = "fill-gray-4" }) => {
   return (
     <svg
       aria-label="SmallDot"
@@ -208,7 +208,7 @@ export const SmallDot = ({ fill = 'fill-gray-4' }) => {
   );
 };
 
-export const FeatureTick = ({ fill = 'fill-gray-white' }) => {
+export const FeatureTick = ({ fill = "fill-gray-white" }) => {
   return (
     <svg
       aria-label="FeatureTick"
@@ -226,7 +226,7 @@ export const FeatureTick = ({ fill = 'fill-gray-white' }) => {
   );
 };
 
-export const Check = ({ fill = 'fill-gray-white' }) => {
+export const Check = ({ fill = "fill-gray-white" }) => {
   return (
     <svg
       aria-label="Check"
@@ -244,7 +244,7 @@ export const Check = ({ fill = 'fill-gray-white' }) => {
   );
 };
 
-export const ArrowLeft = ({ fill = 'fill-gray-white' }) => {
+export const ArrowLeft = ({ fill = "fill-gray-white" }) => {
   return (
     <svg
       aria-label="ArrowLeft"
@@ -289,6 +289,23 @@ export const CircleTick = () => {
           <stop offset="1" stopColor="#D1CAE4" />
         </linearGradient>
       </defs>
+    </svg>
+  );
+};
+
+export const Star = ({ fill = "fill-gray-white" }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="15"
+      viewBox="0 0 16 15"
+      fill="none"
+    >
+      <path
+        d="M8.33398 0L10.1301 5.52786H15.9424L11.2402 8.94427L13.0363 14.4721L8.33398 11.0557L3.6317 14.4721L5.42781 8.94427L0.725532 5.52786H6.53787L8.33398 0Z"
+        className={fill}
+      />
     </svg>
   );
 };

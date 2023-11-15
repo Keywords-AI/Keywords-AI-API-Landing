@@ -1,6 +1,5 @@
 import cn from "src/app/utils/ClassMerge";
-import { ArrowRight } from "../icons";
-import styles from "./Button.css";
+import { ArrowLeft, ArrowRight } from "../icons";
 
 export const Button = ({
   variant,
@@ -17,6 +16,7 @@ export const Button = ({
   textHoverColor = "group-hover:text-gray-white",
   textClickedColor = "group-active:text-gray-white",
   arrowFill = "fill-gray-black",
+  arrowDirection = "right",
 }) => {
   switch (variant) {
     case "primary":
@@ -51,6 +51,16 @@ export const Button = ({
       textClickedColor = "group-active:text-gray-white";
       arrowFill = "fill-gray-white";
       break;
+    case "secondary-black":
+      bgColor = "bg-gray-black";
+      hoverColor = "hover:bg-gray-2";
+      clickedColor = "active:bg-gray-2";
+      textColor = "text-gray-white";
+      textHoverColor = "group-hover:text-gray-white";
+      textClickedColor = "group-active:text-gray-white";
+      arrowFill = "fill-gray-white";
+      className = cn(className, "border border-solid border-gray-3");
+      break;
   }
   return (
     <button
@@ -60,7 +70,8 @@ export const Button = ({
         bgColor,
         hoverColor,
         clickedColor,
-        className
+        className,
+        arrowDirection === "left" ? "flex-row-reverse" : "flex-row"
       )}
       onClick={onClick}
     >
@@ -75,7 +86,8 @@ export const Button = ({
       >
         {text}
       </span>
-      {arrow && <ArrowRight fill={arrowFill} />}
+      {arrow && arrowDirection === "right" && <ArrowRight fill={arrowFill} />}
+      {arrow && arrowDirection === "left" && <ArrowLeft ill={arrowFill} />}
     </button>
   );
 };

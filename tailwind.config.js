@@ -14,6 +14,7 @@ export default {
         inter: ["Inter", "sans-serif"],
       },
       spacing: {
+        xxxs: "4px",
         xxs: "8px",
         xs: "12px",
         sm: "16px",
@@ -24,6 +25,7 @@ export default {
         xxxl: "120px",
       },
       padding: {
+        xxxs: "4px",
         xxs: "8px",
         xs: "12px",
         sm: "16px",
