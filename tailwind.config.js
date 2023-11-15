@@ -55,7 +55,6 @@ export default {
           3: "#3E424A",
           4: "#9FA2AB",
         },
-        highlight: "rgba(255, 255, 255, 0.00)",
         box: "#1D1D1D",
         resend: {
           64: "rgba(239, 245, 255, 0.69)",
@@ -63,6 +62,11 @@ export default {
       },
       boxShadow: {
         pricing: "2px 2px 10px 2px rgba(24, 24, 32, 0.40)",
+      },
+      backgroundImage: {
+        'highlight': 'linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.20) 0%, rgba(143, 143, 143, 0.67) 50%, rgba(0, 0, 0, 0.04) 100%)',
+        
+        
       },
     },
   },

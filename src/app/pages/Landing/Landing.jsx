@@ -10,6 +10,7 @@ import {
   Text,
 } from "src/app/components/icons";
 import { Page } from "src/app/components/Page";
+import { Divider } from "src/app/components/Divider";
 export function Landing() {
   const cardData = [
     {
@@ -59,7 +60,7 @@ export function Landing() {
         <div className="flex max-w-[1200px] flex-col items-start gap-xl w-full">
           <div className="flex flex-col items-start gap-lg self-stretch">
             <div className="btn-rainbow-border">
-              <button className="button-primary gradient-in max-h-[34px]">
+              <button className="button-primary bg-gradient-in max-h-[34px]">
                 <span className="text-sm-regular text-center">
                   Read our launch on Product Hunt
                 </span>
@@ -96,7 +97,7 @@ export function Landing() {
         className="flex-col px-xxxl py-xxl items-center gap-xl self-stretch bg-gray-black"
       >
         <div className="max-w-[1200px] flex-col items-center gap-xl rounded-xl border-t border-box border-solid w-full">
-          <div className="h-[1px] gradient-bar self-stretch"></div>
+          <Divider />
           <div
             aria-label="section title"
             className="flex flex-col text-center items-center gap-sm self-stretch"
@@ -138,8 +139,8 @@ export function Landing() {
               outperforming models including GPT-3.5 and Claude 2.
             </p>
           </div>
-          <div className="gradient-out p-[1px] rounded-lg">
-            <button className="button-secondary-black gradient-in">
+          <div className="bg-gradient-out p-[1px] rounded-lg">
+            <button className="button-secondary-black bg-gradient-in">
               <span className="text-sm-regular text-center flex-1">
                 Benchmark results
               </span>

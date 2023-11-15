@@ -250,7 +250,7 @@ export const cards = [
       "Design a custom package. For businesses with large volume or unique use cases.",
     featureTitle: "Custom plan features:",
     button: (
-      <div className="flex self-stretch gradient-out p-[1px]">
+      <div className="flex self-stretch bg-gradient-out p-[1px]">
         <button
           className={
             "button-secondary-black text-sm-regular text-center text-gray-white flex-1 self-stretch bg-gray-black"
