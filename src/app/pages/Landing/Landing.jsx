@@ -11,6 +11,7 @@ import {
 } from "src/app/components/icons";
 import { Page } from "src/app/components/Page";
 import { Divider } from "src/app/components/Divider";
+import { SectionTitle } from "src/app/components/SectionTitle";
 export function Landing() {
   const cardData = [
     {
@@ -50,50 +51,70 @@ export function Landing() {
         "Enhance your search features with contextual understanding and semantic matching, improving both accuracy and user satisfaction. Supports RAG.",
     },
   ];
-  return (
-    <Page>
-      {/* section 1 */}
+
+  const IntroductionSection = () => {
+    return (
       <div
-        aria-label="section1"
+        aria-label="introduction section"
         className="flex p-xxxl flex-col items-center gap-xxxl self-stretch"
       >
         <div className="flex max-w-[1200px] flex-col items-start gap-xl w-full">
-          <div className="flex flex-col items-start gap-lg self-stretch">
-            <div className="btn-rainbow-border">
-              <button className="button-primary bg-gradient-in max-h-[34px]">
-                <span className="text-sm-regular text-center">
-                  Read our launch on Product Hunt
-                </span>
-              </button>
-            </div>
+          <div className="flex flex-col items-center gap-lg self-stretch">
+            <Button text="Read our launch on Product Hunt" variant="primary" />
 
-            <p className="display-xl self-stretch gradient-text">
-              Streamline Your AI Costs. <br />
-              Not Your Capabilities.
+            <p className="display-xl self-stretch gradient-text text-center">
+              Build scalable AI applications <br /> with dynamic LLM routing
             </p>
-            <p className="text-lg text-gray-4 self-stretch">
-              Get the results you'd expect from high-cost AI models, but at a
-              fraction of the price. <br />
-              We optimize your queries to deliver the most cost-effective, yet
-              powerful, output.
+            <p className="text-lg text-gray-4 self-stretch text-center">
+              We connect the best model for your prompts with a unified API
+              end-point.
+              <br />
+              Outperform any LLM, eliminate downtime, and cut costs by up to
+              97%.
             </p>
           </div>
-          <div className="flex items-start gap-xs">
+          <div className="flex items-center justify-center gap-xs self-stretch">
             <Button text="Get started" variant="secondary" />
             <Button text="Documentation" variant="header" />
           </div>
         </div>
-        <div className="flex max-w-[1200px] items-center gap-xxs self-stretch">
-          {/* <p className="text-sm-regular text-resend-64">Backed by</p>
+        <div className="flex max-w-[1200px] items-center justify-center gap-xxs w-full">
+          <p className="text-sm-regular text-resend-64">Backed by</p>
           <div className="flex items-center gap-xxxs">
             <Y />
             <span className="text-sm-regular gradient-text">Combinator</span>
-          </div> */}
+          </div>
         </div>
       </div>
-      {/* section 2 */}
+    );
+  };
+  const ModelSectionSection = () => {
+    return (
       <div
-        aria-label="section2"
+        aria-label="Model selection section"
+        className="flex px-xxxl py-xxl flex-col items-center gap-xxl self-stretch"
+      >
+        <SectionTitle
+          title={"Leverage all best-in-class LLMs"}
+          subtitle={
+            <span>
+              Efficiently route to the best model for optimized performance.
+              <br />
+              We are actively testing and adding new models every week.
+            </span>
+          }
+        />
+      </div>
+    );
+  };
+  const IntegrateSection = () => {
+    return;
+  };
+
+  const FeaturesSection = ({ cardData }) => {
+    return (
+      <div
+        aria-label="Features section"
         className="flex-col px-xxxl py-xxl items-center gap-xl self-stretch bg-gray-black"
       >
         <div className="max-w-[1200px] flex-col items-center gap-xl rounded-xl border-t border-box border-solid w-full">
@@ -119,9 +140,13 @@ export function Landing() {
           </div>
         </div>
       </div>
-      {/* section 3 */}
+    );
+  };
+
+  const PerformanceSection = () => {
+    return (
       <div
-        aria-label="section3"
+        aria-label="Performance section "
         className="flex flex-col items-center gap-xl px-xxxl py-xxl self-stretch bg-gray-black justify-center"
       >
         <div className="flex max-w-[1200px] flex-col items-start gap-lg w-full ">
@@ -152,7 +177,11 @@ export function Landing() {
           <p className="display-sm text-gray-3">Graph Plaeholder</p>
         </div>
       </div>
-      {/* section 4 */}
+    );
+  };
+
+  const CallToActionSection = () => {
+    return (
       <div className="flex px-[180px] pt-xxxl flex-col items-center gap-xl self-stretch">
         <div className="flex max-w-[1200px] flex-col items-center gap-sm ">
           <p className="display-lg text-center gradient-text ">
@@ -168,6 +197,15 @@ export function Landing() {
           <Subtract />
         </div>
       </div>
+    );
+  };
+
+  return (
+    <Page>
+      <IntroductionSection />
+      <FeaturesSection cardData={cardData} />
+      <PerformanceSection />
+      <CallToActionSection />
     </Page>
   );
 }
