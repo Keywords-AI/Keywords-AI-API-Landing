@@ -65,6 +65,7 @@ export default {
       },
       backgroundImage: {
         'highlight': 'linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.20) 0%, rgba(143, 143, 143, 0.67) 50%, rgba(0, 0, 0, 0.04) 100%)',
+        'gradient1': 'linear-gradient(180deg, rgba(192, 197, 228, 0.16) 0%, rgba(189, 200, 255, 0.09) 50%, rgba(54, 49, 60, 0.08) 100%), #000',
         
         
       },

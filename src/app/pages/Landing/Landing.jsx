@@ -13,45 +13,6 @@ import { Page } from "src/app/components/Page";
 import { Divider } from "src/app/components/Divider";
 import { SectionTitle } from "src/app/components/SectionTitle";
 export function Landing() {
-  const cardData = [
-    {
-      linkIcon: <Brain />,
-      title: "Advanced Reasoning",
-      content:
-        "With vast general knowledge and finely-tuned algorithms, our API comprehends intricate instructions in natural language and tackles tough challenges efficiently.",
-    },
-    {
-      linkIcon: <Text />,
-      title: "Content Generation",
-      content:
-        "Unleash the creativity of our API for compelling copywriting, SEO-optimized articles, or even scriptwriting. Get quality that rivals GPT-4 at a fraction of the cost.",
-    },
-    {
-      linkIcon: <Search />,
-      title: "Intelligent Search",
-      content:
-        "Enhance your search features with contextual understanding and semantic matching, improving both accuracy and user satisfaction. Supports RAG.",
-    },
-    {
-      linkIcon: <Brain />,
-      title: "Advanced Reasoning",
-      content:
-        "With vast general knowledge and finely-tuned algorithms, our API comprehends intricate instructions in natural language and tackles tough challenges efficiently.",
-    },
-    {
-      linkIcon: <Text />,
-      title: "Content Generation",
-      content:
-        "Unleash the creativity of our API for compelling copywriting, SEO-optimized articles, or even scriptwriting. Get quality that rivals GPT-4 at a fraction of the cost.",
-    },
-    {
-      linkIcon: <Search />,
-      title: "Intelligent Search",
-      content:
-        "Enhance your search features with contextual understanding and semantic matching, improving both accuracy and user satisfaction. Supports RAG.",
-    },
-  ];
-
   const IntroductionSection = () => {
     return (
       <div
@@ -111,7 +72,45 @@ export function Landing() {
     return;
   };
 
-  const FeaturesSection = ({ cardData }) => {
+  const FeaturesSection = () => {
+    const cardData = [
+      {
+        linkIcon: <Brain />,
+        title: "Advanced Reasoning",
+        content:
+          "With vast general knowledge and finely-tuned algorithms, our API comprehends intricate instructions in natural language and tackles tough challenges efficiently.",
+      },
+      {
+        linkIcon: <Text />,
+        title: "Content Generation",
+        content:
+          "Unleash the creativity of our API for compelling copywriting, SEO-optimized articles, or even scriptwriting. Get quality that rivals GPT-4 at a fraction of the cost.",
+      },
+      {
+        linkIcon: <Search />,
+        title: "Intelligent Search",
+        content:
+          "Enhance your search features with contextual understanding and semantic matching, improving both accuracy and user satisfaction. Supports RAG.",
+      },
+      {
+        linkIcon: <Brain />,
+        title: "Advanced Reasoning",
+        content:
+          "With vast general knowledge and finely-tuned algorithms, our API comprehends intricate instructions in natural language and tackles tough challenges efficiently.",
+      },
+      {
+        linkIcon: <Text />,
+        title: "Content Generation",
+        content:
+          "Unleash the creativity of our API for compelling copywriting, SEO-optimized articles, or even scriptwriting. Get quality that rivals GPT-4 at a fraction of the cost.",
+      },
+      {
+        linkIcon: <Search />,
+        title: "Intelligent Search",
+        content:
+          "Enhance your search features with contextual understanding and semantic matching, improving both accuracy and user satisfaction. Supports RAG.",
+      },
+    ];
     return (
       <div
         aria-label="Features section"
@@ -203,7 +202,7 @@ export function Landing() {
   return (
     <Page>
       <IntroductionSection />
-      <FeaturesSection cardData={cardData} />
+      <FeaturesSection />
       <PerformanceSection />
       <CallToActionSection />
     </Page>
