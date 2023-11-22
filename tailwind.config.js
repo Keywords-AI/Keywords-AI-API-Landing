@@ -63,7 +63,7 @@ export default {
       },
       boxShadow: {
         pricing: "2px 2px 10px 2px rgba(24, 24, 32, 0.40)",
-        purple: "0 0 40px rgba(143, 0, 210, 0.25)",
+        purple: "0 0 40px rgba(143, 0, 210, 0.05)",
       },
       backgroundImage: {
         'highlight': 'linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.20) 0%, rgba(143, 143, 143, 0.67) 50%, rgba(0, 0, 0, 0.04) 100%)',

@@ -18,6 +18,7 @@ import { ResetPassword } from "./pages/ResetPassword/ResetPassword";
 import { ForgotPassword } from "./pages/ForgotPassword/ForgotPassword";
 import { ComponentGrid } from "./pages/ComponentGrid";
 import { isUserLoggedIn } from "./authentication/Authentication";
+import { BetaAccess } from "./pages/BetaAccess/BetaAccess";
 import AuthContext from "./authentication/AuthContext";
 
 export const Routes = () => {
@@ -43,6 +44,7 @@ export const Routes = () => {
     };
     checkIsLogin();
   }, [location.pathname]);
+
   const routes = useRoutes([
     {
       element: <NavigationLayout />,
@@ -76,6 +78,10 @@ export const Routes = () => {
         { path: "/unauthenticated", element: <Unauthenticated /> },
         { path: "/login", element: <LogIn /> },
         { path: "/signup", element: <SignUp /> },
+        {
+          path: "/beta-access",
+          element: <BetaAccess />,
+        },
         { path: "/reset-password", element: <ResetPassword /> },
         {
           path: "/forgot-password",

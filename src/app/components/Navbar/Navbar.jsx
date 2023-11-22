@@ -24,7 +24,7 @@ export function Navbar() {
           <Logo />
           <p className="display-xs font-[600] text-center">Keywords AI</p>
         </div>
-        <div className="sm:hidden flex items-center gap-xs">
+        {/* <div className="sm:hidden flex items-center gap-xs">
           <Button
             text="Overview"
             variant="header"
@@ -57,7 +57,7 @@ export function Navbar() {
                 : "text-gray-4"
             )}
           />
-        </div>
+        </div> */}
         {user ? (
           <div className="sm:hidden">
             <Button

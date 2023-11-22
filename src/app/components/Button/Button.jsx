@@ -1,6 +1,6 @@
 import cn from "src/app/utils/ClassMerge";
-import { ArrowRight } from "../icons";
-import styles from "./Button.css?inline";
+import { ArrowRight, ArrowLeft } from "../icons";
+import "./Button.css";
 
 
 export const Button = ({
@@ -69,6 +69,11 @@ export const Button = ({
       borderRadius = "rounded-lg";
       textColor = "text-gray-white";
       arrowFill = "fill-gray-white";
+    case "beta":
+      bgColor="black-gradient";
+      textColor = "text-gray-white";
+      hoverColor = "black-gradient";
+      clickedColor = "black-gradient";
   }
   return (
     <button

@@ -18,7 +18,9 @@ import { Divider } from "src/app/components/Divider";
 import { SectionTitle } from "src/app/components/SectionTitle";
 import { ModelLogos } from "./components";
 import { CodeBoxDisplay } from "./components/CodeBoxDisplay";
+import { useNavigate } from "react-router-dom";
 export function Landing() {
+  const navigate = useNavigate();
   const IntroductionSection = () => {
     return (
       <div
@@ -27,7 +29,8 @@ export function Landing() {
       >
         <div className="flex max-w-[1200px] flex-col items-start gap-xl w-full">
           <div className="flex flex-col items-center gap-lg self-stretch">
-            <Button text="Read our launch on Product Hunt" variant="news" />
+            {/* <Button text="Read our launch on Product Hunt" variant="news" /> */}
+            <Button text="Keywords AI Beta Release" variant="beta" arrow={false} />
             <p className="sm:hidden display-xl self-stretch gradient-text text-center">
               Build scalable AI applications <br /> with dynamic LLM routing
             </p>
@@ -43,8 +46,11 @@ export function Landing() {
             </p>
           </div>
           <div className="flex items-center justify-center gap-xs self-stretch">
-            <Button text="Get started" variant="secondary" />
-            <Button text="Documentation" variant="header" />
+            {/* <Button text="Get started" variant="secondary" /> */}
+            <Button text="Join waitlist" variant="secondary" 
+            onClick={()=> navigate('/beta-access')}
+            />
+            {/* <Button text="Documentation" variant="header" /> */}
           </div>
         </div>
         <div className="flex max-w-[1200px] items-center justify-center gap-xxs w-full">
@@ -74,15 +80,15 @@ export function Landing() {
           }
         />
         <ModelLogos />
-        <div className="w-full max-w-[600px] display-sm text-center gradient-text">
+        <p className="w-full max-w-[600px] display-sm text-center">
           Efficiently route to the best model for optimized performance.
-        </div>
+        </p>
         <Divider />
         <div className="flex items-center justify-center gap-xxs">
           <p className="text-md-regular text-gray-4 ">
             Latest added model:{" "}
             <span className="text-gray-white">
-              {"Nous: Capybara 34B (beta)"}
+              {"Claude 2.1"}
             </span>
           </p>
           <ArrowRight fill="fill-gray-white" />
@@ -110,12 +116,12 @@ export function Landing() {
             right into your codebase.
           </p>
           <Divider />
-          <div className="flex items-center justify-center gap-xxs">
+          {/* <div className="flex items-center justify-center gap-xxs">
             <p className="text-md-regular text-gray-white ">
               {"Read documentation"}
             </p>
             <ArrowRight fill="fill-gray-white" />
-          </div>
+          </div> */}
         </div>
       </div>
     );
@@ -178,17 +184,17 @@ export function Landing() {
               <SmallCard {...card} key={index} />
             ))}
           </div>
-          <p className="display-sm gradient-text text-center max-w-[600px] w-full">
+          <p className="display-sm text-center max-w-[600px] w-full">
             Optimize costs, enhance performance, and elevate uptime for your AI
             application.
           </p>
           <Divider />
-          <div className="flex items-center justify-center gap-xxs">
+          {/* <div className="flex items-center justify-center gap-xxs">
             <p className="text-md-regular text-gray-white ">
               {"Try examples in playground"}
             </p>
             <ArrowRight fill="fill-gray-white" />
-          </div>
+          </div> */}
         </div>
       </div>
     );
