@@ -67,14 +67,12 @@ export function Landing() {
     return (
       <div
         aria-label="Model selection section"
-        className="flex px-xxxl py-xxl flex-col items-center gap-xl self-stretch "
+        className="flex px-xxxl sm:px-lg py-xxl flex-col items-center gap-xl self-stretch "
       >
         <SectionTitle
           title={"Leverage all best-in-class LLMs"}
           subtitle={
             <span>
-              Efficiently route to the best model for optimized performance.
-              <br />
               We are actively testing and adding new models every week.
             </span>
           }
@@ -100,7 +98,7 @@ export function Landing() {
     return (
       <div
         aria-label="integration section"
-        className="flex px-xxxl py-xxl flex-col items-center gap-xl self-stretch"
+        className="flex px-xxxl sm:px-lg py-xxl flex-col items-center gap-xl self-stretch"
       >
         <div className="max-w-[1200px] flex-col items-center gap-xl w-full">
           <div className="flex-col items-center gap-lg self-stretch">
@@ -169,7 +167,7 @@ export function Landing() {
     return (
       <div
         aria-label="Features section"
-        className="flex-col px-xxxl py-xxl items-center gap-xl self-stretch bg-gray-black"
+        className="flex-col px-xxxl sm:px-lg py-xxl items-center gap-xl self-stretch bg-gray-black"
       >
         <div className="max-w-[1200px] flex-col items-center gap-xl w-full">
           <SectionTitle
@@ -202,7 +200,7 @@ export function Landing() {
 
   const CallToActionSection = () => {
     return (
-      <div className="flex px-[180px] pt-xxxl flex-col items-center gap-xl self-stretch">
+      <div className="flex px-[180px] sm:px-lg pt-xxxl flex-col items-center gap-xl self-stretch">
         <div className="flex max-w-[1200px] flex-col items-center gap-sm ">
           <p className="display-lg text-center gradient-text ">
             Integrate in minutes. <br />

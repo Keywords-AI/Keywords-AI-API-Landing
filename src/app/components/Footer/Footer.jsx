@@ -6,14 +6,14 @@ export function Footer() {
   return (
     <div
       aria-label="Footer"
-      className="flex w-full px-xxxl py-sm pt-0 flex-col items-center gap-xxs bg-gray-black"
+      className="flex w-full px-xxxl py-sm pt-0 flex-col items-center gap-xxs bg-gray-black "
     >
       <div className="line"></div>
-      <div className="flex justify-between items-start w-full max-w-[1200px]">
-        <div className="caption text-gray-4">
+      <div className="flex justify-between items-start w-full max-w-[1200px] ">
+        <div className="caption text-gray-4 sm:hidden">
           {"Copyright © 2023 Keywords AI Inc. All rights reserved."}
         </div>
-        <div className="flex items-center gap-xxs text-gray4">
+        <div className="flex items-center gap-xxs text-gray4 sm:hidden">
           <span
             className="caption text-gray-4"
             style={{ cursor: "pointer" }}
