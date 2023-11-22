@@ -12,6 +12,7 @@ export default {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        'fira-code': ['Fira Code'],
       },
       spacing: {
         xxxs: "4px",
@@ -53,7 +54,7 @@ export default {
           black: "#000000",
           2: "#181820",
           3: "#3E424A",
-          4: "#9FA2AB",
+          4: "#B1B3BC",
         },
         box: "#1D1D1D",
         resend: {
@@ -62,12 +63,15 @@ export default {
       },
       boxShadow: {
         pricing: "2px 2px 10px 2px rgba(24, 24, 32, 0.40)",
+        purple: "0 0 40px rgba(143, 0, 210, 0.25)",
       },
       backgroundImage: {
         'highlight': 'linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.20) 0%, rgba(143, 143, 143, 0.67) 50%, rgba(0, 0, 0, 0.04) 100%)',
-        'gradient1': 'linear-gradient(180deg, rgba(192, 197, 228, 0.16) 0%, rgba(189, 200, 255, 0.09) 50%, rgba(54, 49, 60, 0.08) 100%), #000',
         
         
+      },
+      screens: {
+        'sm': { 'max': '480px'},
       },
     },
   },

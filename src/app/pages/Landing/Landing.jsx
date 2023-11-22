@@ -8,10 +8,16 @@ import {
   Search,
   Y,
   Text,
+  Electric,
+  Stars,
+  Chat,
+  Document,
 } from "src/app/components/icons";
 import { Page } from "src/app/components/Page";
 import { Divider } from "src/app/components/Divider";
 import { SectionTitle } from "src/app/components/SectionTitle";
+import { ModelLogos } from "./components";
+import { CodeBoxDisplay } from "./components/CodeBoxDisplay";
 export function Landing() {
   const IntroductionSection = () => {
     return (
@@ -21,8 +27,7 @@ export function Landing() {
       >
         <div className="flex max-w-[1200px] flex-col items-start gap-xl w-full">
           <div className="flex flex-col items-center gap-lg self-stretch">
-            <Button text="Read our launch on Product Hunt" variant="primary" />
-
+            <Button text="Read our launch on Product Hunt" variant="news" />
             <p className="display-xl self-stretch gradient-text text-center">
               Build scalable AI applications <br /> with dynamic LLM routing
             </p>
@@ -53,7 +58,7 @@ export function Landing() {
     return (
       <div
         aria-label="Model selection section"
-        className="flex px-xxxl py-xxl flex-col items-center gap-xxl self-stretch"
+        className="flex px-xxxl py-xxl flex-col items-center gap-xl self-stretch "
       >
         <SectionTitle
           title={"Leverage all best-in-class LLMs"}
@@ -65,11 +70,52 @@ export function Landing() {
             </span>
           }
         />
+        <ModelLogos />
+        <div className="w-full max-w-[600px] display-sm text-center gradient-text">
+          Efficiently route to the best model for optimized performance.
+        </div>
+        <Divider />
+        <div className="flex items-center justify-center gap-xxs">
+          <p className="text-md-regular text-gray-4 ">
+            Latest added model:{" "}
+            <span className="text-gray-white">
+              {"Nous: Capybara 34B (beta)"}
+            </span>
+          </p>
+          <ArrowRight fill="fill-gray-white" />
+        </div>
       </div>
     );
   };
   const IntegrateSection = () => {
-    return;
+    return (
+      <div
+        aria-label="integration section"
+        className="flex px-xxxl py-xxl flex-col items-center gap-xl self-stretch"
+      >
+        <div className="max-w-[1200px] flex-col items-center gap-xl w-full">
+          <div className="flex-col items-center gap-lg self-stretch">
+            <Electric />
+            <SectionTitle
+              title={"Integrate within minutes"}
+              subtitle={"Easy integration with OpenAI style API call."}
+            />
+          </div>
+          <CodeBoxDisplay />
+          <p className="display-sm max-w-[600px] text-gray-white text-center">
+            A simple interface so you can switch with just a few lines. It fits
+            right into your codebase.
+          </p>
+          <Divider />
+          <div className="flex items-center justify-center gap-xxs">
+            <p className="text-md-regular text-gray-white ">
+              {"Read documentation"}
+            </p>
+            <ArrowRight fill="fill-gray-white" />
+          </div>
+        </div>
+      </div>
+    );
   };
 
   const FeaturesSection = () => {
@@ -81,7 +127,7 @@ export function Landing() {
           "With vast general knowledge and finely-tuned algorithms, our API comprehends intricate instructions in natural language and tackles tough challenges efficiently.",
       },
       {
-        linkIcon: <Text />,
+        linkIcon: <Stars />,
         title: "Content Generation",
         content:
           "Unleash the creativity of our API for compelling copywriting, SEO-optimized articles, or even scriptwriting. Get quality that rivals GPT-4 at a fraction of the cost.",
@@ -93,22 +139,22 @@ export function Landing() {
           "Enhance your search features with contextual understanding and semantic matching, improving both accuracy and user satisfaction. Supports RAG.",
       },
       {
-        linkIcon: <Brain />,
-        title: "Advanced Reasoning",
+        linkIcon: <Chat />,
+        title: "Conversational AI",
         content:
-          "With vast general knowledge and finely-tuned algorithms, our API comprehends intricate instructions in natural language and tackles tough challenges efficiently.",
+          "Empower your chatbot applications with the human-like interaction capabilities. Offer dynamic conversation flow, deliver accurate responses, and enhance user engagement.",
+      },
+      {
+        linkIcon: <Document />,
+        title: "Document Summary",
+        content:
+          "Optimize your workflows with our API's ability to create comprehensive and meaningful summaries from complex and lengthy documents.",
       },
       {
         linkIcon: <Text />,
-        title: "Content Generation",
+        title: "Textual Analysis",
         content:
-          "Unleash the creativity of our API for compelling copywriting, SEO-optimized articles, or even scriptwriting. Get quality that rivals GPT-4 at a fraction of the cost.",
-      },
-      {
-        linkIcon: <Search />,
-        title: "Intelligent Search",
-        content:
-          "Enhance your search features with contextual understanding and semantic matching, improving both accuracy and user satisfaction. Supports RAG.",
+          "Dive deep into your data and extract valuable insights with our textual analysis capabilities. Facilitate better decision making with accurate data interpretation.",
       },
     ];
     return (
@@ -116,64 +162,30 @@ export function Landing() {
         aria-label="Features section"
         className="flex-col px-xxxl py-xxl items-center gap-xl self-stretch bg-gray-black"
       >
-        <div className="max-w-[1200px] flex-col items-center gap-xl rounded-xl border-t border-box border-solid w-full">
-          <Divider />
-          <div
-            aria-label="section title"
-            className="flex flex-col text-center items-center gap-sm self-stretch"
-          >
-            <p className="gradient-text display-lg">
-              Powerful AI Doesn't Have to Be Expensive.
-            </p>
-            <p className="text-lg text-gray-4 text-center">
-              Startup-friendly pricing, enterprise-level AI capabilities.
-            </p>
-          </div>
+        <div className="max-w-[1200px] flex-col items-center gap-xl w-full">
+          <SectionTitle
+            title={"Power up your LLM infrastructure"}
+            subtitle={"Our dynamic router supports all LLM use cases."}
+          />
           <div
             aria-label="card grid"
-            className="flex w-max-[1200px] items-start justify-center content-start gap-[24px] self-stretch flex-wrap"
+            className="flex w-max-[1000px] items-start justify-center content-start gap-xl w-full flex-wrap"
           >
             {cardData.map((card, index) => (
               <SmallCard {...card} key={index} />
             ))}
           </div>
-        </div>
-      </div>
-    );
-  };
-
-  const PerformanceSection = () => {
-    return (
-      <div
-        aria-label="Performance section "
-        className="flex flex-col items-center gap-xl px-xxxl py-xxl self-stretch bg-gray-black justify-center"
-      >
-        <div className="flex max-w-[1200px] flex-col items-start gap-lg w-full ">
-          <div
-            aria-label="section title"
-            className="flex flex-col items-start gap-sm self-stretch"
-          >
-            <p className="gradient-text display-lg">
-              Performance You Can Trust.
+          <p className="display-sm gradient-text text-center max-w-[600px] w-full">
+            Optimize costs, enhance performance, and elevate uptime for your AI
+            application.
+          </p>
+          <Divider />
+          <div className="flex items-center justify-center gap-xxs">
+            <p className="text-md-regular text-gray-white ">
+              {"Try examples in playground"}
             </p>
-            <p className="text-lg text-gray-4 ">
-              We ran MT-Bench to evaluate conversational flow,
-              instruction-following, and diverse knowledge from STEM to
-              humanities.Our score of 8.8 stands outrivaling GPT-4 and
-              outperforming models including GPT-3.5 and Claude 2.
-            </p>
+            <ArrowRight fill="fill-gray-white" />
           </div>
-          <div className="bg-gradient-out p-[1px] rounded-lg">
-            <button className="button-secondary-black bg-gradient-in">
-              <span className="text-sm-regular text-center flex-1">
-                Benchmark results
-              </span>
-              <ArrowRight fill="fill-gray-white" />
-            </button>
-          </div>
-        </div>
-        <div className="flex h-[480px] flex-col justify-center items-center rounded-xl border border-solid border-box max-w-[1200px] w-full">
-          <p className="display-sm text-gray-3">Graph Plaeholder</p>
         </div>
       </div>
     );
@@ -202,8 +214,9 @@ export function Landing() {
   return (
     <Page>
       <IntroductionSection />
+      <ModelSectionSection />
+      <IntegrateSection />
       <FeaturesSection />
-      <PerformanceSection />
       <CallToActionSection />
     </Page>
   );

@@ -61,6 +61,12 @@ export const Button = ({
       arrowFill = "fill-gray-white";
       className = cn(className, "border border-solid border-gray-3");
       break;
+    case "news":
+      className = cn(className, "border border-solid border-gray-3");
+      bgColor = "bg-gray-2";
+      borderRadius = "rounded-lg";
+      textColor = "text-gray-white";
+      arrowFill = "fill-gray-white";
   }
   return (
     <button

@@ -14,9 +14,9 @@ export function Navbar() {
   return (
     <div
       aria-label="Navigation Bar"
-      className="w-full flex-col px-[120px] py-xs justify-between items-center bg-gray-black border-b border-gray-2 fixed"
+      className="w-full flex-col sm:flex-row px-xxxl sm:px-lg py-xs sm:py-md justify-between items-center bg-gray-black border-b border-gray-2 fixed"
     >
-      <div className="flex max-w-[1200px] justify-between items-center flex-1 w-full">
+      <div className="sm:hidden flex max-w-[1200px] justify-between items-center flex-1 w-full">
         <div
           className="flex items-center gap-xxs self-stretch hover:cursor-pointer"
           onClick={() => navigate("/")}
