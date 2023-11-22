@@ -1,6 +1,6 @@
 import cn from "src/app/utils/ClassMerge";
 import { ArrowRight } from "../icons";
-import styles from "./Button.css";
+import styles from "./Button.css?inline";
 
 export const Button = ({
   variant,
