@@ -27,7 +27,6 @@ export function Unauthorized() {
             onClick={() => {
               navigate("/pricing");
             }}
-            arrow={false}
           />
         </div>
       </div>

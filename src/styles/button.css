@@ -1,23 +1,9 @@
-.button-header {
-    display: flex;
-    min-width: 60px;
-    justify-content: center;
-    align-items: center;
-    @apply gap-xxs px-sm py-xxs rounded-lg;
-}
-
 .button-primary {
     display: flex;
     min-width: 60px;
     justify-content: center;
     align-items: center;
     @apply gap-xxs px-sm py-xxs rounded-lg;
-}
-
-.btn-gradient1 {
-    background: var(--Linear-Electric-Lime-Rio-Grande-Rio-Grande, linear-gradient(180deg, rgba(192, 197, 228, 0.16) 0%, rgba(189, 200, 255, 0.09) 50%, rgba(54, 49, 60, 0.08) 100%));
-
-
 }
 
 .button-secondary-black {
@@ -27,23 +13,7 @@
     @apply gap-xxs px-sm py-xxs rounded-lg
 }
 
-.btn-gradient2 {
-    border: 1px solid var(--highlight, rgba(255, 255, 255, 0.00));
-    background: var(--Linear-Electric-Lime-Rio-Grande-Rio-Grande, linear-gradient(180deg, rgba(192, 197, 228, 0.16) 0%, rgba(189, 200, 255, 0.09) 50%, rgba(54, 49, 60, 0.08) 100%));
-
-}
-
 .btn-rainbow-border {
     background: var(--resend-com-linear-cyan-aqua-green-haze-electric-violet, linear-gradient(90deg, rgba(2, 252, 239, 0.44) 0%, rgba(255, 181, 43, 0.44) 50%, rgba(160, 43, 254, 0.44) 100%));
     @apply p-[1px] rounded-lg max-h-[36px];
-}
-
-
-
-.button-cr {
-    @apply flex min-w-[60px] px-sm py-xxs justify-center items-center gap-xxs rounded-sm;
-}
-
-.button-secondary-gray {
-    @apply flex min-w-[60px] px-sm py-xxs justify-center items-center gap-xxs rounded-sm border border-solid border-gray-3 bg-gray-2;
 }

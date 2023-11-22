@@ -24,7 +24,7 @@ export default function PricingCard({
   },
   upgradeButton = {
     text: "Get Started",
-    className: "button-primary button-fill",
+    className: " button-fill",
   },
   downgradeButton = {
     text: "Talk to us",
@@ -42,7 +42,7 @@ export default function PricingCard({
   const navigate = useNavigate();
 
   return (
-    <div className="gradient-in flex-1 h-[720px] min-w-[280px] p-[24px] flex-col items-center gap-xl  rounded-xl border border-solid border-gray-3">
+    <div className="bg-gradient-in flex-1 h-[720px] min-w-[280px] p-[24px] flex-col items-center gap-xl  rounded-xl border border-solid border-gray-3">
       <div className=" flex-col self-stretch gap-xs justify-between h-[288px]">
         {/* title and descrtion */}
         <div className="flex-col justify-start items-start gap-xs self-stretch flex-1  ">

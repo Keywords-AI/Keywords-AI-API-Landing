@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-export const Brain = ({ fill = 'fill-gray-white' }) => {
+export const Brain = ({ fill = "fill-gray-white" }) => {
   return (
     <svg
-      aria-label='Brain'
+      aria-label="Brain"
       xmlns="http://www.w3.org/2000/svg"
       width="22"
       height="24"
@@ -17,10 +17,10 @@ export const Brain = ({ fill = 'fill-gray-white' }) => {
     </svg>
   );
 };
-export const Text = ({ fill = 'fill-gray-white' }) => {
+export const Text = ({ fill = "fill-gray-white" }) => {
   return (
     <svg
-      aria-label='Text'
+      aria-label="Text"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -34,10 +34,10 @@ export const Text = ({ fill = 'fill-gray-white' }) => {
     </svg>
   );
 };
-export const Search = ({ fill = 'fill-gray-white' }) => {
+export const Search = ({ fill = "fill-gray-white" }) => {
   return (
     <svg
-      aria-label='Search'
+      aria-label="Search"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -51,10 +51,10 @@ export const Search = ({ fill = 'fill-gray-white' }) => {
     </svg>
   );
 };
-export const Logo = ({ fill = 'fill-gray-white' }) => {
+export const Logo = ({ fill = "fill-gray-white" }) => {
   return (
     <svg
-      aria-label='Logo'
+      aria-label="Logo"
       xmlns="http://www.w3.org/2000/svg"
       width="19"
       height="20"
@@ -71,10 +71,10 @@ export const Logo = ({ fill = 'fill-gray-white' }) => {
   );
 };
 
-export const ArrowRight = ({ fill = 'fill-gray-black' }) => {
+export const ArrowRight = ({ fill = "fill-gray-black" }) => {
   return (
     <svg
-      aria-label='ArrowRight'
+      aria-label="ArrowRight"
       xmlns="http://www.w3.org/2000/svg"
       width="4"
       height="8"
@@ -91,7 +91,7 @@ export const ArrowRight = ({ fill = 'fill-gray-black' }) => {
 export const Y = () => {
   return (
     <svg
-      aria-label='Y'
+      aria-label="Y"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -135,7 +135,7 @@ export const Y = () => {
 export const Subtract = () => {
   return (
     <svg
-      aria-label='Subtract'
+      aria-label="Subtract"
       xmlns="http://www.w3.org/2000/svg"
       width="334"
       height="203"
@@ -190,7 +190,7 @@ export const Subtract = () => {
     </svg>
   );
 };
-export const SmallDot = ({ fill = 'fill-gray-4' }) => {
+export const SmallDot = ({ fill = "fill-gray-4" }) => {
   return (
     <svg
       aria-label="SmallDot"
@@ -208,7 +208,7 @@ export const SmallDot = ({ fill = 'fill-gray-4' }) => {
   );
 };
 
-export const FeatureTick = ({ fill = 'fill-gray-white' }) => {
+export const FeatureTick = ({ fill = "fill-gray-white" }) => {
   return (
     <svg
       aria-label="FeatureTick"
@@ -226,7 +226,7 @@ export const FeatureTick = ({ fill = 'fill-gray-white' }) => {
   );
 };
 
-export const Check = ({ fill = 'fill-gray-white' }) => {
+export const Check = ({ fill = "fill-gray-white" }) => {
   return (
     <svg
       aria-label="Check"
@@ -244,7 +244,7 @@ export const Check = ({ fill = 'fill-gray-white' }) => {
   );
 };
 
-export const ArrowLeft = ({ fill = 'fill-gray-white' }) => {
+export const ArrowLeft = ({ fill = "fill-gray-white" }) => {
   return (
     <svg
       aria-label="ArrowLeft"
@@ -289,6 +289,208 @@ export const CircleTick = () => {
           <stop offset="1" stopColor="#D1CAE4" />
         </linearGradient>
       </defs>
+    </svg>
+  );
+};
+
+export const Star = ({ fill = "fill-gray-white" }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="15"
+      viewBox="0 0 16 15"
+      fill="none"
+    >
+      <path
+        d="M8.33398 0L10.1301 5.52786H15.9424L11.2402 8.94427L13.0363 14.4721L8.33398 11.0557L3.6317 14.4721L5.42781 8.94427L0.725532 5.52786H6.53787L8.33398 0Z"
+        className={fill}
+      />
+    </svg>
+  );
+};
+
+export const Electric = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="268"
+      height="286"
+      viewBox="0 0 268 286"
+      fill="none"
+    >
+      <g filter="url(#filter0_d_4873_4233)">
+        <mask
+          id="mask0_4873_4233"
+          style={{ maskType: "alpha" }}
+          maskUnits="userSpaceOnUse"
+          x="39"
+          y="40"
+          width="190"
+          height="206"
+        >
+          <rect x="39.75" y="40" width="188.5" height="206" fill="#D9D9D9" />
+        </mask>
+        <g mask="url(#mask0_4873_4233)">
+          <path
+            d="M118.832 198.488V197.988H118.332H40.9445L149.168 41.6012V130.564V131.064H149.668H227.056L118.832 287.451V198.488Z"
+            fill="black"
+          />
+          <path
+            d="M118.832 198.488V197.988H118.332H40.9445L149.168 41.6012V130.564V131.064H149.668H227.056L118.832 287.451V198.488Z"
+            fill="url(#paint0_linear_4873_4233)"
+          />
+          <path
+            d="M118.832 198.488V197.988H118.332H40.9445L149.168 41.6012V130.564V131.064H149.668H227.056L118.832 287.451V198.488Z"
+            stroke="url(#paint1_linear_4873_4233)"
+          />
+        </g>
+      </g>
+      <defs>
+        <filter
+          id="filter0_d_4873_4233"
+          x="-0.00952148"
+          y="0"
+          width="268.019"
+          height="286"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation="20" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0.560784 0 0 0 0 0 0 0 0 0 0.823529 0 0 0 0.25 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_4873_4233"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_4873_4233"
+            result="shape"
+          />
+        </filter>
+        <linearGradient
+          id="paint0_linear_4873_4233"
+          x1="134"
+          y1="40"
+          x2="134"
+          y2="289.052"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#C0C5E4" stopOpacity="0.157" />
+          <stop offset="0.5" stopColor="#BDC8FF" stopOpacity="0.09" />
+          <stop offset="1" stopColor="#36313C" stopOpacity="0.08" />
+        </linearGradient>
+        <linearGradient
+          id="paint1_linear_4873_4233"
+          x1="39.9905"
+          y1="164.526"
+          x2="228.01"
+          y2="164.526"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="white" stopOpacity="0" />
+          <stop stopOpacity="0.2" />
+          <stop offset="0.5" stopColor="#8F8F8F" stopOpacity="0.67" />
+          <stop offset="1" stopOpacity="0.04" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+
+export const ArrowDown = ({ fill = "fill-gray-4" }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="7"
+      height="4"
+      viewBox="0 0 7 4"
+      fill="none"
+    >
+      <path
+        d="M0.760108 0L3.2345 2.47439L5.70889 0L6.469 0.765499L3.2345 4L0 0.765499L0.760108 0Z"
+        className={fill}
+      />
+    </svg>
+  );
+};
+
+export const Copy = ({ fill = "fill-gray-4" }) => {
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="16"
+    viewBox="0 0 14 16"
+    fill="none"
+  >
+    <path
+      d="M12.5455 14.5455H4.54546V4.36364H12.5455M12.5455 2.90909H4.54546C4.15969 2.90909 3.78972 3.06234 3.51694 3.33512C3.24416 3.6079 3.09091 3.97787 3.09091 4.36364V14.5455C3.09091 14.9312 3.24416 15.3012 3.51694 15.574C3.78972 15.8468 4.15969 16 4.54546 16H12.5455C12.9312 16 13.3012 15.8468 13.574 15.574C13.8468 15.3012 14 14.9312 14 14.5455V4.36364C14 3.97787 13.8468 3.6079 13.574 3.33512C13.3012 3.06234 12.9312 2.90909 12.5455 2.90909ZM10.3636 0H1.63637C1.2506 0 0.88063 0.153246 0.60785 0.426027C0.33507 0.698807 0.181824 1.06878 0.181824 1.45455V11.6364H1.63637V1.45455H10.3636V0Z"
+      className={fill}
+    />
+  </svg>;
+};
+
+export const Chat = ({ fill = "fill-gray-white" }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="25"
+      height="24"
+      viewBox="0 0 25 24"
+      fill="none"
+    >
+      <path
+        d="M16.2666 2.4V10.8H4.47063L3.06663 12.204V2.4H16.2666ZM17.4666 0H1.86663C1.54837 0 1.24314 0.126428 1.0181 0.351472C0.793054 0.576515 0.666626 0.88174 0.666626 1.2V18L5.46663 13.2H17.4666C17.7849 13.2 18.0901 13.0736 18.3152 12.8485C18.5402 12.6235 18.6666 12.3183 18.6666 12V1.2C18.6666 0.88174 18.5402 0.576515 18.3152 0.351472C18.0901 0.126428 17.7849 0 17.4666 0ZM23.4666 4.8H21.0666V15.6H5.46663V18C5.46663 18.3183 5.59305 18.6235 5.8181 18.8485C6.04314 19.0736 6.34837 19.2 6.66663 19.2H19.8666L24.6666 24V6C24.6666 5.68174 24.5402 5.37652 24.3152 5.15147C24.0901 4.92643 23.7849 4.8 23.4666 4.8Z"
+        className={fill}
+      />
+    </svg>
+  );
+};
+
+export const Document = ({ fill = "fill-gray-white" }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="24"
+      viewBox="0 0 20 24"
+      fill="none"
+    >
+      <path
+        d="M2.79996 0C2.16344 0 1.55299 0.252856 1.10291 0.702944C0.65282 1.15303 0.399963 1.76348 0.399963 2.4V21.6C0.399963 22.2365 0.65282 22.847 1.10291 23.2971C1.55299 23.7471 2.16344 24 2.79996 24H17.2C17.8365 24 18.4469 23.7471 18.897 23.2971C19.3471 22.847 19.6 22.2365 19.6 21.6V7.2L12.4 0H2.79996ZM2.79996 2.4H11.2V8.4H17.2V21.6H2.79996V2.4ZM5.19996 12V14.4H14.8V12H5.19996ZM5.19996 16.8V19.2H11.2V16.8H5.19996Z"
+        className={fill}
+      />
+    </svg>
+  );
+};
+
+export const Stars = ({ fill = "fill-gray-white" }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+    >
+      <path
+        d="M19.6364 0L18.2618 3L15.2727 4.36364L18.2618 5.73818L19.6364 8.72727L21 5.73818L24 4.36364L21 3M8.72727 3.27273L6 9.27273L0 12L6 14.7273L8.72727 20.7273L11.4545 14.7273L17.4545 12L11.4545 9.27273M19.6364 15.2727L18.2618 18.2618L15.2727 19.6364L18.2618 21L19.6364 24L21 21L24 19.6364L21 18.2618"
+        className={fill}
+      />
     </svg>
   );
 };
