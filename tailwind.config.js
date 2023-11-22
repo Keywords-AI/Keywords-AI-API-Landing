@@ -71,7 +71,7 @@ export default {
         
       },
       screens: {
-        'sm': { 'max': '480px'},
+        'sm': { 'max': '680px'},
       },
     },
   },

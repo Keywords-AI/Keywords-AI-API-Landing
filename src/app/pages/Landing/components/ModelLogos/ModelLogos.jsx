@@ -87,7 +87,7 @@ const ModelItem = ({ children }) => {
 
 export const ModelLogos = () => {
   return (
-    <div className=" flex justify-center items-center gap-xl ">
+    <div className=" flex justify-center items-center gap-xl flex-wrap">
       <ModelItem>
         <Openai />
       </ModelItem>

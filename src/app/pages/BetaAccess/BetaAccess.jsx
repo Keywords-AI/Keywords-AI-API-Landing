@@ -128,7 +128,7 @@ export function BetaAccess() {
               className="w-full"
               arrow={false}
             />
-            <p className="caption text-gray-4 self-stretch text-center">
+            {/* <p className="caption text-gray-4 self-stretch text-center">
               By signing up, you agree to our{" "}
               <span
                 className=" text-primary hover:cursor-pointer"
@@ -144,7 +144,7 @@ export function BetaAccess() {
                 Privacy Policy
               </span>
               .
-            </p>
+            </p> */}
           </div>
         </form>
       </div>
