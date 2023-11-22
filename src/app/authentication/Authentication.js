@@ -1,5 +1,6 @@
 import axios from "axios";
 const apiurl = import.meta.env.VITE_BACKEND_URL;
+const genericDomain = import.meta.env.KEYWORDS_DOMAIN; // for all subdomains, .keywordsai.co
 const expirationDays = 7;
 export const isUserLoggedIn = async () => {
   try {
@@ -123,10 +124,10 @@ function setCookie(name, value, expirationDays) {
   date.setTime(date.getTime() + (expirationDays * 24 * 60 * 60 * 1000)); // Calculate expiration date
   const expires = "expires=" + date.toUTCString();
   document.cookie = name + "=" + value + ";" + expires + ";path=/;domain=" + 
-  window.location.hostname + ";secure; samesite=strict"
+  genericDomain + ";secure; samesite=strict"
 }
 
 function eraseCookie(name, path) {
-  const domain = window.location.hostname;
+  const domain = genericDomain;
   document.cookie = name + '=; Max-Age=-99999999; domain=' + domain + '; path=' + path;
 }
