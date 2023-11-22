@@ -23,12 +23,15 @@ export function Landing() {
     return (
       <div
         aria-label="introduction section"
-        className="flex p-xxxl flex-col items-center gap-xxxl self-stretch"
+        className="flex p-xxxl sm:px-lg flex-col items-center gap-xxxl self-stretch"
       >
         <div className="flex max-w-[1200px] flex-col items-start gap-xl w-full">
           <div className="flex flex-col items-center gap-lg self-stretch">
             <Button text="Read our launch on Product Hunt" variant="news" />
-            <p className="display-xl self-stretch gradient-text text-center">
+            <p className="sm: hidden display-xl self-stretch gradient-text text-center">
+              Build scalable AI applications <br /> with dynamic LLM routing
+            </p>
+            <p className=" hidden sm:block display-lg self-stretch gradient-text text-center">
               Build scalable AI applications <br /> with dynamic LLM routing
             </p>
             <p className="text-lg text-gray-4 self-stretch text-center">
