@@ -208,7 +208,7 @@ export function Landing() {
           </p>
         </div>
         <div className="flex items-start gap-xxs">
-          <Button text="Get started" variant="secondary" />
+          <Button text="Get started" variant="secondary" onClick={() => navigate("/beta-access")}/>
           <Button text="Contact us" variant="header" />
         </div>
         <div className="flex justify-center items-center">

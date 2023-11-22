@@ -81,7 +81,8 @@ export function Navbar() {
             <Button
               text="Sign up"
               variant="secondary"
-              onClick={() => navigate("/signup")}
+              // onClick={() => navigate("/signup")}
+              onClick={() => navigate("/beta-access")}
             />
           </div>
         )}
