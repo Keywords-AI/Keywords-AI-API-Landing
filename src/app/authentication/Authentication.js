@@ -124,10 +124,10 @@ function setCookie(name, value, expirationDays) {
   date.setTime(date.getTime() + (expirationDays * 24 * 60 * 60 * 1000)); // Calculate expiration date
   const expires = "expires=" + date.toUTCString();
   document.cookie = name + "=" + value + ";" + expires + ";path=/;domain=" + 
-  genericDomain + ";secure; samesite=strict"
+  window.location.hostname + ";secure; samesite=strict"
 }
 
 function eraseCookie(name, path) {
-  const domain = genericDomain;
+  const domain = window.location.hostname;
   document.cookie = name + '=; Max-Age=-99999999; domain=' + domain + '; path=' + path;
 }
