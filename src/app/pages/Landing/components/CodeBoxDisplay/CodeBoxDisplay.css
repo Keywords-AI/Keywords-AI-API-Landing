@@ -1,3 +1,25 @@
-.CodeBoxDisplay {
-  
+.CodeBoxDisplay {}
+
+.code ol {
+    counter-reset: item;
+}
+
+.code li::before {
+    display: inline-block;
+    content: counter(item);
+    counter-increment: item;
+    margin-right: 16px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    @apply font-fira-code text-gray-4 text-right;
+}
+
+.code li {
+    @apply font-fira-code text-gray-white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
 }
