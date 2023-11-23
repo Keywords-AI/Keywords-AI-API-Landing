@@ -1,7 +1,5 @@
 import { CopyCode } from "../../../../components/CopyCode";
-import { Divider } from "../../../../components/Divider";
 import { ArrowDown } from "../../../../components/icons";
-import styles from "./CodeBoxDisplay.css";
 
 export function CodeBoxDisplay() {
   return (
