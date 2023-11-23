@@ -23,6 +23,7 @@ strong {
 html,
 body {
   overflow-x: hidden;
+  @apply bg-gray-black
 }
 
 *,
