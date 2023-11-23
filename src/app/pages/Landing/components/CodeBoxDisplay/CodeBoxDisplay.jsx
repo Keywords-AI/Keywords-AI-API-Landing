@@ -1,9 +1,8 @@
 import { CopyCode } from "../../../../components/CopyCode";
-import { Divider } from "../../../../components/Divider";
 import { ArrowDown } from "../../../../components/icons";
-import styles from "./CodeBoxDisplay.css";
-
+import "./CodeBoxDisplay.css";
 export function CodeBoxDisplay() {
+
   return (
     <div className="flex-col max-w-[800px] items-center w-full rounded-lg border border-gray-3 bg-gradient-in shadow-purple">
       <div
@@ -21,23 +20,19 @@ export function CodeBoxDisplay() {
         aria-label="content"
         className="border-t border-gray-3 flex-col p-md items-start gap-[10px] self-stretch"
       >
-        <div className="flex items-start gap-sm self-stretch">
-          <p className=" text-gray-4 text-sm-regular text-right font-fira-code whitespace-pre-wrap">
-            1{"\n"}2{"\n"}3{"\n"}4{"\n"}5{"\n"}6{"\n"}7{"\n"}8{"\n"}9{"\n"}10
-          </p>
-          <p className="text-gray-white text-sm-regular font-fira-code whitespace-pre-wrap">{`curl -X POST "https://keywordsapi.info/api/generate/" \
-
--H "Content-Type: application/json" \
-
--H "Authorization: Api-Key {YOUR_ACCESS_TOKEN}" \
-
--d '{
-"messages":[{
-"role":"user",
-"content":"Hello"
-}],
-"model":"keywordsai"
-}'`}</p>
+        <div className=" code flex items-start gap-sm self-stretch">
+          <ol className=" text-gray-white text-sm-regular font-fira-code list-inside overflow-x-auto">
+            <li>curl -X POST "https://keywordsapi.info/api/generate/" \</li>
+            <li>-H "Content-Type: application/json" \</li>
+            <li>-H "Authorization: Api-Key {"{YOUR_ACCESS_TOKEN}"}" \</li>
+            <li>{`-d '{`}</li>
+            <li>{`"messages":[{`}</li>
+            <li>"role":"user",</li>
+            <li>"content":"Hello"</li>
+            <li>{`}]`}</li>
+            <li>"model":"keywordsai"</li>
+            <li>{`}'`}</li>
+          </ol>
         </div>
       </div>
     </div>
