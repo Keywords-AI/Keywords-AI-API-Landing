@@ -6,6 +6,7 @@ import React from "react";
 import AuthContext from "src/app/authentication/AuthContext";
 import { logout } from "src/app/authentication/Authentication";
 import { Button } from "../Button";
+import { platformURL } from "src/app/utils/platformURL";
 
 export function Navbar() {
   const navigate = useNavigate();
@@ -58,7 +59,7 @@ export function Navbar() {
             )}
           />
         </div> */}
-        {user ? (
+        {/* {user ? (
           <div className="sm:hidden">
             <Button
               text="Log out"
@@ -85,7 +86,28 @@ export function Navbar() {
               onClick={() => navigate("/beta-access")}
             />
           </div>
-        )}
+        )} */}
+
+        <div className="sm:hidden flex items-center gap-xs">
+          <Button
+            text="Log in"
+            variant="header"
+            arrow={false}
+            onClick={() => {
+              if (user)
+                navigate("/login")
+              else
+                window.location.href = platformURL;
+          }}
+          />
+          <Button
+            text="Beta Access"
+            variant="secondary"
+            // onClick={() => navigate("/signup")}
+            onClick={() => navigate("/beta-access")}
+          />
+        </div>
+
       </div>
     </div>
   );
