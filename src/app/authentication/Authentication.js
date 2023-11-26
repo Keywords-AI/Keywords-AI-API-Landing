@@ -56,6 +56,39 @@ export const signup = async ({email, password, firstname, lastname, organization
   }
 };
 
+export const subscribe = async ({email, password, firstname, lastname, organization}) => {
+  try {
+    await getCSRF(); 
+    const response = await axios.post(`${apiurl}subscribe/`, {
+      email: email,
+      password: password,
+      first_name: firstname,
+      last_name: lastname,
+      organization,
+    }, {
+      headers: {
+        "X-CSRFToken": getCookie("csrftoken"), 
+      },
+      timeout: 5000, 
+    });
+
+    const responseData = response.data;
+  } catch (error) {
+    if (error.code === 'ECONNABORTED') {
+      throw new Error('Request timed out');
+    } else if (error.code === 'ERR_BAD_REQUEST' && error.response.status === 400) {
+      if (error.response.data.email) {
+        throw new Error(error.response.data.email[0]);
+      } else if (error.response.data.password) {
+        throw new Error(error.response.data.password[0]);
+      }
+    } else {
+      throw error;
+    }
+  }
+};
+
+
 export const login = async (email, password) => {
   try {
     await getCSRF(); // Assuming getCSRF() is a function you've defined elsewhere

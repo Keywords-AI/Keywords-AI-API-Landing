@@ -47,8 +47,8 @@ export function Landing() {
           </div>
           <div className="flex items-center justify-center gap-xs self-stretch">
             {/* <Button text="Get started" variant="secondary" /> */}
-            <Button text="Join waitlist" variant="secondary" 
-            onClick={()=> navigate('/beta-access')}
+            <Button text="Join waitlist" variant="secondary"
+              onClick={() => navigate('/beta-access')}
             />
             {/* <Button text="Documentation" variant="header" /> */}
           </div>
@@ -210,8 +210,12 @@ export function Landing() {
           </p>
         </div>
         <div className="flex items-start gap-xxs">
-          <Button text="Get started" variant="secondary" />
-          <Button text="Contact us" variant="header" />
+          <Button text="Get started" variant="secondary" 
+          onClick={()=>navigate('/beta-access')}
+          />
+          <Button text="Contact us" variant="header"
+            onClick={() => window.open('mailto:team@keywordsai.co')}
+          />
         </div>
         <div className="flex justify-center items-center">
           <Subtract />
