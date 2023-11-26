@@ -1,1 +1,1 @@
-export const platformURL = "https://platform.keywordsai.com";
+export const platformURL = "https://platform.keywordsai.co";
