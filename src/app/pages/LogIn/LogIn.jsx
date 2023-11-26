@@ -1,19 +1,27 @@
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import React, { useState } from "react";
 import { BackButton } from "src/app/components/BackButton";
 import { useForm } from "react-hook-form";
 import { AuthenticationTitle } from "src/app/components/AuthenticationTitle/AuthenticationTitle";
 import cn from "src/app/utils/ClassMerge";
 import { login } from "src/app/authentication/Authentication";
 import { Button } from "src/app/components/Button";
+import { useContext } from "react";
+import AuthContext from "src/app/authentication/AuthContext";
 
 export function LogIn() {
   const navigate = useNavigate();
+  const { user } = useContext(AuthContext);
+  const platformURL = "https://platform.keywordsai.co"
+  React.useEffect(() => {
+    if (user) {
+      window.location.href = platformURL;
+    }
+  }, [])
   const onSubmit = async (data) => {
     try {
       const res = await login(data.email, data.password);
-      console.log(res);
-      navigate("/");
+      window.location.href = platformURL;
     } catch (error) {
       setBackendError(error.message);
     }
