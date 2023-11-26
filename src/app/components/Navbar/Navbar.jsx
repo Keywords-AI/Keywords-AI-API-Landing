@@ -14,7 +14,7 @@ export function Navbar() {
   return (
     <div
       aria-label="Navigation Bar"
-      className="w-full flex-col sm:flex-row px-xxxl sm:px-lg py-xs sm:py-sm justify-between items-center bg-transparent border-b border-gray-2 fixed"
+      className=" w-full flex-col sm:flex-row px-xxxl sm:px-lg py-xs sm:py-sm justify-between items-center bg-gray-black bg-opacity-0 backdrop-blur-[3px] border-b border-gray-2 fixed"
     >
       <div className="flex max-w-[1200px] justify-between items-center flex-1 w-full">
         <div

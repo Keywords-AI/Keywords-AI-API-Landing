@@ -9,7 +9,8 @@ export function Footer() {
       className="flex w-full px-xxxl py-sm pt-0 flex-col items-center gap-xxs bg-gray-black "
     >
       <div className="line"></div>
-      <div className="flex justify-between items-start w-full max-w-[1200px] ">
+      <div className="hidden sm:flex self-stretch caption text-gray-4">Copyright © 2023 Keywords AI Inc. All rights reserved.</div>
+      <div className="flex justify-between items-start w-full max-w-[1200px] sm:hidden">
         <div className="caption text-gray-4 sm:hidden">
           {"Copyright © 2023 Keywords AI Inc. All rights reserved."}
         </div>

@@ -1,8 +1,13 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { Button } from "../Button";
-import { Close } from "../icons";
+import { Close, FileLink } from "../icons";
+import { useForm } from "react-hook-form";
 
 export function ContactDialog() {
+  const { register, handleSubmit } = useForm();
+  const onSubmit = (data) => {
+    console.log(data);
+  };
   return (
     <Dialog.Root>
       <Dialog.Trigger asChild>
@@ -25,10 +30,25 @@ export function ContactDialog() {
             We appreciate your feedback. It helps us improve our website for a
             better user experience.
           </Dialog.Description>
-          <form className="flex-col justify-center items-center gap-md">
+          <form
+            className="flex-col justify-center items-start gap-md"
+            onSubmit={handleSubmit(onSubmit)}
+          >
             <textarea className="flex w-[536px] h-[160px] px-xs py-xxs items-center rounded-sm border border-solid border-gray-3 resize-none bg-gray-2 text-sm-regular text-gray-white" />
-            <div className="flex justify-between items-start self-stretch">
-              <p className="caption text-gray-4">
+            <label className="flex items-center gap-xxs hover:cursor-pointer">
+              <FileLink />
+              <p className="text-sm-regular text-gray-4">
+                Attach images or files
+              </p>
+              <input
+                type="file"
+                name="file"
+                {...register("upload", {})}
+                hidden
+              />
+            </label>
+            <div className="flex-row justify-between items-start self-stretch  flex-nowrap">
+              <p className="caption text-gray-4 ">
                 You can also email us at{" "}
                 <span
                   className="text-primary hover:cursor-pointer"
@@ -37,6 +57,7 @@ export function ContactDialog() {
                   team@keywordsai.co.
                 </span>
               </p>
+              <Button text="Submit" variant="secondary" />
             </div>
           </form>
         </Dialog.Content>
