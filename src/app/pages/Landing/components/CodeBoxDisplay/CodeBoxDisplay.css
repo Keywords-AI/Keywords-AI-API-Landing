@@ -9,17 +9,14 @@
     content: counter(item);
     counter-increment: item;
     margin-right: 16px;
-    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px;
-    @apply font-fira-code text-gray-4 text-right;
+
+    @apply font-fira-code text-gray-4 text-right text-[14px] leading-[20px] sm:text-[12px] sm:leading-[16px];
 }
 
 .code li {
-    @apply font-fira-code text-gray-white;
-    font-size: 14px;
+    @apply font-fira-code text-gray-white text-[14px] leading-[20px] sm:text-[12px] sm:leading-[16px];
     font-style: normal;
     font-weight: 400;
-    line-height: 20px;
 }
