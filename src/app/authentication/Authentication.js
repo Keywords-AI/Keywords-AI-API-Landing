@@ -1,8 +1,8 @@
 import axios from "axios";
 const apiurl = import.meta.env.VITE_BACKEND_URL;
 const genericDomain = import.meta.env.VITE_KEYWORDS_DOMAIN; // for all subdomains, .keywordsai.co
-// const extractMainDomain = "." + (window.location.hostname.includes("keywordsai.co")? genericDomain:window.location.hostname);
-const extractMainDomain =genericDomain;
+const extractMainDomain = "." + (window.location.hostname.includes("keywordsai.co")? genericDomain:window.location.hostname);
+// const extractMainDomain = genericDomain;
 const expirationDays = 7;
 const bypassAuth = false;
 export const isUserLoggedIn = async () => {
@@ -124,10 +124,10 @@ const getCSRF = async () => {
 };
 
 function setCookie(name, value, expirationDays, domain = extractMainDomain) {
-  console.log("domain", domain)
   const date = new Date();
   date.setTime(date.getTime() + (expirationDays * 24 * 60 * 60 * 1000)); // Calculate expiration date
   const expires = "expires=" + date.toUTCString();
+  console.log("cookie", name + "=" + encodeURIComponent(value) + ";" + expires + ";path=/;domain=" + domain + ";secure; SameSite=Lax")
   document.cookie = name + "=" + encodeURIComponent(value) + ";" + expires + ";path=/;domain=" + domain + ";secure; SameSite=Lax";
 }
 
