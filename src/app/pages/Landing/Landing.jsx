@@ -19,6 +19,7 @@ import { SectionTitle } from "src/app/components/SectionTitle";
 import { ModelLogos } from "./components";
 import { CodeBoxDisplay } from "./components/CodeBoxDisplay";
 import { useNavigate } from "react-router-dom";
+import { ContactDialog } from "src/app/components/ContactDialog";
 export function Landing() {
   const navigate = useNavigate();
   const IntroductionSection = () => {
@@ -30,7 +31,13 @@ export function Landing() {
         <div className="flex max-w-[1200px] flex-col items-start gap-xl w-full">
           <div className="flex flex-col items-center gap-lg self-stretch">
             {/* <Button text="Read our launch on Product Hunt" variant="news" /> */}
-            <Button text="Keywords AI Beta Release" variant="beta" arrow={false} />
+            <div className="bg-gradient-out p-[1px] rounded-lg">
+              <Button
+                text="Keywords AI Beta Release"
+                variant="beta"
+                arrow={false}
+              />
+            </div>
             <p className="sm:hidden display-xl self-stretch gradient-text text-center">
               Build scalable AI applications <br /> with dynamic LLM routing
             </p>
@@ -47,8 +54,10 @@ export function Landing() {
           </div>
           <div className="flex items-center justify-center gap-xs self-stretch">
             {/* <Button text="Get started" variant="secondary" /> */}
-            <Button text="Join waitlist" variant="secondary" 
-            onClick={()=> navigate('/beta-access')}
+            <Button
+              text="Join waitlist"
+              variant="secondary"
+              onClick={() => navigate("/beta-access")}
             />
             {/* <Button text="Documentation" variant="header" /> */}
           </div>
@@ -85,11 +94,8 @@ export function Landing() {
         <div className="flex items-center justify-center gap-xxs">
           <p className="text-md-regular text-gray-4 ">
             Latest added model:{" "}
-            <span className="text-gray-white">
-              {"Claude 2.1"}
-            </span>
+            <span className="text-gray-white">{"Claude 2.1"}</span>
           </p>
-          <ArrowRight fill="fill-gray-white" />
         </div>
       </div>
     );
@@ -204,12 +210,16 @@ export function Landing() {
         <div className="flex max-w-[1200px] flex-col items-center gap-sm ">
           <p className="display-lg text-center gradient-text ">
             Integrate in minutes. <br />
-            Available today.
+            Beta Available today.
           </p>
         </div>
         <div className="flex items-start gap-xxs">
-          <Button text="Get started" variant="secondary" onClick={() => navigate("/beta-access")}/>
-          <Button text="Contact us" variant="header" />
+          <Button
+            text="Get started"
+            variant="secondary"
+            onClick={() => navigate("/beta-access")}
+          />
+          <ContactDialog />
         </div>
         <div className="flex justify-center items-center">
           <Subtract />
