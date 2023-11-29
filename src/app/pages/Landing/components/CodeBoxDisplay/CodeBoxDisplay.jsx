@@ -9,7 +9,7 @@ export function CodeBoxDisplay() {
         className="flex py-sm px-md justify-between items-center self-stretch"
       >
         <div className="flex justify-center items-center gap-xxs">
-          <p className="text-sm text-center text-gray-4">bash</p>
+          <p className="text-sm-regular text-center text-gray-4">bash</p>
           <ArrowDown />
         </div>
         <CopyCode />

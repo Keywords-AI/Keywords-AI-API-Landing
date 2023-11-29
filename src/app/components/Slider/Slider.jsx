@@ -30,8 +30,8 @@ export const SliderDisplay = ({ defaultValue, max, step, name }) => {
   return (
     <div className="flex-col items-start gap-md">
       <div className="flex justify-between items-center self-stretch">
-        <span className="text-sm text-gray-4">{name}</span>
-        <span className="text-sm text-gray-white">{value}</span>
+        <span className="text-sm-regular text-gray-4">{name}</span>
+        <span className="text-sm-regular text-gray-white">{value}</span>
       </div>
       <Slider
         defaultValue={[defaultValue]}

@@ -93,7 +93,7 @@ export function Landing() {
         <Divider />
         <div className="flex items-center justify-center gap-xxs">
           <p className="text-md-regular text-gray-4 ">
-            Latest added model:{" "}
+            Latest model:{" "}
             <span className="text-gray-white">{"Claude 2.1"}</span>
           </p>
         </div>
@@ -143,13 +143,13 @@ export function Landing() {
         linkIcon: <Stars />,
         title: "Content Generation",
         content:
-          "Unleash the creativity of our API for compelling copywriting, SEO-optimized articles, or even scriptwriting. Get quality that rivals GPT-4 at a fraction of the cost.",
+          "Unleash the creativity of our API for compelling copywriting, SEO-optimized articles, or even scriptwriting.",
       },
       {
         linkIcon: <Search />,
         title: "Intelligent Search",
         content:
-          "Enhance your search features with contextual understanding and semantic matching, improving both accuracy and user satisfaction. Supports RAG.",
+          "Enhance your search features with contextual understanding and semantic matching, improving both accuracy and user satisfaction.",
       },
       {
         linkIcon: <Chat />,

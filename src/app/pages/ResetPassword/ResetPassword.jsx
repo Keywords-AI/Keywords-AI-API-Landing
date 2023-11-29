@@ -34,7 +34,7 @@ export function ResetPassword() {
             >
               <label
                 className={cn(
-                  "self-stretch text-sm text-gray-4",
+                  "self-stretch text-sm-regular text-gray-4",
                   emailError ? "text-error" : ""
                 )}
               >
@@ -55,7 +55,7 @@ export function ResetPassword() {
             >
               <label
                 className={cn(
-                  "self-stretch text-sm text-gray-4",
+                  "self-stretch text-sm-regular text-gray-4",
                   passwordError ? "text-error" : ""
                 )}
               >
