@@ -1,6 +1,6 @@
 import axios from "axios";
 const apiurl = import.meta.env.VITE_BACKEND_URL;
-const genericDomain = import.meta.env.KEYWORDS_DOMAIN; // for all subdomains, .keywordsai.co
+const genericDomain = import.meta.env.VITE_KEYWORDS_DOMAIN; // for all subdomains, .keywordsai.co
 const extractMainDomain = "." + (window.location.hostname.includes("keywordsai.co")? genericDomain:window.location.hostname);
 const expirationDays = 7;
 const bypassAuth = false;
