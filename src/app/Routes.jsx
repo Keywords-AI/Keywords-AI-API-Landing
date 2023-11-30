@@ -39,7 +39,7 @@ export const Routes = () => {
       try {
         const fetchedUser = await isUserLoggedIn();
         setUser(fetchedUser);
-        window.open(platformurl, "_self");
+        window.location.href = platformurl;
       } catch (error) {
         setUser(null);
       }
