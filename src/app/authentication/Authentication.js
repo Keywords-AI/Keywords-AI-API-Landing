@@ -28,6 +28,7 @@ export const isUserLoggedIn = async () => {
 export const signup = async ({email, password, firstname, lastname, organization, endpoint="auth/users/"}) => {
   try {
     await getCSRF(); 
+    console.log("endpoint", `${apiurl}${endpoint}`)
     const response = await axios.post(`${apiurl}${endpoint}`, {
     // const response = await axios.post(`localhost:8000/${endpoint}`, {
       email: email,
