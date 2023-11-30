@@ -25,10 +25,11 @@ export const isUserLoggedIn = async () => {
   }
 };
 
-export const signup = async ({email, password, firstname, lastname, organization}) => {
+export const signup = async ({email, password, firstname, lastname, organization, endpoint="auth/users/"}) => {
   try {
     await getCSRF(); 
-    const response = await axios.post(`${apiurl}auth/users/`, {
+    const response = await axios.post(`${apiurl}${endpoint}`, {
+    // const response = await axios.post(`localhost:8000/${endpoint}`, {
       email: email,
       password: password,
       first_name: firstname,
@@ -56,6 +57,8 @@ export const signup = async ({email, password, firstname, lastname, organization
     }
   }
 };
+
+
 
 export const login = async (email, password) => {
   try {
