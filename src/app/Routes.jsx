@@ -32,14 +32,14 @@ export const Routes = () => {
   // }
   const { user, setUser } = React.useContext(AuthContext);
   const location = useLocation();
-  const platformurl = "https://platform.keywordsai.com";
+  const platformurl = "https://platform.keywordsai.co/overview";
   React.useEffect(() => {
     // check user login status for each navigation
     const checkIsLogin = async () => {
       try {
         const fetchedUser = await isUserLoggedIn();
         setUser(fetchedUser);
-        window.open(platformurl, "_self");
+        window.location.href = platformurl;
       } catch (error) {
         setUser(null);
       }
