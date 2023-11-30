@@ -47,7 +47,7 @@ export function SignUp() {
               >
                 <label
                   className={cn(
-                    "self-stretch text-sm text-gray-4",
+                    "self-stretch text-sm-regular text-gray-4",
                     firstnameError ? "text-error" : ""
                   )}
                 >
@@ -67,7 +67,7 @@ export function SignUp() {
               >
                 <label
                   className={cn(
-                    "self-stretch text-sm text-gray-4",
+                    "self-stretch text-sm-regular text-gray-4",
                     lastnameError ? "text-error" : ""
                   )}
                 >
@@ -88,7 +88,7 @@ export function SignUp() {
             >
               <label
                 className={cn(
-                  "self-stretch text-sm text-gray-4",
+                  "self-stretch text-sm-regular text-gray-4",
                   emailError ? "text-error" : ""
                 )}
               >
@@ -109,7 +109,7 @@ export function SignUp() {
             >
               <label
                 className={cn(
-                  "self-stretch text-sm text-gray-4",
+                  "self-stretch text-sm-regular text-gray-4",
                   passwordError ? "text-error" : ""
                 )}
               >
@@ -128,7 +128,7 @@ export function SignUp() {
               aria-label="Organization name field"
               className="flex-col justify-center items-start gap-xxs self-stretch"
             >
-              <label className={cn("self-stretch text-sm text-gray-4")}>
+              <label className={cn("self-stretch text-sm-regular text-gray-4")}>
                 Organization Name
               </label>
               <input

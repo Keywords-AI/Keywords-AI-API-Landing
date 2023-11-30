@@ -37,7 +37,8 @@ export function LogIn() {
               Don’t have an account?{" "}
               <span
                 className=" text-primary hover:cursor-pointer"
-                onClick={() => navigate("/signup")}
+                // onClick={() => navigate("/signup")}
+                onClick={() => navigate("/beta-access")}
               >
                 Sign up.
               </span>
@@ -55,7 +56,7 @@ export function LogIn() {
             >
               <label
                 className={cn(
-                  "self-stretch text-sm text-gray-4",
+                  "self-stretch text-sm-regular text-gray-4",
                   emailError ? "text-error" : ""
                 )}
               >
@@ -76,7 +77,7 @@ export function LogIn() {
             >
               <label
                 className={cn(
-                  "self-stretch text-sm text-gray-4",
+                  "self-stretch text-sm-regular text-gray-4",
                   passwordError ? "text-error" : ""
                 )}
               >

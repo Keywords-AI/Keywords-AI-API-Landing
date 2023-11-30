@@ -34,7 +34,7 @@ export function ForgotPassword() {
             >
               <label
                 className={cn(
-                  "self-stretch text-sm text-gray-4",
+                  "self-stretch text-sm-regular text-gray-4",
                   emailError ? "text-error" : ""
                 )}
               >

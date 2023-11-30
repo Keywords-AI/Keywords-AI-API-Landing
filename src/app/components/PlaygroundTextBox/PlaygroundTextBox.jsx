@@ -23,11 +23,11 @@ export function PlaygroundTextBox({ company, modelName, isBest, outputText }) {
           }
         >
           {icon}
-          <p className="text-sm text-gray-white">{modelName}</p>
+          <p className="text-sm-regular text-gray-white">{modelName}</p>
         </div>
         {isBest && <Star />}
       </div>
-      <p className="text-sm flex-1  [overflow-y:overlay] text-gray-white">
+      <p className="text-sm-regular flex-1  [overflow-y:overlay] text-gray-white">
         {outputText}
       </p>
     </div>
