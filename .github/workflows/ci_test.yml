@@ -40,7 +40,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_ENV_A: ${{ secrets.VITE_ENV_A }}
+          VITE_KEYWORDS_DOMAIN: ${{ secrets.VITE_KEYWORDS_DOMAIN }}
           VITE_BACKEND_URL: ${{ secrets.VITE_BACKEND_URL }}
       - name: Setup Pages
         uses: actions/configure-pages@v3
