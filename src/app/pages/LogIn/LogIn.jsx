@@ -8,11 +8,11 @@ import { login } from "src/app/authentication/Authentication";
 import { Button } from "src/app/components/Button";
 import { useContext } from "react";
 import AuthContext from "src/app/authentication/AuthContext";
+import { platformURL } from "src/app/utils/platformURL";
 
 export function LogIn() {
   const navigate = useNavigate();
   const { user } = useContext(AuthContext);
-  const platformURL = "https://platform.keywordsai.co"
   React.useEffect(() => {
     if (user) {
       window.location.href = platformURL;
