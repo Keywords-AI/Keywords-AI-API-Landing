@@ -15,8 +15,8 @@ export function BetaAccess() {
   } = useForm();
   const onSubmit = async (data) => {
     try {
-      const res = await signup({ ...data, endpoint: "api/subscribe/" });
-      navigate("/login");
+      const res = await signup({ ...data });
+      console.log(res);
     } catch (error) {
       setBackendError(error.message);
     }
