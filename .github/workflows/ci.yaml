@@ -22,56 +22,56 @@ concurrency:
 
 jobs:
   # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Set up Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: 'npm'
-      - name: Install dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
-        env:
-          VITE_ENV_A: ${{ secrets.VITE_ENV_A }}
-          VITE_BACKEND_URL: ${{ secrets.VITE_BACKEND_URL }}
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          # Upload dist repository
-          path: './dist'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
-  # update_parent_repos: # push latest change to parent
+  # deploy:
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
   #   runs-on: ubuntu-latest
-  #   strategy:
-  #     matrix:
-  #       parent_repo: [Keywords-AI-Landing-Production]
-
   #   steps:
-  #     - uses: actions/checkout@v3
-  #       with: 
-  #         repository: Keywords-AI/${{ matrix.parent_repo }}
-  #         token: ${{ secrets.GITHUB_TOKEN }}
-  #         submodules: 'recursive'
-  #     - name: Pull & update submodules recursively
-  #       run: |
-  #         git submodule update --init --recursive
-  #         git submodule update --recursive --remote
-  #     - name: Commit
-  #       run: |
-  #         git config user.email "actions@github.com"
-  #         git config user.name "GitHub Actions - update submodules"
-  #         git add --all
-  #         git commit -m "Update submodules" || echo "No changes to commit"
-  #         git push
+  #     - name: Checkout
+  #       uses: actions/checkout@v3
+  #     - name: Set up Node
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: 18
+  #         cache: 'npm'
+  #     - name: Install dependencies
+  #       run: npm install
+  #     - name: Build
+  #       run: npm run build
+  #       env:
+  #         VITE_ENV_A: ${{ secrets.VITE_ENV_A }}
+  #         VITE_BACKEND_URL: ${{ secrets.VITE_BACKEND_URL }}
+  #     - name: Setup Pages
+  #       uses: actions/configure-pages@v3
+  #     - name: Upload artifact
+  #       uses: actions/upload-pages-artifact@v1
+  #       with:
+  #         # Upload dist repository
+  #         path: './dist'
+  #     - name: Deploy to GitHub Pages
+  #       id: deployment
+  #       uses: actions/deploy-pages@v1
+  update_parent_repos: # push latest change to parent
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        parent_repo: [Keywords-AI-Landing-Production]
+
+    steps:
+      - uses: actions/checkout@v3
+        with: 
+          repository: Keywords-AI/${{ matrix.parent_repo }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: 'recursive'
+      - name: Pull & update submodules recursively
+        run: |
+          git submodule update --init --recursive
+          git submodule update --recursive --remote
+      - name: Commit
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions - update submodules"
+          git add --all
+          git commit -m "Update submodules" || echo "No changes to commit"
+          git push
