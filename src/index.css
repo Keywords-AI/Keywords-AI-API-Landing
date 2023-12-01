@@ -19,13 +19,17 @@ strong {
   font-weight: bold;
 
 }
-
+html {
+  scrollbar-gutter: stable;
+}
 html,
 body {
   overflow-x: hidden;
   @apply bg-gray-black
 }
-
+body[style] {
+  margin: 0 auto !important;
+}
 *,
 *::before,
 *::after {

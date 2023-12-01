@@ -78,7 +78,7 @@ const Google = ({ fill = "fill-gray-white" }) => {
 const ModelItem = ({ children }) => {
   return (
     <div className="flex ModelLogos-box-shadow p-[1px] rounded-xl bg-gradient-out">
-      <div className="flex p-sm justify-center items-center rounded-xl bg-gradient-in  self-stretch  gap-[10px]">
+      <div className="w-[94px] h-[94px] flex p-sm justify-center items-center rounded-xl bg-gradient-in  self-stretch  gap-[10px]">
         {children}
       </div>
     </div>

@@ -8,7 +8,7 @@ export function SmallCard({ linkIcon, title, content }) {
           {linkIcon}
         </div>
       </div>
-      <div className="flex-col items-center gap-xs self-stretch">
+      <div className="flex-col items-center gap-xxs self-stretch">
         <p className="display-xs text-center text-gray-white">{title}</p>
         <p className="text-md-regular text-center text-gray-4 self-stretch">
           {content}

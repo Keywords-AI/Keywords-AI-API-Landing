@@ -81,7 +81,7 @@ export const Button = forwardRef(
         borderRadius = "rounded-lg";
         className = cn(
           className,
-          "hover:cursor-default gradient-in max-h-[36px]"
+          "hover:cursor-default gradient-in max-h-[36px] tracking-[0.56px]"
         );
     }
     return (
