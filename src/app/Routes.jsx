@@ -32,19 +32,20 @@ export const Routes = () => {
   // }
   const { user, setUser } = React.useContext(AuthContext);
   const location = useLocation();
-  React.useEffect(() => {
-    // check user login status for each navigation
-    const checkIsLogin = async () => {
-      try {
-        const fetchedUser = await isUserLoggedIn();
-        console.log("fetchedUser:", fetchedUser);
-        setUser(fetchedUser);
-      } catch (error) {
-        setUser(null);
-      }
-    };
-    checkIsLogin();
-  }, [location.pathname]);
+  // React.useEffect(() => {
+  //   // check user login status for each navigation
+  //   const checkIsLogin = async () => {
+  //     try {
+  //       const fetchedUser = await isUserLoggedIn();
+  //       console.log("fetchedUser:", fetchedUser);
+  //       setUser(fetchedUser);
+  //     } catch (error) {
+  //       setUser(null);
+  //     }
+  //   };
+
+  //   checkIsLogin();
+  // }, [location.pathname]);
 
   const routes = useRoutes([
     {
