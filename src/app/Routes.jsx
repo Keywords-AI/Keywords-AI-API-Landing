@@ -37,6 +37,7 @@ export const Routes = () => {
     const checkIsLogin = async () => {
       try {
         const fetchedUser = await isUserLoggedIn();
+        console.log("fetchedUser:", fetchedUser);
         setUser(fetchedUser);
       } catch (error) {
         setUser(null);
