@@ -92,7 +92,7 @@ export const login = async (email, password) => {
   }
 };
 
-export const logout =  () => {
+export const logout = () => {
   eraseCookie("access_token");
   eraseCookie("refresh_token");
 };
@@ -162,6 +162,7 @@ function setCookie(name, value, expirationDays, domain = extractMainDomain) {
   console.log("cookie", name + "=" + encodeURIComponent(value) + ";" + expires + ";path=/;domain=" + domain + ";secure; SameSite=Lax")
   document.cookie = name + "=" + encodeURIComponent(value) + ";" + expires + ";path=/;domain=" + domain + ";secure; SameSite=Lax";
 }
-
-
-function c
+function eraseCookie(name, path="/") {
+  const domain = extractMainDomain;
+  document.cookie = name + '=; Max-Age=-99999999; domain=' + domain + '; path=' + path;
+}
