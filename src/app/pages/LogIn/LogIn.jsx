@@ -4,7 +4,7 @@ import { BackButton } from "src/app/components/BackButton";
 import { useForm } from "react-hook-form";
 import { AuthenticationTitle } from "src/app/components/AuthenticationTitle/AuthenticationTitle";
 import cn from "src/app/utils/ClassMerge";
-import { login } from "src/app/authentication/Authentication";
+import { isUserLoggedIn, login } from "src/app/authentication/Authentication";
 import { Button } from "src/app/components/Button";
 import { useContext } from "react";
 import AuthContext from "src/app/authentication/AuthContext";
@@ -12,12 +12,11 @@ import { platformURL } from "src/app/utils/platformURL";
 
 export function LogIn() {
   const navigate = useNavigate();
-  const { user } = useContext(AuthContext);
   React.useEffect(() => {
-    if (user) {
+    if (isUserLoggedIn()) {
       window.location.href = platformURL;
     }
-  }, [])
+  }, []);
   const onSubmit = async (data) => {
     try {
       const res = await login(data.email, data.password);
