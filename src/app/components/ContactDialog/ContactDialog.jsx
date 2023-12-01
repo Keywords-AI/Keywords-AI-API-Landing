@@ -2,11 +2,14 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { Button } from "../Button";
 import { Close, FileLink } from "../icons";
 import { useForm } from "react-hook-form";
+import { platformURL } from "src/app/utils/platformURL";
+import { feedback } from "src/app/authentication/Authentication";
 
 export function ContactDialog() {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     console.log(data);
+    feedback({...data});
   };
   return (
     <Dialog.Root>
@@ -34,7 +37,7 @@ export function ContactDialog() {
             className="flex-col justify-center items-start gap-md"
             onSubmit={handleSubmit(onSubmit)}
           >
-            <textarea className="flex w-[536px] h-[160px] px-xs py-xxs items-center rounded-sm border border-solid border-gray-3 resize-none bg-gray-2 text-sm-regular text-gray-white" />
+            <textarea {...register("content", {})} className="flex w-[536px] h-[160px] px-xs py-xxs items-center rounded-sm border border-solid border-gray-3 resize-none bg-gray-2 text-sm-regular text-gray-white" />
             <label className="flex items-center gap-xxs hover:cursor-pointer">
               <FileLink />
               <p className="text-sm-regular text-gray-4">
@@ -42,8 +45,7 @@ export function ContactDialog() {
               </p>
               <input
                 type="file"
-                name="file"
-                {...register("upload", {})}
+                {...register("file_or_image", {})}
                 hidden
               />
             </label>
