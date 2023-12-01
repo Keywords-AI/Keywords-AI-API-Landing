@@ -22,14 +22,6 @@ import { BetaAccess } from "./pages/BetaAccess/BetaAccess";
 import AuthContext from "./authentication/AuthContext";
 
 export const Routes = () => {
-  // console.log("url:", import.meta.env.VITE_BACKEND_URL);
-  // if (import.meta.env.MODE === "production") {
-  //   console.log("Running in production mode");
-  // } else if (import.meta.env.MODE === "development") {
-  //   console.log("Running in development mode");
-  // } else {
-  //   console.log("Running in some other mode");
-  // }
   const { user, setUser } = React.useContext(AuthContext);
   const location = useLocation();
   // React.useEffect(() => {

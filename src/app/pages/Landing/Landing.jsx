@@ -176,7 +176,7 @@ export function Landing() {
           />
           <div
             aria-label="card grid"
-            className="flex w-max-[1000px] items-start justify-center content-start gap-xl w-full flex-wrap"
+            className="flex max-w-[1000px] items-start justify-center content-start gap-xl w-full flex-wrap"
           >
             {cardData.map((card, index) => (
               <SmallCard {...card} key={index} />

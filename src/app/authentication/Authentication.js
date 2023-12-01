@@ -164,7 +164,4 @@ function setCookie(name, value, expirationDays, domain = extractMainDomain) {
 }
 
 
-function eraseCookie(name, path="/") {
-  const domain = extractMainDomain;
-  document.cookie = name + '=; Max-Age=-99999999; domain=' + domain + '; path=' + path;
-}
+function c
