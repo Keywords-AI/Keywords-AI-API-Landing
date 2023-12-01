@@ -32,7 +32,7 @@ export function BetaAccess() {
       <BackButton text="Back" />
       <div className=" flex-col w-full max-w-[420px] items-center gap-lg justify-center ">
         <AuthenticationTitle
-          title={"Request Beta Access"}
+          title={"Request Beta access"}
           subtitle={"We’ll get back to you via email."}
         />
         <form
@@ -51,7 +51,7 @@ export function BetaAccess() {
                     firstnameError ? "text-error" : ""
                   )}
                 >
-                  First Name*
+                  First name*
                 </label>
                 <input
                   type="text"
@@ -71,7 +71,7 @@ export function BetaAccess() {
                     lastnameError ? "text-error" : ""
                   )}
                 >
-                  Last Name*
+                  Last name*
                 </label>
                 <input
                   type="text"

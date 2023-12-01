@@ -55,7 +55,7 @@ export function Landing() {
           <div className="flex items-center justify-center gap-xs self-stretch">
             {/* <Button text="Get started" variant="secondary" /> */}
             <Button
-              text="Join waitlist"
+              text="Beta access"
               variant="secondary"
               onClick={() => navigate("/beta-access")}
             />
@@ -136,38 +136,32 @@ export function Landing() {
       {
         linkIcon: <Brain />,
         title: "Advanced Reasoning",
-        content:
-          "With vast general knowledge and finely-tuned algorithms, our API comprehends intricate instructions in natural language and tackles tough challenges efficiently.",
+        content: "Efficiently decodes complex instructions.",
       },
       {
         linkIcon: <Stars />,
         title: "Content Generation",
-        content:
-          "Unleash the creativity of our API for compelling copywriting, SEO-optimized articles, or even scriptwriting.",
+        content: "Elevates SEO articles and creative scriptwriting.",
       },
       {
         linkIcon: <Search />,
         title: "Intelligent Search",
-        content:
-          "Enhance your search features with contextual understanding and semantic matching, improving both accuracy and user satisfaction.",
+        content: "Boosts accuracy with contextual understanding.",
       },
       {
         linkIcon: <Chat />,
         title: "Conversational AI",
-        content:
-          "Empower your chatbot applications with the human-like interaction capabilities. Offer dynamic conversation flow, deliver accurate responses, and enhance user engagement.",
+        content: "Delivers human-like, dynamic chatbot interactions.",
       },
       {
         linkIcon: <Document />,
         title: "Document Summary",
-        content:
-          "Optimize your workflows with our API's ability to create comprehensive and meaningful summaries from complex and lengthy documents.",
+        content: "Creates concise summaries from extensive texts.",
       },
       {
         linkIcon: <Text />,
         title: "Textual Analysis",
-        content:
-          "Dive deep into your data and extract valuable insights with our textual analysis capabilities. Facilitate better decision making with accurate data interpretation.",
+        content: "Extracts insights for informed decision-making.",
       },
     ];
     return (
@@ -210,7 +204,7 @@ export function Landing() {
         <div className="flex max-w-[1200px] flex-col items-center gap-sm ">
           <p className="display-lg text-center gradient-text ">
             Integrate in minutes. <br />
-            Beta Available today.
+            Beta available today.
           </p>
         </div>
         <div className="flex items-start gap-xxs">
