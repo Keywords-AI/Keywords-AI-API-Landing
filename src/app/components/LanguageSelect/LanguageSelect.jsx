@@ -19,7 +19,10 @@ export function LanguageSelect({
       </DropdownMenu.Trigger>
 
       <DropdownMenu.Portal>
-        <DropdownMenu.Content className="w-[240px] flex-col items-start rounded-md p-xxxs bg-gray-2 border border-solid border-gray-3">
+        <DropdownMenu.Content
+          className="w-[240px] flex-col items-start rounded-md p-xxxs bg-gray-2 border border-solid border-gray-3"
+          align="end"
+        >
           {languages.map((language) => (
             <DropdownMenu.Item
               key={language.name}
