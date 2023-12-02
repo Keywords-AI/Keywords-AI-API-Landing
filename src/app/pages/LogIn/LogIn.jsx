@@ -14,7 +14,7 @@ export function LogIn() {
   const navigate = useNavigate();
   React.useEffect(() => {
     if (isUserLoggedIn()) {
-      window.location.href = platformURL;
+      window.location.href = platformURL + "/login";
     }
   }, []);
   const onSubmit = async (data) => {
