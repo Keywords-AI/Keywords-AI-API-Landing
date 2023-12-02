@@ -140,7 +140,7 @@ export const feedback = async ({content, file_or_image}) => {
       formData.append('file_or_image', file_or_image[0]);
     }
 
-    const response = await axios.post(`${apiurl}/api/feedback/`, formData, {
+    const response = await axios.post(`${apiurl}api/feedback/`, formData, {
       headers: {
         "X-CSRFToken": getCookie("csrftoken"),
       },
