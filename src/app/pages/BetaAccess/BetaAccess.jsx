@@ -4,7 +4,7 @@ import { BackButton } from "src/app/components/BackButton";
 import { useForm } from "react-hook-form";
 import { AuthenticationTitle } from "src/app/components/AuthenticationTitle/AuthenticationTitle";
 import cn from "src/app/utils/ClassMerge";
-import { signup } from "src/app/authentication/Authentication";
+import { joinwaitlist, signup } from "src/app/authentication/Authentication";
 import { Button } from "src/app/components/Button";
 export function BetaAccess() {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ export function BetaAccess() {
   } = useForm();
   const onSubmit = async (data) => {
     try {
-      const res = await signup({ ...data });
+      const res = await joinwaitlist({ ...data });
       console.log(res);
     } catch (error) {
       setBackendError(error.message);
