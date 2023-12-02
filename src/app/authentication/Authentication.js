@@ -29,20 +29,16 @@ export const signup = async ({email, password, firstname, lastname, organization
   try {
     await getCSRF(); 
     console.log("endpoint", `${apiurl}${endpoint}`)
-    const response = await axios.post(`${apiurl}${endpoint}`, (() => {
-      const formData = new FormData();
+    const formData = new FormData();
       
       formData.append('email', email);
       formData.append('password', password);
       formData.append('first_name', firstname);
       formData.append('last_name', lastname);
       formData.append('organization_name', organization);
-    
-      return formData;
-    })(), {
+    const response = await axios.post(`${apiurl}${endpoint}`, formData, {
       headers: {
         "X-CSRFToken": getCookie("csrftoken"),
-        "Content-Type": "application/json"
       },
       timeout: 5000, 
     });
