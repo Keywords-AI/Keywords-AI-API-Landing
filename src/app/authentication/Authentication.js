@@ -42,7 +42,7 @@ export const signup = async ({email, password, firstname, lastname, organization
     })(), {
       headers: {
         "X-CSRFToken": getCookie("csrftoken"),
-        "Content-Type": "multipart/form-data"
+        "Content-Type": "application/json"
       },
       timeout: 5000, 
     });
