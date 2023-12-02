@@ -314,48 +314,98 @@ export const Electric = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="188"
-      height="206"
+      width="268"
+      height="286"
+      viewBox="0 0 268 286"
       fill="none"
-      viewBox="0 0 188 206"
     >
-      <path
-        fill="#000"
-        d="M78.832 158.488v-.5H.944L109.168 1.601v89.463h77.887L78.831 247.451v-88.963z"
-      ></path>
-      <path
-        fill="url(#paint0_linear_4954_5048)"
-        d="M78.832 158.488v-.5H.944L109.168 1.601v89.463h77.887L78.831 247.451v-88.963z"
-      ></path>
-      <path
-        stroke="url(#paint1_linear_4954_5048)"
-        d="M78.832 158.488v-.5H.944L109.168 1.601v89.463h77.887L78.831 247.451v-88.963z"
-      ></path>
+      <g filter="url(#filter0_d_4954_5046)">
+        <mask
+          id="mask0_4954_5046"
+          style={{ maskType: "alpha" }}
+          maskUnits="userSpaceOnUse"
+          x="39"
+          y="40"
+          width="190"
+          height="206"
+        >
+          <rect x="39.75" y="40" width="188.5" height="206" fill="#D9D9D9" />
+        </mask>
+        <g mask="url(#mask0_4954_5046)">
+          <path
+            d="M118.832 198.488V197.988H118.332H40.9443L149.168 41.6012V130.564V131.064H149.668H227.055L118.832 287.451V198.488Z"
+            fill="black"
+          />
+          <path
+            d="M118.832 198.488V197.988H118.332H40.9443L149.168 41.6012V130.564V131.064H149.668H227.055L118.832 287.451V198.488Z"
+            fill="url(#paint0_linear_4954_5046)"
+          />
+          <path
+            d="M118.832 198.488V197.988H118.332H40.9443L149.168 41.6012V130.564V131.064H149.668H227.055L118.832 287.451V198.488Z"
+            stroke="url(#paint1_linear_4954_5046)"
+          />
+        </g>
+      </g>
       <defs>
+        <filter
+          id="filter0_d_4954_5046"
+          x="-0.00976562"
+          y="0"
+          width="268.02"
+          height="286"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation="20" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0.560784 0 0 0 0 0 0 0 0 0 0.823529 0 0 0 0.25 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_4954_5046"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_4954_5046"
+            result="shape"
+          />
+        </filter>
         <linearGradient
-          id="paint0_linear_4954_5048"
-          x1="94"
-          x2="94"
-          y1="0"
-          y2="249.052"
+          id="paint0_linear_4954_5046"
+          x1="134"
+          y1="40"
+          x2="134"
+          y2="289.052"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#C0C5E4" stopOpacity="0.157"></stop>
-          <stop offset="0.5" stopColor="#BDC8FF" stopOpacity="0.09"></stop>
-          <stop offset="1" stopColor="#36313C" stopOpacity="0.08"></stop>
+          <stop stopColor="#C0C5E4" stopOpacity="0.157" />
+          <stop offset="0.5" stopColor="#BDC8FF" stopOpacity="0.09" />
+          <stop offset="1" stopColor="#36313C" stopOpacity="0.08" />
         </linearGradient>
         <linearGradient
-          id="paint1_linear_4954_5048"
-          x1="-0.01"
-          x2="188.009"
-          y1="124.526"
-          y2="124.526"
+          id="paint1_linear_4954_5046"
+          x1="39.9902"
+          y1="164.526"
+          x2="228.009"
+          y2="164.526"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#fff" stopOpacity="0"></stop>
-          <stop stopOpacity="0.2"></stop>
-          <stop offset="0.5" stopColor="#8F8F8F" stopOpacity="0.67"></stop>
-          <stop offset="1" stopOpacity="0.04"></stop>
+          <stop stopColor="white" stopOpacity="0" />
+          <stop stopOpacity="0.2" />
+          <stop offset="0.5" stopColor="#8F8F8F" stopOpacity="0.67" />
+          <stop offset="1" stopOpacity="0.04" />
         </linearGradient>
       </defs>
     </svg>

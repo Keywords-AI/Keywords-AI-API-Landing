@@ -1,6 +1,12 @@
 import { LanguageSelect } from "src/app/components/LanguageSelect";
 import { CopyCode } from "../../../../components/CopyCode";
-import { ArrowDown } from "../../../../components/icons";
+import {
+  Bash,
+  Golang,
+  Javascript,
+  Php,
+  Python,
+} from "../../../../components/icons";
 import "./CodeBoxDisplay.css";
 import { useState } from "react";
 export function CodeBoxDisplay() {
@@ -22,6 +28,7 @@ export function CodeBoxDisplay() {
           <li>{`}'`}</li>
         </ol>
       ),
+      icon: <Bash />,
       code: `curl -X POST "https://keywordsapi.info/api/generate/" \``,
     },
     {
@@ -40,6 +47,7 @@ export function CodeBoxDisplay() {
           <li>{`}'`}</li>
         </ol>
       ),
+      icon: <Python />,
       code: `curl -X POST "https://keywordsapi.info/api/generate/" \``,
     },
     {
@@ -58,6 +66,7 @@ export function CodeBoxDisplay() {
           <li>{`}'`}</li>
         </ol>
       ),
+      icon: <Javascript />,
       code: `curl -X POST "https://keywordsapi.info/api/generate/" \``,
     },
     {
@@ -76,6 +85,7 @@ export function CodeBoxDisplay() {
           <li>{`}'`}</li>
         </ol>
       ),
+      icon: <Php />,
       code: `curl -X POST "https://keywordsapi.info/api/generate/" \``,
     },
     {
@@ -94,6 +104,7 @@ export function CodeBoxDisplay() {
           <li>{`}'`}</li>
         </ol>
       ),
+      icon: <Golang />,
       code: `curl -X POST "https://keywordsapi.info/api/generate/" \``,
     },
   ];
@@ -110,8 +121,7 @@ export function CodeBoxDisplay() {
         />
         <CopyCode
           code={
-            languages.find((language) => language.name === currentLanguage)
-              .code
+            languages.find((language) => language.name === currentLanguage).code
           }
         />
       </div>

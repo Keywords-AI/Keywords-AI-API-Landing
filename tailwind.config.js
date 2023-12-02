@@ -76,5 +76,5 @@ export default {
       },
     },
   },
-  plugins: [require("./flexPlugin.js")],
+  plugins: [require("./flexPlugin.js"),],
 };

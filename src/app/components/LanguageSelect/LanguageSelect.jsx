@@ -9,7 +9,7 @@ export function LanguageSelect({
 }) {
   return (
     <DropdownMenu.Root>
-      <DropdownMenu.Trigger asChild>
+      <DropdownMenu.Trigger className="outline-none" asChild>
         <button className="flex justify-center items-center gap-xxs">
           <p className="text-sm-regular text-center text-gray-4">
             {currentLanguage}
@@ -19,14 +19,19 @@ export function LanguageSelect({
       </DropdownMenu.Trigger>
 
       <DropdownMenu.Portal>
-        <DropdownMenu.Content className="min-w-[150px] rounded-sm p-xxs bg-gray-black">
+        <DropdownMenu.Content className="w-[240px] flex-col items-start rounded-md p-xxxs bg-gray-2 border border-solid border-gray-3">
           {languages.map((language) => (
             <DropdownMenu.Item
               key={language.name}
-              className="text-gray-white"
+              className="text-gray-white outline-none"
               onClick={() => setCurrentLanguage(language.name)}
             >
-              {language.name}
+              <div className="flex px-xs py-xxs items-center gap-xxs self-stretch rounded-sm hover:bg-gray-3 hover:cursor-pointer">
+                {language.icon}
+                <span className="text-sm-regular text-gray-white">
+                  {language.name}
+                </span>
+              </div>
             </DropdownMenu.Item>
           ))}
         </DropdownMenu.Content>

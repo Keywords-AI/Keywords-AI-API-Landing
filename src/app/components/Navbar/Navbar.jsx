@@ -101,7 +101,7 @@ export function Navbar() {
           }}
           />
           <Button
-            text="Beta Access"
+            text="Beta access"
             variant="secondary"
             // onClick={() => navigate("/signup")}
             onClick={() => navigate("/beta-access")}
