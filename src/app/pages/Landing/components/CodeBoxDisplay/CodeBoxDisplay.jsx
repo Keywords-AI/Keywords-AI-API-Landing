@@ -14,100 +14,119 @@ export function CodeBoxDisplay() {
   const languages = [
     {
       name: "Bash",
-      content: (
-        <ol className=" text-gray-white font-fira-code list-inside overflow-x-auto">
-          <li>curl -X POST "https://keywordsapi.info/api/generate/" \</li>
-          <li>-H "Content-Type: application/json" \</li>
-          <li>-H "Authorization: Api-Key {"{YOUR_ACCESS_TOKEN}"}" \</li>
-          <li>{`-d '{`}</li>
-          <li>{`"messages":[{`}</li>
-          <li>"role":"user",</li>
-          <li>"content":"Hello"</li>
-          <li>{`}]`}</li>
-          <li>"model":"keywordsai"</li>
-          <li>{`}'`}</li>
-        </ol>
-      ),
+
       icon: <Bash />,
-      code: `curl -X POST "https://keywordsapi.info/api/generate/" \``,
+      code: `curl -X POST "https://keywordsapi.info/api/generate/"-H 
+      "Content-Type: application/json"-H "Authorization: Api-Key {YOUR_ACCESS_TOKEN}"-d '{
+        "messages":[{
+            "role":"user",
+            "content":"Hello"
+        }],
+        "stream": false,
+        "max_tokens": 100,
+        ... other parameters in similar format ...
+    
+    }'`,
     },
     {
       name: "Python",
-      content: (
-        <ol className=" text-gray-white font-fira-code list-inside overflow-x-auto">
-          <li>Python -X POST "https://keywordsapi.info/api/generate/" \</li>
-          <li>-H "Content-Type: application/json" \</li>
-          <li>-H "Authorization: Api-Key {"{YOUR_ACCESS_TOKEN}"}" \</li>
-          <li>{`-d '{`}</li>
-          <li>{`"messages":[{`}</li>
-          <li>"role":"user",</li>
-          <li>"content":"Hello"</li>
-          <li>{`}]`}</li>
-          <li>"model":"keywordsai"</li>
-          <li>{`}'`}</li>
-        </ol>
-      ),
+
       icon: <Python />,
-      code: `curl -X POST "https://keywordsapi.info/api/generate/" \``,
+      code: `import requests
+import json
+      
+headers = {
+'Content-Type': 'application/json',
+'Authorization': 'Api-Key {YOUR_ACCESS_TOKEN}',
+}
+      
+data = {
+'messages': [{'role': 'user', 'content': 'Hello'}],
+'stream': false,
+'max_tokens': 100,
+... other parameters in similar format ...
+}
+      
+response = requests.post('https://keywordsapi.info/
+api/generate/', headers=headers, json=data)`,
     },
     {
       name: "Javascript",
-      content: (
-        <ol className=" text-gray-white font-fira-code list-inside overflow-x-auto">
-          <li>Javascript -X POST "https://keywordsapi.info/api/generate/" \</li>
-          <li>-H "Content-Type: application/json" \</li>
-          <li>-H "Authorization: Api-Key {"{YOUR_ACCESS_TOKEN}"}" \</li>
-          <li>{`-d '{`}</li>
-          <li>{`"messages":[{`}</li>
-          <li>"role":"user",</li>
-          <li>"content":"Hello"</li>
-          <li>{`}]`}</li>
-          <li>"model":"keywordsai"</li>
-          <li>{`}'`}</li>
-        </ol>
-      ),
       icon: <Javascript />,
-      code: `curl -X POST "https://keywordsapi.info/api/generate/" \``,
+      code: `fetch('https://keywordsapi.info/api/generate/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Api-Key {YOUR_ACCESS_TOKEN}',
+        },
+        body: JSON.stringify({
+            messages: [{ role: 'user', content: 'Hello' }],
+            'stream': false,
+            'max_tokens': 100,
+            ... other parameters in similar format ...
+        }),
+        })
+        .then(response => response.json())
+        .then(data => console.log(data));`,
     },
     {
       name: "PHP",
-      content: (
-        <ol className=" text-gray-white font-fira-code list-inside overflow-x-auto">
-          <li>PHP -X POST "https://keywordsapi.info/api/generate/" \</li>
-          <li>-H "Content-Type: application/json" \</li>
-          <li>-H "Authorization: Api-Key {"{YOUR_ACCESS_TOKEN}"}" \</li>
-          <li>{`-d '{`}</li>
-          <li>{`"messages":[{`}</li>
-          <li>"role":"user",</li>
-          <li>"content":"Hello"</li>
-          <li>{`}]`}</li>
-          <li>"model":"keywordsai"</li>
-          <li>{`}'`}</li>
-        </ol>
-      ),
       icon: <Php />,
-      code: `curl -X POST "https://keywordsapi.info/api/generate/" \``,
+      code: `<?php
+      $ch = curl_init();
+      
+      curl_setopt($ch, CURLOPT_URL, 'https://keywordsapi.info/api/generate/');
+      curl_setopt($ch, CURLOPT_POST, 1);
+      curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+          'Content-Type: application/json',
+          'Authorization: Api-Key {YOUR_ACCESS_TOKEN}',
+      ));
+      curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode(array(
+          "messages" => array(array("role" => "user", "content" => "Hello")),
+          "stream" => false,
+          "max_tokens" => 100,
+          ... other parameters in similar format ...
+      )));
+      
+      $response = curl_exec($ch);
+      curl_close($ch);
+      ?>`,
     },
     {
       name: "Golang",
-      content: (
-        <ol className=" text-gray-white font-fira-code list-inside overflow-x-auto">
-          <li>Golang -X POST "https://keywordsapi.info/api/generate/" \</li>
-          <li>-H "Content-Type: application/json" \</li>
-          <li>-H "Authorization: Api-Key {"{YOUR_ACCESS_TOKEN}"}" \</li>
-          <li>{`-d '{`}</li>
-          <li>{`"messages":[{`}</li>
-          <li>"role":"user",</li>
-          <li>"content":"Hello"</li>
-          <li>{`}]`}</li>
-          <li>"model":"keywordsai"</li>
-          <li>{`}'`}</li>
-        </ol>
-      ),
       icon: <Golang />,
-      code: `curl -X POST "https://keywordsapi.info/api/generate/" \``,
+      code: `package main
+import (
+          "bytes"
+          "net/http"
+      )
+      
+func main() {
+          url := "https://keywordsapi.info/api/generate/"
+          method := "POST"
+      
+          payload := []byte(\`{
+              "messages": [{"role": "user", "content": "Hello"}],
+              "stream": false,
+              "max_tokens": 100,
+              ... other parameters in similar format ...
+          }\`)
+      
+          client := &http.Client{}
+          req, err := http.NewRequest(method, url, bytes.NewBuffer(payload))
+      
+          if err != nil {
+              panic(err)
+          }
+          req.Header.Add("Content-Type", "application/json")
+          req.Header.Add("Authorization", "Api-Key {YOUR_ACCESS_TOKEN}")
+      
+          res, err := client.Do(req)
+          defer res.Body.Close()
+      }`,
     },
   ];
+
   return (
     <div className="flex-col max-w-[800px] items-center w-full rounded-lg border border-gray-3 bg-gradient-in shadow-purple">
       <div
@@ -131,10 +150,14 @@ export function CodeBoxDisplay() {
         className="border-t border-gray-3 flex-col p-md items-start gap-[10px] self-stretch"
       >
         <div className=" code flex items-start gap-sm self-stretch">
-          {
-            languages.find((language) => language.name === currentLanguage)
-              .content
-          }
+          <ol className=" text-gray-white font-fira-code list-inside overflow-x-auto">
+            {languages
+              .find((language) => language.name === currentLanguage)
+              .code.split(`\n`)
+              .map((line, index) => (
+                <li key={index}>{line}</li>
+              ))}
+          </ol>
         </div>
       </div>
     </div>

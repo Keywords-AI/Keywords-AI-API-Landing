@@ -25,20 +25,24 @@ export const isUserLoggedIn = async () => {
   }
 };
 
-export const signup = async ({email, password, firstname, lastname, organization, endpoint="auth/users/"}) => {
+export const signup = async ({email, password, firstname, lastname, organization, endpoint="api/subscribe "}) => {
   try {
     await getCSRF(); 
     console.log("endpoint", `${apiurl}${endpoint}`)
-    const response = await axios.post(`${apiurl}${endpoint}`, {
-    // const response = await axios.post(`localhost:8000/${endpoint}`, {
-      email: email,
-      password: password,
-      first_name: firstname,
-      last_name: lastname,
-      organization,
-    }, {
+    const response = await axios.post(`${apiurl}${endpoint}`, (() => {
+      const formData = new FormData();
+      
+      formData.append('email', email);
+      formData.append('password', password);
+      formData.append('first_name', firstname);
+      formData.append('last_name', lastname);
+      formData.append('organization_name', organization);
+    
+      return formData;
+    })(), {
       headers: {
-        "X-CSRFToken": getCookie("csrftoken"), 
+        "X-CSRFToken": getCookie("csrftoken"),
+        "Content-Type": "multipart/form-data"
       },
       timeout: 5000, 
     });
@@ -151,6 +155,7 @@ export const feedback = async ({content, file_or_image}) => {
     // Handle response data here
   } catch (error) {
     // Handle error here
+    throw error;
   }
 };
 

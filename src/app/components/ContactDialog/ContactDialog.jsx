@@ -1,18 +1,25 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { Button } from "../Button";
 import { Close, FileLink } from "../icons";
-import { useForm } from "react-hook-form";
+import { set, useForm } from "react-hook-form";
 import { platformURL } from "src/app/utils/platformURL";
 import { feedback } from "src/app/authentication/Authentication";
+import React from "react";
 
 export function ContactDialog() {
   const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => {
+  const [open, setOpen] = React.useState(false);
+  const onSubmit = async (data) => {
     console.log(data);
-    feedback({ ...data });
+    try {
+      await feedback({ ...data });
+      setOpen(false);
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
-    <Dialog.Root>
+    <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Trigger asChild>
         <Button text="Contact us" variant="header" />
       </Dialog.Trigger>
