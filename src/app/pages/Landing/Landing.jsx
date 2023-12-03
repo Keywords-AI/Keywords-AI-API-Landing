@@ -8,10 +8,10 @@ import {
   Search,
   Y,
   Text,
-  Electric,
   Stars,
   Chat,
   Document,
+  Electric,
 } from "src/app/components/icons";
 import { Page } from "src/app/components/Page";
 import { Divider } from "src/app/components/Divider";

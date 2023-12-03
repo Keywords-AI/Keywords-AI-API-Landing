@@ -26,10 +26,10 @@ export function LanguageSelect({
           {languages.map((language) => (
             <DropdownMenu.Item
               key={language.name}
-              className="text-gray-white outline-none"
+              className="text-gray-white outline-none flex self-stretch"
               onClick={() => setCurrentLanguage(language.name)}
             >
-              <div className="flex px-xs py-xxs items-center gap-xxs self-stretch rounded-sm hover:bg-gray-3 hover:cursor-pointer">
+              <div className="flex px-xs py-xxs items-center gap-xxs flex-1 rounded-sm hover:bg-gray-3 hover:cursor-pointer">
                 {language.icon}
                 <span className="text-sm-regular text-gray-white">
                   {language.name}

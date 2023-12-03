@@ -1,11 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { BackButton } from "src/app/components/BackButton";
-import { useForm } from "react-hook-form";
+import { set, useForm } from "react-hook-form";
 import { AuthenticationTitle } from "src/app/components/AuthenticationTitle/AuthenticationTitle";
 import cn from "src/app/utils/ClassMerge";
 import { joinwaitlist, signup } from "src/app/authentication/Authentication";
 import { Button } from "src/app/components/Button";
+import { Toast } from "src/app/components/Toast";
 export function BetaAccess() {
   const navigate = useNavigate();
   const {
@@ -26,6 +27,7 @@ export function BetaAccess() {
   const emailError = errors.email;
   const passwordError = errors.password;
   const [backendError, setBackendError] = React.useState(null);
+  const [open, setOpen] = React.useState(false);
 
   return (
     <div className="flex-col items-center gap-xxxl justify-center self-stretch">
@@ -145,6 +147,21 @@ export function BetaAccess() {
               </span>
               .
             </p> */}
+            <Button
+              text={"HI"}
+              variant={"secondary"}
+              arrow={false}
+              onClick={() => {
+                setOpen(true);
+                console.log(open);
+              }}
+            />
+            <Toast
+              title="Upgrade available"
+              content="We've just released Radix 3.0!"
+              open={open}
+              setOpen={setOpen}
+            ></Toast>
           </div>
         </form>
       </div>

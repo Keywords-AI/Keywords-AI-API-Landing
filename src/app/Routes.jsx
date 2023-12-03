@@ -20,6 +20,7 @@ import { ComponentGrid } from "./pages/ComponentGrid";
 import { isUserLoggedIn } from "./authentication/Authentication";
 import { BetaAccess } from "./pages/BetaAccess/BetaAccess";
 import AuthContext from "./authentication/AuthContext";
+import { ToastProvider } from "@radix-ui/react-toast";
 
 export const Routes = () => {
   const { user, setUser } = React.useContext(AuthContext);
@@ -85,5 +86,9 @@ export const Routes = () => {
       ],
     },
   ]);
-  return <div>{routes}</div>;
+  return (
+    <div>
+      <ToastProvider>{routes}</ToastProvider>
+    </div>
+  );
 };
