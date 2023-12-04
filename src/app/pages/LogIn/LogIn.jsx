@@ -15,9 +15,8 @@ export function LogIn() {
   React.useEffect(() => {
     const redirect = async () => {
       const res = await isUserLoggedIn();
-      console.log(res);
-      if (await isUserLoggedIn()) {
-        // window.location.href = platformURL + "/login";
+      if (res) {
+        window.location.href = platformURL + "/login";
       }
     };
     redirect();

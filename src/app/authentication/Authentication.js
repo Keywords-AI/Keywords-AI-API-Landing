@@ -24,6 +24,8 @@ export const isUserLoggedIn = async () => {
     if (response.status === 200) {
       const data = response.data;
       return data;
+    } else {
+      return null;
     }
   } catch (error) {
     throw error;
