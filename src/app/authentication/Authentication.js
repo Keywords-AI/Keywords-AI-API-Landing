@@ -11,6 +11,7 @@ const expirationDays = 7;
 const bypassAuth = false;
 export const isUserLoggedIn = async () => {
   if (bypassAuth) return true;
+  await getCSRF();
   try {
     const response = await axios.get(`${apiurl}auth/users/me`, {
       headers: {
@@ -85,7 +86,7 @@ export const joinwaitlist = async ({
     // Axios request
     const response = await axios({
       method: "post",
-      url: `${apiurl}api/subscribe/`  ,
+      url: `${apiurl}api/subscribe/`,
       data: formdata,
       headers: { "Content-Type": "multipart/form-data" },
     });

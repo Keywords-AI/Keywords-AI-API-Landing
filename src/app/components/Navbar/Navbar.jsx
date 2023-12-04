@@ -94,11 +94,8 @@ export function Navbar() {
             variant="header"
             arrow={false}
             onClick={() => {
-              if (user)
-                navigate("/login")
-              else
-                window.location.href = platformURL;
-          }}
+              navigate("/login");
+            }}
           />
           <Button
             text="Beta access"
@@ -107,7 +104,6 @@ export function Navbar() {
             onClick={() => navigate("/beta-access")}
           />
         </div>
-
       </div>
     </div>
   );

@@ -13,9 +13,14 @@ import { platformURL } from "src/app/utils/platformURL";
 export function LogIn() {
   const navigate = useNavigate();
   React.useEffect(() => {
-    if (isUserLoggedIn()) {
-      window.location.href = platformURL + "/login";
-    }
+    const redirect = async () => {
+      const res = await isUserLoggedIn();
+      console.log(res);
+      if (await isUserLoggedIn()) {
+        // window.location.href = platformURL + "/login";
+      }
+    };
+    redirect();
   }, []);
   const onSubmit = async (data) => {
     try {
