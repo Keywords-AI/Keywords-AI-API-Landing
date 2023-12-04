@@ -1,4 +1,5 @@
 import * as ToastPrimitive from "@radix-ui/react-toast";
+import { Close } from "../icons";
 
 export const Toast = ({
   title,
@@ -11,25 +12,24 @@ export const Toast = ({
   return (
     <>
       <ToastPrimitive.Root
-        className="ToastPrimitiveRoot"
+        className="bg-gray-2 rounded-md shadow-window border border-solid border-gray-3 flex-col items-start w-[360px] gap-xxxs px-md py-sm flex-1 self-stretch"
         open={open}
         onOpenChange={setOpen}
+        duration={3000}
       >
-        <ToastPrimitive.Title className="ToastPrimitiveTitle">
-          Scheduled: Catch up
+        <ToastPrimitive.Title className="flex justify-between items-center self-stretch">
+          {title}
+          <ToastPrimitive.Action asChild altText="close notification">
+            <button>
+              <Close />
+            </button>
+          </ToastPrimitive.Action>
         </ToastPrimitive.Title>
-        <ToastPrimitive.Description asChild>
-          asdasdas
+        <ToastPrimitive.Description className="flex pl-[24px] items-start gap-[10px] text-sm-regular text-gray-4">
+          {content}
         </ToastPrimitive.Description>
-        <ToastPrimitive.Action
-          className="ToastPrimitiveAction"
-          asChild
-          altText="Goto schedule to undo"
-        >
-          <button className="Button small green">Undo</button>
-        </ToastPrimitive.Action>
       </ToastPrimitive.Root>
-      <ToastPrimitive.Viewport className="fixed bottom-0 right-0 flex flex-col p-[25px] gap-2.5 w-[390px] max-w-full m-0 list-none z-[2147483647] outline-none" />
+      <ToastPrimitive.Viewport className="fixed top-[32px] right-[29px] flex  w-[360px] m-0 list-none z-[2147483647] outline-none" />
     </>
   );
 };

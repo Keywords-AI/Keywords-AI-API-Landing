@@ -25,7 +25,7 @@ export function ContactDialog() {
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0" />
-        <Dialog.Content className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex-col w-[600px] p-lg justify-center items-center gap-md rounded-md border border-solid border-gray-3 bg-gray-2 shadow-contact">
+        <Dialog.Content className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex-col w-[600px] p-lg justify-center items-center gap-md rounded-md border border-solid border-gray-3 bg-gray-2 shadow-window">
           <div className="flex-col items-start gap-xs self-stretch">
             <Dialog.Title className="flex self-stretch justify-between items-center">
               <p className="display-xs text-gray-white text-left">

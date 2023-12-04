@@ -7,6 +7,7 @@ import cn from "src/app/utils/ClassMerge";
 import { joinwaitlist, signup } from "src/app/authentication/Authentication";
 import { Button } from "src/app/components/Button";
 import { Toast } from "src/app/components/Toast";
+import { PassCheck } from "src/app/components/icons";
 export function BetaAccess() {
   const navigate = useNavigate();
   const {
@@ -18,6 +19,7 @@ export function BetaAccess() {
     try {
       const res = await joinwaitlist({ ...data });
       console.log(res);
+      setOpen(true); // open the toast
     } catch (error) {
       setBackendError(error.message);
     }
@@ -147,18 +149,17 @@ export function BetaAccess() {
               </span>
               .
             </p> */}
-            <Button
-              text={"HI"}
-              variant={"secondary"}
-              arrow={false}
-              onClick={() => {
-                setOpen(true);
-                console.log(open);
-              }}
-            />
+
             <Toast
-              title="Upgrade available"
-              content="We've just released Radix 3.0!"
+              title={
+                <div className="flex items-center gap-xxs">
+                  <PassCheck />
+                  <span className="text-sm-md text-gray-white">
+                    You are on the waitlist!
+                  </span>
+                </div>
+              }
+              content="We will reach out to you soon."
               open={open}
               setOpen={setOpen}
             ></Toast>
