@@ -26,32 +26,43 @@ import "aos/dist/aos.css";
 export function Landing() {
   const navigate = useNavigate();
   useEffect(() => {
-    AOS.init();
+    AOS.init({ duration: 1500 });
   }, []);
   const IntroductionSection = () => {
     return (
       <div
         aria-label="introduction section"
         className="flex p-xxxl sm:px-lg flex-col items-center gap-xxxl self-stretch"
-        data-aos="fade-up"
       >
         <div className="flex max-w-[1200px] flex-col items-start gap-xl w-full">
           <div className="flex flex-col items-center gap-lg self-stretch">
             {/* <Button text="Read our launch on Product Hunt" variant="news" /> */}
-            <div className="bg-gradient-out p-[1px] rounded-lg">
+            <div
+              className="bg-gradient-out p-[1px] rounded-lg"
+              data-aos="fade-down" data-aos-delay="50"
+            >
               <Button
                 text="Keywords AI Beta Release"
                 variant="beta"
                 arrow={false}
               />
             </div>
-            <p className="sm:hidden display-xl self-stretch gradient-text text-center">
+            <p
+              className="sm:hidden display-xl self-stretch gradient-text text-center"
+              data-aos="fade-down" data-aos-delay="100"
+            >
               Build scalable AI applications <br /> with dynamic LLM routing
             </p>
-            <p className=" hidden sm:block display-lg self-stretch gradient-text text-center">
+            <p
+              className=" hidden sm:block display-lg self-stretch gradient-text text-center"
+              data-aos="fade-down" data-aos-delay="150"
+            >
               Build scalable AI applications <br /> with dynamic LLM routing
             </p>
-            <p className="text-lg text-gray-4 self-stretch text-center">
+            <p
+              className="text-lg text-gray-4 self-stretch text-center"
+              data-aos="fade-down" data-aos-delay="200"
+            >
               We connect the best model for your prompts with a unified API
               end-point.
               <br />
@@ -59,7 +70,10 @@ export function Landing() {
               97%.
             </p>
           </div>
-          <div className="flex items-center justify-center gap-xs self-stretch">
+          <div
+            className="flex items-center justify-center gap-xs self-stretch"
+            data-aos="fade-down" data-aos-delay="250"
+          >
             {/* <Button text="Get started" variant="secondary" /> */}
             <Button
               text="Beta access"
@@ -84,7 +98,7 @@ export function Landing() {
       <div
         aria-label="Model selection section"
         className="flex px-xxxl sm:px-lg py-xxl flex-col items-center gap-xl self-stretch overflow-hidden"
-        data-aos="fade-right"
+        data-aos="fade-down"
       >
         <SectionTitle
           title={"Leverage all best-in-class LLMs"}
@@ -113,7 +127,6 @@ export function Landing() {
       <div
         aria-label="integration section"
         className="flex px-xxxl sm:px-lg py-xxl flex-col items-center gap-xl self-stretch overflow-hidden"
-        data-aos="fade-left"
       >
         <div className="max-w-[1200px] flex-col items-center gap-xl w-full">
           <div className="flex-col items-center gap-lg self-stretch">
@@ -178,7 +191,7 @@ export function Landing() {
       <div
         aria-label="Features section"
         className="flex-col px-xxxl sm:px-lg py-xxl items-center gap-xl self-stretch bg-gray-blac overflow-hidden"
-        data-aos="zoom-in-right"
+        data-aos="fade-down"
       >
         <div className="max-w-[1200px] flex-col items-center gap-xl w-full">
           <SectionTitle
@@ -211,10 +224,7 @@ export function Landing() {
 
   const CallToActionSection = () => {
     return (
-      <div
-        className="flex px-[180px] sm:px-lg pt-xxxl flex-col items-center gap-xl self-stretch overflow-hidden"
-        data-aos="zoom-out"
-      >
+      <div className="flex px-[180px] sm:px-lg pt-xxxl flex-col items-center gap-xl self-stretch overflow-hidden">
         <div className="flex max-w-[1200px] flex-col items-center gap-sm ">
           <p className="display-lg text-center gradient-text ">
             Integrate in minutes. <br />
