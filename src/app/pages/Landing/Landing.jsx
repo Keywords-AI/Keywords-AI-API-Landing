@@ -26,7 +26,7 @@ import "aos/dist/aos.css";
 export function Landing() {
   const navigate = useNavigate();
   useEffect(() => {
-    AOS.init({ duration: 500 });
+    AOS.init({ duration: 1500 });
   }, []);
   const IntroductionSection = () => {
     return (
@@ -57,14 +57,14 @@ export function Landing() {
             <p
               className=" hidden sm:block display-lg self-stretch gradient-text text-center"
               data-aos="custom-fade-down"
-              data-aos-delay="100"
+              data-aos-delay="150"
             >
               Build scalable AI applications <br /> with dynamic LLM routing
             </p>
             <p
               className="text-lg text-gray-4 self-stretch text-center"
               data-aos="custom-fade-down"
-              data-aos-delay="150"
+              data-aos-delay="250"
             >
               We connect the best model for your prompts with a unified API
               end-point.
@@ -76,7 +76,7 @@ export function Landing() {
           <div
             className="flex items-center justify-center gap-xs self-stretch"
             data-aos="custom-fade-down"
-            data-aos-delay="200"
+            data-aos-delay="350"
             data-aos-anchor-placement="top-bottom"
           >
             {/* <Button text="Get started" variant="secondary" /> */}
@@ -91,7 +91,7 @@ export function Landing() {
         <div
           className="flex max-w-[1200px] items-center justify-center gap-xxs w-full"
           data-aos="custom-fade-down"
-          data-aos-delay="250"
+          data-aos-delay="450"
           data-aos-anchor-placement="top-bottom"
         >
           <p className="text-sm-regular text-resend-64">Backed by</p>
@@ -139,7 +139,7 @@ export function Landing() {
       >
         <div className="max-w-[1200px] flex-col items-center gap-xl w-full">
           <div className="flex-col items-center gap-lg self-stretch">
-            <Electric />
+            <img src="./electric.svg" alt="electric" />
 
             <SectionTitle
               title={"Integrate within minutes"}
