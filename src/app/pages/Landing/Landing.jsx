@@ -139,7 +139,7 @@ export function Landing() {
       >
         <div className="max-w-[1200px] flex-col items-center gap-xl w-full">
           <div className="flex-col items-center gap-lg self-stretch">
-            <img src="./electric.svg" alt="electric" />
+            <img src="./electric.svg" alt="electric" className="w-[188.5px] h-[206px]" />
 
             <SectionTitle
               title={"Integrate within minutes"}
