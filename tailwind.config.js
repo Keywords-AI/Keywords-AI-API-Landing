@@ -12,7 +12,7 @@ export default {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
-        'fira-code': ['Fira Code'],
+        "fira-code": ["Fira Code"],
       },
       spacing: {
         xxxs: "4px",
@@ -67,14 +67,13 @@ export default {
         window: " 0px 0px 10px 10px rgba(255, 255, 255, 0.05)",
       },
       backgroundImage: {
-        'highlight': 'linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.20) 0%, rgba(143, 143, 143, 0.67) 50%, rgba(0, 0, 0, 0.04) 100%)',
-        
-        
+        highlight:
+          "linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.20) 0%, rgba(143, 143, 143, 0.67) 50%, rgba(0, 0, 0, 0.04) 100%)",
       },
       screens: {
-        'sm': { 'max': '680px'},
+        sm: { max: "680px" },
       },
     },
   },
-  plugins: [require("./flexPlugin.js"),],
+  plugins: [require("./flexPlugin.js")],
 };

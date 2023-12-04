@@ -26,7 +26,7 @@ import "aos/dist/aos.css";
 export function Landing() {
   const navigate = useNavigate();
   useEffect(() => {
-    AOS.init({ duration: 1500 });
+    AOS.init({ duration: 500 });
   }, []);
   const IntroductionSection = () => {
     return (
@@ -39,7 +39,7 @@ export function Landing() {
             {/* <Button text="Read our launch on Product Hunt" variant="news" /> */}
             <div
               className="bg-gradient-out p-[1px] rounded-lg"
-              data-aos="fade-down" data-aos-delay="50"
+              data-aos="custom-fade-down"
             >
               <Button
                 text="Keywords AI Beta Release"
@@ -49,19 +49,22 @@ export function Landing() {
             </div>
             <p
               className="sm:hidden display-xl self-stretch gradient-text text-center"
-              data-aos="fade-down" data-aos-delay="100"
+              data-aos="custom-fade-down"
+              data-aos-delay="50"
             >
               Build scalable AI applications <br /> with dynamic LLM routing
             </p>
             <p
               className=" hidden sm:block display-lg self-stretch gradient-text text-center"
-              data-aos="fade-down" data-aos-delay="150"
+              data-aos="custom-fade-down"
+              data-aos-delay="100"
             >
               Build scalable AI applications <br /> with dynamic LLM routing
             </p>
             <p
               className="text-lg text-gray-4 self-stretch text-center"
-              data-aos="fade-down" data-aos-delay="200"
+              data-aos="custom-fade-down"
+              data-aos-delay="150"
             >
               We connect the best model for your prompts with a unified API
               end-point.
@@ -72,7 +75,9 @@ export function Landing() {
           </div>
           <div
             className="flex items-center justify-center gap-xs self-stretch"
-            data-aos="fade-down" data-aos-delay="250"
+            data-aos="custom-fade-down"
+            data-aos-delay="200"
+            data-aos-anchor-placement="top-bottom"
           >
             {/* <Button text="Get started" variant="secondary" /> */}
             <Button
@@ -83,7 +88,12 @@ export function Landing() {
             {/* <Button text="Documentation" variant="header" /> */}
           </div>
         </div>
-        <div className="flex max-w-[1200px] items-center justify-center gap-xxs w-full">
+        <div
+          className="flex max-w-[1200px] items-center justify-center gap-xxs w-full"
+          data-aos="custom-fade-down"
+          data-aos-delay="250"
+          data-aos-anchor-placement="top-bottom"
+        >
           <p className="text-sm-regular text-resend-64">Backed by</p>
           <div className="flex items-center gap-xxxs">
             <Y />
@@ -98,7 +108,6 @@ export function Landing() {
       <div
         aria-label="Model selection section"
         className="flex px-xxxl sm:px-lg py-xxl flex-col items-center gap-xl self-stretch overflow-hidden"
-        data-aos="fade-down"
       >
         <SectionTitle
           title={"Leverage all best-in-class LLMs"}
@@ -191,7 +200,6 @@ export function Landing() {
       <div
         aria-label="Features section"
         className="flex-col px-xxxl sm:px-lg py-xxl items-center gap-xl self-stretch bg-gray-blac overflow-hidden"
-        data-aos="fade-down"
       >
         <div className="max-w-[1200px] flex-col items-center gap-xl w-full">
           <SectionTitle
