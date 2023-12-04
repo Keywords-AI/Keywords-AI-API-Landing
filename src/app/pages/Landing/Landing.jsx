@@ -20,13 +20,20 @@ import { ModelLogos } from "./components";
 import { CodeBoxDisplay } from "./components/CodeBoxDisplay";
 import { useNavigate } from "react-router-dom";
 import { ContactDialog } from "src/app/components/ContactDialog";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export function Landing() {
   const navigate = useNavigate();
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const IntroductionSection = () => {
     return (
       <div
         aria-label="introduction section"
         className="flex p-xxxl sm:px-lg flex-col items-center gap-xxxl self-stretch"
+        data-aos="fade-up"
       >
         <div className="flex max-w-[1200px] flex-col items-start gap-xl w-full">
           <div className="flex flex-col items-center gap-lg self-stretch">
@@ -76,7 +83,8 @@ export function Landing() {
     return (
       <div
         aria-label="Model selection section"
-        className="flex px-xxxl sm:px-lg py-xxl flex-col items-center gap-xl self-stretch "
+        className="flex px-xxxl sm:px-lg py-xxl flex-col items-center gap-xl self-stretch overflow-hidden"
+        data-aos="fade-right"
       >
         <SectionTitle
           title={"Leverage all best-in-class LLMs"}
@@ -104,11 +112,13 @@ export function Landing() {
     return (
       <div
         aria-label="integration section"
-        className="flex px-xxxl sm:px-lg py-xxl flex-col items-center gap-xl self-stretch"
+        className="flex px-xxxl sm:px-lg py-xxl flex-col items-center gap-xl self-stretch overflow-hidden"
+        data-aos="fade-left"
       >
         <div className="max-w-[1200px] flex-col items-center gap-xl w-full">
           <div className="flex-col items-center gap-lg self-stretch">
             <Electric />
+
             <SectionTitle
               title={"Integrate within minutes"}
               subtitle={"Easy integration with OpenAI style API call."}
@@ -167,7 +177,8 @@ export function Landing() {
     return (
       <div
         aria-label="Features section"
-        className="flex-col px-xxxl sm:px-lg py-xxl items-center gap-xl self-stretch bg-gray-black"
+        className="flex-col px-xxxl sm:px-lg py-xxl items-center gap-xl self-stretch bg-gray-blac overflow-hidden"
+        data-aos="zoom-in-right"
       >
         <div className="max-w-[1200px] flex-col items-center gap-xl w-full">
           <SectionTitle
@@ -200,7 +211,10 @@ export function Landing() {
 
   const CallToActionSection = () => {
     return (
-      <div className="flex px-[180px] sm:px-lg pt-xxxl flex-col items-center gap-xl self-stretch">
+      <div
+        className="flex px-[180px] sm:px-lg pt-xxxl flex-col items-center gap-xl self-stretch overflow-hidden"
+        data-aos="zoom-out"
+      >
         <div className="flex max-w-[1200px] flex-col items-center gap-sm ">
           <p className="display-lg text-center gradient-text ">
             Integrate in minutes. <br />
