@@ -318,6 +318,7 @@ export const Electric = () => {
       height="286"
       fill="none"
       viewBox="0 0 268 286"
+      style={{ filter: "drop-shadow(0px 0px 40px rgba(143, 0, 210, 0.25))" }}
     >
       <g filter="url(#filter0_d_4954_5046)">
         <mask
