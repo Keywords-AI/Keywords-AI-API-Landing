@@ -48,7 +48,7 @@ export default {
         primary: "#A8CBFF ",
         complementary: "#123456",
         success: "#73CB98",
-        error: "#D43A28",
+        error: "#F55656",
         gray: {
           white: "#F9FAFC",
           black: "#000000",

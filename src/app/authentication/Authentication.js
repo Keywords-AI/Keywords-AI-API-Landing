@@ -92,7 +92,6 @@ export const joinwaitlist = async ({
       data: formdata,
       headers: { "Content-Type": "multipart/form-data" },
     });
-
     // Assuming the response is text-based; adjust if it's JSON or other format
     console.log(response.data);
   } catch (error) {
@@ -184,7 +183,6 @@ export const feedback = async ({ content, file_or_image }) => {
     if (file_or_image && file_or_image.length > 0) {
       formData.append("file_or_image", file_or_image[0]);
     }
-
     const response = await axios.post(`${apiurl}api/feedback/`, formData, {
       headers: {
         "X-CSRFToken": getCookie("csrftoken"),

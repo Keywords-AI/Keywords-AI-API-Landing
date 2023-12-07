@@ -314,93 +314,48 @@ export const Electric = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="268"
-      height="286"
+      width="189"
+      height="206"
+      viewBox="0 0 189 206"
       fill="none"
-      viewBox="0 0 268 286"
-      style={{ filter: "drop-shadow(0px 0px 40px rgba(143, 0, 210, 0.25))" }}
     >
-      <g filter="url(#filter0_d_4954_5046)">
-        <mask
-          id="mask0_4954_5046"
-          style={{ maskType: "alpha" }}
-          width="190"
-          height="206"
-          x="39"
-          y="40"
-          maskUnits="userSpaceOnUse"
-        >
-          <path fill="#D9D9D9" d="M39.75 40H228.25V246H39.75z"></path>
-        </mask>
-        <g mask="url(#mask0_4954_5046)">
-          <path
-            fill="#000"
-            d="M118.832 198.488v-.5H40.944L149.168 41.601v89.463h77.887L118.832 287.451v-88.963z"
-          ></path>
-          <path
-            fill="url(#paint0_linear_4954_5046)"
-            d="M118.832 198.488v-.5H40.944L149.168 41.601v89.463h77.887L118.832 287.451v-88.963z"
-          ></path>
-          <path
-            stroke="url(#paint1_linear_4954_5046)"
-            d="M118.832 198.488v-.5H40.944L149.168 41.601v89.463h77.887L118.832 287.451v-88.963z"
-          ></path>
-        </g>
-      </g>
+      <path
+        d="M79.0815 158.488V157.988H78.5815H1.1943L109.418 1.60116V90.5644V91.0644H109.918H187.305L79.0815 247.451V158.488Z"
+        fill="black"
+      />
+      <path
+        d="M79.0815 158.488V157.988H78.5815H1.1943L109.418 1.60116V90.5644V91.0644H109.918H187.305L79.0815 247.451V158.488Z"
+        fill="url(#paint0_linear_5472_5926)"
+      />
+      <path
+        d="M79.0815 158.488V157.988H78.5815H1.1943L109.418 1.60116V90.5644V91.0644H109.918H187.305L79.0815 247.451V158.488Z"
+        stroke="url(#paint1_linear_5472_5926)"
+      />
       <defs>
-        <filter
-          id="filter0_d_4954_5046"
-          width="268.02"
-          height="286"
-          x="-0.01"
-          y="0"
-          colorInterpolationFilters="sRGB"
-          filterUnits="userSpaceOnUse"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
-          <feColorMatrix
-            in="SourceAlpha"
-            result="hardAlpha"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          ></feColorMatrix>
-          <feOffset></feOffset>
-          <feGaussianBlur stdDeviation="20"></feGaussianBlur>
-          <feComposite in2="hardAlpha" operator="out"></feComposite>
-          <feColorMatrix values="0 0 0 0 0.560784 0 0 0 0 0 0 0 0 0 0.823529 0 0 0 0.25 0"></feColorMatrix>
-          <feBlend
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_4954_5046"
-          ></feBlend>
-          <feBlend
-            in="SourceGraphic"
-            in2="effect1_dropShadow_4954_5046"
-            result="shape"
-          ></feBlend>
-        </filter>
         <linearGradient
-          id="paint0_linear_4954_5046"
-          x1="134"
-          x2="134"
-          y1="40"
-          y2="289.052"
+          id="paint0_linear_5472_5926"
+          x1="94.2498"
+          y1="0"
+          x2="94.2498"
+          y2="249.052"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#C0C5E4" stopOpacity="0.157"></stop>
-          <stop offset="0.5" stopColor="#BDC8FF" stopOpacity="0.09"></stop>
-          <stop offset="1" stopColor="#36313C" stopOpacity="0.08"></stop>
+          <stop stopColor="#C0C5E4" stopOpacity="0.157" />
+          <stop offset="0.5" stopColor="#BDC8FF" stopOpacity="0.09" />
+          <stop offset="1" stopColor="#36313C" stopOpacity="0.08" />
         </linearGradient>
         <linearGradient
-          id="paint1_linear_4954_5046"
-          x1="39.99"
-          x2="228.009"
-          y1="164.526"
-          y2="164.526"
+          id="paint1_linear_5472_5926"
+          x1="0.240234"
+          y1="124.526"
+          x2="188.259"
+          y2="124.526"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#fff" stopOpacity="0"></stop>
-          <stop stopOpacity="0.2"></stop>
-          <stop offset="0.5" stopColor="#8F8F8F" stopOpacity="0.67"></stop>
-          <stop offset="1" stopOpacity="0.04"></stop>
+          <stop stopColor="white" stopOpacity="0" />
+          <stop stopOpacity="0.2" />
+          <stop offset="0.5" stopColor="#8F8F8F" stopOpacity="0.67" />
+          <stop offset="1" stopOpacity="0.04" />
         </linearGradient>
       </defs>
     </svg>
@@ -539,6 +494,23 @@ export const PassCheck = ({ fill = "fill-gray-white" }) => {
       <path
         d="M8 0C3.584 0 0 3.584 0 8C0 12.416 3.584 16 8 16C12.416 16 16 12.416 16 8C16 3.584 12.416 0 8 0ZM6.4 12L2.4 8L3.528 6.872L6.4 9.736L12.472 3.664L13.6 4.8L6.4 12Z"
         className={fill}
+      />
+    </svg>
+  );
+};
+
+export const Failed = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+    >
+      <path
+        d="M8.8 8.8H7.2V4H8.8M8.8 12H7.2V10.4H8.8M8 0C6.94943 0 5.90914 0.206926 4.93853 0.608964C3.96793 1.011 3.08601 1.60028 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.08601 14.3997 3.96793 14.989 4.93853 15.391C5.90914 15.7931 6.94943 16 8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 6.94943 15.7931 5.90914 15.391 4.93853C14.989 3.96793 14.3997 3.08601 13.6569 2.34315C12.914 1.60028 12.0321 1.011 11.0615 0.608964C10.0909 0.206926 9.05058 0 8 0Z"
+        fill="#F7CAC9"
       />
     </svg>
   );
