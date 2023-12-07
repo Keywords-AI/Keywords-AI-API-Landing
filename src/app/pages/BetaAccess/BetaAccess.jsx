@@ -18,9 +18,9 @@ export function BetaAccess() {
   const onSubmit = async (data) => {
     try {
       const res = await joinwaitlist({ ...data });
-      console.log(res);
-      setOpen(true); // open the toast
+      setOpen(true); 
     } catch (error) {
+      setOpen(true);
       setBackendError(error.message);
     }
   };
@@ -121,9 +121,9 @@ export function BetaAccess() {
               />
             </div>
           </div>
-          <p className="text-sm-regular text-error self-start">
+          {/* <p className="text-sm-regular text-error self-start">
             {backendError ? backendError : ""}
-          </p>
+          </p> */}
           <div className="flex-col items-start gap-xs self-stretch">
             <Button
               text={"Join waitlist"}
@@ -152,16 +152,18 @@ export function BetaAccess() {
 
             <Toast
               title={
-                <div className="flex items-center gap-xxs">
-                  <PassCheck />
-                  <span className="text-sm-md text-gray-white">
-                    You are on the waitlist!
-                  </span>
-                </div>
+                backendError != null
+                  ? "Failed to join waitlist"
+                  : "You are on the waitlist!"
               }
-              content="We will reach out to you soon."
+              content={
+                backendError != null
+                  ? backendError
+                  : "We will reach out to you soon."
+              }
               open={open}
               setOpen={setOpen}
+              variant={backendError != null ? "error" : "success"}
             ></Toast>
           </div>
         </form>

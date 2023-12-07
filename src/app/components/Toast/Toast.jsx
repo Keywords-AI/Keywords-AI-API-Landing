@@ -1,5 +1,5 @@
 import * as ToastPrimitive from "@radix-ui/react-toast";
-import { Close } from "../icons";
+import { Close, Failed, PassCheck } from "../icons";
 
 export const Toast = ({
   title,
@@ -7,6 +7,7 @@ export const Toast = ({
   children,
   open,
   setOpen,
+  variant = "success",
   ...props
 }) => {
   return (
@@ -18,14 +19,17 @@ export const Toast = ({
         duration={3000}
       >
         <ToastPrimitive.Title className="flex justify-between items-center self-stretch">
-          {title}
+          <div className="flex items-center gap-xxs">
+            {variant === "success" ? <PassCheck /> : <Failed />}
+            <span className="text-sm-md text-gray-white">{title}</span>
+          </div>
           <ToastPrimitive.Action asChild altText="close notification">
             <button>
               <Close />
             </button>
           </ToastPrimitive.Action>
         </ToastPrimitive.Title>
-        <ToastPrimitive.Description className="flex pl-[24px] items-start gap-[10px] text-sm-regular text-gray-4">
+        <ToastPrimitive.Description className="flex pl-[24px] items-start gap-[10px] caption text-gray-4">
           {content}
         </ToastPrimitive.Description>
       </ToastPrimitive.Root>

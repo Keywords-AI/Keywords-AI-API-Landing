@@ -9,13 +9,15 @@ import React from "react";
 export function ContactDialog() {
   const { register, handleSubmit } = useForm();
   const [open, setOpen] = React.useState(false);
+  const [submitError, setSubmitError] = React.useState(null);
   const onSubmit = async (data) => {
     console.log(data);
     try {
       await feedback({ ...data });
       setOpen(false);
     } catch (error) {
-      console.log(error);
+      setSubmitError(error.message);
+      console.log(error.message);
     }
   };
   return (
@@ -57,6 +59,13 @@ export function ContactDialog() {
               </p>
               <input type="file" {...register("file_or_image", {})} hidden />
             </label>
+            <div className="flex items-center gap-xxs">
+              {submitError && (
+                <p className="caption text-error">
+                  {submitError || "Unspecified error"}
+                </p>
+              )}
+            </div>
             <div className="flex-row justify-between items-start self-stretch  flex-nowrap">
               <p className="caption text-gray-4 ">
                 You can also email us at{" "}

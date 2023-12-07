@@ -139,7 +139,15 @@ export function Landing() {
       >
         <div className="max-w-[1200px] flex-col items-center gap-xl w-full">
           <div className="flex-col items-center gap-lg self-stretch">
-            <img src="./electric.svg" alt="electric" className="w-[188.5px] h-[206px]" />
+            {/* <img src="./electric.svg" alt="electric" className="w-[188.5px] h-[206px]" /> */}
+            <div
+              className="w-[188.5px] h-[206px]"
+              style={{
+                filter: "drop-shadow(0px 0px 40px rgba(143, 0, 210, 0.25))",
+              }}
+            >
+              <Electric />
+            </div>
 
             <SectionTitle
               title={"Integrate within minutes"}
