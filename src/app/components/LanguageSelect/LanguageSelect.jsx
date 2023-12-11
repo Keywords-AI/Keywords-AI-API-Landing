@@ -1,3 +1,4 @@
+import React from "react";
 import { ArrowDown } from "../icons";
 import "./LanguageSelect.css";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
@@ -29,9 +30,11 @@ export function LanguageSelect({
               className="text-gray-white outline-none flex self-stretch"
               onClick={() => setCurrentLanguage(language.name)}
             >
-              <div className="flex px-xs py-xxs items-center gap-xxs flex-1 rounded-sm hover:bg-gray-3 hover:cursor-pointer">
-                {language.icon}
-                <span className="text-sm-regular text-gray-white">
+              <div className="flex px-xs py-xxs items-center gap-xxs flex-1 rounded-sm hover:bg-gray-3 hover:cursor-pointer group">
+                {React.createElement(language.icon, {
+                  fill: "fill-gray-4 group-hover:fill-gray-white",
+                })}
+                <span className="text-sm-regular text-gray-4 group-hover:text-gray-white">
                   {language.name}
                 </span>
               </div>
