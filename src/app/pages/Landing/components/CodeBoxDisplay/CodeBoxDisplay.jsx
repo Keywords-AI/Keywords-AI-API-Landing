@@ -15,7 +15,7 @@ export function CodeBoxDisplay() {
     {
       name: "Bash",
 
-      icon: <Bash />,
+      icon: Bash,
       code: `curl -X POST "https://keywordsapi.info/api/generate/"-H 
       "Content-Type: application/json"-H "Authorization: Api-Key {YOUR_ACCESS_TOKEN}"-d '{
         "messages":[{
@@ -31,7 +31,7 @@ export function CodeBoxDisplay() {
     {
       name: "Python",
 
-      icon: <Python />,
+      icon: Python,
       code: `import requests
 import json
       
@@ -52,7 +52,7 @@ api/generate/', headers=headers, json=data)`,
     },
     {
       name: "Javascript",
-      icon: <Javascript />,
+      icon: Javascript,
       code: `fetch('https://keywordsapi.info/api/generate/', {
         method: 'POST',
         headers: {
@@ -71,7 +71,7 @@ api/generate/', headers=headers, json=data)`,
     },
     {
       name: "PHP",
-      icon: <Php />,
+      icon: Php,
       code: `<?php
       $ch = curl_init();
       
@@ -94,7 +94,7 @@ api/generate/', headers=headers, json=data)`,
     },
     {
       name: "Golang",
-      icon: <Golang />,
+      icon: Golang,
       code: `package main
 import (
           "bytes"

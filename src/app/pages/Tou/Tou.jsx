@@ -6,7 +6,7 @@ export function Tou() {
     title: "Terms of Use",
     date: "Updated 10/24/2023",
     content: (
-      <div className="Tos text-md-regular text-gray-4">
+      <div className="Tos text-sm-regular text-gray-4">
         <p>
           <strong>AGREEMENT TO OUR LEGAL TERMS</strong>
         </p>

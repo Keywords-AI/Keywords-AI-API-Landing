@@ -7,11 +7,11 @@ export function Dpa() {
     title: "Data Processing Agreement",
     date: "Updated 10/19/2023",
     content: (
-      <p className="Dpa text-md-regular text-gray-4">
+      <p className="Dpa text-sm-regular text-gray-4">
         To use our API services, you're required to accept the Keywords AI Data
-        Processing Agreement (DPA), available via the link below. By agreeing to
-        our Terms of Service, you're also automatically consenting to our DPA,
-        eliminating the need for a separate signature.
+        Processing Agreement (DPA), available via the button below. By agreeing
+        to our Terms of Service, you're also automatically consenting to our
+        DPA, eliminating the need for a separate signature.
       </p>
     ),
   };
@@ -32,6 +32,9 @@ export function Dpa() {
               text={"Request signed DPA"}
               variant={"secondary"}
               borderRadius="rounded-sm"
+              onClick={() => {
+                window.location.href = "mailto:team@keywordsai.co";
+              }}
             />
           </div>
         </div>

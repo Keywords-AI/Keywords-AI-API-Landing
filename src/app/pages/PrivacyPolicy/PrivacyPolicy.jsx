@@ -6,7 +6,7 @@ export function PrivacyPolicy() {
     title: "Privacy Policy",
     date: "Updated 10/20/2023",
     content: (
-      <div className="PrivacyPolicy text-md-regular text-gray-4">
+      <div className="PrivacyPolicy text-sm-regular text-gray-4">
         <p>
           This privacy notice for Keywords AI Inc. (doing business as Keywords
           AI) (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), describes
