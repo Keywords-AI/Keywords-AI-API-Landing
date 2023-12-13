@@ -16,7 +16,7 @@ export function LogIn() {
     const redirect = async () => {
       const res = await isUserLoggedIn();
       if (res) {
-        window.location.href = platformURL + "/login";
+        window.location.href = platformURL;
       }
     };
     redirect();
