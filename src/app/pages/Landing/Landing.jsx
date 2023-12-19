@@ -85,7 +85,17 @@ export function Landing() {
               variant="secondary"
               onClick={() => navigate("/beta-access")}
             />
-            {/* <Button text="Documentation" variant="header" /> */}
+            <button
+              className="flex min-w-[60px] py-xxs px-sm justify-center items-center gap-xxs rounded-lg bg-gray-black group hover:bg-gray-3 active:bg-gray-2"
+              onClick={() =>
+                (window.location.href = "https://zcal.co/keywords-ai")
+              }
+            >
+              <span className="text-gray-4 text-sm-regular group-hover:text-gray-white">
+                Book a demo
+              </span>
+              <ArrowRight fill="fill-gray-4 group-hover:fill-gray-white" />
+            </button>
           </div>
         </div>
         <div
