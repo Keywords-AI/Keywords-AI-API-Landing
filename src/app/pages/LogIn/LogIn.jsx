@@ -39,10 +39,10 @@ export function LogIn() {
   const [backendError, setBackendError] = useState(null);
   return (
     <div className="flex-col items-center gap-xxxl justify-center self-stretch">
-      <BackButton text="Back" />
+      <BackButton text="Home" link="/"/>
       <div className=" flex-col w-full max-w-[420px] items-center gap-lg justify-center ">
         <AuthenticationTitle
-          title={"Sign In"}
+          title={"Sign in"}
           subtitle={
             <span>
               Don’t have an account?{" "}
