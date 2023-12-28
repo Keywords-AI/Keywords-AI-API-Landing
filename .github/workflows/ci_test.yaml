@@ -31,11 +31,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          submodules: 'recursive'
-      - name: Pull & update submodules recursively
-        run: |
-          git submodule update --init --recursive
-          git submodule update --recursive --remote
+          submodules: 'true'
+          token: ${{ secrets.KA_LANDING }}
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
