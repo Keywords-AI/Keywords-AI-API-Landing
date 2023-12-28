@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
-import { BackButton } from "src/app/components/BackButton";
+import { BackButton } from "src/app/old_components/BackButton";
 import { useForm } from "react-hook-form";
-import { AuthenticationTitle } from "src/app/components/AuthenticationTitle/AuthenticationTitle";
+import { AuthenticationTitle } from "src/app/old_components/AuthenticationTitle/AuthenticationTitle";
 import cn from "src/app/utils/ClassMerge";
 import { isUserLoggedIn, login } from "src/app/authentication/Authentication";
-import { Button } from "src/app/components/Button";
+import { Button } from "src/app/old_components/Button";
 import { useContext } from "react";
 import AuthContext from "src/app/authentication/AuthContext";
 import { platformURL } from "src/app/utils/platformURL";
@@ -39,7 +39,7 @@ export function LogIn() {
   const [backendError, setBackendError] = useState(null);
   return (
     <div className="flex-col items-center gap-xxxl justify-center self-stretch">
-      <BackButton text="Home" link="/"/>
+      <BackButton text="Home" link="/" />
       <div className=" flex-col w-full max-w-[420px] items-center gap-lg justify-center ">
         <AuthenticationTitle
           title={"Sign in"}

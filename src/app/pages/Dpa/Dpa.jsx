@@ -1,6 +1,6 @@
 import "./Dpa.css";
-import { Page } from "src/app/components/Page";
-import { Button } from "src/app/components/Button";
+import { Page } from "src/app/old_components/Page";
+import { Button } from "src/app/old_components/Button";
 
 export function Dpa() {
   const Data = {

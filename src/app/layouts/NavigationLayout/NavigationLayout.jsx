@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import { Footer } from "src/app/components/Footer/Footer";
-import { Navbar } from "src/app/components/Navbar/Navbar";
+import { Footer } from "src/app/old_components/Footer/Footer";
+import { Navbar } from "src/app/old_components/Navbar/Navbar";
 
 export function NavigationLayout({ user }) {
   return (

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { BackButton } from "src/app/components/BackButton/BackButton";
-import { Button } from "src/app/components/Button";
+import { BackButton } from "src/app/old_components/BackButton/BackButton";
+import { Button } from "src/app/old_components/Button";
 
 export function Unauthorized() {
   const navigate = useNavigate();

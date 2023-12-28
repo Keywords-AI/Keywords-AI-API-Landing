@@ -1,4 +1,4 @@
-import { Page } from "src/app/components/Page/Page";
+import { Page } from "src/app/old_components/Page/Page";
 import "./Tou.css";
 
 export function Tou() {

@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Subtract } from "src/app/components/icons";
+import { Subtract } from "src/app/old_components/icons";
 
 export function FullScreenLayout() {
   return (

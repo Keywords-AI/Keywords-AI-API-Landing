@@ -1,4 +1,4 @@
-import { Check } from "src/app/components/icons";
+import { Check } from "src/app/old_components/icons";
 import "./PricingTable.css";
 export function PricingTable() {
   const plans = [

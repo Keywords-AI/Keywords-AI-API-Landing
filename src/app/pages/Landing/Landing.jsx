@@ -1,4 +1,4 @@
-import { Button } from "src/app/components/Button";
+import { Button } from "src/app/old_components/Button";
 import { SmallCard } from "./components/SmallCard/SmallCard";
 import "./Landing.css";
 import {
@@ -12,14 +12,14 @@ import {
   Chat,
   Document,
   Electric,
-} from "src/app/components/icons";
-import { Page } from "src/app/components/Page";
-import { Divider } from "src/app/components/Divider";
-import { SectionTitle } from "src/app/components/SectionTitle";
+} from "src/app/old_components/icons";
+import { Page } from "src/app/old_components/Page";
+import { Divider } from "src/app/old_components/Divider";
+import { SectionTitle } from "src/app/old_components/SectionTitle";
 import { ModelLogos } from "./components";
 import { CodeBoxDisplay } from "./components/CodeBoxDisplay";
 import { useNavigate } from "react-router-dom";
-import { ContactDialog } from "src/app/components/ContactDialog";
+import { ContactDialog } from "src/app/old_components/ContactDialog";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";

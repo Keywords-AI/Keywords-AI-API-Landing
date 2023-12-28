@@ -1,12 +1,12 @@
-import { LanguageSelect } from "src/app/components/LanguageSelect";
-import { CopyCode } from "../../../../components/CopyCode";
+import { LanguageSelect } from "src/app/old_components/LanguageSelect";
+import { CopyCode } from "../../../../old_components/CopyCode";
 import {
   Bash,
   Golang,
   Javascript,
   Php,
   Python,
-} from "../../../../components/icons";
+} from "../../../../old_components/icons";
 import "./CodeBoxDisplay.css";
 import { useState } from "react";
 export function CodeBoxDisplay() {

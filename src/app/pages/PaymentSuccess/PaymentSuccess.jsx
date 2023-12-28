@@ -1,7 +1,7 @@
-import { BackButton } from "src/app/components/BackButton/BackButton";
-import { CircleTick } from "src/app/components/icons";
+import { BackButton } from "src/app/old_components/BackButton/BackButton";
+import { CircleTick } from "src/app/old_components/icons";
 import "./PaymentSuccess.css";
-import { Button } from "src/app/components/Button";
+import { Button } from "src/app/old_components/Button";
 
 export function PaymentSuccess() {
   return (
