@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const { join } = require("path");
-const theme = require("./src/app/components/styles/theme.js");
+const theme = require("./src/components/styles/theme.js");
 export default {
   content: [
     join(
