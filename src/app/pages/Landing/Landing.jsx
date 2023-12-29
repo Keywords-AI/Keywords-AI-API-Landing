@@ -1,4 +1,3 @@
-import { Button } from "src/app/old_components/Button";
 import { SmallCard } from "./components/SmallCard/SmallCard";
 import "./Landing.css";
 import {
@@ -12,17 +11,19 @@ import {
   Chat,
   Document,
   Electric,
-} from "src/app/old_components/icons";
-import { Page } from "src/app/old_components/Page";
-import { Divider } from "src/app/old_components/Divider";
-import { SectionTitle } from "src/app/old_components/SectionTitle";
+} from "src/app/components/icons-old";
+import { Page } from "src/app/components/Page";
+import { Divider } from "src/app/components/Divider";
+import { SectionTitle } from "src/app/components/SectionTitle";
 import { ModelLogos } from "./components";
 import { CodeBoxDisplay } from "./components/CodeBoxDisplay";
 import { useNavigate } from "react-router-dom";
-import { ContactDialog } from "src/app/old_components/ContactDialog";
+import { ContactDialog } from "src/app/components/ContactDialog";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Right } from "src/app/components/Icons";
+import { Button } from "src/app/components/Buttons";
 export function Landing() {
   const navigate = useNavigate();
   useEffect(() => {
@@ -36,16 +37,11 @@ export function Landing() {
       >
         <div className="flex max-w-[1200px] flex-col items-start gap-xl w-full">
           <div className="flex flex-col items-center gap-lg self-stretch">
-            {/* <Button text="Read our launch on Product Hunt" variant="news" /> */}
             <div
               className="bg-gradient-out p-[1px] rounded-lg"
               data-aos="custom-fade-down"
             >
-              <Button
-                text="Keywords AI Beta Release"
-                variant="beta"
-                arrow={false}
-              />
+              <Button text="Keywords AI Beta Release" variant="beta" />
             </div>
             <p
               className="sm:hidden display-xl self-stretch gradient-text text-center"
@@ -81,21 +77,15 @@ export function Landing() {
           >
             {/* <Button text="Get started" variant="secondary" /> */}
             <Button
-              text="Beta access"
-              variant="secondary"
-              onClick={() => navigate("/beta-access")}
-            />
-            <button
-              className="flex min-w-[60px] py-xxs px-sm justify-center items-center gap-xxs rounded-lg bg-gray-black group hover:bg-gray-3 active:bg-gray-2"
+              text="Try playground"
+              variant="r18-white"
               onClick={() =>
-                (window.location.href = "https://zcal.co/keywords-ai")
+                (window.location.href =
+                  "https://keywords-platform.web.app/login")[[[]]]
               }
-            >
-              <span className="text-gray-4 text-sm-regular group-hover:text-gray-white">
-                Book a demo
-              </span>
-              <ArrowRight fill="fill-gray-4 group-hover:fill-gray-white" />
-            </button>
+              icon={Right}
+            />
+            <Button text="Book a demo" variant="r18-black" icon={Right} />
           </div>
         </div>
         <div
@@ -170,12 +160,13 @@ export function Landing() {
             right into your codebase.
           </p>
           <Divider />
-          {/* <div className="flex items-center justify-center gap-xxs">
-            <p className="text-md-regular text-gray-white ">
-              {"Read documentation"}
-            </p>
-            <ArrowRight fill="fill-gray-white" />
-          </div> */}
+          <Button
+            variant="text"
+            text="Read Documentation"
+            onClick={() =>
+              (window.location.href = "https://docs.keywordsai.co")
+            }
+          />
         </div>
       </div>
     );
@@ -260,8 +251,10 @@ export function Landing() {
         <div className="flex items-start gap-xxs">
           <Button
             text="Get started"
-            variant="secondary"
-            onClick={() => navigate("/beta-access")}
+            variant="r18-white"
+            onClick={() =>
+              (window.location.href = "https://keywords-platform.web.app/login")
+            }
           />
           <ContactDialog />
         </div>

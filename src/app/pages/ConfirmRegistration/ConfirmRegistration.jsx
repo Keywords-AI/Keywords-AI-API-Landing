@@ -1,5 +1,5 @@
-import { BackButton } from "src/app/old_components/BackButton";
-import { Button } from "src/app/old_components/Button";
+import { BackButton } from "src/app/components/BackButton";
+import { Button } from "src/app/components/Button_old";
 
 export function ConfirmRegistration() {
   return (

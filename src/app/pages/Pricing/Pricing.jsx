@@ -1,8 +1,8 @@
-import { Page } from "src/app/old_components/Page/Page";
+import { Page } from "src/app/components/Page/Page";
 import PricingCard from "./components/PricingCard/PricingCard";
-import { Button } from "src/app/old_components/Button";
+import { Button } from "src/app/components/Button_old";
 import { PricingTable } from "./components/PricingTable/PricingTable";
-import { ArrowRight } from "src/app/old_components/icons";
+import { ArrowRight } from "src/app/components/icons-old";
 export function Pricing() {
   const cards = [
     {

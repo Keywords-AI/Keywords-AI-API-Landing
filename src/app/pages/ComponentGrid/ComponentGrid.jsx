@@ -1,6 +1,6 @@
-import { Page } from "src/app/old_components/Page";
-import { PlaygroundTextBox } from "src/app/old_components/PlaygroundTextBox";
-import { SliderDisplay } from "src/app/old_components/Slider";
+import { Page } from "src/app/components/Page";
+import { PlaygroundTextBox } from "src/app/components/PlaygroundTextBox";
+import { SliderDisplay } from "src/app/components/Slider";
 
 export function ComponentGrid() {
   return (

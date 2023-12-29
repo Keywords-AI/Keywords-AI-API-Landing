@@ -1,13 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { BackButton } from "src/app/old_components/BackButton";
+import { BackButton } from "src/app/components/BackButton";
 import { set, useForm } from "react-hook-form";
-import { AuthenticationTitle } from "src/app/old_components/AuthenticationTitle/AuthenticationTitle";
+import { AuthenticationTitle } from "src/app/components/AuthenticationTitle/AuthenticationTitle";
 import cn from "src/app/utils/ClassMerge";
 import { joinwaitlist, signup } from "src/app/authentication/Authentication";
-import { Button } from "src/app/old_components/Button";
-import { Toast } from "src/app/old_components/Toast";
-import { PassCheck } from "src/app/old_components/icons";
+import { Button } from "src/app/components/Button_old";
+import { Toast } from "src/app/components/Toast";
+import { PassCheck } from "src/app/components/icons-old";
 export function BetaAccess() {
   const navigate = useNavigate();
   const {

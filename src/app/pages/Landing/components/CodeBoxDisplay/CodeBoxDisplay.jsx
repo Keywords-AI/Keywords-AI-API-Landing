@@ -1,14 +1,15 @@
-import { LanguageSelect } from "src/app/old_components/LanguageSelect";
-import { CopyCode } from "../../../../old_components/CopyCode";
+import { LanguageSelect } from "src/app/components/LanguageSelect";
+import { CopyCode } from "../../../../components/CopyCode";
 import {
   Bash,
   Golang,
   Javascript,
   Php,
   Python,
-} from "../../../../old_components/icons";
+} from "../../../../components/icons-old";
 import "./CodeBoxDisplay.css";
 import { useState } from "react";
+import { CodeViewer } from "src/app/components/CodeViewer";
 export function CodeBoxDisplay() {
   const [currentLanguage, setCurrentLanguage] = useState("Bash");
   const languages = [
@@ -129,37 +130,7 @@ func main() {
 
   return (
     <div className="flex-col max-w-[800px] items-center w-full rounded-lg border border-gray-3 bg-gradient-in shadow-purple">
-      <div
-        aria-label="header"
-        className="flex py-sm px-md justify-between items-center self-stretch"
-      >
-        <LanguageSelect
-          languages={languages}
-          currentLanguage={currentLanguage}
-          setCurrentLanguage={setCurrentLanguage}
-        />
-        <CopyCode
-          code={
-            languages.find((language) => language.name === currentLanguage).code
-          }
-        />
-      </div>
-
-      <div
-        aria-label="content"
-        className="border-t border-gray-3 flex-col p-md items-start gap-[10px] self-stretch"
-      >
-        <div className=" code flex items-start gap-sm self-stretch">
-          <ol className=" text-gray-white font-fira-code list-inside overflow-x-auto">
-            {languages
-              .find((language) => language.name === currentLanguage)
-              .code.split(`\n`)
-              .map((line, index) => (
-                <li key={index}>{line}</li>
-              ))}
-          </ol>
-        </div>
-      </div>
+      <CodeViewer />
     </div>
   );
 }
