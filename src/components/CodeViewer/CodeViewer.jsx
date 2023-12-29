@@ -6,6 +6,7 @@ import { DropDownMenu } from "../DropDownMenu";
 import { Copy, Down } from "../Icons";
 import { Button } from "../Buttons";
 import { useState } from "react";
+import "./CodeViewer.css";
 import { DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
 import { whiteDark, whiteDarkInit } from "@uiw/codemirror-theme-white/dark";
 const languages = [
@@ -187,6 +188,7 @@ export function CodeViewer() {
               lineHighlight: "transparent",
               selection: "#3E424A",
               fontFamily: "monospace",
+              lineHeight: "1",
             },
           })}
         />

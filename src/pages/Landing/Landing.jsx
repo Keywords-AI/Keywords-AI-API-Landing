@@ -81,7 +81,7 @@ export function Landing() {
               variant="r18-white"
               onClick={() =>
                 (window.location.href =
-                  "https://keywords-platform.web.app/login")[[[]]]
+                  "[https://keywords-platform.web.app/]login")[[[]]]
               }
               icon={Right}
             />
@@ -164,7 +164,8 @@ export function Landing() {
             variant="text"
             text="Read Documentation"
             onClick={() =>
-              (window.location.href = "https://docs.keywordsai.co")
+              (window.location.href =
+                "https://keywords-platform.web.app/platform/playground")
             }
           />
         </div>
@@ -228,12 +229,14 @@ export function Landing() {
             application.
           </p>
           <Divider />
-          {/* <div className="flex items-center justify-center gap-xxs">
-            <p className="text-md-regular text-gray-white ">
-              {"Try examples in playground"}
-            </p>
-            <ArrowRight fill="fill-gray-white" />
-          </div> */}
+
+          <Button
+            variant="text"
+            text="Try examples in playground"
+            onClick={() =>
+              (window.location.href = "https://docs.keywordsai.co")
+            }
+          />
         </div>
       </div>
     );
