@@ -67,7 +67,7 @@ export const Routes = () => {
     {
       element: <FullScreenLayout />, // layout without navigation bar
       children: [
-        { path: "/payment-success", element: <PaymentSuccess /> },
+        // { path: "/payment-success", element: <PaymentSuccess /> },
         { path: "/confirm-registration", element: <ConfirmRegistration /> },
         { path: "/unauthorized", element: <Unauthorized /> },
         { path: "/unauthenticated", element: <Unauthenticated /> },
