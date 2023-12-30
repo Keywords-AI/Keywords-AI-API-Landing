@@ -85,7 +85,14 @@ export function Landing() {
               }
               icon={Right}
             />
-            <Button text="Book a demo" variant="r18-black" icon={Right} />
+            <Button
+              text="Book a demo"
+              variant="r18-black"
+              icon={Right}
+              onClick={() =>
+                (window.location.href = "https://zcal.co/keywords-ai")
+              }
+            />
           </div>
         </div>
         <div
@@ -163,6 +170,9 @@ export function Landing() {
           <Button
             variant="text"
             text="Read Documentation"
+            icon={Right}
+            iconPosition="right"
+            iconSize="xs"
             onClick={() =>
               (window.location.href =
                 "https://keywords-platform.web.app/platform/playground")
@@ -233,6 +243,9 @@ export function Landing() {
           <Button
             variant="text"
             text="Try examples in playground"
+            icon={Right}
+            iconPosition="right"
+            iconSize="xs"
             onClick={() =>
               (window.location.href = "https://docs.keywordsai.co")
             }

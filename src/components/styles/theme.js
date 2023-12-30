@@ -49,6 +49,7 @@ export default {
         2: "#151518",
         3: gray3,
         4: gray4,
+        5: "#282A30",
       },
       box: "#1D1D1D",
       resend: {
@@ -63,11 +64,11 @@ export default {
       card: `0 0 10px 2px rgba(255, 255, 255, 0.10), 0 0 0 1px, #73CB98`,
       key: `1px 1px 1px 0px black`,
       border: `inset 0 0 0 1px ${gray3}`,
-      'border-l': `inset 1px 0 0 0 ${gray3}`,
-      'border-b': `inset 0 -1px 0 0 ${gray3}`,
-      'border-t': `inset 0 1px 0 0 ${gray3}`,
-      'border-r': `inset -1px 0 0 0 ${gray3}`,
-      'border-tlr': `inset 1px 0 0 0 ${gray3},inset -1px 0 0 0 ${gray3},inset 0 1px 0 0 ${gray3}`,
+      "border-l": `inset 1px 0 0 0 ${gray3}`,
+      "border-b": `inset 0 -1px 0 0 ${gray3}`,
+      "border-t": `inset 0 1px 0 0 ${gray3}`,
+      "border-r": `inset -1px 0 0 0 ${gray3}`,
+      "border-tlr": `inset 1px 0 0 0 ${gray3},inset -1px 0 0 0 ${gray3},inset 0 1px 0 0 ${gray3}`,
     },
     backgroundImage: {
       highlight:

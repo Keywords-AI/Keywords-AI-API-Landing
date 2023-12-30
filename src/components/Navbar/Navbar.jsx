@@ -12,6 +12,7 @@ export function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
   const { user } = React.useContext(AuthContext);
+  console.log(location.pathname);
   return (
     <div
       aria-label="Navigation Bar"
@@ -31,21 +32,12 @@ export function Navbar() {
               text="Overview"
               variant="header"
               onClick={() => navigate("/")}
-              textClassName={cn(
-                "text-sm-regular",
-                location.pathname == "/" ? "text-gray-white" : "text-gray-4"
-              )}
+              active={location.pathname == "/"}
             />
             <Button
               text="Pricing"
               variant="header"
               // onClick={() => navigate("/pricing")}
-              textClassName={cn(
-                "text-sm-regular",
-                location.pathname == "/pricing"
-                  ? "text-gray-white"
-                  : "text-gray-4"
-              )}
             />
 
             <Button
@@ -54,34 +46,17 @@ export function Navbar() {
               onClick={() =>
                 (window.location.href = "https://docs.keywordsai.co")
               }
-              textClassName={cn(
-                "text-sm-regular",
-                location.pathname == "/componentgrid"
-                  ? "text-gray-white"
-                  : "text-gray-4"
-              )}
             />
             <Button
               text="Models"
               variant="header"
               // onClick={() => navigate("/componentgrid")}
-              textClassName={cn(
-                "text-sm-regular",
-                location.pathname == "/componentgrid"
-                  ? "text-gray-white"
-                  : "text-gray-4"
-              )}
             />
             <Button
               text="Changelog"
               variant="header"
-              // onClick={() => navigate("/componentgrid")}
-              textClassName={cn(
-                "text-sm-regular",
-                location.pathname == "/componentgrid"
-                  ? "text-gray-white"
-                  : "text-gray-4"
-              )}
+              onClick={() => navigate("/changelog")}
+              active={location.pathname == "/changelog"}
             />
           </div>
         }

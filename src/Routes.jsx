@@ -21,6 +21,7 @@ import { isUserLoggedIn } from "./authentication/Authentication";
 import { BetaAccess } from "./pages/BetaAccess/BetaAccess";
 import AuthContext from "./authentication/AuthContext";
 import { ToastProvider } from "@radix-ui/react-toast";
+import { ChangeLog } from "./pages/ChangeLog";
 
 export const Routes = () => {
   const { user, setUser } = React.useContext(AuthContext);
@@ -57,6 +58,10 @@ export const Routes = () => {
         {
           path: "/dpa",
           element: <Dpa />,
+        },
+        {
+          path: "/changelog",
+          element: <ChangeLog />,
         },
         {
           path: "/componentgrid",

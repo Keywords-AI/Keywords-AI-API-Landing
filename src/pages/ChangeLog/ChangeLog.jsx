@@ -1,4 +1,4 @@
-import { Page } from "src/app/components/Page";
+import { Page } from "src/components/Page";
 
 export function ChangeLog() {
   return (

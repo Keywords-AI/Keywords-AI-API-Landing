@@ -417,7 +417,7 @@ export const Button = forwardRef(
             {icon && (
               <div
                 className={cn(
-                  "flex justify-center items-center w-[16px] h-[16px] gap-[10px]",
+                  "flex justify-center items-center ",
                   iconPosition === "left" ? "order-first" : "order-last"
                 )}
               >
