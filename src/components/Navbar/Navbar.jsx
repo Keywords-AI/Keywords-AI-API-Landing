@@ -12,7 +12,6 @@ export function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
   const { user } = React.useContext(AuthContext);
-  console.log(location.pathname);
   return (
     <div
       aria-label="Navigation Bar"
