@@ -69,7 +69,7 @@ export function Navbar() {
             }}
           />
           <Button
-            text="Beta access"
+            text="Get Started"
             variant="r18-white"
             icon={Right}
             onClick={() =>
