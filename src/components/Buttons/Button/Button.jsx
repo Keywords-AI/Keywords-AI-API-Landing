@@ -201,6 +201,27 @@ export const Button = forwardRef(
         justification = justification || "justify-start";
 
         break;
+
+      case "r4-black":
+        iconPosition = iconPosition || "right";
+        bgColor = bgColor || "bg-gray-1";
+        hoverColor = hoverColor || "bg-gray-2";
+        textClassName = textClassName || "text-sm-md";
+        clickedColor = clickedColor || "bg-gray-2";
+        textColor = textColor || "text-gray-4";
+        textHoverColor = textHoverColor || "text-gray-4";
+        textClickedColor = textClickedColor || "text-gray-white";
+        borderRadius = borderRadius || "rounded-sm";
+        borderColor = borderColor || "border-transparent";
+        borderHoverColor = borderHoverColor || "shadow-border shadow-gray-3";
+        borderClickedColor =
+          borderClickedColor || "shadow-border shadow-gray-4";
+        padding = padding || "py-xxs px-xs";
+        iconFill = iconFill || "fill-gray-4";
+        iconHoverFill = iconHoverFill || "fill-gray-4";
+        justification = justification || "justify-center";
+
+        break;
       case "text":
         iconPosition = iconPosition || "left";
         bgColor = bgColor || "bg-transparent";

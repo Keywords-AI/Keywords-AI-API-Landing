@@ -2,6 +2,8 @@ import "./PricingCard.css";
 import { useNavigate } from "react-router-dom";
 import React, { useEffect } from "react";
 import { FeatureTick } from "src/components/icons-old";
+import { Button } from "src/components/Buttons";
+import cn from "src/utilities/ClassMerge";
 
 const ranking = {
   flex_8k: 1,
@@ -15,6 +17,9 @@ export default function PricingCard({
   title = "Title",
   description = "Description Here",
   featureTitle = "Here are the features",
+  buttonVar = "r4-primary",
+  buttonText = "Try for free",
+  bgColor = "bg-gray-1",
   priceDescription = "Price Description",
   currentPlan = "Current Plan",
   button = {
@@ -42,59 +47,36 @@ export default function PricingCard({
   const navigate = useNavigate();
 
   return (
-    <div className="bg-gradient-in flex-1 h-[720px] min-w-[280px] p-[24px] flex-col items-center gap-xl  rounded-xl border border-solid border-gray-3">
-      <div className=" flex-col self-stretch gap-xs justify-between h-[288px]">
-        {/* title and descrtion */}
-        <div className="flex-col justify-start items-start gap-xs self-stretch flex-1  ">
-          <div className="display-sm text-gray-white">{title}</div>
-          <div className="text-md-regular text-gray-4">{description}</div>
+        <div className={cn("flex h-[720px] p-md flex-col items-center gap-xl flex-1 shadow-border w-ful shadow-gray-3 rounded-md min-w-[280px]", bgColor)}>
+        <div className="flex flex-col items-start justify-center gap-xxs self-stretch">
+          <span className="self-stretch display-sm"> {title}</span>
+          <span className="text-md-regular self-stretch text-gray-4"> {description} </span>
         </div>
-        {/* main feature and button */}
-        <div className="flex flex-col items-start gap-lg self-stretch justify-between">
-          {price && (
-            <div className="flex-col items-start self-stretch ">
-              <div>
-                <span className="display-sm text-gray-white">{price}</span>
-                <span className="text-md-regular text-gray-4">
-                  {" / 1K input tokens"}
-                </span>
-              </div>
-              <p>{priceDescription}</p>
-            </div>
-          )}
+        <div className="flex flex-col items-center gap-lg self-stretch">
+          <div className="flex flex-col h-[56px] items-start self-stretch">
+            {price && <div className="flex items-end gap-xxs">
+              <span className="display-sm"> {price} </span>
+              <span className="text-sm-regular text-gray-4 py-[2px]"> / month </span>
+            </div>}
+            {price && <span className="text-md-regular text-gray-4">//</span>}
+          </div>  
+          {/* <Button variant={buttonVar} text={buttonText} width="w-full" className="self-stretch items-center justify-center gap-xxs" /> */}
           {button}
         </div>
-      </div>
 
-      {/* all features */}
-      <div className="flex-col items-start gap-md self-stretch">
-        <div className="text-md-medium">{featureTitle}</div>
-        <div className="flex-col gap-xs items-center self-stretch">
+        <div className="flex flex-col items-start gap-md self-stretch">
+          <span className="text-md-md "> {featureTitle} </span>
+          <div className="flex flex-col items-start gap-xs">
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className="flex-row justify-start items-center gap-xs self-stretch"
-              style={{
-                alignItems: "flex-start",
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "flex-end",
-                  justifyContent: "center",
-                  height: "16px",
-                  width: "16px",
-                  flexShrink: 0,
-                }}
-              >
+            <div className="flex items-center gap-xs"> 
                 <FeatureTick />
-              </div>
-              <div className="text-md-regular text-gray-white">{feature}</div>
+                {feature}
             </div>
+
           ))}
+          </div>
         </div>
+
       </div>
-    </div>
   );
 }

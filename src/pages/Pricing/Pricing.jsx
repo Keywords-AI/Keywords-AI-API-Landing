@@ -1,29 +1,22 @@
 import { Page } from "src/components/Page/Page";
 import PricingCard from "./components/PricingCard/PricingCard";
-import { Button } from "src/components/Button_old";
+import { Button } from "src/components/Buttons";
 import { PricingTable } from "./components/PricingTable/PricingTable";
 import { ArrowRight } from "src/components/icons-old";
 export function Pricing() {
   const cards = [
     {
-      title: "Flex 8k",
+      title: "Starter",
       description:
-        "Usage-based plan with a 8k context window, ideal for most AI applications.",
-      price: "$0.02",
-      priceDescription: (
-        <span className="text-md-regular text-gray-4">
-          {"First "}
-          <span className="text-md-rmedium text-gray-white">40K</span>
-          {" tokens free"}
-        </span>
-      ),
-      featureTitle: "Flex 8k plan features:",
+        "Best for solo builders.",
+      price: "$0",
+      priceDescription: "",
+      featureTitle: "Starter plan features:",
       button: (
         <Button
-          variant={"secondary"}
-          text={"Start free trial"}
-          arrow={false}
-          className="self-stretch"
+          variant={"r4-black"}
+          text={"Try for free"}
+          className="self-stretch shadow-border shadow-gray-3 rounded-sm bg-gray-2"
         />
       ),
       currentPlan: "View Usage Details",
@@ -69,25 +62,20 @@ export function Pricing() {
       rank: 2,
     },
     {
-      title: "Flex 32k",
+      title: "Team",
       description:
-        "Usage-based plan with a 32k context window, perfect for context-rich AI products.",
-      price: "$0.04",
-      priceDescription: (
-        <span className="text-md-regular text-gray-4">
-          {"First "}
-          <span className="text-md-rmedium text-gray-white">40K</span>
-          {" tokens free"}
-        </span>
-      ),
-      featureTitle: "Flex 32k plan features:",
+        "Best for startups and teams.",
+      price: "$29",
+      priceDescription: "",
+      featureTitle: "Team plan features:",
       currentPlan: "View Usage Details",
+      bgColor: "bg-gray-2",
       button: (
         <Button
-          variant={"secondary"}
-          text={"Start free trial"}
-          arrow={false}
-          className="self-stretch"
+          variant={"r4-primary"}
+          text={"Get started"}
+          className="self-stretch items-center justify-center gap-xxs"
+          width="w-full"
         />
       ),
       // upgradeButton: {
@@ -134,7 +122,7 @@ export function Pricing() {
     {
       title: "Custom",
       description:
-        "Design a custom package. For businesses with large volume or unique use cases.",
+        "Paragraph",
       featureTitle: "Custom plan features:",
       button: (
         <div className="flex self-stretch gradient-out p-[1px]">

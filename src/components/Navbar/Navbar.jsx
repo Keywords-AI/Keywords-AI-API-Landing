@@ -36,7 +36,7 @@ export function Navbar() {
             <Button
               text="Pricing"
               variant="header"
-              // onClick={() => navigate("/pricing")}
+              onClick={() => navigate("/pricing")}
             />
 
             <Button
