@@ -45,8 +45,8 @@ export default {
       avatar: "#008080", //to be updated, ping @andy
       gray: {
         white: "#F9FAFC",
-        black: "#05050A",
-        2: "#151518",
+        black: "#151519",
+        2: "#1E1E23",
         3: gray3,
         4: gray4,
         5: "#282A30",
@@ -58,7 +58,7 @@ export default {
       notification: "rgba(115, 203, 152, 0.25)",
     },
     boxShadow: {
-      pricing: "2px 2px 10px 2px rgba(24, 24, 32, 0.40)",
+      pricing: `0px 0px 4px 0px rgba(255, 255, 255, 0.08)`,
       purple: "0 0 40px rgba(143, 0, 210, 0.25)", // Jialin's work, but if something went wrong, ping @Hendrix
       window: `0 0 10px 10px rgba(255, 255, 255, 0.05), 0 0 0 1px ${gray3}`,
       card: `0 0 10px 2px rgba(255, 255, 255, 0.10), 0 0 0 1px, #73CB98`,
