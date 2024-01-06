@@ -78,7 +78,7 @@ export default function PricingCard({
               </span>
             </div>
           )}
-          {price && <span className="text-md-regular text-gray-4">//</span>}
+          {price && <span className="text-md-regular text-gray-4">{}</span>}
         </div>
         {/* <Button variant={buttonVar} text={buttonText} width="w-full" className="self-stretch items-center justify-center gap-xxs" /> */}
         {button}

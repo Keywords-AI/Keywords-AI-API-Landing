@@ -70,7 +70,7 @@ export function Pricing() {
         "Feature",
         "Feature",
       ],
-      plan: "flex_8k",
+      plan: "starter",
       rank: 2,
     },
     {
@@ -175,7 +175,7 @@ export function Pricing() {
             <SwitchButton onCheckedChange={handleSwitchChange} />
             <div>
               <span className="text-lg text-gray-4 text-center"> Yearly </span>
-              <span className="text-lg text-primary text-center"> (15% off) </span>
+              <span className="text-lg text-primary text-center"> (25% off) </span>
             </div>
           </div>
           <div className="flex max-w-[1000px] items-start content-start gap-y-[24px] gap-x-[20px]  flex-wrap">
