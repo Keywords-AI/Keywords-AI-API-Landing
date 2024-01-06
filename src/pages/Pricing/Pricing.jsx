@@ -30,7 +30,8 @@ export function Pricing() {
           variant={"r4-black"}
           text={"Try for free"}
           className="self-stretch shadow-border shadow-gray-3 rounded-sm bg-gray-2"
-          onClick={() => window.location.href = 'keywordsai/login?next=/pricing'}
+          onClick={() => window.location.href = 'https://platform.keywordsai.co/login?next=/pricing'}
+          type="button"
         />
       ),
       currentPlan: "View Usage Details",
@@ -88,7 +89,7 @@ export function Pricing() {
           text={"Get started"}
           className="self-stretch items-center justify-center gap-xxs"
           width="w-full"
-          onClick={() => window.location.href = 'keywordsai/login?next=/pricing'}
+          onClick={() => window.location.href = 'https://platform.keywordsai.co/login?next=/pricing'}
           type="button"
         />
       ),
