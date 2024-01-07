@@ -132,11 +132,11 @@ import (
       ... other parameters in similar format ...
     }\`)
   
-    client := &http.Client{}]
+    client := &http.Client{}
     req, err := http.NewRequest(method, url, bytes.NewBuffer(payload))
   
     if err != nil {
-[      panic(err)
+      panic(err)
     }
   
     req.Header.Add("Content-Type", "application/json")
