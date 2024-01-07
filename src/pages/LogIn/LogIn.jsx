@@ -4,7 +4,7 @@ import { BackButton } from "src/components/BackButton";
 import { useForm } from "react-hook-form";
 import { AuthenticationTitle } from "src/components/AuthenticationTitle/AuthenticationTitle";
 import cn from "src/utilities/ClassMerge";
-import { isUserLoggedIn, login } from "src/authentication/Authentication";
+import { isUserLoggedIn, login } from "src/utilities/Authentication";
 import { Button } from "src/components/Button_old";
 import { useContext } from "react";
 import { platformURL } from "src/utilities/platformURL";

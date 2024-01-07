@@ -4,7 +4,7 @@ import { BackButton } from "src/components/BackButton";
 import { set, useForm } from "react-hook-form";
 import { AuthenticationTitle } from "src/components/AuthenticationTitle/AuthenticationTitle";
 import cn from "src/utilities/ClassMerge";
-import { joinwaitlist, signup } from "src/authentication/Authentication";
+import { joinwaitlist, signup } from "src/utilities/Authentication";
 import { Button } from "src/components/Button_old";
 import { Toast } from "src/components/Toast";
 export function BetaAccess() {

@@ -17,7 +17,7 @@ import { LogIn } from "./pages/LogIn";
 import { ResetPassword } from "./pages/ResetPassword/ResetPassword";
 import { ForgotPassword } from "./pages/ForgotPassword/ForgotPassword";
 import { ComponentGrid } from "./pages/ComponentGrid";
-import { isUserLoggedIn } from "./authentication/Authentication";
+import { isUserLoggedIn } from "./utilities/Authentication";
 import { BetaAccess } from "./pages/BetaAccess/BetaAccess";
 import AuthContext from "./authentication/AuthContext";
 import { ToastProvider } from "@radix-ui/react-toast";

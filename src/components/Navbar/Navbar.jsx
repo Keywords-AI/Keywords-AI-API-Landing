@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import React from "react";
 import AuthContext from "src/authentication/AuthContext";
-import { logout } from "src/authentication/Authentication";
+import { logout } from "src/utilities/Authentication";
 import cn from "src/utilities/ClassMerge";
 import { Button } from "../Buttons";
 import { Right } from "../Icons";
@@ -37,7 +37,7 @@ export function Navbar() {
             <Button
               text="Pricing"
               variant="header"
-              // onClick={() => navigate("/pricing")}
+              onClick={() => navigate("/pricing")}
             />
 
             <Button

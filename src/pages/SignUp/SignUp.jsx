@@ -4,7 +4,7 @@ import { BackButton } from "src/components/BackButton";
 import { useForm } from "react-hook-form";
 import { AuthenticationTitle } from "src/components/AuthenticationTitle/AuthenticationTitle";
 import cn from "src/utilities/ClassMerge";
-import { signup } from "src/authentication/Authentication";
+import { signup } from "src/utilities/Authentication";
 import { Button } from "src/components/Button_old";
 export function SignUp() {
   const navigate = useNavigate();

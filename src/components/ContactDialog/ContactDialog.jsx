@@ -1,7 +1,7 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { Close, FileLink } from "../icons-old";
 import { set, useForm } from "react-hook-form";
-import { feedback } from "src/authentication/Authentication";
+import { feedback } from "src/utilities/Authentication";
 import React from "react";
 import { Button } from "../Buttons";
 import { Right } from "../Icons";
