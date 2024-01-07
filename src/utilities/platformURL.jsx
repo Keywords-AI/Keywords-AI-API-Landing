@@ -3,7 +3,8 @@ const selectEndpoint = () => {
   if (envMode === "development") {
     return "https://platform-test.keywordsai.co";
   }
-  currentAddress = window.location.hostname;
+  const currentAddress = window.location.hostname;
+  console.log("currentAddress", currentAddress);
   if (currentAddress === "https://test.keywordsai.co") {
     return "https://platform-test.keywordsai.co";
   } else if (currentAddress === "https://keywordsai.co") {
