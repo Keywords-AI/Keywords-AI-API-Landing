@@ -1,7 +1,11 @@
 import { Page } from "src/components/Page/Page";
 import "./PrivacyPolicy.css";
+import { useEffect } from "react";
 
 export function PrivacyPolicy() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   const Data = {
     title: "Privacy Policy",
     date: "Updated 10/20/2023",

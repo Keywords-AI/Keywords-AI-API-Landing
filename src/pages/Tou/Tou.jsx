@@ -1,7 +1,11 @@
 import { Page } from "src/components/Page/Page";
 import "./Tou.css";
+import { useEffect } from "react";
 
 export function Tou() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   const Data = {
     title: "Terms of Use",
     date: "Updated 10/24/2023",
