@@ -7,6 +7,7 @@ import { logout } from "src/authentication/Authentication";
 import cn from "src/utilities/ClassMerge";
 import { Button } from "../Buttons";
 import { Right } from "../Icons";
+import { platformURL } from "src/utilities/platformURL";
 
 export function Navbar() {
   const navigate = useNavigate();
@@ -54,7 +55,7 @@ export function Navbar() {
             <Button
               text="Changelog"
               variant="header"
-              onClick={() => navigate("/changelog")}
+              // onClick={() => navigate("/changelog")}
               active={location.pathname == "/changelog"}
             />
           </div>
@@ -65,16 +66,14 @@ export function Navbar() {
             text="Log in"
             variant="header"
             onClick={() => {
-              window.location.href = "https://keywords-platform.web.app/login";
+              window.location.href = platformURL + "/login";
             }}
           />
           <Button
             text="Get Started"
             variant="r18-white"
             icon={Right}
-            onClick={() =>
-              (window.location.href = "https://keywords-platform.web.app/login")
-            }
+            onClick={() => (window.location.href = platformURL + "/login")}
           />
         </div>
       </div>

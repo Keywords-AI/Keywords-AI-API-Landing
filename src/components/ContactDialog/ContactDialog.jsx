@@ -76,7 +76,7 @@ export function ContactDialog() {
                   team@keywordsai.co.
                 </span>
               </p>
-              <Button text="Submit" variant="secondary" />
+              <Button text="Submit" variant="r4-primary" />
             </div>
           </form>
         </Dialog.Content>

@@ -24,6 +24,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Right } from "src/components/Icons";
 import { Button } from "src/components/Buttons";
+import { platformURL } from "src/utilities/platformURL";
 export function Landing() {
   const navigate = useNavigate();
   useEffect(() => {
@@ -79,10 +80,7 @@ export function Landing() {
             <Button
               text="Try playground"
               variant="r18-white"
-              onClick={() =>
-                (window.location.href =
-                  "[https://keywords-platform.web.app/]login")[[[]]]
-              }
+              onClick={() => (window.location.href = platformURL)}
               icon={Right}
             />
             <Button
@@ -174,8 +172,7 @@ export function Landing() {
             iconPosition="right"
             iconSize="xs"
             onClick={() =>
-              (window.location.href =
-                "https://keywords-platform.web.app/platform/playground")
+              (window.location.href = "https://docs.keywordsai.co")
             }
           />
         </div>
@@ -247,7 +244,7 @@ export function Landing() {
             iconPosition="right"
             iconSize="xs"
             onClick={() =>
-              (window.location.href = "https://docs.keywordsai.co")
+              (window.location.href = platformURL + "/platform/playground")
             }
           />
         </div>
@@ -268,9 +265,7 @@ export function Landing() {
           <Button
             text="Get started"
             variant="r18-white"
-            onClick={() =>
-              (window.location.href = "https://keywords-platform.web.app/login")
-            }
+            onClick={() => (window.location.href = platformURL + "/login")}
           />
           <ContactDialog />
         </div>

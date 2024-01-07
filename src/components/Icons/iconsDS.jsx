@@ -3,7 +3,7 @@ import cn from "src/utilities/ClassMerge";
 
 export const Right = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "xs",
 }) => {
@@ -44,7 +44,7 @@ export const Right = ({
 
 export const Up = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "xs",
 }) => {
@@ -101,7 +101,7 @@ export const Up = ({
 };
 export const Left = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "xs",
 }) => {
@@ -195,7 +195,7 @@ export const Delete = ({
 };
 export const Check = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "sm",
 }) => {
@@ -236,7 +236,7 @@ export const Check = ({
 };
 export const Cross = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "sm",
 }) => {
@@ -261,7 +261,7 @@ export const Cross = ({
 };
 export const Rocket = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "sm",
 }) => {
@@ -286,7 +286,7 @@ export const Rocket = ({
 };
 export const Careers = ({
   fill = "fill-primary",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "sm",
 }) => {
@@ -311,7 +311,7 @@ export const Careers = ({
 };
 export const Pencil = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "sm",
 }) => {
@@ -337,7 +337,7 @@ export const Pencil = ({
 // className={active ? activeFill : fill} />
 export const Quality = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "md",
 }) => {
@@ -379,7 +379,7 @@ export const Quality = ({
 // className={active ? activeFill : fill} />
 export const EnterKey = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "md",
 }) => {
@@ -412,7 +412,7 @@ export const EnterKey = ({
 // className={active ? activeFill : fill} />
 export const Userpg = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "md",
 }) => {
@@ -437,7 +437,7 @@ export const Userpg = ({
 // className={active ? activeFill : fill} />
 export const Search = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "md",
 }) => {
@@ -479,7 +479,7 @@ export const Search = ({
 // className={active ? activeFill : fill} />
 export const Send = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "md",
 }) => {
@@ -505,7 +505,7 @@ export const Send = ({
 // className={active ? activeFill : fill} />
 export const Attachment = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "md",
 }) => {
@@ -534,7 +534,7 @@ export const Attachment = ({
 // className={active ? activeFill : fill} />
 export const Copy = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "md",
 }) => {
@@ -575,7 +575,7 @@ export const Copy = ({
 // className={active ? activeFill : fill} />
 export const Hamburger = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "md",
 }) => {
@@ -601,7 +601,7 @@ export const Hamburger = ({
 // className={active ? activeFill : fill} />
 export const Terminate = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "md",
 }) => {
@@ -625,7 +625,7 @@ export const Terminate = ({
 };
 export const Logo = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "md",
 }) => {
@@ -649,7 +649,7 @@ export const Logo = ({
 };
 export const LogoSubtract = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "md",
 }) => {
@@ -781,7 +781,7 @@ export const Link = ({
 // className={active ? activeFill : fill} />
 export const Down = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "xxs",
 }) => {
@@ -824,12 +824,12 @@ export const Down = ({
 // className={active ? activeFill : fill} />
 export const Success = ({
   fill = "fill-success",
-  activeFill = "fill-success",
+  activeFill = "fill-primary",
   active = false,
-  size = "xxs",
+  size = "md",
 }) => {
   switch (size) {
-    case "xxs":
+    case "md":
       return (
         <svg
           width="16"
@@ -875,7 +875,7 @@ export const Warning = ({
 
 export const Building = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "md",
 }) => {
@@ -898,7 +898,7 @@ export const Building = ({
 
 export const Regenerate = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "sm",
 }) => {
@@ -923,7 +923,7 @@ export const Regenerate = ({
 
 export const Stop = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "sm",
 }) => {
@@ -977,7 +977,7 @@ export const Dots = ({
 };
 export const OpenAI = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "lg",
 }) => {
@@ -1017,7 +1017,7 @@ export const OpenAI = ({
 
 export const Anthropic = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "lg",
 }) => {
@@ -1057,7 +1057,7 @@ export const Anthropic = ({
 
 export const Labs = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "lg",
 }) => {
@@ -1118,7 +1118,7 @@ export const Labs = ({
 
 export const Cohere = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "lg",
 }) => {
@@ -1182,7 +1182,7 @@ export const Cohere = ({
 
 export const Google = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "lg",
 }) => {
@@ -1225,19 +1225,19 @@ export const Google = ({
         >
           <path
             d="M14.8611 8.1673C14.8611 7.69454 14.8154 7.20653 14.7391 6.74902H8.13574V9.44832H11.9178C11.7653 10.3176 11.262 11.0801 10.5148 11.5681L12.7718 13.3219C14.0986 12.0866 14.8611 10.2871 14.8611 8.1673Z"
-            className={active ? activeFill : fill}
+            fill="#4285F4"
           />
           <path
             d="M8.13542 15C10.0264 15 11.6125 14.3748 12.7715 13.3072L10.5145 11.5687C9.8892 11.9957 9.08093 12.2397 8.13542 12.2397C6.30539 12.2397 4.76511 11.0044 4.20085 9.35742L1.88281 11.1417C3.07233 13.5055 5.48187 15 8.13542 15Z"
-            className={active ? activeFill : fill}
+            fill="#0F9D58"
           />
           <path
             d="M4.20114 9.34197C3.91138 8.47271 3.91138 7.52719 4.20114 6.65793L1.8831 4.8584C0.891832 6.84093 0.891832 9.17422 1.8831 11.1415L4.20114 9.34197Z"
-            className={active ? activeFill : fill}
+            fill="#F4B400"
           />
           <path
             d="M8.13542 3.77581C9.12668 3.76056 10.1027 4.14182 10.8195 4.82808L12.8172 2.81505C11.5515 1.62553 9.87395 0.985016 8.13542 1.00027C5.48187 1.00027 3.07233 2.49479 1.88281 4.85858L4.20085 6.65811C4.76511 4.99583 6.30539 3.77581 8.13542 3.77581Z"
-            className={active ? activeFill : fill}
+            fill="#DB4437"
           />
         </svg>
       );
@@ -1246,7 +1246,7 @@ export const Google = ({
 
 export const User = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "md",
 }) => {
@@ -1287,7 +1287,7 @@ export const User = ({
 // className={active ? activeFill : fill} />
 export const Bracket = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "md",
 }) => {
@@ -1313,7 +1313,7 @@ export const Bracket = ({
 
 export const LinkedIn = ({
   fill = "fill-gray-4",
-  activeFill = "fill-gray-white",
+  activeFill = "fill-gray-5",
   active = false,
   size = "md",
 }) => {
@@ -1368,7 +1368,7 @@ export const Ellipse = ({
   }
 };
 
-export const Score = ({ fill = "fill-gray-4" }) => {
+export const Score = ({ fill = "fill-gray-4", activeFill = "fill-gray-5" }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -1385,41 +1385,54 @@ export const Score = ({ fill = "fill-gray-4" }) => {
   );
 };
 
-export const Cost = ({ fill = "fill-gray-4" }) => {
+export const Cost = ({
+  fill = "fill-gray-4",
+  activeFill = "fill-gray-5",
+  active = false,
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="10"
+      width="16"
       height="16"
       viewBox="0 0 10 16"
       fill="none"
     >
       <path
         d="M0.555664 10.6667H2.33344C2.33344 11.6267 3.55122 12.4444 5.00011 12.4444C6.449 12.4444 7.66678 11.6267 7.66678 10.6667C7.66678 9.68889 6.74233 9.33333 4.78678 8.86222C2.90233 8.39111 0.555664 7.80444 0.555664 5.33333C0.555664 3.74222 1.86233 2.39111 3.66678 1.93778V0H6.33344V1.93778C8.13789 2.39111 9.44455 3.74222 9.44455 5.33333H7.66678C7.66678 4.37333 6.449 3.55556 5.00011 3.55556C3.55122 3.55556 2.33344 4.37333 2.33344 5.33333C2.33344 6.31111 3.25789 6.66667 5.21344 7.13778C7.09789 7.60889 9.44455 8.19556 9.44455 10.6667C9.44455 12.2578 8.13789 13.6089 6.33344 14.0622V16H3.66678V14.0622C1.86233 13.6089 0.555664 12.2578 0.555664 10.6667Z"
-        className={fill}
+        className={active ? activeFill : fill}
       />
     </svg>
   );
 };
+[[[[[[]]]]]];
 
-export const Latency = ({ fill = "fill-gray-4" }) => {
+export const Latency = ({
+  fill = "fill-gray-4",
+  activeFill = "fill-gray-5",
+  active = false,
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="16"
-      height="14"
+      height="14]"
       viewBox="0 0 16 14"
       fill="none"
     >
       <path
         d="M8 10.4586C7.36348 10.4586 6.75303 10.2057 6.30294 9.75565C5.85286 9.30556 5.6 8.69511 5.6 8.05859C5.6 7.16259 6.088 6.37859 6.8 5.97059L14.568 1.47459L10.144 9.13859C9.744 9.92259 8.936 10.4586 8 10.4586ZM8 0.0585938C9.448 0.0585938 10.8 0.458594 11.976 1.11459L10.296 2.08259C9.6 1.81059 8.8 1.65859 8 1.65859C6.30261 1.65859 4.67475 2.33288 3.47452 3.53311C2.27428 4.73334 1.6 6.36121 1.6 8.05859C1.6 9.82659 2.312 11.4266 3.472 12.5786H3.48C3.792 12.8906 3.792 13.3946 3.48 13.7066C3.168 14.0186 2.656 14.0186 2.344 13.7146C0.896 12.2666 0 10.2666 0 8.05859C0 5.93686 0.842855 3.90203 2.34315 2.40174C3.84344 0.901448 5.87827 0.0585938 8 0.0585938ZM16 8.05859C16 10.2666 15.104 12.2666 13.656 13.7146C13.344 14.0186 12.84 14.0186 12.528 13.7066C12.216 13.3946 12.216 12.8906 12.528 12.5786C13.688 11.4186 14.4 9.82659 14.4 8.05859C14.4 7.25859 14.248 6.45859 13.968 5.73859L14.936 4.05859C15.6 5.25859 16 6.60259 16 8.05859Z"
-        className={fill}
+        className={active ? activeFill : fill}
       />
     </svg>
   );
 };
 
-export const Tokens = ({ fill = "fill-gray-4" }) => {
+export const Tokens = ({
+  fill = "fill-gray-4",
+  activeFill = "fill-gray-5",
+  active = false,
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -1430,13 +1443,17 @@ export const Tokens = ({ fill = "fill-gray-4" }) => {
     >
       <path
         d="M7.9998 2.656L12.7998 5.352V10.648L7.9998 13.344L3.1998 10.648V5.352L7.9998 2.656ZM15.1998 11.6C15.1998 11.904 15.0318 12.168 14.7758 12.304L8.4558 15.856C8.3278 15.952 8.1678 16 7.9998 16C7.8318 16 7.6718 15.952 7.5438 15.856L1.2238 12.304C0.967805 12.168 0.799805 11.904 0.799805 11.6V4.4C0.799805 4.096 0.967805 3.832 1.2238 3.696L7.5438 0.144C7.6718 0.0480001 7.8318 0 7.9998 0C8.1678 0 8.3278 0.0480001 8.4558 0.144L14.7758 3.696C15.0318 3.832 15.1998 4.096 15.1998 4.4V11.6ZM7.9998 1.72L2.3998 4.872V11.128L7.9998 14.28L13.5998 11.128V4.872L7.9998 1.72Z"
-        className={fill}
+        className={active ? activeFill : fill}
       />
     </svg>
   );
 };
 
-export const Speed = ({ fill = "fill-gray-4" }) => {
+export const Speed = ({
+  fill = "fill-gray-4",
+  activeFill = "fill-gray-5",
+  active = false,
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -1447,13 +1464,17 @@ export const Speed = ({ fill = "fill-gray-4" }) => {
     >
       <path
         d="M8 10.4586C7.36348 10.4586 6.75303 10.2057 6.30294 9.75565C5.85286 9.30556 5.6 8.69511 5.6 8.05859C5.6 7.16259 6.088 6.37859 6.8 5.97059L14.568 1.47459L10.144 9.13859C9.744 9.92259 8.936 10.4586 8 10.4586ZM8 0.0585938C9.448 0.0585938 10.8 0.458594 11.976 1.11459L10.296 2.08259C9.6 1.81059 8.8 1.65859 8 1.65859C6.30261 1.65859 4.67475 2.33288 3.47452 3.53311C2.27428 4.73334 1.6 6.36121 1.6 8.05859C1.6 9.82659 2.312 11.4266 3.472 12.5786H3.48C3.792 12.8906 3.792 13.3946 3.48 13.7066C3.168 14.0186 2.656 14.0186 2.344 13.7146C0.896 12.2666 0 10.2666 0 8.05859C0 5.93686 0.842855 3.90203 2.34315 2.40174C3.84344 0.901448 5.87827 0.0585938 8 0.0585938ZM16 8.05859C16 10.2666 15.104 12.2666 13.656 13.7146C13.344 14.0186 12.84 14.0186 12.528 13.7066C12.216 13.3946 12.216 12.8906 12.528 12.5786C13.688 11.4186 14.4 9.82659 14.4 8.05859C14.4 7.25859 14.248 6.45859 13.968 5.73859L14.936 4.05859C15.6 5.25859 16 6.60259 16 8.05859Z"
-        className={fill}
+        className={active ? activeFill : fill}
       />
     </svg>
   );
 };
 
-export const Custom = ({ fill = "fill-gray-4" }) => {
+export const Custom = ({
+  fill = "fill-gray-4",
+  activeFill = "fill-gray-5",
+  active = false,
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -1470,11 +1491,15 @@ export const Custom = ({ fill = "fill-gray-4" }) => {
   );
 };
 
-export const High = ({ fill = "fill-gray-4" }) => {
+export const High = ({
+  fill = "fill-gray-4",
+  activeFill = "fill-gray-white",
+  active,
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="8"
+      width="16"
       height="16"
       viewBox="0 0 8 16"
       fill="none"
@@ -1491,7 +1516,7 @@ export const Medium = ({ fill = "fill-gray-4" }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="8"
+      width="16"
       height="16"
       viewBox="0 0 8 16"
       fill="none"
@@ -1508,7 +1533,7 @@ export const Low = ({ fill = "fill-gray-4" }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="8"
+      width="16"
       height="16"
       viewBox="0 0 8 16"
       fill="none"
@@ -1519,4 +1544,175 @@ export const Low = ({ fill = "fill-gray-4" }) => {
       />
     </svg>
   );
+};
+
+// className={"flex-shrink-0"}>
+// className={active ? activeFill : fill} />
+
+export const JavaScript = ({
+  fill = "fill-gray-4",
+  activeFill = "fill-gray-5",
+  active = false,
+  size = "md",
+}) => {
+  switch (size) {
+    case "md":
+      return (
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className={"flex-shrink-0"}
+        >
+          <path
+            d="M0 0H16V16H0V0ZM4.20444 13.3689C4.56 14.1244 5.26222 14.7467 6.46222 14.7467C7.79556 14.7467 8.71111 14.0356 8.71111 12.48V7.34222H7.2V12.4444C7.2 13.2089 6.88889 13.4044 6.4 13.4044C5.88444 13.4044 5.67111 13.0489 5.43111 12.6311L4.20444 13.3689ZM9.52 13.2089C9.96444 14.08 10.8622 14.7467 12.2667 14.7467C13.6889 14.7467 14.7556 14.0089 14.7556 12.6489C14.7556 11.3956 14.0356 10.8356 12.7556 10.2844L12.3822 10.1244C11.7333 9.84889 11.4578 9.66222 11.4578 9.21778C11.4578 8.85333 11.7333 8.56889 12.1778 8.56889C12.6044 8.56889 12.8889 8.75556 13.1467 9.21778L14.3111 8.44444C13.8222 7.59111 13.1289 7.26222 12.1778 7.26222C10.8356 7.26222 9.97333 8.11556 9.97333 9.24444C9.97333 10.4711 10.6933 11.0489 11.7778 11.5111L12.1511 11.6711C12.8444 11.9733 13.2533 12.16 13.2533 12.6756C13.2533 13.1022 12.8533 13.4133 12.2311 13.4133C11.4933 13.4133 11.0667 13.0311 10.7467 12.4978L9.52 13.2089Z"
+            className={active ? activeFill : fill}
+          />
+        </svg>
+      );
+  }
+};
+
+export const Python = ({
+  fill = "fill-gray-4",
+  activeFill = "fill-gray-5",
+  active = false,
+  size = "md",
+}) => {
+  switch (size) {
+    case "md":
+      return (
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className={"flex-shrink-0"}
+        >
+          <path
+            d="M13.712 4C14.3188 4 14.9008 4.24106 15.3299 4.67014C15.7589 5.09922 16 5.68118 16 6.288V9.312C16 9.91882 15.7589 10.5008 15.3299 10.9299C14.9008 11.3589 14.3188 11.6 13.712 11.6H8C8 11.912 8.256 12.368 8.568 12.368H12V13.712C12 14.3188 11.7589 14.9008 11.3299 15.3299C10.9008 15.7589 10.3188 16 9.712 16H6.288C5.68118 16 5.09922 15.7589 4.67014 15.3299C4.24106 14.9008 4 14.3188 4 13.712V10.712C4 9.448 5.024 8.432 6.288 8.432H10.488C11.752 8.432 12.768 7.408 12.768 6.144V4H13.712ZM10.288 13.432C9.968 13.432 9.712 13.672 9.712 14.144C9.712 14.616 9.968 14.712 10.288 14.712C10.3626 14.712 10.4365 14.6973 10.5054 14.6688C10.5743 14.6402 10.6369 14.5984 10.6896 14.5456C10.7424 14.4929 10.7842 14.4303 10.8128 14.3614C10.8413 14.2925 10.856 14.2186 10.856 14.144C10.856 13.672 10.6 13.432 10.288 13.432ZM2.288 12C1.024 12 0 10.976 0 9.712V6.688C0 5.424 1.024 4.4 2.288 4.4H8C8 4.088 7.744 3.632 7.432 3.632H4V2.288C4 1.024 5.024 0 6.288 0H9.712C10.976 0 12 1.024 12 2.288V5.288C12 6.552 10.976 7.568 9.712 7.568H5.512C4.248 7.568 3.232 8.592 3.232 9.856V12H2.288ZM5.712 2.568C6.032 2.568 6.288 2.328 6.288 1.856C6.288 1.384 6.032 1.288 5.712 1.288C5.4 1.288 5.144 1.384 5.144 1.856C5.144 2.328 5.4 2.568 5.712 2.568Z"
+            className={active ? activeFill : fill}
+          />
+        </svg>
+      );
+  }
+};
+
+export const Php = ({
+  fill = "fill-gray-4",
+  activeFill = "fill-gray-5",
+  active = false,
+  size = "md",
+}) => {
+  switch (size) {
+    case "md":
+      return (
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className={"flex-shrink-0"}
+        >
+          <path
+            d="M8 12.053C3.58 12.053 0 10.2396 0 7.99962C0 5.75962 3.58 3.94629 8 3.94629C12.42 3.94629 16 5.75962 16 7.99962C16 10.2396 12.42 12.053 8 12.053ZM4.54 6.75296C4.9 6.75296 5.14667 6.81962 5.26667 6.95962C5.38667 7.09296 5.41333 7.33296 5.35333 7.64629C5.28667 7.99962 5.16 8.22629 4.96667 8.37296C4.78 8.51962 4.49333 8.59296 4.10667 8.59296H3.52667L3.88 6.75296H4.54ZM2.20667 10.453H3.16667L3.39333 9.28629H4.21333C4.57333 9.28629 4.86667 9.24629 5.1 9.17296C5.33333 9.09296 5.54667 8.96629 5.74 8.78629C5.9 8.63962 6.02667 8.47962 6.12667 8.29962C6.22667 8.12629 6.3 7.92629 6.33333 7.71296C6.44 7.19296 6.36667 6.78629 6.11333 6.49962C5.85333 6.20629 5.45333 6.06629 4.9 6.06629H3.06L2.20667 10.453ZM7.04 4.89962L6.18667 9.28629H7.13333L7.62667 6.77296H8.38667C8.62667 6.77296 8.78667 6.81296 8.86 6.89296C8.93333 6.97296 8.94667 7.11962 8.90667 7.33296L8.52667 9.28629H9.49333L9.88667 7.23962C9.97333 6.82629 9.90667 6.52629 9.70667 6.33296C9.50667 6.15296 9.14 6.06629 8.60667 6.06629H7.76L8 4.89962H7.04ZM12 6.75296C12.3667 6.75296 12.6067 6.81962 12.7267 6.95962C12.8467 7.09296 12.8733 7.33296 12.8133 7.64629C12.7467 7.99962 12.62 8.22629 12.4333 8.37296C12.24 8.51962 11.9533 8.59296 11.5667 8.59296H11L11.3333 6.75296H12ZM9.66667 10.453H10.6267L10.8533 9.28629H11.6667C12.0333 9.28629 12.3333 9.24629 12.5667 9.17296C12.8 9.09296 13 8.96629 13.2 8.78629C13.36 8.63962 13.4933 8.47962 13.5867 8.29962C13.6867 8.12629 13.76 7.92629 13.8 7.71296C13.9 7.19296 13.8267 6.78629 13.5733 6.49962C13.3333 6.20629 12.9133 6.06629 12.36 6.06629H10.5267L9.66667 10.453Z"
+            className={active ? activeFill : fill}
+          />
+        </svg>
+      );
+  }
+};
+
+export const Go = ({
+  fill = "fill-gray-4",
+  activeFill = "fill-gray-5",
+  active = false,
+  size = "md",
+}) => {
+  switch (size) {
+    case "md":
+      return (
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className={"flex-shrink-0"}
+        >
+          <path
+            d="M1.20597 6.82046C1.1748 6.82046 1.16701 6.80488 1.18259 6.78151L1.34619 6.57118C1.36177 6.54781 1.40072 6.53223 1.43188 6.53223H4.21296C4.24412 6.53223 4.25191 6.5556 4.23633 6.57897L4.1039 6.78151C4.08832 6.80488 4.04937 6.82825 4.026 6.82825L1.20597 6.82046Z"
+            className={active ? activeFill : fill}
+          />
+          <path
+            d="M0.0311606 7.53726C6.5006e-08 7.53726 -0.00779017 7.52168 0.00779012 7.49831L0.171383 7.28797C0.186963 7.2646 0.225914 7.24902 0.257075 7.24902H3.80938C3.84054 7.24902 3.85612 7.27239 3.84833 7.29576L3.78601 7.48273C3.77822 7.51389 3.74706 7.52947 3.7159 7.52947L0.0311606 7.53726Z"
+            className={active ? activeFill : fill}
+          />
+          <path
+            d="M1.91788 8.25406C1.88672 8.25406 1.87893 8.23069 1.89451 8.20731L2.00357 8.01256C2.01915 7.98919 2.05031 7.96582 2.08147 7.96582H3.6395C3.67066 7.96582 3.68624 7.98919 3.68624 8.02035L3.67066 8.20731C3.67066 8.23848 3.6395 8.26185 3.61613 8.26185L1.91788 8.25406Z"
+            className={active ? activeFill : fill}
+          />
+          <path
+            d="M10.0009 6.68051C9.51009 6.80515 9.17512 6.89863 8.69213 7.02327C8.57527 7.05443 8.56748 7.06222 8.46621 6.94537C8.34936 6.81294 8.26367 6.72725 8.10007 6.64935C7.6093 6.40785 7.1341 6.47796 6.69006 6.7662C6.16033 7.10897 5.88767 7.61532 5.89546 8.24633C5.90325 8.86954 6.33171 9.38369 6.94713 9.46938C7.47686 9.53949 7.9209 9.35253 8.27146 8.95523C8.34157 8.86954 8.40389 8.77606 8.48179 8.66699C8.20135 8.66699 7.85079 8.66699 6.97829 8.66699C6.8147 8.66699 6.77575 8.56572 6.83028 8.43329C6.93155 8.19179 7.11852 7.78671 7.22758 7.58416C7.25095 7.53742 7.30548 7.45952 7.42233 7.45952C7.81963 7.45952 9.28418 7.45952 10.2579 7.45952C10.2424 7.66986 10.2424 7.88019 10.2112 8.09052C10.1255 8.65141 9.91518 9.16556 9.57241 9.61739C9.01152 10.3575 8.27925 10.8171 7.35222 10.9417C6.58879 11.043 5.87988 10.895 5.25667 10.4276C4.6802 9.99132 4.35302 9.41485 4.26732 8.69815C4.16605 7.84903 4.41534 7.08559 4.92949 6.41564C5.48259 5.69116 6.21486 5.23154 7.11073 5.06795C7.843 4.93551 8.54411 5.02121 9.17511 5.44966C9.58799 5.72232 9.88402 6.09625 10.0788 6.54807C10.1255 6.61819 10.0944 6.65714 10.0009 6.68051Z"
+            className={active ? activeFill : fill}
+          />
+          <path
+            d="M12.5792 10.9886C11.8703 10.973 11.2237 10.7705 10.6784 10.3031C10.2188 9.90576 9.93057 9.3994 9.83708 8.79956C9.69686 7.91927 9.93836 7.14026 10.4681 6.44693C11.0368 5.69908 11.7223 5.30957 12.6493 5.14598C13.4439 5.00576 14.1918 5.08366 14.8695 5.54328C15.4849 5.96394 15.8667 6.53262 15.9679 7.28048C16.1004 8.33215 15.7965 9.18906 15.0721 9.92134C14.5579 10.4433 13.9269 10.7705 13.2024 10.9185C12.9921 10.9574 12.7818 10.9652 12.5792 10.9886ZM14.4333 7.84137C14.4255 7.7401 14.4255 7.6622 14.4099 7.58429C14.2697 6.81307 13.5608 6.37682 12.8207 6.5482C12.0962 6.7118 11.6288 7.17142 11.4574 7.90369C11.3172 8.51132 11.6132 9.12674 12.1741 9.37603C12.6026 9.56299 13.031 9.53962 13.4439 9.32929C14.0593 9.00989 14.3943 8.51132 14.4333 7.84137Z"
+            className={active ? activeFill : fill}
+          />
+        </svg>
+      );
+  }
+};
+
+export const Info = ({
+  fill = "fill-gray-4",
+  activeFill = "fill-gray-5",
+  active = false,
+  size = "sm",
+}) => {
+  switch (size) {
+    case "sm":
+      return (
+        <svg
+          width="12"
+          height="12"
+          viewBox="0 0 12 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className={"flex-shrink-0"}
+        >
+          <path
+            d="M5.4 4.2H6.6V3H5.4M6 10.8C3.354 10.8 1.2 8.646 1.2 6C1.2 3.354 3.354 1.2 6 1.2C8.646 1.2 10.8 3.354 10.8 6C10.8 8.646 8.646 10.8 6 10.8ZM6 0C5.21207 0 4.43185 0.155195 3.7039 0.456723C2.97595 0.758251 2.31451 1.20021 1.75736 1.75736C0.632141 2.88258 0 4.4087 0 6C0 7.5913 0.632141 9.11742 1.75736 10.2426C2.31451 10.7998 2.97595 11.2417 3.7039 11.5433C4.43185 11.8448 5.21207 12 6 12C7.5913 12 9.11742 11.3679 10.2426 10.2426C11.3679 9.11742 12 7.5913 12 6C12 5.21207 11.8448 4.43185 11.5433 3.7039C11.2417 2.97595 10.7998 2.31451 10.2426 1.75736C9.68549 1.20021 9.02405 0.758251 8.2961 0.456723C7.56815 0.155195 6.78793 0 6 0ZM5.4 9H6.6V5.4H5.4V9Z"
+            className={active ? activeFill : fill}
+          />
+        </svg>
+      );
+  }
+};
+
+export const SuccessEmpty = ({
+  fill = "fill-success",
+  activeFill = "fill-success",
+  active = false,
+  size = "md",
+}) => {
+  switch (size) {
+    case "md":
+      return (
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="8" cy="8" r="7" stroke="#F9FAFC" strokeWidth="2" />
+        </svg>
+      );
+  }
 };
