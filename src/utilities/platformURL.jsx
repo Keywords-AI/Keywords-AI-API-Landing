@@ -5,9 +5,9 @@ const selectEndpoint = () => {
   }
   const currentAddress = window.location.hostname;
   console.log("currentAddress", currentAddress);
-  if (currentAddress === "https://test.keywordsai.co") {
+  if (currentAddress === "test.keywordsai.co") {
     return "https://platform-test.keywordsai.co";
-  } else if (currentAddress === "https://keywordsai.co") {
+  } else if (currentAddress === "keywordsai.co") {
     return "https://platform.keywordsai.co";
   }
   return "https://platform-test.keywordsai.co";
