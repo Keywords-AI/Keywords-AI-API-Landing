@@ -28,12 +28,12 @@ export function Navbar() {
         </div>
         {
           <div className="sm:hidden flex items-center gap-xs">
-            <Button
+            {/* <Button
               text="Overview"
               variant="header"
               onClick={() => navigate("/")}
               active={location.pathname == "/"}
-            />
+            /> */}
             {/* <Button
               text="Pricing"
               variant="header"
