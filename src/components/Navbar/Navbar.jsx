@@ -71,7 +71,7 @@ export function Navbar() {
             // onClick={() => navigate("beta-access")}
           />
           <Button
-            text="Get Started"
+            text="Get started"
             variant="r18-white"
             icon={Right}
             // onClick={() => (window.location.href = platformURL + "/login")}
