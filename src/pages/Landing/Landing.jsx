@@ -64,10 +64,10 @@ export function Landing() {
               data-aos-delay="250"
             >
               We connect the best model for your prompts with a unified API
-              end-point.
-              <br />
-              Outperform any LLM, eliminate downtime, and cut costs by up to
-              97%.
+              end-point. 
+              <br className="sm:hidden" />
+              {` Outperform any LLM, eliminate downtime, and cut costs by up to
+              97%.`}
             </p>
           </div>
           <div
