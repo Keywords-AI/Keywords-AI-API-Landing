@@ -65,10 +65,10 @@ export function Navbar() {
           <Button
             text="Log in"
             variant="header"
-            // onClick={() => {
-            //   window.location.href = platformURL + "/login";
-            // }}
-            onClick={() => navigate("beta-access")}
+            onClick={() => {
+              window.location.href = platformURL + "/login";
+            }}
+            // onClick={() => navigate("beta-access")}
           />
           <Button
             text="Get Started"
