@@ -63,33 +63,33 @@ export const Routes = () => {
           path: "/changelog",
           element: <ChangeLog />,
         },
-        {
-          path: "/componentgrid",
-          element: user ? <ComponentGrid /> : <Navigate to="/" />,
-        },
+        // {
+        //   path: "/componentgrid",
+        //   element: user ? <ComponentGrid /> : <Navigate to="/" />,
+        // },
       ],
     },
-    // {
-    //   element: <FullScreenLayout />, // layout without navigation bar
-    //   children: [
-    //     // { path: "/payment-success", element: <PaymentSuccess /> },
-    //     { path: "/confirm-registration", element: <ConfirmRegistration /> },
-    //     { path: "/unauthorized", element: <Unauthorized /> },
-    //     { path: "/unauthenticated", element: <Unauthenticated /> },
-    //     { path: "/login", element: <LogIn /> },
-    //     { path: "/signup", element: <SignUp /> },
-    //     {
-    //       path: "/beta-access",
-    //       element: <BetaAccess />,
-    //     },
-    //     { path: "/reset-password", element: <ResetPassword /> },
-    //     {
-    //       path: "/forgot-password",
-    //       element: <ForgotPassword />,
-    //     },
-    //     { path: "*", element: <NotFound /> },
-    //   ],
-    // },
+    {
+      element: <FullScreenLayout />, // layout without navigation bar
+      children: [
+        // { path: "/payment-success", element: <PaymentSuccess /> },
+        // { path: "/confirm-registration", element: <ConfirmRegistration /> },
+        // { path: "/unauthorized", element: <Unauthorized /> },
+        // { path: "/unauthenticated", element: <Unauthenticated /> },
+        // { path: "/login", element: <LogIn /> },
+        // { path: "/signup", element: <SignUp /> },
+        {
+          path: "/beta-access",
+          element: <BetaAccess />,
+        },
+        // { path: "/reset-password", element: <ResetPassword /> },
+        // {
+        //   path: "/forgot-password",
+        //   element: <ForgotPassword />,
+        // },
+        { path: "*", element: <NotFound /> },
+      ],
+    },
   ]);
   return (
     <div>

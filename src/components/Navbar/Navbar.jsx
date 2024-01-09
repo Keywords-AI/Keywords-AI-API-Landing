@@ -34,7 +34,7 @@ export function Navbar() {
               onClick={() => navigate("/")}
               active={location.pathname == "/"}
             />
-            <Button
+            {/* <Button
               text="Pricing"
               variant="header"
               onClick={() => navigate("/pricing")}
@@ -57,7 +57,7 @@ export function Navbar() {
               variant="header"
               // onClick={() => navigate("/changelog")}
               active={location.pathname == "/changelog"}
-            />
+            /> */}
           </div>
         }
 
@@ -65,15 +65,17 @@ export function Navbar() {
           <Button
             text="Log in"
             variant="header"
-            onClick={() => {
-              window.location.href = platformURL + "/login";
-            }}
+            // onClick={() => {
+            //   window.location.href = platformURL + "/login";
+            // }}
+            onClick={() => navigate("beta-access")}
           />
           <Button
             text="Get Started"
             variant="r18-white"
             icon={Right}
-            onClick={() => (window.location.href = platformURL + "/login")}
+            // onClick={() => (window.location.href = platformURL + "/login")}
+            onClick={() => navigate("beta-access")}
           />
         </div>
       </div>

@@ -80,7 +80,8 @@ export function Landing() {
             <Button
               text="Try playground"
               variant="r18-white"
-              onClick={() => (window.location.href = platformURL)}
+              // onClick={() => (window.location.href = platformURL)}
+              onClick={() => navigate("beta-access")}
               icon={Right}
             />
             <Button
@@ -171,9 +172,10 @@ export function Landing() {
             icon={Right}
             iconPosition="right"
             iconSize="xs"
-            onClick={() =>
-              (window.location.href = "https://docs.keywordsai.co")
-            }
+            // onClick={() =>
+            //   (window.location.href = "https://docs.keywordsai.co")
+            // }
+            onClick={() => navigate("beta-access")}
           />
         </div>
       </div>
@@ -243,9 +245,10 @@ export function Landing() {
             icon={Right}
             iconPosition="right"
             iconSize="xs"
-            onClick={() =>
-              (window.location.href = platformURL + "/platform/playground")
-            }
+            // onClick={() =>
+            //   (window.location.href = platformURL + "/platform/playground")
+            // }
+            onClick={() => navigate("beta-access")}
           />
         </div>
       </div>
@@ -265,7 +268,8 @@ export function Landing() {
           <Button
             text="Get started"
             variant="r18-white"
-            onClick={() => (window.location.href = platformURL + "/login")}
+            // onClick={() => (window.location.href = platformURL + "/login")}
+            onClick={() => navigate("beta-access")}
           />
           <ContactDialog />
         </div>
