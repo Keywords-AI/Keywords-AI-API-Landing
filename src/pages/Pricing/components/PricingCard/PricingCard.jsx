@@ -90,7 +90,7 @@ export default function PricingCard({
         <div className="flex flex-col items-start gap-xs">
           {features.map((feature, index) => (
             <div className="flex items-center gap-xs" key={index}>
-              <FeatureTick />
+              <FeatureTick fill="fill-primary"/>
               {feature}
             </div>
           ))}
