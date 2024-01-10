@@ -96,11 +96,18 @@ export function Landing() {
             />
           </div>
         </div>
-        <DashboardPreview />
+        <div
+          data-aos="custom-fade-down"
+          data-aos-delay="450"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <DashboardPreview />
+        </div>
+
         <div
           className="flex max-w-[1200px] items-center justify-center gap-xxs w-full"
           data-aos="custom-fade-down"
-          data-aos-delay="450"
+          data-aos-delay="550"
           data-aos-anchor-placement="top-bottom"
         >
           <p className="text-sm-regular text-resend-64">Backed by</p>
