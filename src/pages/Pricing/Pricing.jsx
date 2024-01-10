@@ -19,12 +19,11 @@ export function Pricing() {
 
   const cards = [
     {
-      title: "Starter",
+      title: "Free",
       description:
         "Best for solo builders.",
       price: "$0",
-      priceDescription: "",
-      featureTitle: "Starter plan features:",
+      featureTitle: "Free plan features:",
       button: (
         <Button
           variant={"r4-black"}
@@ -35,40 +34,15 @@ export function Pricing() {
         />
       ),
       currentPlan: "View Usage Details",
-      // upgradeButton: {
-      //   text: 'Add subscription',
-      //   className: 'button-primary self-stretch',
-      //   onClick: () => {
-      //     if (!user.email) navigate('/signup?next=/platform/pricing');
-      //     else {
-      //       createPaymentSession({
-      //         lookup_keys: [
-      //           'keywordsai_flex_8k_input',
-      //           'keywordsai_flex_8k_output',
-      //         ],
-      //       });
-      //     }
-      //   },
-      // },
-      // downgradeButton: {
-      //   text: 'Add subscription',
-      //   className: 'button-primary self-stretch',
-      //   onClick: () => {
-      //     if (!user.email) navigate('/signup?next=/platform/pricing');
-      //     else {
-      //       createPaymentSession({
-      //         lookup_keys: [
-      //           'keywordsai_flex_8k_input',
-      //           'keywordsai_flex_8k_output',
-      //         ],
-      //       });
-      //     }
-      //   },
-      // },
       features: [
-        "Feature",
-        "Feature",
-        "Feature",
+        "10,000 API requests",
+        "1 developer seat",
+        "1 proxy API key",
+        "Usage analytics",
+        "Status monitoring",
+        "Dynamic LLM router",
+        "OpenAI credits support",
+        "Email support", 
       ],
       plan: "starter",
       rank: 2,
@@ -78,8 +52,8 @@ export function Pricing() {
       description:
         "Best for startups and teams.",
       price: teamPrice,
-      priceDescription: "",
-      featureTitle: "Team plan features:",
+      // bonus: "First 1000 API calls for free",
+      featureTitle: "Everything in Free, plus",
       currentPlan: "View Usage Details",
       bgColor: "bg-gray-2",
       border: "shadow-gray-4 shadow-border",
@@ -93,40 +67,16 @@ export function Pricing() {
           type="button"
         />
       ),
-      // upgradeButton: {
-      //   text: 'Add subscription',
-      //   className: 'button-primary self-stretch',
-      //   onClick: () => {
-      //     if (!user.email) navigate('/signup?next=/platform/pricing');
-      //     else {
-      //       createPaymentSession({
-      //         lookup_keys: [
-      //           'keywordsai_flex_32k_input',
-      //           'keywordsai_flex_32k_output',
-      //         ],
-      //       });
-      //     }
-      //   },
-      // },
-      // downgradeButton: {
-      //   text: 'Add subscription',
-      //   className: 'button-primary self-stretch',
-      //   onClick: () => {
-      //     if (!user.email) navigate('/signup?next=/platform/pricing');
-      //     else {
-      //       createPaymentSession({
-      //         lookup_keys: [
-      //           'keywordsai_flex_32k_input',
-      //           'keywordsai_flex_32k_output',
-      //         ],
-      //       });
-      //     }
-      //   },
-      // },
+
       features: [
-        "Feature",
-        "Feature",
-        "Feature",
+        "Unlimited API requests",
+        "Unlimited seats ",
+        "Unlimited proxy keys",
+        "Advanced usage analytics",
+        "Advanced model fallback",
+        "Priority model access",
+        "Admin roles",
+        "CTO priority support"
       ],
       plan: "flex_32k",
       rank: 3,
@@ -135,7 +85,7 @@ export function Pricing() {
       title: "Custom",
       description:
         "Fully tailored for your use case.",
-      featureTitle: "Custom plan features:",
+      featureTitle: "Everything in Team, plus",
       button: (<Button
           variant={"r4-black"}
           text={"Book a demo"}
@@ -145,9 +95,11 @@ export function Pricing() {
       ),
       currentPlan: "View Usage Details",
       features: [
-        "Feature",
-        "Feature",
-        "Feature",
+        "Testing playground",
+        "Integration assistance",
+        "Use-case optimization",
+        "Increased rate limit",
+        "Volume discount",
       ],
       plan: "custom",
       rank: 4,

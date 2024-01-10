@@ -16,6 +16,7 @@ export default function PricingCard({
   plan = "plan",
   title = "Title",
   description = "Description Here",
+  bonus="",
   featureTitle = "Here are the features",
   buttonVar = "r4-primary",
   buttonText = "Try for free",
@@ -78,7 +79,7 @@ export default function PricingCard({
               </span>
             </div>
           )}
-          {price && <span className="text-md-regular text-gray-4">{}</span>}
+          {price && <span className="text-md-regular text-gray-4">{bonus}</span>}
         </div>
         {/* <Button variant={buttonVar} text={buttonText} width="w-full" className="self-stretch items-center justify-center gap-xxs" /> */}
         {button}
