@@ -25,6 +25,8 @@ import "aos/dist/aos.css";
 import { Right } from "src/components/Icons";
 import { Button } from "src/components/Buttons";
 import { platformURL } from "src/utilities/platformURL";
+import DashboardPreview from "./components/DashboardPreview";
+
 export function Landing() {
   const navigate = useNavigate();
   useEffect(() => {
@@ -64,7 +66,7 @@ export function Landing() {
               data-aos-delay="250"
             >
               We connect the best model for your prompts with a unified API
-              end-point. 
+              end-point.
               <br className="sm:hidden" />
               {` Outperform any LLM, eliminate downtime, and cut costs by up to
               97%.`}
@@ -94,6 +96,7 @@ export function Landing() {
             />
           </div>
         </div>
+        <DashboardPreview />
         <div
           className="flex max-w-[1200px] items-center justify-center gap-xxs w-full"
           data-aos="custom-fade-down"
