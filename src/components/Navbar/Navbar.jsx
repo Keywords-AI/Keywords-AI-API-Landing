@@ -28,13 +28,13 @@ export function Navbar() {
         </div>
         {
           <div className="sm:hidden flex items-center gap-xs">
-            {/* <Button
+            <Button
               text="Overview"
               variant="header"
               onClick={() => navigate("/")}
               active={location.pathname == "/"}
-            /> */}
-            {/* <Button
+            />
+            <Button
               text="Pricing"
               variant="header"
               onClick={() => navigate("/pricing")}
@@ -47,6 +47,7 @@ export function Navbar() {
                 (window.location.href = "https://docs.keywordsai.co")
               }
             />
+            {/*
             <Button
               text="Models"
               variant="header"
