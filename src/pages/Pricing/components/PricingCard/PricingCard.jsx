@@ -86,12 +86,15 @@ export default function PricingCard({
       </div>
 
       <div className="flex flex-col items-start gap-md self-stretch">
-        <span className="text-md-md "> {featureTitle} </span>
+        <span className="text-md-md text-gray-white"> {featureTitle} </span>
         <div className="flex flex-col items-start gap-xs">
           {features.map((feature, index) => (
             <div className="flex items-center gap-xs" key={index}>
               <FeatureTick fill="fill-primary"/>
+              <span className="text-md-regular text-gray-white">
               {feature}
+
+              </span>
             </div>
           ))}
         </div>

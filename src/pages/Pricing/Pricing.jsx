@@ -14,7 +14,7 @@ export function Pricing() {
 
   const handleSwitchChange = (checked) => {
     setIsYearly(checked);
-    setTeamPrice(checked ? "$21" : "$29");
+    setTeamPrice(checked ? "$29" : "$39");
   };
 
   const cards = [
@@ -29,7 +29,7 @@ export function Pricing() {
           variant={"r4-black"}
           text={"Try for free"}
           className="self-stretch shadow-border shadow-gray-3 rounded-sm bg-gray-2"
-          onClick={() => window.location.href = 'https://platform.keywordsai.co/login?next=platform/pricing'}
+          onClick={() => window.location.href = 'https://platform.keywordsai.co/login?next=platform/api/plans'}
           type="button"
         />
       ),
@@ -63,7 +63,7 @@ export function Pricing() {
           text={"Get started"}
           className="self-stretch items-center justify-center gap-xxs"
           width="w-full"
-          onClick={() => window.location.href = 'https://platform.keywordsai.co/login?next=platform/pricing'}
+          onClick={() => window.location.href = 'https://platform.keywordsai.co/login?next=platform/api/plans'}
           type="button"
         />
       ),
@@ -124,10 +124,12 @@ export function Pricing() {
         <div className="flex-col items-center gap-lg">
           <div className="flex justify-center items-center gap-sm">
             <span className="text-lg text-gray-4 text-center"> Monthly </span>
+            <div className=" ">
             <SwitchButton onCheckedChange={handleSwitchChange} />
+            </div>
             <div>
               <span className="text-lg text-gray-4 text-center"> Yearly </span>
-              <span className="text-lg text-primary text-center"> (25% off) </span>
+              <span className="text-lg text-primary text-center"> (35% off) </span>
             </div>
           </div>
           <div className="flex max-w-[1000px] items-start content-start gap-y-[24px] gap-x-[20px]  flex-wrap">

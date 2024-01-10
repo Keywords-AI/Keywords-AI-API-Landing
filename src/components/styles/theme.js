@@ -44,7 +44,7 @@ export default {
       error: "#F55656",
       avatar: "#008080", //to be updated, ping @andy
       gray: {
-        white: "#F9FAFC",
+        white: "#F9FAFD",
         black: "#151519",
         2: "#1E1E23",
         3: gray3,
