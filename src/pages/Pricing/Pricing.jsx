@@ -7,14 +7,17 @@ import { createPath, useNavigate } from "react-router-dom";
 import SwitchButton from "src/components/Buttons/SwitchButton";
 import { useState } from "react";
 import { createPaymentSession } from "src/services/stripe";
+import { set } from "react-hook-form";
 export function Pricing() {
   const navigate = useNavigate();
   const [isYearly, setIsYearly] = useState(false);
-  const [teamPrice, setTeamPrice] = useState("$29");
+  const [teamPrice, setTeamPrice] = useState("$39");
+  const [bonus, setBonus] = useState("Billed monthly");
 
   const handleSwitchChange = (checked) => {
     setIsYearly(checked);
-    setTeamPrice(checked ? "$29" : "$39");
+    setTeamPrice(checked ? "$29 " : "$39");
+    setBonus(checked ? "Billed annually" : "Billed monthly");
   };
 
   const cards = [
@@ -52,7 +55,7 @@ export function Pricing() {
       description:
         "Best for startups and teams.",
       price: teamPrice,
-      // bonus: "First 1000 API calls for free",
+      bonus: bonus,
       featureTitle: "Everything in Free, plus",
       currentPlan: "View Usage Details",
       bgColor: "bg-gray-2",
