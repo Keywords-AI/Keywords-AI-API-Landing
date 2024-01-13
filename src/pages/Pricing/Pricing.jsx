@@ -10,9 +10,9 @@ import { createPaymentSession } from "src/services/stripe";
 import { set } from "react-hook-form";
 export function Pricing() {
   const navigate = useNavigate();
-  const [isYearly, setIsYearly] = useState(false);
-  const [teamPrice, setTeamPrice] = useState("$39");
-  const [bonus, setBonus] = useState("Billed monthly");
+  const [isYearly, setIsYearly] = useState(true);
+  const [teamPrice, setTeamPrice] = useState("$29");
+  const [bonus, setBonus] = useState("Billed annually");
 
   const handleSwitchChange = (checked) => {
     setIsYearly(checked);
@@ -128,7 +128,7 @@ export function Pricing() {
           <div className="flex justify-center items-center gap-sm">
             <span className="text-lg text-gray-4 text-center"> Monthly </span>
             <div className=" ">
-            <SwitchButton onCheckedChange={handleSwitchChange} />
+            <SwitchButton onCheckedChange={handleSwitchChange} checked={isYearly}/>
             </div>
             <div>
               <span className="text-lg text-gray-4 text-center"> Yearly </span>
