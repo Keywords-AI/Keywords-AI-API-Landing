@@ -38,6 +38,7 @@ export function Navbar() {
               text="Pricing"
               variant="header"
               onClick={() => navigate("/pricing")}
+              active={location.pathname == "/pricing"}
             />
 
             <Button
