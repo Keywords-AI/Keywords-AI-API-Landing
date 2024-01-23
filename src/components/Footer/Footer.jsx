@@ -20,6 +20,14 @@ export function Footer() {
           <span
             className="caption text-gray-4"
             style={{ cursor: "pointer" }}
+            onClick={() => window.open("https://comply.dog/yc5bmv#checklist")}
+          >
+            GDPR
+          </span>
+          <SmallDot fill="fill-gray-4" />
+          <span
+            className="caption text-gray-4"
+            style={{ cursor: "pointer" }}
             onClick={() => navigate("/privacy-policy")}
           >
             Privacy Policy
