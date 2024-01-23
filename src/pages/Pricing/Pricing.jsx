@@ -23,8 +23,7 @@ export function Pricing() {
   const cards = [
     {
       title: "Free",
-      description:
-        "Best for solo builders.",
+      description: "Best for solo builders.",
       price: "$0",
       featureTitle: "Free plan features:",
       button: (
@@ -32,7 +31,10 @@ export function Pricing() {
           variant={"r4-black"}
           text={"Try for free"}
           className="self-stretch shadow-border shadow-gray-3 rounded-sm bg-gray-2"
-          onClick={() => window.location.href = 'https://platform.keywordsai.co/login?next=platform/api/plans'}
+          onClick={() =>
+            (window.location.href =
+              "https://platform.keywordsai.co/login?next=platform/api/plans")
+          }
           type="button"
         />
       ),
@@ -45,15 +47,14 @@ export function Pricing() {
         "Status monitoring",
         "Dynamic LLM router",
         "OpenAI credits support",
-        "Email support", 
+        "Email support",
       ],
       plan: "starter",
       rank: 2,
     },
     {
       title: "Team",
-      description:
-        "Best for startups and teams.",
+      description: "Best for startups and teams.",
       price: teamPrice,
       bonus: bonus,
       featureTitle: "Everything in Free, plus",
@@ -66,7 +67,10 @@ export function Pricing() {
           text={"Get started"}
           className="self-stretch items-center justify-center gap-xxs"
           width="w-full"
-          onClick={() => window.location.href = 'https://platform.keywordsai.co/login?next=platform/api/plans'}
+          onClick={() =>
+            (window.location.href =
+              "https://platform.keywordsai.co/login?next=platform/api/plans")
+          }
           type="button"
         />
       ),
@@ -79,21 +83,21 @@ export function Pricing() {
         "Advanced model fallback",
         "Priority model access",
         "Admin roles",
-        "CTO priority support"
+        "CTO priority support",
       ],
       plan: "flex_32k",
       rank: 3,
     },
     {
       title: "Custom",
-      description:
-        "Fully tailored for your use case.",
+      description: "Fully tailored for your use case.",
       featureTitle: "Everything in Team, plus",
-      button: (<Button
+      button: (
+        <Button
           variant={"r4-black"}
           text={"Book a demo"}
           className="self-stretch shadow-border shadow-gray-3 rounded-sm bg-gray-2"
-          onClick={() => window.location.href = 'https://zcal.co/keywords-ai'}
+          onClick={() => (window.location.href = "https://zcal.co/keywords-ai")}
         />
       ),
       currentPlan: "View Usage Details",
@@ -119,7 +123,8 @@ export function Pricing() {
             Plans and Pricing
           </p>
           <p className="text-lg text-center text-gray-4 ">
-          Start for free and scale as you go. Upgrade to enable unlimited requests, and additional features.
+            Start for free and scale as you go. Upgrade to enable unlimited
+            requests, and additional features.
           </p>
         </div>
 
@@ -128,11 +133,17 @@ export function Pricing() {
           <div className="flex justify-center items-center gap-sm">
             <span className="text-lg text-gray-4 text-center"> Monthly </span>
             <div className=" ">
-            <SwitchButton onCheckedChange={handleSwitchChange} checked={isYearly}/>
+              <SwitchButton
+                onCheckedChange={handleSwitchChange}
+                checked={isYearly}
+              />
             </div>
             <div>
               <span className="text-lg text-gray-4 text-center"> Yearly </span>
-              <span className="text-lg text-primary text-center"> (35% off) </span>
+              <span className="text-lg text-primary text-center">
+                {" "}
+                (35% off){" "}
+              </span>
             </div>
           </div>
           <div className="flex max-w-[1000px] items-start content-start gap-y-[24px] gap-x-[20px]  flex-wrap">
