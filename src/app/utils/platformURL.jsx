@@ -1,1 +1,0 @@
-export const platformURL = "https://platform.keywordsai.co";

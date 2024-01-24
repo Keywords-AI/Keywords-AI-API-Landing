@@ -1,0 +1,3 @@
+[submodule "src/app/components"]
+	path = src/app/components
+	url = https://github.com/Keywords-AI/Keywords-AI-Design-System.git
