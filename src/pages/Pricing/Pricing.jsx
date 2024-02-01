@@ -107,6 +107,7 @@ export function Pricing() {
         "Use-case optimization",
         "Increased rate limit",
         "Volume discount",
+        "SOC 2 compliance",
       ],
       plan: "custom",
       rank: 4,

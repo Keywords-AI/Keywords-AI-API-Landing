@@ -57,7 +57,7 @@ export default function PricingCard({
         "flex h-[720px] p-md flex-col items-center gap-xl flex-1 w-ful rounded-md min-w-[280px]",
         border,
         bgColor,
-        hover && "shadow-pricing",
+        // hover && "shadow-pricing",
       )}
       
     >

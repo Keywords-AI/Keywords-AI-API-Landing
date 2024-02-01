@@ -12,7 +12,6 @@ import { platformURL } from "src/utilities/platformURL";
 export function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
-  const { user } = React.useContext(AuthContext);
   return (
     <div
       aria-label="Navigation Bar"
@@ -44,8 +43,9 @@ export function Navbar() {
             <Button
               text="Docs"
               variant="header"
+              textClickedColor="text-gray-4"
               onClick={() =>
-                (window.location.href = "https://docs.keywordsai.co")
+                window.open("https://docs.keywordsai.co", "_blank")
               }
             />
             {/*

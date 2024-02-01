@@ -1,8 +1,10 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Deployment process
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- make sure the latest code is in test branch
+- `git push origin test`
+- wait for the action to finish and go to [https://test.keywordsai.co/](https://test.keywordsai.co/) see if the changes is correct
+- `git checkout production`
+- `git rebase origin/test`
+- `git push origin production`
+- go to [https://keywordsai.co/](https://keywordsai.co/) check the result
