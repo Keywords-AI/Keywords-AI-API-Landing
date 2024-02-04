@@ -51,14 +51,14 @@ export function Landing() {
               data-aos="custom-fade-down"
               data-aos-delay="50"
             >
-              Build scalable AI applications <br /> with dynamic LLM routing
+              The new way to build and monitor <br /> scalable LLM applications
             </p>
             <p
               className=" hidden sm:block display-lg self-stretch gradient-text text-center"
               data-aos="custom-fade-down"
               data-aos-delay="150"
             >
-              Build scalable AI applications <br /> with dynamic LLM routing
+              The new way to build and monitor <br /> scalable LLM applications
             </p>
             <p
               className="text-lg text-gray-4 self-stretch text-center"
@@ -80,7 +80,7 @@ export function Landing() {
           >
             {/* <Button text="Get started" variant="secondary" /> */}
             <Button
-              text="Try playground"
+              text="Join waitlist"
               variant="r18-white"
               // onClick={() => (window.location.href = platformURL)}
               onClick={() => navigate("beta-access")}
