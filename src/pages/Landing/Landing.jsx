@@ -101,10 +101,9 @@ export function Landing() {
           data-aos-delay="450"
           data-aos-anchor-placement="top-bottom"
         >
-          {/* <DashboardPreview /> */}
-          <div className="flex">
+          {/* <div className="flex">
             <img src="/images/preview.png" className="w-full h-full" />
-          </div>
+          </div> */}
         </div>
 
         <div
