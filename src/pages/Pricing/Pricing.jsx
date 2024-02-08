@@ -77,12 +77,12 @@ export function Pricing() {
 
       features: [
         "Unlimited API requests",
-        "Unlimited seats ",
+        "Unlimited seats",
         "Unlimited proxy keys",
         "Advanced usage analytics",
-        "Advanced model fallback",
-        "Priority model access",
         "Admin roles",
+        "Advanced model fallback",
+        "Mistral, Anthropic, and x more models",
         "CTO priority support",
       ],
       plan: "flex_32k",
@@ -107,7 +107,6 @@ export function Pricing() {
         "Use-case optimization",
         "Increased rate limit",
         "Volume discount",
-        "SOC 2 compliance",
       ],
       plan: "custom",
       rank: 4,
