@@ -47,7 +47,7 @@ export function Pricing() {
         "Usage analytics",
         "Status monitoring",
         "Dynamic LLM router",
-        "OpenAI credits support",
+        "OpenAI models",
         "Email support",
       ],
       plan: "starter",
