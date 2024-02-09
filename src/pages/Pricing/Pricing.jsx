@@ -8,6 +8,7 @@ import SwitchButton from "src/components/Buttons/SwitchButton";
 import { useState } from "react";
 import { createPaymentSession } from "src/services/stripe";
 import { set } from "react-hook-form";
+import { models } from "src/utilities/constants";
 export function Pricing() {
   const navigate = useNavigate();
   const [isYearly, setIsYearly] = useState(true);
@@ -19,7 +20,7 @@ export function Pricing() {
     setTeamPrice(checked ? "$29 " : "$39");
     setBonus(checked ? "Billed annually" : "Billed monthly");
   };
-
+  const remaining = models.length;
   const cards = [
     {
       title: "Free",
@@ -82,7 +83,7 @@ export function Pricing() {
         "Advanced usage analytics",
         "Admin roles",
         "Advanced model fallback",
-        "Mistral, Anthropic, and 20 more models",
+        `Mistral, Anthropic, and ${remaining} more models`,
         "CTO priority support",
       ],
       plan: "flex_32k",
