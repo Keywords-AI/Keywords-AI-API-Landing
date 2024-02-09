@@ -82,7 +82,7 @@ export function Pricing() {
         "Advanced usage analytics",
         "Admin roles",
         "Advanced model fallback",
-        "Mistral, Anthropic, and x more models",
+        "Mistral, Anthropic, and 20 more models",
         "CTO priority support",
       ],
       plan: "flex_32k",
