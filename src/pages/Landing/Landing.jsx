@@ -44,7 +44,7 @@ export function Landing() {
               className="bg-gradient-out p-[1px] rounded-lg"
               data-aos="custom-fade-down"
             >
-              <Button text="Keywords AI Beta Release" variant="beta" />
+              <Button text="Keywords AI beta release" variant="beta" />
             </div>
             <p
               className="sm:hidden display-xl self-stretch gradient-text text-center"
