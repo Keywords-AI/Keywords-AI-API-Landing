@@ -1,6 +1,6 @@
 import axios from "axios";
-const apiurl = import.meta.env.VITE_BACKEND_URL;
-const genericDomain = import.meta.env.VITE_KEYWORDS_DOMAIN; // for all subdomains, .keywordsai.co
+const apiurl = import.meta.env.VITE_BACKEND_URL || "https://api.keywordsai.co/";
+const genericDomain = import.meta.env.VITE_KEYWORDS_DOMAIN || "kewordsai.co"; // for all subdomains, .keywordsai.co
 const extractMainDomain =
   "." +
   (window.location.hostname.includes("keywordsai.co")
@@ -90,7 +90,7 @@ export const joinwaitlist = async ({
       method: "post",
       url: `${apiurl}api/subscribe/`,
       data: formdata,
-      headers: { "Content-Type": "multipart/form-data" },
+      headers: { "Content-Type": "application/json" },
     });
     // Assuming the response is text-based; adjust if it's JSON or other format
     console.log(response.data);
@@ -186,6 +186,7 @@ export const feedback = async ({ content, file_or_image }) => {
     const response = await axios.post(`${apiurl}api/feedback/`, formData, {
       headers: {
         "X-CSRFToken": getCookie("csrftoken"),
+        "Content-Type": "multipart/form-data",
       },
       timeout: 5000,
     });

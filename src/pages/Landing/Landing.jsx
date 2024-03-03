@@ -283,7 +283,13 @@ export function Landing() {
             // onClick={() => (window.location.href = platformURL + "/login")}
             onClick={() => navigate("beta-access")}
           />
-          <ContactDialog />
+          {/* <ContactDialog /> */}
+          <Button
+            text="Contact us"
+            variant="r18-black"
+            icon={Right}
+            onClick={() => window.open("mailto:team@keywordsai.co")}
+          />
         </div>
         <div className="flex justify-center items-center">
           <Subtract />
