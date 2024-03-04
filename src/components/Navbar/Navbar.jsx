@@ -27,11 +27,30 @@ export function Navbar() {
         </div>
         {
           <div className="sm:hidden flex items-center gap-xs">
-            <Button
+            {/* <Button
               text="Overview"
               variant="header"
               onClick={() => navigate("/")}
               active={location.pathname == "/"}
+            /> */}
+            <Button
+              text="Platform"
+              variant="header"
+              onClick={() => window.open(platformURL, "_blank")}
+            />
+            <Button
+              text="Documentation"
+              variant="header"
+              onClick={() =>
+                window.open("https://docs.keywordsai.co", "_blank")
+              }
+              // active={location.pathname == "/"}
+            />
+            <Button
+              text="Changelog"
+              variant="header"
+              onClick={() => navigate("/changelog")}
+              active={location.pathname == "/changelog"}
             />
             <Button
               text="Pricing"
@@ -41,12 +60,18 @@ export function Navbar() {
             />
 
             <Button
-              text="Docs"
+              text="Models"
               variant="header"
               textClickedColor="text-gray-4"
-              onClick={() =>
-                window.open("https://docs.keywordsai.co", "_blank")
-              }
+              onClick={() => navigate("/models")}
+              active={location.pathname == "/models"}
+            />
+            <Button
+              text="Community"
+              variant="header"
+              textClickedColor="text-gray-4"
+              onClick={() => navigate("/community")}
+              active={location.pathname == "/community"}
             />
             {/*
             <Button

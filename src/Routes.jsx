@@ -1,6 +1,7 @@
 import React from "react";
 import { useRoutes, Navigate, useLocation } from "react-router-dom";
-import { Landing } from "./pages/Landing";
+// import { Landing } from "./pages/Landing";
+import { Landing } from "./pages/Landing1/Landing";
 import { Pricing } from "./pages/Pricing/Pricing";
 import { NavigationLayout } from "./layouts/NavigationLayout/NavigationLayout";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy/PrivacyPolicy";

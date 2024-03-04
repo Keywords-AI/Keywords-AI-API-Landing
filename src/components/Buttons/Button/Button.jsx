@@ -272,6 +272,21 @@ export const Button = forwardRef(
         borderHoverColor = borderHoverColor || "shadow-border shadow-gray-4";
 
         break;
+      case "big-white":
+        bgColor = bgColor || "bg-gray-white";
+        hoverColor = hoverColor || "bg-gray-black";
+        clickedColor = clickedColor || "bg-gray-black";
+        textColor = textColor || "text-gray-black";
+        textClassName = textClassName || "text-md-medium";
+        textHoverColor = textHoverColor || "text-gray-white";
+        textClickedColor = textClickedColor || "text-gray-white";
+        borderRadius = borderRadius || "rounded-[400px]";
+        padding = padding || "py-xs px-md";
+        iconFill = iconFill || "fill-gray-black";
+        iconHoverFill = iconHoverFill || "fill-gray-white";
+        borderHoverColor = borderHoverColor || "shadow-border shadow-gray-4";
+
+        break;
       case "r18-black":
         bgColor = bgColor || "bg-gray-black";
         hoverColor = hoverColor || "bg-gray-3";
@@ -284,6 +299,22 @@ export const Button = forwardRef(
         textClickedColor = textClickedColor || "text-gray-white";
         borderRadius = borderRadius || "rounded-lg";
         padding = padding || "py-xxs px-sm";
+        iconFill = iconFill || "fill-gray-4";
+        iconHoverFill = iconHoverFill || "fill-gray-white";
+
+        break;
+      case "big-black":
+        bgColor = bgColor || "bg-gray-black";
+        hoverColor = hoverColor || "bg-gray-3";
+        borderColor = borderColor || "shadow-transparent";
+        borderHoverColor = borderHoverColor || "shadow-transparent";
+        clickedColor = clickedColor || "bg-gray-3";
+        textClassName = textClassName || "text-md-medium ";
+        textColor = textColor || "text-gray-4";
+        textHoverColor = textHoverColor || "text-gray-white";
+        textClickedColor = textClickedColor || "text-gray-white";
+        borderRadius = borderRadius || "rounded-[400px]";
+        padding = padding || "py-xs px-md";
         iconFill = iconFill || "fill-gray-4";
         iconHoverFill = iconHoverFill || "fill-gray-white";
 
