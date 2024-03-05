@@ -1,0 +1,26 @@
+.CodeBoxDisplay {}
+
+.code ol {
+    counter-reset: item;
+}
+
+.code li::before {
+    content: counter(item);
+    counter-increment: item;
+    margin-right: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: right;
+    @apply font-fira-code text-gray-4 text-right text-[14px] leading-[20px] sm:text-[12px] sm:leading-[16px];
+    width: 17px;
+}
+
+.code li {
+    @apply font-fira-code text-gray-white text-[14px] leading-[20px] sm:text-[12px] sm:leading-[16px];
+    font-style: normal;
+    font-weight: 400;
+
+
+    display: flex; /* Make the list item a flex container */
+    align-items: center; /* Center align items vertically */
+}
