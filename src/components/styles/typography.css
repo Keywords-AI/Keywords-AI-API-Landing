@@ -1,10 +1,11 @@
 .display-xl {
     @apply text-gray-white font-inter;
     font-size: 72px;
-    font-weight: 500;
-    letter-spacing: -1px;
-    line-height: 88px;
     font-style: normal;
+    font-weight: 600;
+    line-height: 88px;
+    /* 122.222% */
+    letter-spacing: -1px;
 }
 
 .display-lg {

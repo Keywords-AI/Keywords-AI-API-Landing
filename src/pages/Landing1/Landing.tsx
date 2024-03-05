@@ -30,6 +30,7 @@ import {
 } from "./TeamsLogo";
 import FeatureSection from "./FeatureSection";
 import { AdvantagesSecctions } from "./AdvantagesSecctions";
+import CodePrewview from "./CodePrewview";
 
 export function Landing() {
   const navigate = useNavigate();
@@ -129,7 +130,7 @@ export function Landing() {
           data-aos-delay="500"
           data-aos-anchor-placement="top-bottom"
         >
-          <img src="/images/preview.png" className="w-full h-full" />
+          <img src="/images/preview.png" className="w-full max-w-[1000px]" />
         </div>
       </div>
     );
@@ -150,7 +151,7 @@ export function Landing() {
           <JustPaidLogo />
           <EduPhoriaAiLogo />
         </div>
-        <div className="min-h-[1px] shrink-0 bg-highlight w-full max-w-[1200px]" />
+        <div className="min-h-[1.2px] shrink-0 [background:linear-gradient(90deg,rgba(255,255,255,0.00)_0%,rgba(0,0,0,0.20)_0%,rgba(143,143,143,0.67)_50%,rgba(0,0,0,0.04)_100%)] w-full max-w-[1200px]" />
       </div>
     );
   };
@@ -210,151 +211,29 @@ export function Landing() {
       </div>
     );
   };
-  const IntegrateSection = () => {
-    return (
-      <div
-        aria-label="integration section"
-        className="flex px-xxxl sm:px-lg py-xxl flex-col items-center gap-xl self-stretch overflow-hidden"
-      >
-        <div className="max-w-[1200px] flex-col items-center gap-xl w-full">
-          <div className="flex-col items-center gap-lg self-stretch">
-            {/* <img src="./electric.svg" alt="electric" className="w-[188.5px] h-[206px]" /> */}
-            <div
-              className="w-[188.5px] h-[206px]"
-              style={{
-                filter: "drop-shadow(0px 0px 40px rgba(143, 0, 210, 0.25))",
-              }}
-            >
-              <Electric />
-            </div>
-
-            <SectionTitle
-              title={"Integrate within minutes"}
-              subtitle={"Easy integration with OpenAI style API call."}
-            />
-          </div>
-          {/* <CodeBoxDisplay /> */}
-          <p className="display-sm max-w-[600px] text-gray-white text-center">
-            A simple interface so you can switch with just a few lines. It fits
-            right into your codebase.
-          </p>
-          <Divider />
-          <Button
-            variant="text"
-            text="Read Documentation"
-            icon={Right}
-            iconPosition="right"
-            iconSize="xs"
-            // onClick={() =>
-            //   (window.location.href = "https://docs.keywordsai.co")
-            // }
-            onClick={() => navigate("beta-access")}
-          />
-        </div>
-      </div>
-    );
-  };
-
-  const FeaturesSection = () => {
-    const cardData = [
-      {
-        linkIcon: <Brain />,
-        title: "Advanced Reasoning",
-        content: "Efficiently decodes complex instructions.",
-      },
-      {
-        linkIcon: <Stars />,
-        title: "Content Generation",
-        content: "Elevates SEO articles and creative scriptwriting.",
-      },
-      {
-        linkIcon: <Search />,
-        title: "Intelligent Search",
-        content: "Boosts accuracy with contextual understanding.",
-      },
-      {
-        linkIcon: <Chat />,
-        title: "Conversational AI",
-        content: "Delivers human-like, dynamic chatbot interactions.",
-      },
-      {
-        linkIcon: <Document />,
-        title: "Document Summary",
-        content: "Creates concise summaries from extensive texts.",
-      },
-      {
-        linkIcon: <Text />,
-        title: "Textual Analysis",
-        content: "Extracts insights for informed decision-making.",
-      },
-    ];
-    return (
-      <div
-        aria-label="Features section"
-        className="flex-col px-xxxl sm:px-lg py-xxl items-center gap-xl self-stretch bg-gray-blac overflow-hidden"
-      >
-        <div className="max-w-[1200px] flex-col items-center gap-xl w-full">
-          <SectionTitle
-            title={"Power up your LLM infrastructure"}
-            subtitle={"Our dynamic router supports all LLM use cases."}
-          />
-          <div
-            aria-label="card grid"
-            className="flex max-w-[1000px] items-start justify-center content-start gap-xl w-full flex-wrap"
-          >
-            {/* {cardData.map((card, index) => (
-              <SmallCard {...card} key={index} />
-            ))} */}
-          </div>
-          <p className="display-sm text-center max-w-[600px] w-full">
-            Optimize costs, enhance performance, and elevate uptime for your AI
-            application.
-          </p>
-          <Divider />
-
-          <Button
-            variant="text"
-            text="Try examples in playground"
-            icon={Right}
-            iconPosition="right"
-            iconSize="xs"
-            // onClick={() =>
-            //   (window.location.href = platformURL + "/platform/playground")
-            // }
-            onClick={() => navigate("beta-access")}
-          />
-        </div>
-      </div>
-    );
-  };
 
   const CallToActionSection = () => {
     return (
-      <div className="flex px-[180px] sm:px-lg pt-xxxl flex-col items-center gap-xl self-stretch overflow-hidden">
-        <div className="flex max-w-[1200px] flex-col items-center gap-sm ">
-          <p className="display-lg text-center gradient-text ">
-            Integrate in minutes. <br />
-            Beta available today.
-          </p>
-        </div>
-        <div className="flex items-start gap-xxs">
+      <div className="flex-col p-xxxl pb-0 items-center gap-xl self-stretch">
+        <p className="max-w-[800px] text-center w-full display-xl gradient-text">
+          Integrate in minutes. Beta available today.
+        </p>
+        <div className="flex items-center justify-center gap-xs">
           <Button
             text="Get started"
-            variant="r18-white"
-            // onClick={() => (window.location.href = platformURL + "/login")}
+            variant="big-white"
+            // onClick={() => (window.location.href = platformURL)}
             onClick={() => navigate("beta-access")}
-          />
-          {/* <ContactDialog /> */}
-          <Button
-            text="Contact us"
-            variant="r18-black"
             icon={Right}
-            onClick={() => window.open("mailto:team@keywordsai.co")}
+          />
+          <Button
+            variant="big-black"
+            text="Documentation"
+            icon={Right}
+            onClick={() => window.open("https://docs.keywordsai.co", "_blank")}
           />
         </div>
-        <div className="flex justify-center items-center">
-          <Subtract />
-        </div>
+        <Subtract />
       </div>
     );
   };
@@ -362,13 +241,11 @@ export function Landing() {
   return (
     <Page>
       <IntroductionSection />
-      {/* <ModelSectionSection /> */}
       <ColaborationSection />
       <FeatureSection />
       <CommentSesction />
       <AdvantagesSecctions />
-      {/* <IntegrateSection /> */}
-      {/* <FeaturesSection /> */}
+      <CodePrewview />
       <CallToActionSection />
     </Page>
   );

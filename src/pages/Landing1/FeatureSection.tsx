@@ -36,17 +36,17 @@ export default function FeatureSection({}: Props) {
       </div>
       <div
         aria-label="frame 1864"
-        className="flex max-w-[1200px] justify-center items-start content-start gap-lg w-full flex-wrap"
+        className="flex max-w-[1000px] justify-center items-start content-start gap-lg w-full flex-wrap "
       >
         <Card
           min_width={"min-w-[400px]"}
-          max_width={"flex-1"}
+          max_width={"flex-1 max-w-[584px]"}
           heading="Leverage all best-in-class LLMs"
           subheading={
             "Use a unified interface for any model.\nSave hours from building custom API clients."
           }
         >
-          <div className="flex max-h-[216px] justify-center items-center content-center overflow-auto gap-md w-full flex-wrap rounded-lg ">
+          <div className="flex  justify-center items-center content-center overflow-auto gap-md w-full flex-wrap rounded-lg min-w-[456px]">
             <ModelLogos.Openai />
             <ModelLogos.Ai_21_labs />
             <ModelLogos.Google />
@@ -59,20 +59,18 @@ export default function FeatureSection({}: Props) {
 
         <Card
           min_width="min-w-[320px]"
+          max_width="w-[384px]"
           heading="Built for scaling"
           subheading={
             "Bypass rate limits and make hundreds of concurrent calls.\nNo latency impact."
           }
         >
           <div className="flex justify-center items-center content-center gap-md self-stretch flex-wrap rounded-lg">
-            <img
-              src="/images/ScaleChart.png"
-              className="w-[320px] h-[216px] "
-            />
+            <img src="/images/ScaleChart.png" className="w-[320px] " />
           </div>
         </Card>
         <Card
-          min_width="min-w-[320px]"
+          min_width="min-w-[320px] w-[420px]"
           heading="From MVP to production"
           subheading={
             "One-stop DevOps platform for the entire LLM development lifecycle."
@@ -102,7 +100,7 @@ export default function FeatureSection({}: Props) {
             "Zoom through the platform by using quick keyboard shortcuts effortlessly."
           }
         >
-          <div className="flex justify-center items-center content-center gap-lg self-stretch flex-wrap">
+          <div className="flex justify-center items-center content-center gap-lg  flex-wrap w-full ">
             <TimeLine />
             <ShowFilter />
             <ClearFilter />
@@ -139,7 +137,7 @@ const Card = ({
   return (
     <div
       className={cn(
-        "flex min-w-[400px] p-lg  items-center gap-xl  border border-[color:var(--resend-com-linear-nero-nero,rgba(255,255,255,0.12))] [background:linear-gradient(0deg,#151519_0%,rgba(21,21,25,0.10)_40%,rgba(0,0,0,0.00)_100%,#000_100%)] rounded-lg border-solid landing-card",
+        "flex  p-lg  items-center gap-xl  border border-[color:var(--resend-com-linear-nero-nero,rgba(255,255,255,0.12))] [background:linear-gradient(0deg,#151519_0%,rgba(21,21,25,0.10)_40%,rgba(0,0,0,0.00)_100%,#000_100%)] rounded-lg border-solid landing-card",
         min_width,
         max_width,
         reversed ? "flex-col-reverse" : "flex-col"
@@ -148,7 +146,7 @@ const Card = ({
       {children}
       <div
         aria-label="card text"
-        className="w-[400px] flex-col justify-start items-center gap-xs "
+        className=" flex-col justify-start items-center gap-xs max-w-[400px]"
       >
         <div className="self-stretch text-center text-white display-sm">
           {heading}
