@@ -27,15 +27,15 @@ export const Right = ({
     case "sm":
       return (
         <svg
-          width="12"
-          height="12"
-          viewBox="0 0 12 12"
+          width={12}
+          height={12}
+          viewBox="0 0 8 12"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M2.29492 10.58L6.87492 6L2.29492 1.41L3.70492 0L9.70492 6L3.70492 12L2.29492 10.58Z"
-            className={active ? activeFill : fill}
+            d="M0.294983 10.58L4.87498 6L2.58498 3.705L0.294983 1.41L1.70498 0L7.70498 6L1.70498 12L0.294983 10.58Z"
+            fill="#151519"
           />
         </svg>
       );

@@ -443,7 +443,7 @@ export const Button = forwardRef(
           setHover(false);
         }}
         className={cn(
-          "group inline-flex items-center gap-xxs",
+          "group flex items-center gap-xxs",
           width,
           justification,
           borderRadius,
@@ -462,9 +462,9 @@ export const Button = forwardRef(
         ) : (
           <>
             {text && (
-              <span className={cn(hover ? textHoverColor : textColor)}>
-                {text}
-              </span>
+              <div className={cn(hover ? textHoverColor : textColor, "")}>
+                <span className="">{text}</span>
+              </div>
             )}
             {icon && (
               <div
