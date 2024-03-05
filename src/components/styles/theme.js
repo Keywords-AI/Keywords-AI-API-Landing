@@ -76,6 +76,7 @@ export default {
     },
     screens: {
       sm: { max: "680px" },
+      lg: { min: "681px" },
     },
   },
 };
