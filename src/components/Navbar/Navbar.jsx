@@ -46,12 +46,12 @@ export function Navbar() {
               }
               // active={location.pathname == "/"}
             />
-            <Button
+            {/* <Button
               text="Changelog"
               variant="header"
               onClick={() => navigate("/changelog")}
               active={location.pathname == "/changelog"}
-            />
+            /> */}
             <Button
               text="Pricing"
               variant="header"
@@ -59,7 +59,7 @@ export function Navbar() {
               active={location.pathname == "/pricing"}
             />
 
-            <Button
+            {/* <Button
               text="Models"
               variant="header"
               textClickedColor="text-gray-4"
@@ -72,7 +72,7 @@ export function Navbar() {
               textClickedColor="text-gray-4"
               onClick={() => navigate("/community")}
               active={location.pathname == "/community"}
-            />
+            /> */}
             {/*
             <Button
               text="Models"
