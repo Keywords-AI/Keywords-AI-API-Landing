@@ -6,6 +6,7 @@ import "./Landing.css";
 import {
   ClearFilter,
   ExportLogs,
+  OpenSidebar,
   SearchPrompt,
   ShowDisplay,
   ShowFilter,
@@ -112,6 +113,7 @@ export default function FeatureSection({}: Props) {
             <SearchPrompt />
             <ViewNext />
             <ViewLast />
+            <OpenSidebar />
           </div>
         </Card>
       </div>
@@ -135,24 +137,24 @@ const Card = ({
   reversed = false,
 }) => {
   return (
-    <div
-      className={cn(
-        "flex  p-lg  items-center gap-xl  border border-[color:var(--resend-com-linear-nero-nero,rgba(255,255,255,0.12))] [background:linear-gradient(0deg,#151519_0%,rgba(21,21,25,0.10)_40%,rgba(0,0,0,0.00)_100%,#000_100%)] rounded-lg border-solid landing-card",
-        min_width,
-        max_width,
-        reversed ? "flex-col-reverse" : "flex-col"
-      )}
-    >
-      {children}
+    <div className={cn("landing-card-outer flex", min_width, max_width)}>
       <div
-        aria-label="card text"
-        className=" flex-col justify-start items-center gap-xs max-w-[400px]"
+        className={cn(
+          "flex p-[31px] items-center gap-xl rounded-lg bg-gray-black w-full",
+          reversed ? "flex-col-reverse" : "flex-col"
+        )}
       >
-        <div className="self-stretch text-center text-white display-sm">
-          {heading}
-        </div>
-        <div className="self-stretch text-center text-md-regular text-gray-4">
-          {subheading}
+        {children}
+        <div
+          aria-label="card text"
+          className=" flex-col justify-start items-center gap-xs max-w-[400px]"
+        >
+          <div className="self-stretch text-center text-white display-sm">
+            {heading}
+          </div>
+          <div className="self-stretch text-center text-md-regular text-gray-4">
+            {subheading}
+          </div>
         </div>
       </div>
     </div>

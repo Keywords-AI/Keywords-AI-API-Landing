@@ -23,7 +23,7 @@ export function Footer() {
   return (
     <div
       aria-label="Footer"
-      className="flex flex-col w-full pb-lg items-start gap-lg bg-gray-black sm:pt-0 sm:px-lg sm:pb-xxs"
+      className="flex flex-col w-full pb-lg items-start gap-lg bg-gray-black sm:pt-0 sm:px-lg sm:pb-xxs "
     >
       <div className="line bg-gray-2"></div>
       <div className="hidden sm:flex w-full justify-center caption text-gray-4">
