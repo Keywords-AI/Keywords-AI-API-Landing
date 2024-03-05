@@ -48,7 +48,7 @@ export function Footer() {
                 onMouseEnter={handleLinkedInEnter}
                 onMouseLeave={handleLinkedInLeave}
               >
-                <LinkedIn active={isLinkedInHovered}/>
+                <LinkedIn active={isLinkedInHovered} />
               </a>
               <a
                 href="https://www.linkedin.com/company/keywordsai"
@@ -58,7 +58,7 @@ export function Footer() {
                 onMouseEnter={handleTwitterEnter}
                 onMouseLeave={handleTwitterLeave}
               >
-                <Twitter active={isTwitterHovered}/>
+                <Twitter active={isTwitterHovered} />
               </a>
               <a
                 href="https://www.linkedin.com/company/keywordsai"
@@ -68,7 +68,7 @@ export function Footer() {
                 onMouseEnter={handleDiscordEnter}
                 onMouseLeave={handleDiscordLeave}
               >
-                <Discord active={isDiscordHovered}/>
+                <Discord active={isDiscordHovered} />
               </a>
             </div>
           </div>
@@ -91,11 +91,18 @@ export function Footer() {
             <div className="flex flex-col w-[140px] items-start gap-[10px] shrink-0">
               <div className="flex items-center justify-center gap-[10px]">
                 <a
-                  href="https://docs.keywordsai.co/get-started/introduction"
+                  // href="https://docs.keywordsai.co/get-started/introduction"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                 >
-                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">Features</span>
+                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">
+                    Features
+                  </span>
                 </a>
               </div>
             </div>
@@ -117,7 +124,9 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">Docs</span>
+                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">
+                    Docs
+                  </span>
                 </a>
               </div>
             </div>
@@ -128,7 +137,9 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">Models</span>
+                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">
+                    Models
+                  </span>
                 </a>
               </div>
             </div>
@@ -152,7 +163,9 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">Community</span>
+                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">
+                    Community
+                  </span>
                 </a>
               </div>
             </div>
@@ -163,7 +176,9 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">Pricing</span>
+                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">
+                    Pricing
+                  </span>
                 </a>
               </div>
             </div>
@@ -187,7 +202,9 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">API</span>
+                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">
+                    API
+                  </span>
                 </a>
               </div>
             </div>
@@ -198,7 +215,9 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">Changelog</span>
+                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">
+                    Changelog
+                  </span>
                 </a>
               </div>
             </div>
@@ -209,7 +228,9 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">DPA</span>
+                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">
+                    DPA
+                  </span>
                 </a>
               </div>
             </div>
@@ -220,7 +241,9 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">Status</span>
+                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">
+                    Status
+                  </span>
                 </a>
               </div>
             </div>
@@ -232,7 +255,9 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">GDPR</span>
+                  <span className="text-gray-4 text-sm-regular hover:text-gray-white">
+                    GDPR
+                  </span>
                 </a>
               </div>
             </div>

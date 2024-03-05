@@ -36,7 +36,9 @@ export function Navbar() {
             <Button
               text="Platform"
               variant="header"
-              onClick={() => window.open(platformURL, "_blank")}
+              // onClick={() => window.open(platformURL, "_blank")}
+              onClick={() => navigate("/")}
+              // active={location.pathname == "/"}
             />
             <Button
               text="Documentation"
@@ -56,7 +58,7 @@ export function Navbar() {
               text="Pricing"
               variant="header"
               onClick={() => navigate("/pricing")}
-              active={location.pathname == "/pricing"}
+              // active={location.pathname == "/pricing"}
             />
 
             {/* <Button

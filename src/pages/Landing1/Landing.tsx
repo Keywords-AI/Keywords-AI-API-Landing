@@ -68,30 +68,32 @@ export function Landing() {
           >
             <div
               aria-label="frame 619"
-              className="flex-col items-center gap-lg self-stretch"
+              className="flex-col items-center gap-lg w-full max-w-[1000px]"
             >
               <p
                 className="sm:hidden  text-center display-xl gradient-text"
                 data-aos="custom-fade-down"
                 data-aos-delay="50"
               >
-                Unified DevOps platform to build AI applications
+                Unified DevOps platform <br />
+                to build AI applications
               </p>
               <p
                 className="hidden sm:block text-center display-lg gradient-text"
                 data-aos="custom-fade-down"
                 data-aos-delay="50"
               >
-                Unified DevOps platform to build AI applications
+                Unified DevOps platform <br />
+                to build AI applications
               </p>
               <p
                 className=" display-xs self-stretch text-gray-4 text-center"
                 data-aos="custom-fade-down"
                 data-aos-delay="250"
               >
-                Meet the new way to build software with LLMs. <br />
-                Keywords AI has every feature you need to build, deploy, and
-                scale your application.
+                Every feature you need to build, deploy, and scale your
+                application. <br />
+                Keywords AI is the new way to build software with LLMs.
               </p>
             </div>
           </div>
@@ -148,11 +150,36 @@ export function Landing() {
           POWERING THE WORLD’S BEST AI PRODUCT TEAMS
         </div>
         <div className="flex max-w-[1000px] justify-center items-start content-start gap-[20px] w-full flex-wrap">
-          <WonderChatLogo />
-          <AgentHubLogo />
-          <ShepherdLogo />
-          <JustPaidLogo />
-          <EduPhoriaAiLogo />
+          <div
+            className="cursor-pointer"
+            onClick={() => window.open("https://wonderchat.io/", "_blank")}
+          >
+            <WonderChatLogo />
+          </div>
+          <div
+            className="cursor-pointer"
+            onClick={() => window.open("https://www.agenthub.dev/", "_blank")}
+          >
+            <AgentHubLogo />
+          </div>
+          <div
+            className="cursor-pointer"
+            onClick={() => window.open("https://shepherd.study/", "_blank")}
+          >
+            <ShepherdLogo />
+          </div>
+          <div
+            className="cursor-pointer"
+            onClick={() => window.open("https://www.justpaid.io/", "_blank")}
+          >
+            <JustPaidLogo />
+          </div>
+          <div
+            className="cursor-pointer"
+            onClick={() => window.open("https://eduphoria.ai/", "_blank")}
+          >
+            <EduPhoriaAiLogo />
+          </div>
         </div>
         <div className="min-h-[1.2px] shrink-0 [background:linear-gradient(90deg,rgba(255,255,255,0.00)_0%,rgba(0,0,0,0.20)_0%,rgba(143,143,143,0.67)_50%,rgba(0,0,0,0.04)_100%)] w-full max-w-[1200px]" />
       </div>
@@ -203,7 +230,7 @@ export function Landing() {
             life. I'm not even just saying that, I truly don't think I've ever
             integrated a product that was as easy.”
           </p>
-          <div className="flex-col items-center gap-xxs">
+          <div className="flex-col items-center gap-xxxs">
             <p className="text-md-medium text-center text-gray-white">
               Rahul Behal
             </p>
