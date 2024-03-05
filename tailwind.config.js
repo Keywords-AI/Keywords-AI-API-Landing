@@ -5,7 +5,7 @@ export default {
   content: [
     join(
       __dirname,
-      "{src,pages,components,app}/**/*!(*.stories|*.spec).{js,jsx,html}"
+      "{src,pages,components,app}/**/*!(*.stories|*.spec).{ts,tsx,js,jsx,html}"
     ),
   ],
   theme: theme,

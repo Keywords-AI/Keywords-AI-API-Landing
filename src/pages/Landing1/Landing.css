@@ -1,0 +1,13 @@
+.gradient-text {
+    background: var(--gray-cool-white, linear-gradient(92deg, #FFF 47.94%, #D1CAE4 100%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.landing-card {
+    background: linear-gradient(0deg, #151519 0%, rgba(21, 21, 25, 0.10) 40%, rgba(0, 0, 0, 0.00) 100%, #000 100%);
+
+
+
+}
