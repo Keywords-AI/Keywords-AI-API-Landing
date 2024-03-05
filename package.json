@@ -24,6 +24,7 @@
     "aos": "^3.0.0-beta.6",
     "axios": "^1.6.1",
     "clsx": "^2.0.0",
+    "posthog-js": "^1.110.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.48.2",
