@@ -98,7 +98,7 @@ export function Pricing() {
           variant={"r4-black"}
           text={"Book a demo"}
           className="self-stretch shadow-border shadow-gray-3 rounded-sm bg-gray-2"
-          onClick={() => (window.location.href = "https://zcal.co/keywords-ai")}
+          onClick={() => (window.open  ("https://zcal.co/keywords-ai", "_blank"))}
         />
       ),
       currentPlan: "View Usage Details",

@@ -23,11 +23,11 @@ export function Footer() {
   return (
     <div
       aria-label="Footer"
-      className="flex flex-col w-full pb-lg items-start gap-lg bg-gray-black sm:pt-0 sm:px-lg sm:pb-xxs "
+      className="flex flex-col w-full pb-lg items-center gap-lg bg-gray-black sm:pt-0 sm:px-lg sm:pb-xxs "
     >
       <div className="line bg-gray-2"></div>
       <div className="hidden sm:flex w-full justify-center caption text-gray-4">
-        Copyright © 2023 Keywords AI Inc. All rights reserved.
+        Copyright © 2024 Keywords AI Inc. All rights reserved.
       </div>
       <div className="flex justify-between items-start self-stretch w-full px-[120px] sm:hidden">
         <div className="flex flex-1 max-w-[1200px] justify-between items-start self-stretch">
@@ -51,7 +51,7 @@ export function Footer() {
                 <LinkedIn active={isLinkedInHovered} />
               </a>
               <a
-                href="https://www.linkedin.com/company/keywordsai"
+                href="https://twitter.com/keywordsai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-row w-[16px] h-[16px] justify-center items-center gap-[10px]"
@@ -133,7 +133,7 @@ export function Footer() {
             <div className="flex flex-col w-[140px] items-start gap-[10px] shrink-0">
               <div className="flex items-center justify-center gap-[10px]">
                 <a
-                  href="https://docs.keywordsai.co/get-started/introduction"
+                  href="https://docs.keywordsai.co/integration/supported-models"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -147,7 +147,6 @@ export function Footer() {
               <div className="flex items-center justify-center gap-[10px]">
                 <a
                   href="https://keywordsai.co/#/privacy-policy"
-                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   <span className="text-gray-4 text-sm-regular hover:text-gray-white">
@@ -173,7 +172,6 @@ export function Footer() {
               <div className="flex items-center justify-center gap-[10px]">
                 <a
                   href="https://keywordsai.co/#/pricing"
-                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   <span className="text-gray-4 text-sm-regular hover:text-gray-white">
@@ -186,7 +184,6 @@ export function Footer() {
               <div className="flex items-center justify-center gap-[10px]">
                 <a
                   href="https://keywordsai.co/#/terms-of-use"
-                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   <span className="text-gray-4 text-sm-regular hover:text-gray-white">
@@ -198,7 +195,7 @@ export function Footer() {
             <div className="flex flex-col w-[140px] items-start gap-[10px] shrink-0">
               <div className="flex items-center justify-center gap-[10px]">
                 <a
-                  href="https://docs.keywordsai.co/get-started/introduction"
+                  href="https://docs.keywordsai.co/platform-features/api-keys"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -211,8 +208,8 @@ export function Footer() {
             <div className="flex flex-col w-[140px] items-start gap-[10px] shrink-0">
               <div className="flex items-center justify-center gap-[10px]">
                 <a
-                  href="https://docs.keywordsai.co/get-started/introduction"
-                  target="_blank"
+                  // href="https://docs.keywordsai.co/get-started/introduction"
+                  // target="_blank"
                   rel="noopener noreferrer"
                 >
                   <span className="text-gray-4 text-sm-regular hover:text-gray-white">
@@ -225,7 +222,6 @@ export function Footer() {
               <div className="flex items-center justify-center gap-[10px]">
                 <a
                   href="https://keywordsai.co/#/dpa"
-                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   <span className="text-gray-4 text-sm-regular hover:text-gray-white">
