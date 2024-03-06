@@ -219,11 +219,13 @@ export function CodeBoxDisplay({
           open={open}
           setOpen={setOpen as Dispatch<SetStateAction<boolean | undefined>>}
           width={"w-[160px]"}
+          align="start"
           trigger={
             <Button
               variant="small"
               icon={Down}
               iconSize="xxs"
+              className="outline-none"
               text={currentLanguage.name}
               onClick={() => setOpen(!open)}
               iconPosition={"right"}
@@ -239,6 +241,7 @@ export function CodeBoxDisplay({
                     onClick={() => setCurrentLanguage(language)}
                     icon={language.icon}
                     iconPosition="left"
+                    className="outline-none"
                     iconSize="md"
                     justification="justify-start"
                   />
