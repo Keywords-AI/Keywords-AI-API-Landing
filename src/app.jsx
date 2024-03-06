@@ -1,7 +1,8 @@
 import { Routes } from "./Routes";
-import React from "react";
+import React, { useEffect } from "react";
 import AuthContext from "./authentication/AuthContext";
 import { PostHogProvider } from "posthog-js/react";
+import posthog from "posthog-js";
 
 export function App() {
   const [user, setUser] = React.useState(null);
