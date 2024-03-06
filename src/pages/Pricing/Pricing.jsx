@@ -34,7 +34,7 @@ export function Pricing() {
           className="self-stretch shadow-border shadow-gray-3 rounded-sm bg-gray-2"
           onClick={() =>
             (window.location.href =
-              "https://platform.keywordsai.co/login?next=platform/api/plans")
+              "https://platform.keywordsai.co/login?next=/platform/api/plans")
           }
           type="button"
         />

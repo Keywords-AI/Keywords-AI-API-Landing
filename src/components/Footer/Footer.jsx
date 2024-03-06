@@ -30,7 +30,7 @@ export function Footer() {
         Copyright © 2024 Keywords AI Inc. All rights reserved.
       </div>
       <div className="flex justify-between items-start self-stretch w-full px-[120px] sm:hidden">
-        <div className="flex flex-1 max-w-[1200px] justify-between items-start self-stretch">
+        <div className="flex flex-1 w-full justify-between items-center self-stretch">
           <div className="flex flex-col justify-between items-start self-stretch">
             <div className="flex items-center gap-xxs">
               <Logo />
