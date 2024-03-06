@@ -247,7 +247,7 @@ export function Landing() {
     return (
       <div className="flex-col p-xxxl pb-0 items-center gap-xl self-stretch">
         <p className="max-w-[800px] text-center w-full display-xl gradient-text">
-          Integrate in minutes. Beta available today.
+          Integrate in minutes. Available today.
         </p>
         <div className="flex items-center justify-center gap-xs">
           <Button
