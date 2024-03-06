@@ -32,21 +32,23 @@ export function BetaAccess() {
 
   return (
     <div className="flex-col items-center gap-xxxl justify-center self-stretch">
-      <BackButton text="Back" />
-      <div className=" flex-col w-full max-w-[420px] items-center gap-lg justify-center ">
+      <div className="flex-col items-start gap-xxs self-stretch">
+        <BackButton text="Home" link={"https://keywordsai.co/"} />
+      </div>
+      <div className=" flex-col max-w-[420px] items-center gap-lg justify-center ">
         <AuthenticationTitle
           title={"Request Beta access"}
-          subtitle={"We’ll get back to you via email."}
+          subtitle={<span>We’ll get back to you via email.</span>}
         />
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="flex-col justify-center items-center gap-md self-stretch"
         >
-          <div className="flex-col justify-center items-start gap-xs self-stretch">
-            <div className="flex items-center justify-between gap-xs self-stretch">
+          <div className="flex-col justify-center items-start gap-xs">
+            <div className="flex items-center  gap-xs">
               <div
                 aria-label="firstname field"
-                className="flex-col justify-center items-start gap-xxs flex-1 w-[204px]"
+                className="flex-col justify-center items-start gap-xxs flex-1 self-stretch"
               >
                 <label
                   className={cn(
@@ -66,7 +68,7 @@ export function BetaAccess() {
               </div>
               <div
                 aria-label="lastname field"
-                className="flex-col justify-center items-start gap-xxs flex-1 w-[204px]"
+                className="flex-col justify-center items-start gap-xxs flex-1 self-stretch"
               >
                 <label
                   className={cn(
