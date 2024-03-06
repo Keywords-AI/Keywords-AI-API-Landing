@@ -24,7 +24,7 @@ export default function FeatureSection({}: Props) {
   return (
     <div
       aria-label="frame 641"
-      className="flex-col items-center gap-xl self-stretch bg-gray-black sm:px-lg p-xxxl"
+      className="flex-col items-center gap-xl self-stretch bg-gray-black sm:p-lg p-xxxl"
     >
       <div
         aria-label="frame 2079"
@@ -34,7 +34,7 @@ export default function FeatureSection({}: Props) {
         <div className=" sm:hidden max-w-[1000px] text-center w-full display-xl gradient-text">
           A unified developer platform for LLM applications
         </div>
-        <p className="hidden sm:block max-w-[1000px] text-center w-full display-xs gradient-text">
+        <p className="hidden sm:block max-w-[1000px] text-center w-full display-lg gradient-text">
           A unified developer platform <br />
           for LLM applications
         </p>
