@@ -37,6 +37,7 @@ export function BetaAccess() {
       </div>
       <div className=" flex-col max-w-[420px] items-center gap-lg justify-center ">
         <AuthenticationTitle
+        
           title={"Request Beta access"}
           subtitle={<span>We’ll get back to you via email.</span>}
         />
