@@ -96,7 +96,7 @@ export default function FeatureSection({}: Props) {
           min_width="min-w-[320px]"
           max_width="flex-1"
           reversed
-          heading="Designed for for your keyboard"
+          heading="Designed for your keyboard"
           subheading={
             "Zoom through the platform by using quick keyboard shortcuts effortlessly."
           }
