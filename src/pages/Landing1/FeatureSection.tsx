@@ -34,18 +34,18 @@ export default function FeatureSection({}: Props) {
         <div className=" sm:hidden max-w-[1000px] text-center w-full display-xl gradient-text">
           A unified developer platform for LLM applications
         </div>
-        <p className="hidden sm:block max-w-[1000px] text-center w-full display-lg gradient-text">
+        <p className="hidden sm:block max-w-[1000px] text-center w-full display-sm gradient-text">
           A unified developer platform <br />
           for LLM applications
         </p>
       </div>
       <div
         aria-label="frame 1864"
-        className="flex max-w-[1000px] sm:max-w-[390px] justify-center items-start content-start gap-lg w-full flex-wrap "
+        className="flex max-w-[1000px] sm:max-w-[320px] justify-center items-start content-start gap-lg w-full flex-wrap "
       >
         <Card
-          min_width={"min-w-[400px] min-w-[300px]"}
-          max_width={"flex-1 max-w-[584px] max-w-[320px]"}
+          min_width={"min-w-[400px] sm:min-w-[300px]"}
+          max_width={"flex-1 max-w-[584px] sm:max-w-[320px]"}
           heading="Leverage all best-in-class LLMs"
           subheading={
             "Use a unified interface for any model.\nSave hours from building custom API clients."
@@ -105,7 +105,7 @@ export default function FeatureSection({}: Props) {
             "Zoom through the platform by using quick keyboard shortcuts effortlessly."
           }
         >
-          <div className="flex justify-center items-center content-center gap-lg  flex-wrap w-full ">
+          <div className="flex justify-center items-center content-center gap-lg sm:gap-xxxs  flex-wrap w-full ">
             <TimeLine />
             <ShowFilter />
             <ClearFilter />

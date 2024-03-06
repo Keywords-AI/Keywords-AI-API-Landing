@@ -79,7 +79,7 @@ export function Landing() {
                 to build AI applications
               </p>
               <p
-                className="hidden sm:block text-center display-lg gradient-text"
+                className="hidden sm:block text-center display-sm gradient-text"
                 data-aos="custom-fade-down"
                 data-aos-delay="50"
               >

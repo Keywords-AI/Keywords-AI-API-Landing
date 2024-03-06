@@ -84,7 +84,7 @@ export const AdvantagesSecctions = () => {
         }
         footerHighlight={"help you improve user experiences."}
       >
-        <div className="flex max-w-[1000px] justify-center items-start content-start gap-lg w-full ">
+        <div className="flex max-w-[1000px] justify-center items-start content-start gap-lg w-full flex-wrap">
           <EvaluationCard />
           <UserInsightCard />
         </div>
@@ -97,7 +97,7 @@ export const AdvantagesSecctions = () => {
         }
         footerHighlight={"easily fine-tune models to optimize performance."}
       >
-        <div className="flex max-w-[1000px] justify-center items-start content-start gap-lg w-full ">
+        <div className="flex max-w-[1000px] justify-center items-start content-start gap-lg w-full flex-wrap">
           <DataCollectionCard />
           <FineTuneCard />
         </div>
