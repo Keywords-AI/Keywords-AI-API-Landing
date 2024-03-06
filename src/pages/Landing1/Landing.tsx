@@ -261,7 +261,7 @@ export function Landing() {
         <p className="hidden sm:block max-w-[800px] text-center w-full display-xs gradient-text">
           Integrate in minutes. Available today.
         </p>
-        <div className="flex sm:flex-col items-center justify-center gap-xs">
+        <div className="flex  items-center justify-center gap-xs sm:gap-xxxs">
           <Button
             text="Get started"
             variant="big-white"
