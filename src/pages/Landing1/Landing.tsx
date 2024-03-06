@@ -41,7 +41,7 @@ export function Landing() {
     return (
       <div
         aria-label="frame 636"
-        className="flex p-xxxl sm:px-lg flex-col items-center gap-xxxl self-stretch bg-gray-black"
+        className="flex p-xxxl sm:p-lg flex-col items-center gap-xxxl self-stretch bg-gray-black"
       >
         <div
           aria-label="frame 2023"
@@ -79,7 +79,7 @@ export function Landing() {
                 to build AI applications
               </p>
               <p
-                className="hidden sm:block text-center display-lg gradient-text"
+                className="hidden sm:block text-center display-xs gradient-text"
                 data-aos="custom-fade-down"
                 data-aos-delay="50"
               >
@@ -87,7 +87,16 @@ export function Landing() {
                 to build AI applications
               </p>
               <p
-                className=" display-xs self-stretch text-gray-4 text-center"
+                className="sm:hidden display-xs self-stretch text-gray-4 text-center"
+                data-aos="custom-fade-down"
+                data-aos-delay="250"
+              >
+                Every feature you need to build, deploy, and scale your
+                application. <br />
+                Keywords AI is the new way to build software with LLMs.
+              </p>
+              <p
+                className="hidden sm:flex text-md self-stretch text-gray-4 text-center"
                 data-aos="custom-fade-down"
                 data-aos-delay="250"
               >
@@ -144,7 +153,7 @@ export function Landing() {
     return (
       <div
         aria-label="frame 631"
-        className="flex-col p-xxxl items-center gap-xl self-stretch bg-gray-black flex-nowrap"
+        className="flex-col p-xxxl sm:p-lg items-center gap-xl self-stretch bg-gray-black flex-nowrap"
       >
         <div className="flex-col items-center gap-sm self-stretch text-center caption-cap gradient-text">
           POWERING THE WORLD’S BEST AI PRODUCT TEAMS
@@ -190,7 +199,7 @@ export function Landing() {
     return (
       <div
         aria-label="frame 643"
-        className="flex-col p-xxxl items-center gap-xl self-stretch bg-gray-black"
+        className="flex-col p-xxxl items-center gap-xl self-stretch bg-gray-black sm:p-lg"
       >
         <svg
           width={108}
@@ -245,11 +254,14 @@ export function Landing() {
 
   const CallToActionSection = () => {
     return (
-      <div className="flex-col p-xxxl pb-0 items-center gap-xl self-stretch">
-        <p className="max-w-[800px] text-center w-full display-xl gradient-text">
+      <div className="flex-col p-xxxl pb-0 items-center gap-xl self-stretch sm:p-lg">
+        <p className="sm:hidden max-w-[800px] text-center w-full display-xl gradient-text">
           Integrate in minutes. Available today.
         </p>
-        <div className="flex items-center justify-center gap-xs">
+        <p className="hidden sm:block max-w-[800px] text-center w-full display-xs gradient-text">
+          Integrate in minutes. Available today.
+        </p>
+        <div className="flex sm:flex-col items-center justify-center gap-xs">
           <Button
             text="Get started"
             variant="big-white"

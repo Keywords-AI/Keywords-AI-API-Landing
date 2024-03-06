@@ -141,7 +141,7 @@ export function Landing() {
         </p>
         <Divider />
         <div className="flex items-center justify-center gap-xxs">
-          <p className="text-md-regular text-gray-4 ">
+          <p className="t`ext-md-regular text-gray-4 ">
             Latest model:{" "}
             <span className="text-gray-white">{"Claude 2.1"}</span>
           </p>

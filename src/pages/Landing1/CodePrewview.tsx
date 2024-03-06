@@ -7,22 +7,28 @@ export default function CodePrewview({}: Props) {
   return (
     <div
       aria-label="frame 664"
-      className="flex-col p-xxxl items-center gap-xl self-stretch bg-gray-black"
+      className="flex-col p-xxxl sm:px-lg items-center gap-xl self-stretch bg-gray-black"
     >
       <div className="flex-col items-center gap-lg self-stretch">
         <ElectricLogo />
         <div className="flex-col items-center gap-sm self-stretch">
-          <p className="display-lg gradient-text text-center self-stretch">
+          <p className="sm:hidden display-lg gradient-text text-center self-stretch">
             Integrate within minutes
           </p>
-          <p className="text-lg text-center text-gray-4">
+          <p className="hidden sm:block display-xs gradient-text text-center self-stretch">
+            Integrate within minutes
+          </p>
+          <p className="sm:hidden text-lg text-center text-gray-4">
+            Easy integration with OpenAI style API call.
+          </p>
+          <p className="hidden sm:block text-md text-center text-gray-4">
             Easy integration with OpenAI style API call.
           </p>
         </div>
       </div>
       {/* code box */}
       <CodeBoxDisplay />
-      <p className="max-w-[600px] w-full text-gray-4 text-center display-sm">
+      <p className="max-w-[600px]  w-full text-gray-4 text-center display-sm">
         A simple interface so you can switch without rewriting code.{" "}
         <span className=" text-gray-white">
           It fits right into your codebase.

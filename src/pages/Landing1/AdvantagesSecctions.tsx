@@ -12,15 +12,22 @@ import {
 
 const Section = ({ keyword, header, children, footer, footerHighlight }) => {
   return (
-    <div className="flex w-[1440px] flex-col items-center gap-xl bg-gray-black p-xxxl">
+    <div className="flex w-[1440px] flex-col items-center gap-xl bg-gray-black p-xxxl sm:p-lg sm:w-full sm:gap-md">
       <div className="flex-col items-center gap-sm self-stretch">
         <p className="caption-cap text-center gradient-text">{keyword}</p>
-        <p className="max-w-[800px] w-full text-center display-xl gradient-text">
+        <p className="sm:hidden max-w-[800px] w-full text-center display-xl gradient-text">
+          {header}
+        </p>
+        <p className="hidden sm:block max-w-[800px] w-full text-center display-xs gradient-text">
           {header}
         </p>
       </div>
       {children}
-      <div className=" text-gray-4 max-w-[800px] w-full display-sm text-center">
+      <div className=" sm:hidden text-gray-4 max-w-[800px] w-full display-sm text-center">
+        {footer}
+        <span className="text-gray-white">{footerHighlight}</span>
+      </div>
+      <div className="hidden sm:block text-gray-4 max-w-[380px] w-full display-xs text-center">
         {footer}
         <span className="text-gray-white">{footerHighlight}</span>
       </div>

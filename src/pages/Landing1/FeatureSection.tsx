@@ -24,30 +24,34 @@ export default function FeatureSection({}: Props) {
   return (
     <div
       aria-label="frame 641"
-      className="flex-col items-center gap-xl self-stretch bg-gray-black p-xxxl"
+      className="flex-col items-center gap-xl self-stretch bg-gray-black sm:px-lg p-xxxl"
     >
       <div
         aria-label="frame 2079"
         className="flex flex-col items-center gap-sm self-stretch"
       >
         <div className="caption-cap gradient-text ">BUILT FOR DEVELOPERS</div>
-        <div className=" max-w-[1000px] text-center w-full display-xl gradient-text">
+        <div className=" sm:hidden max-w-[1000px] text-center w-full display-xl gradient-text">
           A unified developer platform for LLM applications
         </div>
+        <p className="hidden sm:block max-w-[1000px] text-center w-full display-xs gradient-text">
+          A unified developer platform <br />
+          for LLM applications
+        </p>
       </div>
       <div
         aria-label="frame 1864"
-        className="flex max-w-[1000px] justify-center items-start content-start gap-lg w-full flex-wrap "
+        className="flex max-w-[1000px] sm:max-w-[390px] justify-center items-start content-start gap-lg w-full flex-wrap "
       >
         <Card
-          min_width={"min-w-[400px]"}
-          max_width={"flex-1 max-w-[584px]"}
+          min_width={"min-w-[400px] min-w-[300px]"}
+          max_width={"flex-1 max-w-[584px] max-w-[320px]"}
           heading="Leverage all best-in-class LLMs"
           subheading={
             "Use a unified interface for any model.\nSave hours from building custom API clients."
           }
         >
-          <div className="flex  justify-center items-center content-center overflow-auto gap-md w-full flex-wrap rounded-lg min-w-[456px]">
+          <div className="flex  justify-center items-center content-center overflow-auto gap-md w-full flex-wrap rounded-lg min-w-[456px] sm:min-w-[280px]">
             <ModelLogos.Openai />
             <ModelLogos.Ai_21_labs />
             <ModelLogos.Google />

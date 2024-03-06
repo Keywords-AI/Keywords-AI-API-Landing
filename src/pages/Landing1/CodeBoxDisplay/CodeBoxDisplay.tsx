@@ -213,7 +213,7 @@ export function CodeBoxDisplay({
     }
   }, [copyClicked]);
   return (
-    <div className="flex-col w-[800px] items-center rounded-md shadow-border shadow-gray-2 bg-gray-1">
+    <div className="flex-col w-[800px] sm:w-[360px] items-center rounded-md shadow-border shadow-gray-2 bg-gray-1">
       <div className="flex items-center justify-between self-stretch px-sm py-xxs rounded-t-md">
         <DropDownMenu
           open={open}
@@ -271,7 +271,7 @@ export function CodeBoxDisplay({
           value={currentLanguage.code}
           extensions={[currentLanguage.extension as Extension]}
           editable={false}
-          className="w-full"
+          className="w-full "
           height="100%"
           basicSetup={{ tabSize: 1, foldGutter: false }}
           theme={DarkTheme}

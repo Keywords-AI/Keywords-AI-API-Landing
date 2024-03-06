@@ -43,7 +43,7 @@ body[style] {
 }
 
 ::-webkit-scrollbar {
-  @apply bg-gray-black w-[4px];
+  @apply bg-gray-black w-[4px] h-[4px];
 }
 
 ::-webkit-scrollbar-track {

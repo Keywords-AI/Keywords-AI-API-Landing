@@ -38,7 +38,7 @@ export function Footer() {
             </div>
           </div>
           <div className="flex flex-col w-[12px] h-[9.289px] items-start gap-[10px]"></div>
-          <div className="flex flex-row items-start gap-sm">
+          <div className="flex sm:flex-col flex-row items-start gap-sm">
             <a
               href="https://www.linkedin.com/company/keywordsai"
               target="_blank"
