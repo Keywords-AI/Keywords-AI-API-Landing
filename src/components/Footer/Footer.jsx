@@ -29,7 +29,7 @@ export function Footer() {
       {/* <div className="hidden sm:flex w-full justify-center caption text-gray-4">
         Copyright © 2024 Keywords AI Inc. All rights reserved.
       </div> */}
-      <div className="flex flex-1 h-fit max-w-[1200px] w-full justify-between">
+      <div className="flex flex-1 h-fit max-w-[1200px] w-full justify-between sm:gap-xxs">
         <div className="flex flex-col justify-between items-start self-stretch">
           <div className="flex items-center gap-xxs">
             <Logo />
