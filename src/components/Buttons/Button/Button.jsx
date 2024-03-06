@@ -213,7 +213,8 @@ export const Button = forwardRef(
         textClickedColor = textClickedColor || "text-gray-white";
         borderRadius = borderRadius || "rounded-sm";
         borderColor = borderColor || "border-transparent";
-        borderHoverColor = borderHoverColor || "shadow-border shadow-gray-3";
+        borderHoverColor =
+          borderHoverColor || "outline-1 outline outline-gray-4";
         borderClickedColor =
           borderClickedColor || "shadow-border shadow-gray-4";
         padding = padding || "py-xxs px-xs";
@@ -443,7 +444,7 @@ export const Button = forwardRef(
           setHover(false);
         }}
         className={cn(
-          "group flex items-center gap-xxs",
+          "group flex items-center gap-xxs cursor-pointer",
           width,
           justification,
           borderRadius,

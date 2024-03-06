@@ -135,7 +135,7 @@ export function Landing() {
           data-aos-delay="500"
           data-aos-anchor-placement="top-bottom"
         >
-          <img src="/images/preview.png" className="w-full max-w-[1000px]" />
+          <img src="/images/preview.png" className="w-full max-w-[1200px]" />
         </div>
       </div>
     );
