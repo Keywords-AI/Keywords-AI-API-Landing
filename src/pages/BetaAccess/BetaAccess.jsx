@@ -33,7 +33,7 @@ export function BetaAccess() {
   return (
     <div className="flex-col items-center gap-xxxl justify-center self-stretch">
       <div className="flex-col items-start gap-xxs self-stretch">
-        <BackButton text="Home" link={"https://keywordsai.co/"} />
+        <BackButton text="back" />
       </div>
       <div className=" flex-col max-w-[420px] items-center gap-lg justify-center ">
         <AuthenticationTitle
