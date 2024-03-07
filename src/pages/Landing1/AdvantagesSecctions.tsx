@@ -84,7 +84,7 @@ export const AdvantagesSecctions = () => {
         }
         footerHighlight={"help you improve user experiences."}
       >
-        <div className="flex max-w-[1000px] justify-center items-start content-start gap-lg w-full flex-wrap">
+        <div className="flex max-w-[1000px] justify-center items-start content-start gap-lg w-full sm:flex-wrap">
           <EvaluationCard />
           <UserInsightCard />
         </div>

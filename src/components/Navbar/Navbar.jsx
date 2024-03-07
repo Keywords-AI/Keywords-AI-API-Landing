@@ -20,7 +20,10 @@ export function Navbar() {
       <div className="flex max-w-[1200px] justify-between items-center flex-1 w-full">
         <div
           className="flex items-center gap-xxs self-stretch hover:cursor-pointer"
-          onClick={() => navigate("/")}
+          onClick={() => {
+            navigate("/");
+            window.scrollTo(0, 0);
+          }}
         >
           <Logo />
           <p className="display-xs font-[600] text-center">Keywords AI</p>
@@ -37,7 +40,10 @@ export function Navbar() {
               text="Platform"
               variant="header"
               // onClick={() => window.open(platformURL, "_blank")}
-              onClick={() => navigate("/")}
+              onClick={() => {
+                navigate("/");
+                window.scrollTo(0, 0);
+              }}
               // active={location.pathname == "/"}
             />
             <Button
