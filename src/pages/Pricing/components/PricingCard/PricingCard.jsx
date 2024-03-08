@@ -70,20 +70,18 @@ export default function PricingCard({
       <div className="flex flex-col items-center gap-lg self-stretch">
         <div className="flex flex-col h-[56px] items-start self-stretch">
           {price && (
-            <div className="flex items-end gap-xxs">
-              {plan != "custom" && (
-                <span className="display-sm"> {price} </span>
-              )}
+            <div className="flex items-end">
+              <span className="display-sm"> {price}</span>
               {plan == "custom" && (
-                <div className="gap-xxxs relative">
-                  <span className="display-sm"> {price} </span>
-                  <span className="text-sm-regular py-[2px] absolute -right-2 bottom-0">+</span>
-                </div>
+                <span className="text-sm-regular text-gray-4 py-[2px]">
+                  + / month{" "}
+                </span>
               )}
-              <span className="text-sm-regular text-gray-4 py-[2px]">
-                {" "}
-                / month{" "}
-              </span>
+              {plan != "custom" && (
+                <span className="text-sm-regular text-gray-4 py-[2px]">
+                  / month{" "}
+                </span>
+              )}
             </div>
           )}
           {price && (

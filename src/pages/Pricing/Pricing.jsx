@@ -95,7 +95,7 @@ export function Pricing() {
     },
     {
       title: "Team",
-      description: "Built for scaling.",
+      description: "Best for high-growth teams.",
       price: "$499",
       bonus: "Billed annually",
       featureTitle: "Everything in Pro, plus",
@@ -125,8 +125,8 @@ export function Pricing() {
       {/* upper container */}
       <div className="flex-col px-xl py-xl pb-[240px] items-center gap-xl self-stretch">
         {/* section title */}
-        <div className="flex-col max-w-[1000px] items-center gap-sm">
-          <p className="display-lg text-center text-gray-white ">
+        <div className="flex flex-col max-w-[1000px] items-center gap-lg">
+          <p className="display-xl text-center text-gray-white ">
             Plans and Pricing
           </p>
           <p className="text-lg text-center text-gray-4 ">
