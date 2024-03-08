@@ -16,7 +16,7 @@ export default function PricingCard({
   plan = "plan",
   title = "Title",
   description = "Description Here",
-  bonus="",
+  bonus = "",
   featureTitle = "Here are the features",
   buttonVar = "r4-primary",
   buttonText = "Try for free",
@@ -56,10 +56,9 @@ export default function PricingCard({
       className={cn(
         "flex h-[720px] p-md flex-col items-center gap-xl flex-1 w-ful rounded-md min-w-[280px]",
         border,
-        bgColor,
+        bgColor
         // hover && "shadow-pricing",
       )}
-      
     >
       <div className="flex flex-col items-start justify-center gap-xxs self-stretch">
         <span className="self-stretch display-sm"> {title}</span>
@@ -72,14 +71,24 @@ export default function PricingCard({
         <div className="flex flex-col h-[56px] items-start self-stretch">
           {price && (
             <div className="flex items-end gap-xxs">
-              <span className="display-sm"> {price} </span>
+              {plan != "custom" && (
+                <span className="display-sm"> {price} </span>
+              )}
+              {plan == "custom" && (
+                <div className="gap-xxxs relative">
+                  <span className="display-sm"> {price} </span>
+                  <span className="text-sm-regular py-[2px] absolute -right-2 bottom-0">+</span>
+                </div>
+              )}
               <span className="text-sm-regular text-gray-4 py-[2px]">
                 {" "}
                 / month{" "}
               </span>
             </div>
           )}
-          {price && <span className="text-sm-regular text-gray-4">{bonus}</span>}
+          {price && (
+            <span className="text-sm-regular text-gray-4">{bonus}</span>
+          )}
         </div>
         {/* <Button variant={buttonVar} text={buttonText} width="w-full" className="self-stretch items-center justify-center gap-xxs" /> */}
         {button}
@@ -90,11 +99,8 @@ export default function PricingCard({
         <div className="flex flex-col items-start gap-xs">
           {features.map((feature, index) => (
             <div className="flex items-center gap-xs" key={index}>
-              <FeatureTick fill="fill-primary"/>
-              <span className="text-md-regular text-gray-white">
-              {feature}
-
-              </span>
+              <FeatureTick fill="fill-primary" />
+              <span className="text-md-regular text-gray-white">{feature}</span>
             </div>
           ))}
         </div>
