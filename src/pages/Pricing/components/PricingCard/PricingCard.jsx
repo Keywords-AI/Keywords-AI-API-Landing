@@ -55,7 +55,7 @@ export default function PricingCard({
       onMouseLeave={() => setHover(false)}
       className={cn(
         "flex h-[720px] p-md flex-col items-center gap-xl flex-1 w-ful rounded-md min-w-[280px]",
-        border,
+        // border,
         bgColor
         // hover && "shadow-pricing",
       )}

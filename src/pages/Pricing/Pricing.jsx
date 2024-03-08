@@ -62,8 +62,8 @@ export function Pricing() {
       bonus: bonus,
       featureTitle: "Everything in Starter, plus",
       currentPlan: "View Usage Details",
-      bgColor: "bg-gray-2",
-      border: "shadow-gray-4 shadow-border",
+      // bgColor: "bg-gray-2",
+      // border: "shadow-gray-4 shadow-border",
       button: (
         <Button
           variant={"r4-white"}
