@@ -9,105 +9,111 @@ import { useState } from "react";
 import { createPaymentSession } from "src/services/stripe";
 import { set } from "react-hook-form";
 import { models } from "src/utilities/constants";
+import PricingSwtichButton from "./components/PricingSwtichButton";
 export function Pricing() {
   const navigate = useNavigate();
   const [isYearly, setIsYearly] = useState(true);
-  const [teamPrice, setTeamPrice] = useState("$29");
+  const [teamPrice, setTeamPrice] = useState("$79");
   const [bonus, setBonus] = useState("Billed annually");
 
   const handleSwitchChange = (checked) => {
     setIsYearly(checked);
-    setTeamPrice(checked ? "$29 " : "$39");
+    setTeamPrice(checked ? "$79 " : "$99");
     setBonus(checked ? "Billed annually" : "Billed monthly");
   };
   const remaining = models.length;
   const cards = [
     {
-      title: "Free",
+      title: "Starter",
       description: "Best for solo builders.",
       price: "$0",
-      featureTitle: "Free plan features:",
+      featureTitle: "Starter plan features:",
+      bonus: "Free forever",
       button: (
         <Button
           variant={"r4-black"}
-          text={"Try for free"}
+          text={"Get started free"}
           className="self-stretch shadow-border shadow-gray-3 rounded-sm bg-gray-2"
           onClick={() =>
             (window.location.href =
-              "https://platform.keywordsai.co/login?next=/platform/api/plans")
+              "https://platform.keywordsai.co/login") // should direct to the pricing page in the platform later
           }
           type="button"
         />
       ),
       currentPlan: "View Usage Details",
       features: [
-        "10,000 API requests",
-        "1 developer seat",
-        "1 proxy API key",
-        "Usage analytics",
-        "Status monitoring",
-        "Dynamic LLM router",
-        "OpenAI models",
-        "Email support",
+        "10k requests / month",
+        "2 seats",
+        // "1 proxy API key",
+        "Community support",
+        // "Status monitoring",
+        // "Dynamic LLM router",
+        // "OpenAI models",
+        // "Email support",
       ],
       plan: "starter",
       rank: 2,
     },
     {
-      title: "Team",
-      description: "Best for startups and teams.",
+      title: "Pro",
+      description: "Best for early stage startups.",
       price: teamPrice,
       bonus: bonus,
-      featureTitle: "Everything in Free, plus",
+      featureTitle: "Everything in Starter, plus",
       currentPlan: "View Usage Details",
-      bgColor: "bg-gray-2",
-      border: "shadow-gray-4 shadow-border",
+      // bgColor: "bg-gray-2",
+      // border: "shadow-gray-4 shadow-border",
       button: (
         <Button
-          variant={"r4-primary"}
+          variant={"r4-white"}
           text={"Get started"}
+          bgColor="bg-gray-white"
+          textColor="text-gray-black"
           className="self-stretch items-center justify-center gap-xxs"
           width="w-full"
           onClick={() =>
             (window.location.href =
-              "https://platform.keywordsai.co/login?next=platform/api/plans")
+              "https://platform.keywordsai.co/login") // should direct to the pricing page in the platform later
           }
           type="button"
         />
       ),
 
       features: [
-        "Unlimited API requests",
-        "Unlimited seats",
-        "Unlimited proxy keys",
-        "Advanced usage analytics",
-        "Admin roles",
-        "Advanced model fallback",
-        `Mistral, Anthropic, and ${remaining} more models`,
-        "CTO priority support",
+        "1M requests / month",
+        "5 seats",
+        "Custom evaluations",
+        "Founders 24/7 support",
+        // "Admin roles",
+        // "Advanced model fallback",
+        // `Mistral, Anthropic, and ${remaining} more models`,
+        // "CTO priority support",
       ],
       plan: "flex_32k",
       rank: 3,
     },
     {
-      title: "Custom",
-      description: "Fully tailored for your use case.",
-      featureTitle: "Everything in Team, plus",
+      title: "Team",
+      description: "Best for high-growth teams.",
+      price: "$499",
+      bonus: "Billed annually",
+      featureTitle: "Everything in Pro, plus",
       button: (
         <Button
           variant={"r4-black"}
-          text={"Book a demo"}
+          text={"Talk to founders"}
           className="self-stretch shadow-border shadow-gray-3 rounded-sm bg-gray-2"
           onClick={() => (window.open  ("https://zcal.co/keywords-ai", "_blank"))}
         />
       ),
       currentPlan: "View Usage Details",
       features: [
-        "Testing playground",
-        "Integration assistance",
-        "Use-case optimization",
+        "Unlimited request",
+        "Unlimited seats",
+        "Fine-tuning",
         "Increased rate limit",
-        "Volume discount",
+        "SOC 2 compliance",
       ],
       plan: "custom",
       rank: 4,
@@ -119,13 +125,12 @@ export function Pricing() {
       {/* upper container */}
       <div className="flex-col px-xl py-xl pb-[240px] items-center gap-xl self-stretch">
         {/* section title */}
-        <div className="flex-col max-w-[1000px] items-center gap-sm">
-          <p className="display-lg text-center text-gray-white ">
+        <div className="flex flex-col max-w-[1000px] items-center gap-lg">
+          <p className="display-xl text-center text-gray-white ">
             Plans and Pricing
           </p>
           <p className="text-lg text-center text-gray-4 ">
-            Start for free and scale as you go. Upgrade to enable unlimited
-            requests, and additional features.
+          Start for free and scale as you go. 
           </p>
         </div>
 
@@ -143,7 +148,7 @@ export function Pricing() {
               <span className="text-lg text-gray-4 text-center"> Yearly </span>
               <span className="text-lg text-primary text-center">
                 {" "}
-                (35% off){" "}
+                (20% off){" "}
               </span>
             </div>
           </div>
