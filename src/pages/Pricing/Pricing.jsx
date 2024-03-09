@@ -9,7 +9,7 @@ import { useState } from "react";
 import { createPaymentSession } from "src/services/stripe";
 import { set } from "react-hook-form";
 import { models } from "src/utilities/constants";
-import PricingSwtichButton from "./components/PricingSwtichButton";
+import PricingSwitchButton from "./components/PricingSwitchButton";
 export function Pricing() {
   const navigate = useNavigate();
   const [isYearly, setIsYearly] = useState(true);

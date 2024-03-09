@@ -9,7 +9,7 @@ export default function ButtonGroup({ buttons }) {
     setActiveButton(index);
   };
 
-  return (
+return (
     <div className="flex-row bg-gray-2 rounded-sm h-fit">
       {buttons.map((button, index) => (
         <Button 
