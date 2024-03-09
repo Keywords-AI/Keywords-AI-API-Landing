@@ -110,7 +110,7 @@ export function Navbar() {
             variant="r18-white"
             icon={Right}
             // onClick={() => (window.location.href = platformURL + "/login")}
-            onClick={() => window.open("https://platform.keywordsai.co/signup")}
+            onClick={() => window.location.href = "https://platform.keywordsai.co/signup"}
           />
         </div>
       </div>
