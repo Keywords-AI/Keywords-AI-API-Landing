@@ -121,7 +121,7 @@ export function Landing() {
               text="Get started"
               variant="big-white"
               // onClick={() => (window.location.href = platformURL)}
-              onClick={() => navigate("beta-access")}
+              onClick={() => window.open("https://platform.keywordsai.co/signup")}
               icon={Right}
               iconSize="sm"
             />
@@ -266,7 +266,7 @@ export function Landing() {
             text="Get started"
             variant="big-white"
             // onClick={() => (window.location.href = platformURL)}
-            onClick={() => navigate("beta-access")}
+            onClick={() => window.open("https://platform.keywordsai.co/signup")}
             iconSize="sm"
             icon={Right}
           />
