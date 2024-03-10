@@ -59,7 +59,7 @@ export default function PricingCard({
         )}
       >
         <div className="flex flex-col items-start justify-center gap-xxs self-stretch">
-          <span className="self-stretch display-sm"> {title}</span>
+          <div className="self-stretch display-sm"> {title}</div>
           <span className="text-md-regular self-stretch text-gray-4">
             {" "}
             {description}{" "}
