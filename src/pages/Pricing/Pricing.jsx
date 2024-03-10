@@ -123,7 +123,7 @@ export function Pricing() {
   return (
     <Page>
       {/* upper container */}
-      <div className="flex-col px-xl py-xl pb-[240px] items-center gap-xl self-stretch">
+      <div className="flex-col px-xl pt-xxxl pb-[240px] items-center gap-xl self-stretch">
         {/* section title */}
         <div className="flex-col max-w-[1000px] items-center gap-sm">
           <p className="display-lg text-center text-gray-white ">
