@@ -46,7 +46,7 @@ export function Pricing() {
       ),
       currentPlan: "View Usage Details",
       features: [
-        "$10 free LLM credits",
+        // "$10 free LLM credits",
         "10k requests / month",
         "2 seats",
         "Community support",
@@ -93,7 +93,7 @@ export function Pricing() {
       ),
 
       features: [
-        "$100 free LLM credits",
+        // "$100 free LLM credits",
         "1M requests / month",
         "5 seats",
         "Custom evaluations",
@@ -140,7 +140,7 @@ export function Pricing() {
         {/* section title */}
         <div className="flex flex-col max-w-[1000px] items-center gap-lg">
           <p className="display-xl text-center text-gray-white ">
-            How much?{" "}
+            Simple Pricing.{" "}
             <span className="display-xl text-center text-gray-4 ">
               {" "}
               Start for free.

@@ -101,8 +101,8 @@ export function Landing() {
                 data-aos-delay="250"
               >
                 Every feature you need to build, deploy, and scale your
-                application. <br />
-                Keywords AI is the new way to build software with LLMs.
+                application. Keywords AI is the new way to build software with
+                LLMs.
               </p>
             </div>
           </div>
@@ -121,7 +121,9 @@ export function Landing() {
               text="Get started"
               variant="big-white"
               // onClick={() => (window.location.href = platformURL)}
-              onClick={() => window.location.href = "https://platform.keywordsai.co/signup"}
+              onClick={() =>
+                (window.location.href = "https://platform.keywordsai.co/signup")
+              }
               icon={Right}
               iconSize="sm"
             />
@@ -266,7 +268,9 @@ export function Landing() {
             text="Get started"
             variant="big-white"
             // onClick={() => (window.location.href = platformURL)}
-            onClick={() => window.location.href = "https://platform.keywordsai.co/signup"}
+            onClick={() =>
+              (window.location.href = "https://platform.keywordsai.co/signup")
+            }
             iconSize="sm"
             icon={Right}
           />
