@@ -91,7 +91,7 @@ export function Landing() {
               variant="r18-black"
               icon={Right}
               onClick={() =>
-                (window.location.href = "https://zcal.co/keywords-ai")
+                (window.location.href = "https://cal.com/keywordsai/demo")
               }
             />
           </div>
