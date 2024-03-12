@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { FeatureTick } from "src/components/icons-old";
 import { Button } from "src/components/Buttons";
 import cn from "src/utilities/ClassMerge";
+import { Tag } from "../tag";
 
 const ranking = {
   flex_8k: 1,
@@ -48,7 +49,9 @@ export default function PricingCard({
 }) {
   const [hover, setHover] = React.useState(false);
   const navigate = useNavigate();
-
+  useEffect(() => {
+    price = price
+  } , [price]);
   return (
     <div
       onMouseEnter={() => setHover(true)}
@@ -61,7 +64,15 @@ export default function PricingCard({
       )}
     >
       <div className="flex flex-col items-start justify-center gap-xxs self-stretch">
-        <span className="self-stretch display-sm"> {title}</span>
+        {title === "Pro" && (
+          <div className="flex flex-row gap-xxs items-center">
+            <span className="self-stretch display-sm"> {title}</span>
+            {/* { <Tag text="-20%" hidden={price!=="$79"}/>} */}
+          </div>
+        )}
+        {title !== "Pro" && (
+          <span className="self-stretch display-sm"> {title}</span>
+        )}
         <span className="text-md-regular self-stretch text-gray-4">
           {" "}
           {description}{" "}

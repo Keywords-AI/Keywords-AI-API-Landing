@@ -123,7 +123,7 @@ export function Pricing() {
   return (
     <Page>
       {/* upper container */}
-      <div className="flex-col px-xl py-xl pb-[240px] items-center gap-xl self-stretch">
+      <div className="flex-col px-xl pt-[120px] pb-[240px] items-center gap-xl self-stretch">
         {/* section title */}
         <div className="flex flex-col max-w-[1000px] items-center gap-lg">
           <p className="display-xl text-center text-gray-white ">
@@ -135,7 +135,7 @@ export function Pricing() {
         </div>
 
         {/* pricing cards */}
-        <div className="flex-col items-center gap-lg">
+        <div className="flex-col items-center gap-lg max-w-[1000px] flex ">
           <div className="flex justify-center items-center gap-sm">
             <span className="text-lg text-gray-4 text-center"> Monthly </span>
             <div className=" ">
@@ -152,9 +152,9 @@ export function Pricing() {
               </span>
             </div>
           </div>
-          <div className="flex max-w-[1000px] items-start content-start gap-y-[24px] gap-x-[20px]  flex-wrap">
+          <div className="flex max-w-[1000px] items-start content-start gap-[24px]  flex-wrap">
             {cards.map((card, index) => (
-              <PricingCard {...card} key={index} />
+              <PricingCard {...card} price={card.price} key={index} />
             ))}
           </div>
         </div>
