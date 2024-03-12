@@ -9,7 +9,10 @@ import { useState } from "react";
 import { createPaymentSession } from "src/services/stripe";
 import { set } from "react-hook-form";
 import { models } from "src/utilities/constants";
-import PricingSwitchButton from "./components/PricingSwitchButton";
+import PricingSwtichButton from "./components/PricingSwtichButton";
+import TextSwitchButton from "src/components/Buttons/TextSwitchButton";
+import { Tag } from "src/components/Tag/Tag";
+import cn from "src/utilities/ClassMerge";
 export function Pricing() {
   const navigate = useNavigate();
   const [isYearly, setIsYearly] = useState(true);
@@ -34,29 +37,38 @@ export function Pricing() {
           variant={"r4-black"}
           text={"Get started free"}
           className="self-stretch shadow-border shadow-gray-3 rounded-sm bg-gray-2"
-          onClick={() =>
-            (window.location.href =
-              "https://platform.keywordsai.co/login") // should direct to the pricing page in the platform later
+          onClick={
+            () =>
+              (window.location.href = "https://platform.keywordsai.co/login") // should direct to the pricing page in the platform later
           }
           type="button"
         />
       ),
       currentPlan: "View Usage Details",
       features: [
+        // "$10 free LLM credits",
         "10k requests / month",
         "2 seats",
-        // "1 proxy API key",
         "Community support",
-        // "Status monitoring",
-        // "Dynamic LLM router",
-        // "OpenAI models",
-        // "Email support",
       ],
       plan: "starter",
       rank: 2,
     },
     {
-      title: "Pro",
+      title: isYearly ? (
+        <div className="flex  items-center gap-xxs">
+          Pro
+          <Tag
+            text="-20%"
+            textColor="text-success"
+            border=""
+            borderRadious="rounded-sm"
+            backgroundColor="bg-success/10"
+          />
+        </div>
+      ) : (
+        "Pro"
+      ),
       description: "Best for early stage startups.",
       price: teamPrice,
       bonus: bonus,
@@ -72,15 +84,16 @@ export function Pricing() {
           textColor="text-gray-black"
           className="self-stretch items-center justify-center gap-xxs"
           width="w-full"
-          onClick={() =>
-            (window.location.href =
-              "https://platform.keywordsai.co/login") // should direct to the pricing page in the platform later
+          onClick={
+            () =>
+              (window.location.href = "https://platform.keywordsai.co/login") // should direct to the pricing page in the platform later
           }
           type="button"
         />
       ),
 
       features: [
+        // "$100 free LLM credits",
         "1M requests / month",
         "5 seats",
         "Custom evaluations",
@@ -104,7 +117,7 @@ export function Pricing() {
           variant={"r4-black"}
           text={"Talk to founders"}
           className="self-stretch shadow-border shadow-gray-3 rounded-sm bg-gray-2"
-          onClick={() => (window.open  ("https://zcal.co/keywords-ai", "_blank"))}
+          onClick={() => window.open("https://zcal.co/keywords-ai", "_blank")}
         />
       ),
       currentPlan: "View Usage Details",
@@ -123,36 +136,43 @@ export function Pricing() {
   return (
     <Page>
       {/* upper container */}
-      <div className="flex-col px-xl pt-[120px] pb-[240px] items-center gap-xl self-stretch">
+      <div className="flex-col px-xl pt-xxxl pb-[240px] items-center gap-xl self-stretch">
         {/* section title */}
         <div className="flex flex-col max-w-[1000px] items-center gap-lg">
           <p className="display-xl text-center text-gray-white ">
-            Plans and Pricing
+            Simple Pricing.{" "}
+            <span className="display-xl text-center text-gray-4 ">
+              {" "}
+              Start for free.
+            </span>
           </p>
-          <p className="text-lg text-center text-gray-4 ">
-          Start for free and scale as you go. 
+          <p className="display-sm text-center text-gray-4 ">
+            Get with free credits and scale as you go.
           </p>
         </div>
 
         {/* pricing cards */}
-        <div className="flex-col items-center gap-lg max-w-[1000px] flex ">
-          <div className="flex justify-center items-center gap-sm">
-            <span className="text-lg text-gray-4 text-center"> Monthly </span>
-            <div className=" ">
-              <SwitchButton
-                onCheckedChange={handleSwitchChange}
-                checked={isYearly}
+        <div className="flex-col items-center gap-lg">
+          <div className={`flex items-center gap-xxs`}>
+            {isYearly && <div className="w-[46px] h-[4px]"></div>}
+            <TextSwitchButton
+              checked={isYearly}
+              leftValue="Monthly"
+              rightValue="Annually"
+              onCheckedChange={handleSwitchChange}
+            />
+            {isYearly && (
+              <Tag
+                text="-20%"
+                textColor="text-success"
+                border=""
+                borderRadious="rounded-sm"
+                backgroundColor="bg-success/10"
               />
-            </div>
-            <div>
-              <span className="text-lg text-gray-4 text-center"> Yearly </span>
-              <span className="text-lg text-primary text-center">
-                {" "}
-                (20% off){" "}
-              </span>
-            </div>
+            )}
           </div>
-          <div className="flex max-w-[1000px] items-start content-start gap-[24px]  flex-wrap">
+
+          <div className="flex max-w-[1000px] items-start content-start gap-y-[24px] gap-x-[20px]  flex-wrap">
             {cards.map((card, index) => (
               <PricingCard {...card} price={card.price} key={index} />
             ))}

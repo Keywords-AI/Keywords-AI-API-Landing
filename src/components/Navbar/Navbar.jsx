@@ -63,7 +63,10 @@ export function Navbar() {
             <Button
               text="Pricing"
               variant="header"
-              onClick={() => navigate("/pricing")}
+              onClick={() => {
+                navigate("/pricing");
+                window.scrollTo(0, 0);
+              }}
               // active={location.pathname == "/pricing"}
             />
 
@@ -110,7 +113,9 @@ export function Navbar() {
             variant="r18-white"
             icon={Right}
             // onClick={() => (window.location.href = platformURL + "/login")}
-            onClick={() => window.location.href = "https://platform.keywordsai.co/signup"}
+            onClick={() =>
+              (window.location.href = "https://platform.keywordsai.co/signup")
+            }
           />
         </div>
       </div>

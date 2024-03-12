@@ -186,10 +186,11 @@ export const Subtract = () => {
           y2={101.5}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="white" stopOpacity={0} />
-          <stop stopOpacity={0.2} />
-          <stop offset={0.5} stopColor="#8F8F8F" stopOpacity={0.67} />
-          <stop offset={1} stopOpacity={0.04} />
+          <stop stopColor="#38BDF8" stopOpacity={0} />
+          <stop stopColor="#38BDF8" stopOpacity={0} />
+          <stop offset={0.3302} stopColor="#E8E8E8" stopOpacity={0.2} />
+          <stop offset={0.6441} stopColor="#8F8F8F" stopOpacity={0.67} />
+          <stop offset={0.9893} stopColor="#EC4899" stopOpacity={0} />
         </linearGradient>
       </defs>
     </svg>
