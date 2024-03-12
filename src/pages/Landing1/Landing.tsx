@@ -133,9 +133,7 @@ export function Landing() {
               icon={Right}
               iconSize="sm"
               iconFill=""
-              onClick={() =>
-                (window.location.href = "https://zcal.co/keywords-ai")
-              }
+              onClick={() => window.open("https://cal.com/keywordsai/demo", "_blank")}
             />
           </div>
         </div>

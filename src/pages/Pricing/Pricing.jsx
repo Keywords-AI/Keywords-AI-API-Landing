@@ -9,7 +9,6 @@ import { useState } from "react";
 import { createPaymentSession } from "src/services/stripe";
 import { set } from "react-hook-form";
 import { models } from "src/utilities/constants";
-import PricingSwtichButton from "./components/PricingSwtichButton";
 import TextSwitchButton from "src/components/Buttons/TextSwitchButton";
 import { Tag } from "src/components/Tag/Tag";
 import cn from "src/utilities/ClassMerge";
@@ -117,7 +116,7 @@ export function Pricing() {
           variant={"r4-black"}
           text={"Talk to founders"}
           className="self-stretch shadow-border shadow-gray-3 rounded-sm bg-gray-2"
-          onClick={() => window.open("https://zcal.co/keywords-ai", "_blank")}
+          onClick={() => window.open("https://cal.com/keywordsai/demo", "_blank")}
         />
       ),
       currentPlan: "View Usage Details",
@@ -174,7 +173,7 @@ export function Pricing() {
 
           <div className="flex max-w-[1000px] items-start content-start gap-y-[24px] gap-x-[20px]  flex-wrap">
             {cards.map((card, index) => (
-              <PricingCard {...card} key={index} />
+              <PricingCard {...card} price={card.price} key={index} />
             ))}
           </div>
         </div>

@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { FeatureTick } from "src/components/icons-old";
 import { Button } from "src/components/Buttons";
 import cn from "src/utilities/ClassMerge";
+import { Tag } from "../tag";
 
 const ranking = {
   flex_8k: 1,
@@ -48,7 +49,9 @@ export default function PricingCard({
 }) {
   const [hover, setHover] = React.useState(false);
   const navigate = useNavigate();
-
+  useEffect(() => {
+    price = price
+  } , [price]);
   return (
     <div className="flex rounded-md  pricing-card-outer">
       <div
