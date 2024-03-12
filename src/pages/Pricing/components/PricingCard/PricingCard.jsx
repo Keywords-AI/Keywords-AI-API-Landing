@@ -50,7 +50,7 @@ export default function PricingCard({
   const navigate = useNavigate();
 
   return (
-    <div className="flex rounded-md  landing-card-outer">
+    <div className="flex rounded-md  pricing-card-outer">
       <div
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
