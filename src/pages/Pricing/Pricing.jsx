@@ -136,7 +136,7 @@ export function Pricing() {
   return (
     <Page>
       {/* upper container */}
-      <div className="flex-col px-xl pt-xxxl pb-xxxl items-center gap-xl self-stretch">
+      <div className="flex-col px-xl pt-xxl pb-xxxl items-center gap-xl self-stretch">
         {/* section title */}
         <div className="flex flex-col max-w-[1000px] items-center gap-lg">
           <p className="display-xl text-center text-gray-white ">
@@ -146,7 +146,7 @@ export function Pricing() {
               Start for free.
             </span>
           </p>
-          <p className="display-xs text-center text-gray-4 ">
+          <p className="display-lg text-center text-gray-4 ">
             Get with free credits and scale as you go.
           </p>
         </div>
@@ -179,13 +179,12 @@ export function Pricing() {
           </div>
         </div>
       </div>
-        {/* pricing table */}
-        <div className="flex flex-col px-xl pt-xxxl pb-[240px] gap-xl items-center self-stretch w-full">
-          
-              <PricingTable />
-          {/* 
+      {/* pricing table */}
+      <div className="flex flex-col px-xl pt-xxxl pb-[240px] gap-xl items-center self-stretch w-full">
+        <PricingTable />
+        {/* 
           <PricingTable /> */}
-        </div>
+      </div>
     </Page>
   );
 }
