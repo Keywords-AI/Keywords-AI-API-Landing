@@ -45,10 +45,10 @@ export function PricingTable() {
       pii: "PII removal",
     },
     {
-      section: "Integration",
+      section: "Compatibility",
       openai: "OpenAI compatible",
-      langchain: "LangChain integration",
-      LlamaIndex: "LlamaIndex integration",
+      langchain: "LangChain compatible",
+      LlamaIndex: "LlamaIndex compatible",
     },
     {
       section: "Support",
@@ -186,7 +186,7 @@ export function PricingTable() {
     },
 
     {
-      section: "Integration",
+      section: "Compatibility",
       openai: (
         <div className="flex flex-row h-[42px] items-center gap-xxs self-stretch shadow-border-b shadow-gray-2">
           <Check fill="fill-gray-4" />
@@ -248,19 +248,19 @@ export function PricingTable() {
       requests: (
         <div className="flex flex-row h-[42px] items-center gap-xxs self-stretch shadow-border-b shadow-gray-2">
           <Check fill="fill-primary" />
-          <span className="text-gray-4">&nbsp;{"1M logs free"}</span>
+          <span className="text-gray-white">&nbsp;{"1M logs free"}</span>
         </div>
       ),
       endpoints: (
         <div className="flex flex-row h-[42px] items-center gap-xxs self-stretch shadow-border-b shadow-gray-2">
           <Check fill="fill-primary" />
-          <span className="text-gray-4">&nbsp;{"All models (100+)"}</span>
+          <span className="text-gray-white">&nbsp;{"All models (100+)"}</span>
         </div>
       ),
       proxy: (
         <div className="flex flex-row h-[42px] items-center gap-xxs self-stretch shadow-border-b shadow-gray-2">
           <Check fill="fill-primary" />
-          <span className="text-gray-4">&nbsp;{"10"}</span>
+          <span className="text-gray-white">&nbsp;{"10"}</span>
         </div>
       ),
       async: (
@@ -293,7 +293,7 @@ export function PricingTable() {
       seats: (
         <div className="flex flex-row h-[42px] items-center gap-xxs self-stretch shadow-border-b shadow-gray-2">
           <Check fill="fill-primary" />
-          <span className="text-gray-4">&nbsp;{"5 seats"}</span>
+          <span className="text-gray-white">&nbsp;{"5 seats"}</span>
         </div>
       ),
       dashboard: (
@@ -378,7 +378,7 @@ export function PricingTable() {
     },
 
     {
-      section: "Integration",
+      section: "Compatibility",
       openai: (
         <div className="flex flex-row h-[42px] items-center gap-xxs self-stretch shadow-border-b shadow-gray-2">
           <Check fill="fill-primary" />
@@ -403,7 +403,7 @@ export function PricingTable() {
       priority: (
         <div className="flex flex-row h-[42px] items-center gap-xxs self-stretch shadow-border-b shadow-gray-2">
           <Check fill="fill-primary" />
-          <span className="text-gray-4">&nbsp;{"Priority email"}</span>
+          <span className="text-gray-white">&nbsp;{"Priority email"}</span>
         </div>
       ),
       white_glove: (
@@ -425,13 +425,13 @@ export function PricingTable() {
       retention: (
         <div className="flex flex-row h-[42px] items-center gap-xxs self-stretch shadow-border-b shadow-gray-2">
           <Check fill="fill-primary" />
-          <span className="text-gray-4">&nbsp;{"60 days"}</span>
+          <span className="text-gray-white">&nbsp;{"60 days"}</span>
         </div>
       ),
       json: (
         <div className="flex flex-row h-[42px] items-center gap-xxs self-stretch shadow-border-b shadow-gray-2">
           <Check fill="fill-primary" />
-          <span className="text-gray-4">&nbsp;{"JSON & CSV export"}</span>
+          <span className="text-gray-white">&nbsp;{"JSON & CSV export"}</span>
         </div>
       ),
     },
@@ -443,19 +443,19 @@ export function PricingTable() {
       requests: (
         <div className="flex flex-row h-[42px] items-center gap-xxs self-stretch shadow-border-b shadow-gray-2">
           <Check fill="fill-primary" />
-          <span className="text-gray-4">&nbsp;{"Unlimited"}</span>
+          <span className="text-gray-white">&nbsp;{"Unlimited"}</span>
         </div>
       ),
       endpoints: (
         <div className="flex flex-row h-[42px] items-center gap-xxs self-stretch shadow-border-b shadow-gray-2">
           <Check fill="fill-primary" />
-          <span className="text-gray-4">&nbsp;{"All models (100+)"}</span>
+          <span className="text-gray-white">&nbsp;{"All models (100+)"}</span>
         </div>
       ),
       proxy: (
         <div className="flex flex-row h-[42px] items-center gap-xxs self-stretch shadow-border-b shadow-gray-2">
           <Check fill="fill-primary" />
-          <span className="text-gray-4">&nbsp;{"Unlimited"}</span>
+          <span className="text-gray-white">&nbsp;{"Unlimited"}</span>
         </div>
       ),
       async: (
@@ -491,7 +491,7 @@ export function PricingTable() {
       seats: (
         <div className="flex flex-row h-[42px] items-center gap-xxs self-stretch shadow-border-b shadow-gray-2">
           <Check fill="fill-primary" />
-          <span className="text-gray-4">&nbsp;{"Unlimited seats"}</span>
+          <span className="text-gray-white">&nbsp;{"Unlimited seats"}</span>
         </div>
       ),
       dashboard: (
@@ -600,7 +600,7 @@ export function PricingTable() {
     },
 
     {
-      section: "Integration",
+      section: "Compatibility",
       openai: (
         <div className="flex flex-row h-[42px] items-center gap-xxs self-stretch shadow-border-b shadow-gray-2">
           <Check fill="fill-primary" />
@@ -625,7 +625,7 @@ export function PricingTable() {
       priority: (
         <div className="flex flex-row h-[42px] items-center gap-xxs self-stretch shadow-border-b shadow-gray-2">
           <Check fill="fill-primary" />
-          <span className="text-gray-4">&nbsp;{"Founders 24/7 text"}</span>
+          <span className="text-gray-white">&nbsp;{"Founders 24/7 text"}</span>
         </div>
       ),
       white_glove: (
@@ -653,13 +653,13 @@ export function PricingTable() {
       retention: (
         <div className="flex flex-row h-[42px] items-center gap-xxs self-stretch shadow-border-b shadow-gray-2">
           <Check fill="fill-primary" />
-          <span className="text-gray-4">&nbsp;{"120 days"}</span>
+          <span className="text-gray-white">&nbsp;{"120 days"}</span>
         </div>
       ),
       json: (
         <div className="flex flex-row h-[42px] items-center gap-xxs self-stretch shadow-border-b shadow-gray-2">
           <Check fill="fill-primary" />
-          <span className="text-gray-4">&nbsp;{"JSON & CSV export"}</span>
+          <span className="text-gray-white">&nbsp;{"JSON & CSV export"}</span>
         </div>
       ),
     },
@@ -676,7 +676,7 @@ export function PricingTable() {
               className="flex flex-col justify-end items-start w-full"
             >
               <div className="flex flex-row h-[42px] items-center gap-xxs w-full">
-                <span className="text-md-regular text-gray-white">
+                <span className="text-md-md text-gray-white">
                   {feature.section}
                 </span>
               </div>
@@ -697,7 +697,7 @@ export function PricingTable() {
           ))}
         </div>
         <div className="flex flex-col py-md items-start gap-md flex-1 self-stretch">
-          <div className="flex flex-col items-start gap-xs self-stretch">
+          <div className="flex flex-col items-start gap-sm self-stretch">
             <span className="display-sm text-gray-white">Free</span>
             <Button
               variant="r4-white"
@@ -727,7 +727,7 @@ export function PricingTable() {
           ))}
         </div>
         <div className="flex flex-col py-md items-start gap-md flex-1  bg-gray-2 shadow-border shadow-gray-3 rounded-md p-md">
-          <div className="flex flex-col items-start gap-xs self-stretch">
+          <div className="flex flex-col items-start gap-sm self-stretch">
             <span className="display-sm text-gray-white">Team</span>
             <Button
               variant="r4-primary"
@@ -757,7 +757,7 @@ export function PricingTable() {
           ))}
         </div>
         <div className="flex flex-col py-md items-start gap-md flex-1 self-stretch">
-          <div className="flex flex-col items-start gap-xs self-stretch">
+          <div className="flex flex-col items-start gap-sm self-stretch">
             <span className="display-sm text-gray-white">Enterprise</span>
             <Button
               variant="r4-white"
