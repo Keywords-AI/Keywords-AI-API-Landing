@@ -60,7 +60,7 @@ export function Footer() {
               <Twitter active={isTwitterHovered} />
             </a>
             <a
-              href="https://www.linkedin.com/company/keywordsai"
+              href="https://discord.gg/vt7tEFZuQW"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-row w-[16px] h-[16px] justify-center items-center gap-[10px]"
