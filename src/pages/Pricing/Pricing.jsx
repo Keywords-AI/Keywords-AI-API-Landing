@@ -26,10 +26,10 @@ export function Pricing() {
   const remaining = models.length;
   const cards = [
     {
-      title: "Starter",
+      title: "Free",
       description: "Best for solo builders.",
       price: "$0",
-      featureTitle: "Starter plan features:",
+      featureTitle: "Free plan features:",
       bonus: "Free forever",
       button: (
         <Button
@@ -56,7 +56,7 @@ export function Pricing() {
     {
       title: isYearly ? (
         <div className="flex  items-center gap-xxs">
-          Pro
+          Team
           <Tag
             text="-20%"
             textColor="text-success"
@@ -66,12 +66,12 @@ export function Pricing() {
           />
         </div>
       ) : (
-        "Pro"
+        "Team"
       ),
       description: "Best for early stage startups.",
       price: teamPrice,
       bonus: bonus,
-      featureTitle: "Everything in Starter, plus",
+      featureTitle: "Everything in Free, plus",
       currentPlan: "View Usage Details",
       // bgColor: "bg-gray-2",
       // border: "shadow-gray-4 shadow-border",
@@ -106,11 +106,11 @@ export function Pricing() {
       rank: 3,
     },
     {
-      title: "Team",
+      title: "Enterprise",
       description: "Best for high-growth teams.",
       price: "$499",
       bonus: "Billed annually",
-      featureTitle: "Everything in Pro, plus",
+      featureTitle: "Everything in Team, plus",
       button: (
         <Button
           variant={"r4-black"}
@@ -137,7 +137,7 @@ export function Pricing() {
   return (
     <Page>
       {/* upper container */}
-      <div className="flex-col px-xl pt-xxxl pb-[240px] items-center gap-xl self-stretch">
+      <div className="flex-col px-xl pt-xxxl pb-xxxl items-center gap-xl self-stretch">
         {/* section title */}
         <div className="flex flex-col max-w-[1000px] items-center gap-lg">
           <p className="display-xl text-center text-gray-white ">
@@ -179,12 +179,14 @@ export function Pricing() {
             ))}
           </div>
         </div>
-        {/* pricing table */}
-        {/* <div className="flex-col max-w-[1000px] gap-sm w-full">
-          <div className="display-sm">Compare Plans and Features</div>
-          <PricingTable />
-        </div> */}
       </div>
+        {/* pricing table */}
+        <div className="flex flex-col px-xl pt-xxxl pb-[240px] gap-xl items-center self-stretch w-full">
+          
+              <PricingTable />
+          {/* 
+          <PricingTable /> */}
+        </div>
     </Page>
   );
 }
