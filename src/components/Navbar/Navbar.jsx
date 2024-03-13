@@ -101,7 +101,7 @@ export function Navbar() {
 
         <div className="sm:hidden flex items-center gap-xs">
           <Button
-            text="Log in"
+            text="Sign in"
             variant="header"
             onClick={() => {
               window.location.href = platformURL + "/login";

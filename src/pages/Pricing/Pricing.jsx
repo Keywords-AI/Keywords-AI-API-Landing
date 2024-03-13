@@ -125,9 +125,8 @@ export function Pricing() {
       features: [
         "Unlimited request",
         "Unlimited seats",
-        "Fine-tuning",
         "Increased rate limit",
-        "SOC 2 compliance",
+        "SOC-2 compliance",
       ],
       plan: "custom",
       rank: 4,
