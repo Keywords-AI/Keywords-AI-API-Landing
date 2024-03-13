@@ -47,19 +47,19 @@ const TextSwitchButton = React.forwardRef(
           onChange={onChange}
           ref={ref}
         >
-          <div className="flex gap-[28px] w-full self-stretch flex-1 h-[28px] justify-center items-center">
+          <div className="flex w-full self-stretch flex-1 h-[28px] justify-center items-center">
             <p
               className={cn(
-                "text-center text-sm-regular",
-                checked ? "text-gray-4" : "text-gray-white"
+                "text-center text-sm-regular w-[82px] h-[28px] rounded-lg flex items-center justify-center",
+                checked ? "text-gray-4" : "text-gray-white bg-gray-2"
               )}
             >
               {leftValue}
             </p>
             <p
               className={cn(
-                "text-center text-sm-regular",
-                checked ? "text-gray-white" : "text-gray-4"
+                "text-center text-sm-regular w-[82px] h-[28px] rounded-lg flex items-center justify-center",
+                checked ? "text-gray-white bg-gray-2" : "text-gray-4"
               )}
             >
               {rightValue}

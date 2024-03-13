@@ -25,6 +25,7 @@ import {
   AgentHubLogo,
   EduPhoriaAiLogo,
   JustPaidLogo,
+  LawmeLogo,
   ShepherdLogo,
   WonderChatLogo,
 } from "./TeamsLogo";
@@ -133,7 +134,9 @@ export function Landing() {
               icon={Right}
               iconSize="sm"
               iconFill=""
-              onClick={() => window.open("https://cal.com/keywordsai/demo", "_blank")}
+              onClick={() =>
+                window.open("https://cal.com/keywordsai/demo", "_blank")
+              }
             />
           </div>
         </div>
@@ -182,6 +185,12 @@ export function Landing() {
             onClick={() => window.open("https://www.justpaid.io/", "_blank")}
           >
             <JustPaidLogo />
+          </div>
+          <div
+            className="cursor-pointer"
+            onClick={() => window.open("https://www.lawme.ai/", "_blank")}
+          >
+            <LawmeLogo />
           </div>
           <div
             className="cursor-pointer"
