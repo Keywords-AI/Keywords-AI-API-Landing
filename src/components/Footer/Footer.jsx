@@ -157,7 +157,7 @@ export function Footer() {
           <div className="flex flex-col w-[140px] items-start gap-[10px] shrink-0">
             <div className="flex items-center justify-center gap-[10px]">
               <a
-                href="https://docs.keywordsai.co/get-started/introduction"
+                href="https://discord.gg/vt7tEFZuQW"
                 target="_blank"
                 rel="noopener noreferrer"
               >

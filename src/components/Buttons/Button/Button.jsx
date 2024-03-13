@@ -136,6 +136,7 @@ export const Button = forwardRef(
         padding = padding || "py-xxs px-xs";
         borderColor = borderColor || "shadow-transparent";
         borderHoverColor = borderHoverColor || "shadow-transparent"; //border-gray-4
+        justification = justification || "justify-center";
 
         break;
       // case "r4-gray-2":
@@ -165,6 +166,7 @@ export const Button = forwardRef(
         borderHoverColor = borderHoverColor || "shadow-transparent";
         padding = padding || "py-xxs px-xs";
         textClassName = textClassName || "text-sm-md";
+        justification = justification || "justify-center";
 
         break;
       case "r4-red":
