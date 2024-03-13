@@ -116,7 +116,9 @@ export function Pricing() {
           variant={"r4-black"}
           text={"Talk to founders"}
           className="self-stretch shadow-border shadow-gray-3 rounded-sm bg-gray-2"
-          onClick={() => window.open("https://cal.com/keywordsai/demo", "_blank")}
+          onClick={() =>
+            window.open("https://cal.com/keywordsai/demo", "_blank")
+          }
         />
       ),
       currentPlan: "View Usage Details",
@@ -145,7 +147,7 @@ export function Pricing() {
               Start for free.
             </span>
           </p>
-          <p className="display-sm text-center text-gray-4 ">
+          <p className="display-xs text-center text-gray-4 ">
             Get with free credits and scale as you go.
           </p>
         </div>
