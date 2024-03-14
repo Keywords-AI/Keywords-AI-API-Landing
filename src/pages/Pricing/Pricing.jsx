@@ -38,7 +38,8 @@ export function Pricing() {
           className="self-stretch shadow-border shadow-gray-3 rounded-sm bg-gray-2"
           onClick={
             () =>
-              (window.location.href = "https://platform.keywordsai.co/login") // should direct to the pricing page in the platform later
+              (window.location.href =
+                "https://platform.keywordsai.co/platform/api/plans") // should direct to the pricing page in the platform later
           }
           type="button"
         />
@@ -85,7 +86,8 @@ export function Pricing() {
           width="w-full"
           onClick={
             () =>
-              (window.location.href = "https://platform.keywordsai.co/login") // should direct to the pricing page in the platform later
+              (window.location.href =
+                "https://platform.keywordsai.co/platform/api/plans") // should direct to the pricing page in the platform later
           }
           type="button"
         />
