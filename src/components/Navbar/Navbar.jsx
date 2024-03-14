@@ -18,59 +18,67 @@ export function Navbar() {
       className=" w-full flex-col sm:flex-row px-xxxl sm:px-lg py-xs sm:py-sm justify-between items-center bg-gray-black bg-opacity-0 backdrop-blur-[3px] border-b border-gray-2 fixed z-10"
     >
       <div className="flex max-w-[1200px] justify-between items-center flex-1 w-full">
-        <div
-          className="flex items-center gap-xxs self-stretch hover:cursor-pointer"
-          onClick={() => {
-            navigate("/");
-            window.scrollTo(0, 0);
-          }}
-        >
-          <Logo />
-          <p className="display-xs font-[600] text-center">Keywords AI</p>
-        </div>
-        {
-          <div className="sm:hidden flex items-center gap-xs">
-            {/* <Button
+        <div className="flex flex-row gap-lg items-center">
+          <div
+            className="flex items-center gap-xxs self-stretch hover:cursor-pointer"
+            onClick={() => {
+              navigate("/");
+              window.scrollTo(0, 0);
+            }}
+          >
+            <Logo />
+            <p className="display-xs font-[600] text-center">Keywords AI</p>
+          </div>
+          {
+            <div className="sm:hidden flex items-center gap-xs">
+              {/* <Button
               text="Overview"
               variant="header"
               onClick={() => navigate("/")}
               active={location.pathname == "/"}
             /> */}
-            <Button
-              text="Platform"
-              variant="header"
-              // onClick={() => window.open(platformURL, "_blank")}
-              onClick={() => {
-                navigate("/");
-                window.scrollTo(0, 0);
-              }}
-              // active={location.pathname == "/"}
-            />
-            <Button
-              text="Documentation"
-              variant="header"
-              onClick={() =>
-                window.open("https://docs.keywordsai.co", "_blank")
-              }
-              // active={location.pathname == "/"}
-            />
-            {/* <Button
+              <Button
+                text="Platform"
+                variant="header"
+                // onClick={() => window.open(platformURL, "_blank")}
+                onClick={() => {
+                  navigate("/");
+                  window.scrollTo(0, 0);
+                }}
+                // active={location.pathname == "/"}
+              />
+              <Button
+                text="Documentation"
+                variant="header"
+                onClick={() =>
+                  window.open("https://docs.keywordsai.co", "_blank")
+                }
+                // active={location.pathname == "/"}
+              />
+              {/* <Button
               text="Changelog"
               variant="header"
               onClick={() => navigate("/changelog")}
               active={location.pathname == "/changelog"}
             /> */}
-            <Button
-              text="Pricing"
-              variant="header"
-              onClick={() => {
-                navigate("/pricing");
-                window.scrollTo(0, 0);
-              }}
-              // active={location.pathname == "/pricing"}
-            />
-
-            {/* <Button
+              <Button
+                text="Pricing"
+                variant="header"
+                onClick={() => {
+                  navigate("/pricing");
+                  window.scrollTo(0, 0);
+                }}
+                // active={location.pathname == "/pricing"}
+              />
+              <Button
+                text="Community"
+                variant="header"
+                onClick={() =>
+                  window.open("https://discord.gg/qegzrBjer9", "_blank")
+                }
+                // active={location.pathname == "/pricing"}
+              />
+              {/* <Button
               text="Models"
               variant="header"
               textClickedColor="text-gray-4"
@@ -84,7 +92,7 @@ export function Navbar() {
               onClick={() => navigate("/community")}
               active={location.pathname == "/community"}
             /> */}
-            {/*
+              {/*
             <Button
               text="Models"
               variant="header"
@@ -96,8 +104,9 @@ export function Navbar() {
               // onClick={() => navigate("/changelog")}
               active={location.pathname == "/changelog"}
             /> */}
-          </div>
-        }
+            </div>
+          }
+        </div>
 
         <div className="sm:hidden flex items-center gap-xs">
           <Button
