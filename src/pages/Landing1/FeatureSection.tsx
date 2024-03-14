@@ -91,7 +91,7 @@ export default function FeatureSection({}: Props) {
           max_width="flex-1"
           heading="Dead simple integration"
           subheading={
-            "OpenAI style API call.\nLiterally 2 lines of change in your code."
+            "OpenAI compatible.\nLiterally 2 lines of change in your code."
           }
         >
           <SimpleImage />

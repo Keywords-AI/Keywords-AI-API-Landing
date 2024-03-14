@@ -74,7 +74,7 @@ export function Navbar() {
                 text="Community"
                 variant="header"
                 onClick={() =>
-                  window.open("https://discord.gg/qegzrBjer9", "_blank")
+                  window.open("https://discord.gg/rez3qVGu", "_blank")
                 }
                 // active={location.pathname == "/pricing"}
               />
