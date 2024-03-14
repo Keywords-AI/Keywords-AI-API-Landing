@@ -24,6 +24,7 @@ import { Button } from "src/components/Buttons";
 import {
   AgentHubLogo,
   EduPhoriaAiLogo,
+  JobLoomLogo,
   JustPaidLogo,
   LawmeLogo,
   ShepherdLogo,
@@ -161,7 +162,7 @@ export function Landing() {
         <div className="flex-col items-center gap-sm self-stretch text-center caption-cap gradient-text">
           POWERING THE WORLD’S BEST AI PRODUCT TEAMS
         </div>
-        <div className="flex max-w-[1000px] justify-center items-start content-start gap-[20px] w-full flex-wrap">
+        <div className="flex max-w-[1200px] justify-center items-start content-start gap-[20px] w-full ">
           <div
             className="cursor-pointer"
             onClick={() => window.open("https://wonderchat.io/", "_blank")}
@@ -197,6 +198,12 @@ export function Landing() {
             onClick={() => window.open("https://eduphoria.ai/", "_blank")}
           >
             <EduPhoriaAiLogo />
+          </div>
+          <div
+            className="cursor-pointer"
+            onClick={() => window.open("https://www.jobloom.ai/", "_blank")}
+          >
+            <JobLoomLogo />
           </div>
         </div>
         <div className="min-h-[1.2px] shrink-0 [background:linear-gradient(90deg,rgba(255,255,255,0.00)_0%,rgba(0,0,0,0.20)_0%,rgba(143,143,143,0.67)_50%,rgba(0,0,0,0.04)_100%)] w-full max-w-[1200px]" />
