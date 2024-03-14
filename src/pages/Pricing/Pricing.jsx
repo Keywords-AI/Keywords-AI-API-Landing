@@ -138,7 +138,7 @@ export function Pricing() {
       {/* upper container */}
       <div className="flex-col px-xl pt-xxl pb-xxxl items-center gap-xl self-stretch">
         {/* section title */}
-        <div className="flex flex-col max-w-[1000px] items-center gap-lg">
+        <div className="flex flex-col max-w-[1000px] items-center gap-md">
           <p className="display-lg text-center text-gray-white ">
             Simple Pricing.{" "}
             <span className="display-lg text-center text-gray-4 ">
