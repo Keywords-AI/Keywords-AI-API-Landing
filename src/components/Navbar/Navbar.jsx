@@ -69,7 +69,14 @@ export function Navbar() {
               }}
               // active={location.pathname == "/pricing"}
             />
-
+                      <Button
+              text="Community"
+              variant="header"
+              onClick={() =>
+                window.open("https://discord.gg/qegzrBjer9", "_blank")
+              }
+              // active={location.pathname == "/pricing"}
+            />
             {/* <Button
               text="Models"
               variant="header"
