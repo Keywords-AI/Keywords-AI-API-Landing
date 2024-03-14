@@ -60,7 +60,7 @@ export function Footer() {
               <Twitter active={isTwitterHovered} />
             </a>
             <a
-              href="https://discord.gg/vt7tEFZuQW"
+              href="https://discord.gg/rez3qVGu"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-row w-[16px] h-[16px] justify-center items-center gap-[10px]"
@@ -157,7 +157,7 @@ export function Footer() {
           <div className="flex flex-col w-[140px] items-start gap-[10px] shrink-0">
             <div className="flex items-center justify-center gap-[10px]">
               <a
-                href="https://discord.gg/vt7tEFZuQW"
+                href="https://discord.gg/rez3qVGu"
                 target="_blank"
                 rel="noopener noreferrer"
               >
