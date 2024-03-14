@@ -171,7 +171,6 @@ export function Pricing() {
               />
             )}
           </div>
-
           <div className="flex max-w-[1000px] items-start content-start gap-y-[24px] gap-x-[20px]  flex-wrap">
             {cards.map((card, index) => (
               <PricingCard {...card} price={card.price} key={index} />
@@ -179,13 +178,12 @@ export function Pricing() {
           </div>
         </div>
       </div>
-        {/* pricing table */}
-        <div className="flex flex-col px-xl pt-xxxl pb-[240px] gap-xl items-center self-stretch w-full">
-          
-              <PricingTable />
-          {/* 
+      {/* pricing table */}
+      <div className="flex flex-col px-xl pt-xxxl pb-[240px] gap-xl items-center self-stretch w-full">
+        <PricingTable />
+        {/* 
           <PricingTable /> */}
-        </div>
+      </div>
     </Page>
   );
 }
