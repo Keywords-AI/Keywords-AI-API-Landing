@@ -139,14 +139,14 @@ export function Pricing() {
       <div className="flex-col px-xl pt-xxl pb-xxxl items-center gap-xl self-stretch">
         {/* section title */}
         <div className="flex flex-col max-w-[1000px] items-center gap-lg">
-          <p className="display-xl text-center text-gray-white ">
+          <p className="display-lg text-center text-gray-white ">
             Simple Pricing.{" "}
-            <span className="display-xl text-center text-gray-4 ">
+            <span className="display-lg text-center text-gray-4 ">
               {" "}
               Start for free.
             </span>
           </p>
-          <p className="display-lg text-center text-gray-4 ">
+          <p className="display-xs text-center text-gray-4 ">
             Get with free credits and scale as you go.
           </p>
         </div>
