@@ -58,7 +58,7 @@ export default function PricingCard({
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
         className={cn(
-          "flex h-[719px] p-md flex-col items-center gap-xl flex-1 w-full rounded-md min-w-[279px] bg-gray-black"
+          "flex  px-md pt-md pb-[120px] flex-col items-center gap-xl flex-1 w-full rounded-md min-w-[279px] bg-gray-black"
         )}
       >
         <div className="flex flex-col items-start justify-center gap-xxs self-stretch">

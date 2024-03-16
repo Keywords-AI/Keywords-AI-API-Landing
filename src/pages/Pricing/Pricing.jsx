@@ -47,6 +47,7 @@ export function Pricing() {
       currentPlan: "View Usage Details",
       features: [
         // "$10 free LLM credits",
+        "$15 free LLM credits",
         "10k requests / month",
         "2 seats",
         "Community support",
