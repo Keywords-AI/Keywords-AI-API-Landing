@@ -23,22 +23,29 @@ import { Right } from "src/components/Icons";
 import { Button } from "src/components/Buttons";
 import {
   AgentHubLogo,
+  ArionaiLogo,
+  CruxLogo,
   EduPhoriaAiLogo,
+  GentooLogo,
   JobLoomLogo,
   JustPaidLogo,
   LawmeLogo,
+  MilaLogo,
   ShepherdLogo,
   WonderChatLogo,
 } from "./TeamsLogo";
 import FeatureSection from "./FeatureSection";
 import { AdvantagesSecctions } from "./AdvantagesSecctions";
 import CodePrewview from "./CodePrewview";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 export function Landing() {
   const navigate = useNavigate();
   useEffect(() => {
     AOS.init({ duration: 1500 });
   }, []);
+
   const IntroductionSection = () => {
     return (
       <div
@@ -154,6 +161,15 @@ export function Landing() {
     );
   };
   const ColaborationSection = () => {
+    const sliderSettings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    };
     return (
       <div
         aria-label="frame 631"
@@ -162,50 +178,107 @@ export function Landing() {
         <div className="flex-col items-center gap-sm self-stretch text-center caption-cap gradient-text">
           POWERING THE WORLD’S BEST AI PRODUCT TEAMS
         </div>
-        <div className="flex max-w-[1200px] justify-center items-start content-start gap-[20px] w-full ">
-          <div
-            className="cursor-pointer"
-            onClick={() => window.open("https://wonderchat.io/", "_blank")}
-          >
-            <WonderChatLogo />
+        <Slider
+          {...sliderSettings}
+          className="bg-red-500 max-w-[1200px] h-[44px]"
+        >
+          <div style={{ width: 100 }}>
+            <p>100</p>
           </div>
-          <div
-            className="cursor-pointer"
-            onClick={() => window.open("https://www.agenthub.dev/", "_blank")}
-          >
-            <AgentHubLogo />
+          <div style={{ width: 200 }}>
+            <p>200</p>
           </div>
-          <div
-            className="cursor-pointer"
-            onClick={() => window.open("https://shepherd.study/", "_blank")}
-          >
-            <ShepherdLogo />
+          <div style={{ width: 75 }}>
+            <p>75</p>
           </div>
-          <div
-            className="cursor-pointer"
-            onClick={() => window.open("https://www.justpaid.io/", "_blank")}
-          >
-            <JustPaidLogo />
+          <div style={{ width: 300 }}>
+            <p>300</p>
           </div>
-          <div
-            className="cursor-pointer"
-            onClick={() => window.open("https://www.lawme.ai/", "_blank")}
-          >
-            <LawmeLogo />
+          <div style={{ width: 225 }}>
+            <p>225</p>
           </div>
-          <div
-            className="cursor-pointer"
+          <div style={{ width: 175 }}>
+            <p>175</p>
+          </div>
+          {/* <div
+            className="cursor-pointer w-[154px]"
+            style={{ width: "154px" }}
             onClick={() => window.open("https://eduphoria.ai/", "_blank")}
           >
             <EduPhoriaAiLogo />
           </div>
           <div
-            className="cursor-pointer"
+            className="cursor-pointer w-[154px]"
+            style={{ width: "154px" }}
+            onClick={() => window.open("https://wonderchat.io/", "_blank")}
+          >
+            <WonderChatLogo />
+          </div>
+          <div
+            className="cursor-pointer w-[154px]"
+            style={{ width: "154px" }}
+            onClick={() => window.open("https://www.agenthub.dev/", "_blank")}
+          >
+            <AgentHubLogo />
+          </div>
+          <div
+            className="cursor-pointer w-[154px]"
+            style={{ width: "154px" }}
+            onClick={() => window.open("https://www.justpaid.io/", "_blank")}
+          >
+            <JustPaidLogo />
+          </div>
+          <div
+            className="cursor-pointer w-[154px]"
+            style={{ width: "154px" }}
+            onClick={() => window.open("https://shepherd.study/", "_blank")}
+          >
+            <ShepherdLogo />
+          </div>
+          <div
+            className="cursor-pointer w-[154px]"
+            style={{ width: "154px" }}
+            onClick={() => window.open("https://www.getcrux.ai", "_blank")}
+          >
+            <CruxLogo />
+          </div>
+          <div
+            className="cursor-pointer w-[154px]"
+            style={{ width: "154px" }}
+            onClick={() => window.open("https://www.lawme.ai/", "_blank")}
+          >
+            <LawmeLogo />
+          </div>
+          <div
+            className="cursor-pointer w-[154px]"
+            style={{ width: "154px" }}
+            onClick={() => window.open("https://milaai.app", "_blank")}
+          >
+            <MilaLogo />
+          </div>
+          <div
+            className="cursor-pointer w-[154px]"
+            style={{ width: "154px" }}
+            onClick={() => window.open("http://www.gentooai.com", "_blank")}
+          >
+            <GentooLogo />
+          </div>
+          <div
+            className="cursor-pointer w-[154px]"
+            style={{ width: "154px" }}
             onClick={() => window.open("https://www.jobloom.ai/", "_blank")}
           >
             <JobLoomLogo />
           </div>
-        </div>
+          <div
+            className="cursor-pointer w-[154px]"
+            style={{ width: "154px" }}
+            // onClick={() => window.open("", "_blank")}
+          >
+            <ArionaiLogo />
+          </div> */}
+        </Slider>
+
         <div className="min-h-[1.2px] shrink-0 [background:linear-gradient(90deg,rgba(255,255,255,0.00)_0%,rgba(0,0,0,0.20)_0%,rgba(143,143,143,0.67)_50%,rgba(0,0,0,0.04)_100%)] w-full max-w-[1200px]" />
       </div>
     );
