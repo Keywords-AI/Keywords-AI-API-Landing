@@ -16,7 +16,7 @@ import { SectionTitle } from "src/components/SectionTitle";
 
 import { useNavigate } from "react-router-dom";
 import { ContactDialog } from "src/components/ContactDialog";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Right } from "src/components/Icons";
@@ -160,6 +160,33 @@ export function Landing() {
     );
   };
   const ColaborationSection = () => {
+    const [deviceType, setDeviceType] = useState("desktop");
+
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth < 768) {
+          console.log("mobile");
+          setDeviceType("mobile");
+        } else if (window.innerWidth < 1024) {
+          console.log("tablet");
+          setDeviceType("tablet");
+        } else {
+          console.log("desktop");
+          setDeviceType("desktop");
+        }
+      };
+
+      // Initial setup
+      handleResize();
+
+      // Setup event listener
+      window.addEventListener("resize", handleResize);
+
+      // Cleanup on unmount
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
     const responsive = {
       desktop: {
         breakpoint: { max: 3000, min: 1024 },
@@ -168,8 +195,8 @@ export function Landing() {
       },
       tablet: {
         breakpoint: { max: 1024, min: 464 },
-        items: 5,
-        slidesToSlide: 5, // optional, default to 1.
+        items: 4,
+        slidesToSlide: 4, // optional, default to 1.
       },
       mobile: {
         breakpoint: { max: 464, min: 0 },
@@ -193,9 +220,9 @@ export function Landing() {
           autoPlay
           autoPlaySpeed={2000}
           transitionDuration={5000}
-          containerClass="w-[1200px]"
+          containerClass="max-w-[1200px] w-full"
           removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
-          deviceType={"desktop"}
+          deviceType={deviceType}
           itemClass="cursor-pointer w-[154px]"
         >
           <div onClick={() => window.open("https://eduphoria.ai/", "_blank")}>
