@@ -165,13 +165,10 @@ export function Landing() {
     useEffect(() => {
       const handleResize = () => {
         if (window.innerWidth < 768) {
-          console.log("mobile");
           setDeviceType("mobile");
         } else if (window.innerWidth < 1024) {
-          console.log("tablet");
           setDeviceType("tablet");
         } else {
-          console.log("desktop");
           setDeviceType("desktop");
         }
       };
@@ -218,8 +215,9 @@ export function Landing() {
           responsive={responsive}
           infinite={true}
           autoPlay
-          autoPlaySpeed={2000}
-          transitionDuration={5000}
+          autoPlaySpeed={3000}
+          customTransition="transform 1000ms ease-in-out"
+          transitionDuration={1000}
           containerClass="max-w-[1200px] w-full"
           removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
           deviceType={deviceType}
