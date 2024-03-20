@@ -37,9 +37,8 @@ import {
 import FeatureSection from "./FeatureSection";
 import { AdvantagesSecctions } from "./AdvantagesSecctions";
 import CodePrewview from "./CodePrewview";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 export function Landing() {
   const navigate = useNavigate();
   useEffect(() => {
@@ -161,14 +160,22 @@ export function Landing() {
     );
   };
   const ColaborationSection = () => {
-    const sliderSettings = {
-      dots: false,
-      infinite: true,
-      speed: 500,
-
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 2000,
+    const responsive = {
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 7,
+        slidesToSlide: 7, // optional, default to 1.
+      },
+      tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 5,
+        slidesToSlide: 5, // optional, default to 1.
+      },
+      mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 2,
+        slidesToSlide: 2, // optional, default to 1.
+      },
     };
     return (
       <div
@@ -178,106 +185,60 @@ export function Landing() {
         <div className="flex-col items-center gap-sm self-stretch text-center caption-cap gradient-text">
           POWERING THE WORLD’S BEST AI PRODUCT TEAMS
         </div>
-        <Slider
-          {...sliderSettings}
-          className="bg-red-500 max-w-[1200px] h-[44px]"
+        <Carousel
+          swipeable={true}
+          draggable={true}
+          responsive={responsive}
+          infinite={true}
+          autoPlay
+          autoPlaySpeed={2000}
+          transitionDuration={5000}
+          containerClass="w-[1200px]"
+          removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+          deviceType={"desktop"}
+          itemClass="cursor-pointer w-[154px]"
         >
-          <div style={{ width: 100 }}>
-            <p>100</p>
-          </div>
-          <div style={{ width: 200 }}>
-            <p>200</p>
-          </div>
-          <div style={{ width: 75 }}>
-            <p>75</p>
-          </div>
-          <div style={{ width: 300 }}>
-            <p>300</p>
-          </div>
-          <div style={{ width: 225 }}>
-            <p>225</p>
-          </div>
-          <div style={{ width: 175 }}>
-            <p>175</p>
-          </div>
-          {/* <div
-            className="cursor-pointer w-[154px]"
-            style={{ width: "154px" }}
-            onClick={() => window.open("https://eduphoria.ai/", "_blank")}
-          >
+          <div onClick={() => window.open("https://eduphoria.ai/", "_blank")}>
             <EduPhoriaAiLogo />
           </div>
-          <div
-            className="cursor-pointer w-[154px]"
-            style={{ width: "154px" }}
-            onClick={() => window.open("https://wonderchat.io/", "_blank")}
-          >
+          <div onClick={() => window.open("https://wonderchat.io/", "_blank")}>
             <WonderChatLogo />
           </div>
           <div
-            className="cursor-pointer w-[154px]"
-            style={{ width: "154px" }}
             onClick={() => window.open("https://www.agenthub.dev/", "_blank")}
           >
             <AgentHubLogo />
           </div>
           <div
-            className="cursor-pointer w-[154px]"
-            style={{ width: "154px" }}
             onClick={() => window.open("https://www.justpaid.io/", "_blank")}
           >
             <JustPaidLogo />
           </div>
-          <div
-            className="cursor-pointer w-[154px]"
-            style={{ width: "154px" }}
-            onClick={() => window.open("https://shepherd.study/", "_blank")}
-          >
+          <div onClick={() => window.open("https://shepherd.study/", "_blank")}>
             <ShepherdLogo />
           </div>
-          <div
-            className="cursor-pointer w-[154px]"
-            style={{ width: "154px" }}
-            onClick={() => window.open("https://www.getcrux.ai", "_blank")}
-          >
+          <div onClick={() => window.open("https://www.getcrux.ai", "_blank")}>
             <CruxLogo />
           </div>
-          <div
-            className="cursor-pointer w-[154px]"
-            style={{ width: "154px" }}
-            onClick={() => window.open("https://www.lawme.ai/", "_blank")}
-          >
+          <div onClick={() => window.open("https://www.lawme.ai/", "_blank")}>
             <LawmeLogo />
           </div>
-          <div
-            className="cursor-pointer w-[154px]"
-            style={{ width: "154px" }}
-            onClick={() => window.open("https://milaai.app", "_blank")}
-          >
+          <div onClick={() => window.open("https://milaai.app", "_blank")}>
             <MilaLogo />
           </div>
-          <div
-            className="cursor-pointer w-[154px]"
-            style={{ width: "154px" }}
-            onClick={() => window.open("http://www.gentooai.com", "_blank")}
-          >
+          <div onClick={() => window.open("http://www.gentooai.com", "_blank")}>
             <GentooLogo />
           </div>
-          <div
-            className="cursor-pointer w-[154px]"
-            style={{ width: "154px" }}
-            onClick={() => window.open("https://www.jobloom.ai/", "_blank")}
-          >
+          <div onClick={() => window.open("https://www.jobloom.ai/", "_blank")}>
             <JobLoomLogo />
           </div>
           <div
-            className="cursor-pointer w-[154px]"
-            style={{ width: "154px" }}
-            // onClick={() => window.open("", "_blank")}
+
+          // onClick={() => window.open("", "_blank")}
           >
             <ArionaiLogo />
-          </div> */}
-        </Slider>
+          </div>
+        </Carousel>
 
         <div className="min-h-[1.2px] shrink-0 [background:linear-gradient(90deg,rgba(255,255,255,0.00)_0%,rgba(0,0,0,0.20)_0%,rgba(143,143,143,0.67)_50%,rgba(0,0,0,0.04)_100%)] w-full max-w-[1200px]" />
       </div>
