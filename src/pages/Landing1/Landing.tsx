@@ -260,7 +260,7 @@ export function Landing() {
               Rahul Behal
             </p>
             <p className="text-sm-regular text-center text-gray-4">
-              CCo-founder, AgentHub (YC W24)
+              Co-founder, AgentHub (YC W24)
             </p>
           </div>
         </div>
