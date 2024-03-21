@@ -16,29 +16,35 @@ import { SectionTitle } from "src/components/SectionTitle";
 
 import { useNavigate } from "react-router-dom";
 import { ContactDialog } from "src/components/ContactDialog";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Right } from "src/components/Icons";
 import { Button } from "src/components/Buttons";
 import {
   AgentHubLogo,
+  ArionaiLogo,
+  CruxLogo,
   EduPhoriaAiLogo,
+  GentooLogo,
   JobLoomLogo,
   JustPaidLogo,
   LawmeLogo,
+  MilaLogo,
   ShepherdLogo,
   WonderChatLogo,
 } from "./TeamsLogo";
 import FeatureSection from "./FeatureSection";
 import { AdvantagesSecctions } from "./AdvantagesSecctions";
 import CodePrewview from "./CodePrewview";
-
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 export function Landing() {
   const navigate = useNavigate();
   useEffect(() => {
     AOS.init({ duration: 1500 });
   }, []);
+
   const IntroductionSection = () => {
     return (
       <div
@@ -154,6 +160,47 @@ export function Landing() {
     );
   };
   const ColaborationSection = () => {
+    const [deviceType, setDeviceType] = useState("desktop");
+
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth < 768) {
+          setDeviceType("mobile");
+        } else if (window.innerWidth < 1024) {
+          setDeviceType("tablet");
+        } else {
+          setDeviceType("desktop");
+        }
+      };
+
+      // Initial setup
+      handleResize();
+
+      // Setup event listener
+      window.addEventListener("resize", handleResize);
+
+      // Cleanup on unmount
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
+    const responsive = {
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 7,
+        slidesToSlide: 1, // optional, default to 1.
+      },
+      tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 4,
+        slidesToSlide: 1, // optional, default to 1.
+      },
+      mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 2,
+        slidesToSlide: 1, // optional, default to 1.
+      },
+    };
     return (
       <div
         aria-label="frame 631"
@@ -162,50 +209,62 @@ export function Landing() {
         <div className="flex-col items-center gap-sm self-stretch text-center caption-cap gradient-text">
           POWERING THE WORLD’S BEST AI PRODUCT TEAMS
         </div>
-        <div className="flex max-w-[1200px] justify-center items-start content-start gap-[20px] w-full ">
-          <div
-            className="cursor-pointer"
-            onClick={() => window.open("https://wonderchat.io/", "_blank")}
-          >
+        <Carousel
+          swipeable={true}
+          draggable={true}
+          responsive={responsive}
+          infinite={true}
+          autoPlay
+          autoPlaySpeed={3000}
+          customTransition="transform 1000ms ease-in-out"
+          transitionDuration={1000}
+          containerClass="max-w-[1200px] w-full"
+          removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+          deviceType={deviceType}
+          itemClass="cursor-pointer w-[154px]"
+        >
+          <div onClick={() => window.open("https://eduphoria.ai/", "_blank")}>
+            <EduPhoriaAiLogo />
+          </div>
+          <div onClick={() => window.open("https://wonderchat.io/", "_blank")}>
             <WonderChatLogo />
           </div>
           <div
-            className="cursor-pointer"
             onClick={() => window.open("https://www.agenthub.dev/", "_blank")}
           >
             <AgentHubLogo />
           </div>
           <div
-            className="cursor-pointer"
-            onClick={() => window.open("https://shepherd.study/", "_blank")}
-          >
-            <ShepherdLogo />
-          </div>
-          <div
-            className="cursor-pointer"
             onClick={() => window.open("https://www.justpaid.io/", "_blank")}
           >
             <JustPaidLogo />
           </div>
-          <div
-            className="cursor-pointer"
-            onClick={() => window.open("https://www.lawme.ai/", "_blank")}
-          >
+          <div onClick={() => window.open("https://shepherd.study/", "_blank")}>
+            <ShepherdLogo />
+          </div>
+          <div onClick={() => window.open("https://www.getcrux.ai", "_blank")}>
+            <CruxLogo />
+          </div>
+          <div onClick={() => window.open("https://www.lawme.ai/", "_blank")}>
             <LawmeLogo />
           </div>
-          <div
-            className="cursor-pointer"
-            onClick={() => window.open("https://eduphoria.ai/", "_blank")}
-          >
-            <EduPhoriaAiLogo />
+          <div onClick={() => window.open("https://milaai.app", "_blank")}>
+            <MilaLogo />
           </div>
-          <div
-            className="cursor-pointer"
-            onClick={() => window.open("https://www.jobloom.ai/", "_blank")}
-          >
+          <div onClick={() => window.open("http://www.gentooai.com", "_blank")}>
+            <GentooLogo />
+          </div>
+          <div onClick={() => window.open("https://www.jobloom.ai/", "_blank")}>
             <JobLoomLogo />
           </div>
-        </div>
+          <div
+
+          // onClick={() => window.open("", "_blank")}
+          >
+            <ArionaiLogo />
+          </div>
+        </Carousel>
+
         <div className="min-h-[1.2px] shrink-0 [background:linear-gradient(90deg,rgba(255,255,255,0.00)_0%,rgba(0,0,0,0.20)_0%,rgba(143,143,143,0.67)_50%,rgba(0,0,0,0.04)_100%)] w-full max-w-[1200px]" />
       </div>
     );
