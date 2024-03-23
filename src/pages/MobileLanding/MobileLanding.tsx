@@ -27,7 +27,6 @@ import { FeatureSection } from "./FeatureSection";
 import { IntrimLogo, LogoCard } from "./OtherSVG";
 
 export function MobileLanding() {
-
   useEffect(() => {
     AOS.init({ duration: 1500 });
   }, []);
@@ -44,12 +43,12 @@ export function MobileLanding() {
         >
           <div
             aria-label="frame 2024"
-            className="flex p-xs justify-center items-center gap-xxs rounded-lg border border-solid border-gray-3 bg-gray-2"
+            className="flex px-xs py-[6px]  justify-center items-center gap-xxs rounded-lg border border-solid border-gray-3 bg-gray-2"
             data-aos="custom-fade-down"
           >
             <div
               aria-aria-label="frame 1603"
-              className="flex flex-row justify-center items-center gap-xxs"
+              className="flex flex-row justify-center items-center gap-xxs "
             >
               <span className="text-center caption text-resend-64">
                 Backed by
@@ -236,7 +235,7 @@ export function MobileLanding() {
           Integrate in minutes. Available today.
         </p>
         <div className="flex flex-col justify-center items-center gap-xs">
-        <Button
+          <Button
             text="Sign up for free"
             variant="big-white"
             // onClick={() => (window.location.href = platformURL)}
@@ -251,7 +250,6 @@ export function MobileLanding() {
     );
   };
 
-  
   return (
     <Page>
       <IntroductionSection />
