@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useRoutes, Navigate, useLocation } from "react-router-dom";
 // import { Landing } from "./pages/Landing";
 import { Landing } from "./pages/Landing1/Landing";
@@ -23,10 +23,26 @@ import { BetaAccess } from "./pages/BetaAccess/BetaAccess";
 import AuthContext from "./authentication/AuthContext";
 import { ToastProvider } from "@radix-ui/react-toast";
 import { ChangeLog } from "./pages/ChangeLog";
+import { MobileLanding } from "./pages/MobileLanding/MobileLanding";
+
+
+
+const useScreenWidth = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return width;
+};
 
 export const Routes = () => {
   const { user, setUser } = React.useContext(AuthContext);
   const location = useLocation();
+  const screenWidth = useScreenWidth();
+  const isMobile = screenWidth < 768; 
   // React.useEffect(() => {
   //   // check user login status for each navigation
   //   const checkIsLogin = async () => {
@@ -44,9 +60,9 @@ export const Routes = () => {
 
   const routes = useRoutes([
     {
-      element: <NavigationLayout />,
+      element: <NavigationLayout mobile={isMobile}/>,
       children: [
-        { path: "/", element: <Landing /> },
+        { path: "/", element: isMobile ? <MobileLanding /> : <Landing /> },
         { path: "/pricing", element: <Pricing /> },
         {
           path: "/privacy-policy",
