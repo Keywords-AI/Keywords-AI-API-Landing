@@ -3,6 +3,7 @@ import { LinkedIn, Logo, Twitter, Discord } from "../Icons";
 import { SmallDot } from "../icons-old";
 import "./Footer.css";
 import { useNavigate } from "react-router-dom";
+import { IntrimLogo } from "src/pages/MobileLanding/OtherSVG";
 export function Footer() {
   const navigate = useNavigate();
   const [isTwitterHovered, setIsTwitterHovered] = useState(false);
@@ -297,6 +298,63 @@ export function Footer() {
             Contact Us
           </span>
         </div> */}
+    </div>
+  );
+}
+export function MobileFooter() {
+  const [isTwitterHovered, setIsTwitterHovered] = useState(false);
+  const [isLinkedInHovered, setIsLinkedInHovered] = useState(false);
+  const [isDiscordHovered, setIsDiscordHovered] = useState(false);
+
+  // Handlers for Twitter
+  const handleTwitterEnter = () => setIsTwitterHovered(true);
+  const handleTwitterLeave = () => setIsTwitterHovered(false);
+
+  // Handlers for LinkedIn
+  const handleLinkedInEnter = () => setIsLinkedInHovered(true);
+  const handleLinkedInLeave = () => setIsLinkedInHovered(false);
+
+  // Handlers for Discord
+  const handleDiscordEnter = () => setIsDiscordHovered(true);
+  const handleDiscordLeave = () => setIsDiscordHovered(false);
+  return (
+    <div className="flex flex-row py-xs px-md justify-between items-center">
+      <div className="flex flex-row gap-xxs">
+        <IntrimLogo />
+        <span className="text-sm-md text-gray-4">Keywords AI</span>
+      </div>
+      <div className="flex items-start flex-row gap-sm">
+        <a
+          href="https://www.linkedin.com/company/keywordsai"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-row w-[16px] h-[16px] justify-center items-center gap-[10px]"
+          onMouseEnter={handleLinkedInEnter}
+          onMouseLeave={handleLinkedInLeave}
+        >
+          <LinkedIn active={isLinkedInHovered} />
+        </a>
+        <a
+          href="https://twitter.com/keywordsai"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-row w-[16px] h-[16px] justify-center items-center gap-[10px]"
+          onMouseEnter={handleTwitterEnter}
+          onMouseLeave={handleTwitterLeave}
+        >
+          <Twitter active={isTwitterHovered} />
+        </a>
+        <a
+          href="https://discord.gg/KEanfAafQQ"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-row w-[16px] h-[16px] justify-center items-center gap-[10px]"
+          onMouseEnter={handleDiscordEnter}
+          onMouseLeave={handleDiscordLeave}
+        >
+          <Discord active={isDiscordHovered} />
+        </a>
+      </div>
     </div>
   );
 }
