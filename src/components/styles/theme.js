@@ -1,4 +1,4 @@
-const gray3 = "#282A30";
+const gray3 = "#2E2E33";
 const gray4 = "#B1B3BC";
 
 export default {
