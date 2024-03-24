@@ -318,7 +318,7 @@ export function MobileFooter() {
   const handleDiscordEnter = () => setIsDiscordHovered(true);
   const handleDiscordLeave = () => setIsDiscordHovered(false);
   return (
-    <div className="flex flex-row py-xs px-md justify-between items-center self-stretch">
+    <div className="flex flex-row py-xs px-md justify-between items-center self-stretch bg-gray-2">
       <div className="flex flex-row gap-xxs items-center">
         <IntrimLogo />
         <span className="text-sm-md text-gray-4">Keywords AI</span>
