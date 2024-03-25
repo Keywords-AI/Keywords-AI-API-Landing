@@ -42,8 +42,7 @@ export function Navbar() {
                 variant="header"
                 // onClick={() => window.open(platformURL, "_blank")}
                 onClick={() => {
-                  navigate("/");
-                  window.scrollTo(0, 0);
+                  window.location.href = platformURL + "/login";
                 }}
                 // active={location.pathname == "/"}
               />
