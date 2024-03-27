@@ -47,9 +47,9 @@ export function Pricing() {
       currentPlan: "View Usage Details",
       features: [
         // "$10 free LLM credits",
-        "$15 free LLM credits",
         "10k requests / month",
         "2 seats",
+        "$15 free LLM credits",
         "Community support",
       ],
       plan: "starter",
@@ -149,7 +149,7 @@ export function Pricing() {
               Start for Free.
             </span>
           </p>
-          <p className="display-xs text-center text-gray-4 ">
+          <p className="text-md-medium text-center text-gray-4 ">
             Get started free and scale as you go.
           </p>
         </div>

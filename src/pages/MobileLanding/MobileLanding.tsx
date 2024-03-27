@@ -229,7 +229,7 @@ export function MobileLanding() {
 
   const CallToActionSection = () => {
     return (
-      <div className="flex pt-[120px] pb-[180px] px-md flex-col items-center gap-lg bg-gray-black">
+      <div className="flex pt-[120px] pb-[240px] px-md flex-col items-center gap-lg bg-gray-black">
         <LogoCard />
         <p className="text-center display-md-bold gradient-text w-full">
           Integrate in minutes. Available today.
